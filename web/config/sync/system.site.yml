@@ -1,0 +1,14 @@
+uuid: c8c4b948-290a-4f5e-9240-7bb0aa26bbb9
+name: keplerchallenge.co.nz
+mail: info@scud.keplerchallenge.co.nz
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

@@ -1,0 +1,8 @@
+name: RaceResults
+type: module
+description: Import and access results from races, current and historic
+core: 8.x
+package: norwegian.blue
+dependencies:
+  - geolocation
+  - plain_time_field

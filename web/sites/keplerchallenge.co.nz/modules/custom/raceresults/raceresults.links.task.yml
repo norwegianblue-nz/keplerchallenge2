@@ -1,0 +1,49 @@
+# Split routing definition
+split.settings_tab:
+  route_name: split.settings
+  title: 'Settings'
+  base_route: split.settings
+
+entity.split.canonical:
+  route_name: entity.split.canonical
+  base_route: entity.split.canonical
+  title: 'View'
+
+entity.split.edit_form:
+  route_name: entity.split.edit_form
+  base_route: entity.split.canonical
+  title: 'Edit'
+
+entity.split.version_history:
+  route_name: entity.split.version_history
+  base_route: entity.split.canonical
+  title: 'Revisions'
+
+entity.split.delete_form:
+  route_name:  entity.split.delete_form
+  base_route:  entity.split.canonical
+  title: Delete
+  weight: 10
+
+# Race split routing definition
+race_split.settings_tab:
+  route_name: race_split.settings
+  title: 'Settings'
+  base_route: race_split.settings
+
+entity.race_split.canonical:
+  route_name: entity.race_split.canonical
+  base_route: entity.race_split.canonical
+  title: 'View'
+
+entity.race_split.edit_form:
+  route_name: entity.race_split.edit_form
+  base_route: entity.race_split.canonical
+  title: 'Edit'
+
+entity.race_split.delete_form:
+  route_name:  entity.race_split.delete_form
+  base_route:  entity.race_split.canonical
+  title: Delete
+  weight: 10
+

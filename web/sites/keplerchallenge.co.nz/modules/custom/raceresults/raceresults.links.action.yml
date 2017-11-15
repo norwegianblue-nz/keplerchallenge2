@@ -1,0 +1,10 @@
+entity.split.add_form:
+  route_name: entity.split.add_form
+  title: 'Add Split'
+  appears_on:
+    - entity.split.collection
+entity.race_split.add_form:
+  route_name: entity.race_split.add_form
+  title: 'Add Race split'
+  appears_on:
+    - entity.race_split.collection

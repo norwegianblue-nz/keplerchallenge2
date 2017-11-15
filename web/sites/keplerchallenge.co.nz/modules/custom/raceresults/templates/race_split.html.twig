@@ -1,0 +1,22 @@
+{#
+/**
+ * @file race_split.html.twig
+ * Default theme implementation to present Race split data.
+ *
+ * This template is used when viewing Race split pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_race_split()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('race_split') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

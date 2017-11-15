@@ -1,0 +1,55 @@
+add split entities:
+  title: 'Create new Split entities'
+
+administer split entities:
+  title: 'Administer Split entities'
+  description: 'Allow to access the administration form to configure Split entities.'
+  restrict access: true
+
+delete split entities:
+  title: 'Delete Split entities'
+
+edit split entities:
+  title: 'Edit Split entities'
+
+access split overview:
+  title: 'Access the Split overview page'
+
+view published split entities:
+  title: 'View published Split entities'
+
+view unpublished split entities:
+  title: 'View unpublished Split entities'
+
+view all split revisions:
+  title: 'View all Split revisions'
+
+revert all split revisions:
+  title: 'Revert all Split revisions'
+  description: 'Role requires permission <em>view Split revisions</em> and <em>edit rights</em> for split entities in question or <em>administer split entities</em>.'
+
+delete all split revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Split revisions</em> and <em>delete rights</em> for split entities in question or <em>administer split entities</em>.'
+add race split entities:
+  title: 'Create new Race split entities'
+
+administer race split entities:
+  title: 'Administer Race split entities'
+  description: 'Allow to access the administration form to configure Race split entities.'
+  restrict access: true
+
+delete race split entities:
+  title: 'Delete Race split entities'
+
+edit race split entities:
+  title: 'Edit Race split entities'
+
+access race split overview:
+  title: 'Access the Race split overview page'
+
+view published race split entities:
+  title: 'View published Race split entities'
+
+view unpublished race split entities:
+  title: 'View unpublished Race split entities'

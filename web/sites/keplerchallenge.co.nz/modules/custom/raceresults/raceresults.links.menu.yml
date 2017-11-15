@@ -1,0 +1,28 @@
+
+# Split menu items definition
+entity.split.collection:
+  title: 'Split list'
+  route_name: entity.split.collection
+  description: 'List Split entities'
+  parent: system.admin_structure
+  weight: 100
+
+split.admin.structure.settings:
+  title: Split settings
+  description: 'Configure Split entities'
+  route_name: split.settings
+  parent: system.admin_structure
+
+# Race split menu items definition
+entity.race_split.collection:
+  title: 'Race split list'
+  route_name: entity.race_split.collection
+  description: 'List Race split entities'
+  parent: system.admin_structure
+  weight: 100
+
+race_split.admin.structure.settings:
+  title: Race split settings
+  description: 'Configure Race split entities'
+  route_name: race_split.settings
+  parent: system.admin_structure

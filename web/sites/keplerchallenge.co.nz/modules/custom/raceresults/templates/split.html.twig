@@ -1,0 +1,22 @@
+{#
+/**
+ * @file split.html.twig
+ * Default theme implementation to present Split data.
+ *
+ * This template is used when viewing Split pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_split()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('split') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>
