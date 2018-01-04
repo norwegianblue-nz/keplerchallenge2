@@ -30,3 +30,5 @@
 # Ignore test modules
 /web/sites/*/modules/contrib
 /web/sites/*/modules/custom/*_try*
+web/sites/keplerchallenge.co.nz/unused_modules
+
