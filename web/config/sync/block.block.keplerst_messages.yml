@@ -1,0 +1,22 @@
+uuid: 373fb0ed-d4b6-4488-a1ae-d14d374b9978
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - keplerst
+_core:
+  default_config_hash: _xBGCwzTBcpNEPQHjrm6TTzv6PBQyyKLvNeWgdhrLEA
+id: keplerst_messages
+theme: keplerst
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

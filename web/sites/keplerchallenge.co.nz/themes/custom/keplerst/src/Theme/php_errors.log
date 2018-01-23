@@ -1,0 +1,4 @@
+[12-Oct-2016 22:07:58 UTC] PHP Fatal error:  Class 'Drupal\keplerst\Theme\OmegaInfo' not found in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/Theme/OmegaSettingsInfo.php on line 16
+[12-Oct-2016 22:08:31 UTC] PHP Fatal error:  Class 'Drupal\keplerst\Theme\OmegaInfo' not found in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/Theme/OmegaSettingsInfo.php on line 16
+[13-Oct-2016 00:33:47 UTC] PHP Fatal error:  Class 'Drupal\keplerst\Theme\OmegaInfo' not found in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/Theme/OmegaSettingsInfo.php on line 16
+[13-Oct-2016 00:34:37 UTC] PHP Fatal error:  Class 'Drupal\keplerst\Theme\OmegaInfo' not found in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/Theme/OmegaSettingsInfo.php on line 16

@@ -1,0 +1,4 @@
+[12-Oct-2016 22:08:19 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/phpsass/SassFile.php on line 66
+[12-Oct-2016 22:08:49 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/phpsass/SassFile.php on line 66
+[13-Oct-2016 00:34:09 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/phpsass/SassFile.php on line 66
+[13-Oct-2016 00:34:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 8192 bytes) in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/phpsass/SassFile.php on line 66

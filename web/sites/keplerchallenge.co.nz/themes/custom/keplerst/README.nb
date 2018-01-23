@@ -1,0 +1,26 @@
+#/*
+This theme is heavily based on Omega5
+Most of the code to make it work with different layouts and generating the cs
+for different screens based on the layout is from Omega5
+
+There are calls in <theme>.theme to php files which do some of this.
+Some of it is clever use of scss mixins etc.. Some has been 'tweaked' by
+norwegian.blue
+
+There are a few custom mixins in _<theme>_mixins.scss which are of general use.
+
+To configure layouts, firstly ensure twig templates are correct 
+Then alter as required the layout scss files. NOTE the keplerst_default shouldn't
+be altered. 
+
+Omega5 uses the yml files in config/install to generate the layout css files.
+This theme doesn't have the necessary triggers to make this happen, so editing
+the scss files directly is required.
+
+_<theme>gs.scss has the 'smarts' in to calculate the css required to make the 
+layouts appear right at different device widths (as defined in the -layout.scss
+files)
+
+This theme has the twig template, the css and the .theme php required for
+parallax scrolling images. The front page displays these as a slideshow and the
+other pages has the ability to show multiples as fixed bg image 'stripes'

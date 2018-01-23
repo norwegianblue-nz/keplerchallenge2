@@ -1,0 +1,60 @@
+// 
+//  Created on : 17/10/2016, 1:12:35 PM
+//  Author     : roo
+//
+#header {
+  font-family: comfortaaregular,OpenSansRegular, sans-serif;
+  position: relative; // nb */
+  
+
+}
+#header {height: 200px; // nb */
+  display:none;
+}
+ .path-frontpage #header {
+    display: block;
+    height: 200px; // nb */
+    background: transparent url("/sites/kidsrestorethekepler/themes/custom/krtk_interim/images/norblu_header.jpg") no-repeat scroll 0% 0% /cover; /* nb */
+ }
+@media all and (min-width: 740px) {
+ .path-frontpage #header {
+    display: block;
+    height: 250px; // nb */
+    background: transparent url("/sites/kidsrestorethekepler/themes/custom/krtk_interim/images/norblu_header.jpg") no-repeat fixed 0% 0% /cover; /* nb */
+ }
+}
+@media all and (min-width: 1219px) {
+ .path-frontpage #header {
+    display: block;
+    height: 350px; // nb */
+    background: transparent url("/sites/kidsrestorethekepler/themes/custom/krtk_interim/images/norblu_header.jpg") no-repeat fixed 0% 0% /cover; /* nb */
+ }
+}
+
+.header .section {
+  position: relative;
+}
+.region-header {
+  padding: 0;
+}
+header#header-outer-wrapper {background-color: rgba(255,255,255,0.8);z-index:10;width: 100%; box-shadow: -1px 0 3px 1px rgba(0, 0, 0, 0.3333);}
+@media all and (min-width: 560px) {
+    header#header-outer-wrapper {position: fixed;}
+    section#btns-outer-wrapper {margin-top: 140px;}
+}
+
+ 
+
+// Header - split into two for branding and user menu
+@media all and (max-width: 959px) {
+    #block-keplerst-branding {@include parrotCols(10, 12, normal, '100');float:left;}
+    #block-loginformpopup {@include parrotCols(2, 12, normal, '100');float:right;}
+}
+@media all and (min-width: 960px) and (max-width: 1279px) {
+    #block-keplerst-branding {@include parrotCols(10, 12, normal, '960');float:left;}
+    #block-loginformpopup {@include parrotCols(2, 12, normal, '960');float:right;}
+}
+@media all and (min-width: 1280px) {
+    #block-keplerst-branding {@include parrotCols(10, 12, normal, '1200');float:left;}
+    #block-loginformpopup {@include parrotCols(2, 12, normal, '1200');float:right;}
+}

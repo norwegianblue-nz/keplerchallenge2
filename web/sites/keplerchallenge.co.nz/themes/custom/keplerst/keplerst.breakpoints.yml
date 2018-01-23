@@ -1,0 +1,82 @@
+keplerst.standard.all:
+  label: All
+  mediaQuery: 'all and (min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.mobile_portrait:
+  label: Mobile Portrait
+  mediaQuery: 'all and (max-width: 479px)'
+  weight: 1
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.mobile_landscape:
+  label: Mobile Landscape
+  mediaQuery: 'all and (min-width: 480px) and (max-width: 599px)'
+  weight: 2
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.tablet_portrait:
+  label: Mobile Landscape
+  mediaQuery: 'all and (min-width: 600px) and (max-width: 839px)'
+  weight: 3
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.tablet:
+  label: Narrow
+  mediaQuery: 'all and (min-width: 840px) and (max-width: 959px)'
+  weight: 4
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.normal:
+  label: Narrow
+  mediaQuery: 'all and (min-width: 960x) and (max-width: 1279px)'
+  weight: 5
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.wide:
+  label: Normal
+  mediaQuery: 'all and (min-width: 1280px) and (max-width: 1600px)'
+  weight: 6
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.extrawide:
+  label: Wide
+  mediaQuery: 'all and (min-width: 1601px)'
+  weight: 7
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard  
+keplerst.standard.hamburger:
+  label: Hamburger
+  mediaQuery: 'all and (min-width: 1500px)'
+  weight: 6
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard  
+

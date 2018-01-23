@@ -1,0 +1,14 @@
+uuid: 5c61dd94-6387-4d8a-a17e-3b0447511596
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.race_management
+  module:
+    - user
+id: user_remove_role_action.race_management
+label: 'Remove the race-management role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: race_management

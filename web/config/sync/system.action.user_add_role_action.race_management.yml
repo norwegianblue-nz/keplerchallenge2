@@ -1,0 +1,14 @@
+uuid: 7d657113-0b89-4aae-bc7a-6078ce12afaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.race_management
+  module:
+    - user
+id: user_add_role_action.race_management
+label: 'Add the race-management role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: race_management

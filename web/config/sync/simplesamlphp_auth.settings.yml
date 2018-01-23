@@ -1,0 +1,31 @@
+langcode: en
+default_langcode: en
+activate: true
+mail_attr: mail
+unique_id: uid
+user_name: cn
+auth_source: keplerentries
+login_link_display_name: SingleSign-On
+header_no_cache: 1
+role:
+  population: 'athlete:roles,~=,5|race_management:roles,~=,6'
+  eval_every_time: true
+register_users: true
+allow:
+  set_drupal_pwd: false
+  default_login: true
+  default_login_roles:
+    authenticated: '0'
+    administrator: '0'
+  default_login_users: '1'
+logout_goto_url: ''
+user_register_original: visitors_admin_approval
+sync:
+  mail: true
+  user_name: true
+autoenablesaml: true
+debug: true
+secure: false
+httponly: false
+_core:
+  default_config_hash: BuLah1nwoT5oUjn6XIuKnXkjcvdt5tDIGQ6gAflOY0s

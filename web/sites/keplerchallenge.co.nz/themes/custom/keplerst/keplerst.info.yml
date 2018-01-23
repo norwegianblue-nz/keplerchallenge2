@@ -1,0 +1,99 @@
+name: KeplerST
+type: theme
+description: 'Kepler Challenge custom theme'
+package: norwegian.blue
+base theme: classy
+force_export: false
+inherit_layout: false
+scss_support: true
+libraries:
+  - keplerst/keplerst
+  - keplerst/base
+  - keplerst/OpenSans
+  - keplerst/WorkSans
+  - keplerst/Comfortaa
+ckeditor_stylesheets:
+  - style/css/keplerst.css
+  - style/css/base.css
+  - css/components/table.css
+  - fonts/worksans.css
+  - fonts/comfortaa.css
+  - fonts/opensans.css
+regions:
+  menu: Menu
+  header: Header
+  btns: 'Menu Buttons'
+  title_bar: 'Title Bar'
+  teaser: Teaser
+  highlighted: Highlighted
+  preface_first: 'Preface First'
+  preface_second: 'Preface Second'
+  preface_third: 'Preface Third'
+  preface_fourth: 'Preface Fourth'
+  content: Content
+  content2: 'Content 2'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  extras: 'Extras'
+  postscript_first: 'Postscript First'
+  postscript_second: 'Postscript Second'
+  postscript_third: 'Postscript Third'
+  social: 'Social Media'
+  postscript_fourth: 'Postscript Fourth'
+  footer_header: 'Footer Header'
+  footer: Footer
+  copyright: Copyright
+  lastword: 'The Last Word'
+  page_top: 'Page Top'
+  page_bottom: 'Page Bottom'
+features:
+  logo: true
+  name: true
+  slogan: true
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  main_menu: true
+  secondary_menu: true
+version: 8.x-1.0-alpha1
+core: 8.x
+project: keplerst
+datestamp: 1469485442
+libraries-override:
+  omega/omega_html_elements:
+    css:
+      component:
+        style/css/elements/html-elements.css: style/css/elements/html-elements.css
+  omega/omega_branding:
+    css:
+      component:
+        style/css/elements/site-branding.css: style/css/elements/site-branding.css
+  omega/omega_breadcrumbs:
+    css:
+      component:
+        style/css/elements/breadcrumbs.css: style/css/elements/breadcrumbs.css
+  omega/omega_main_menus:
+    css:
+      component:
+        style/css/elements/main-menus.css: style/css/elements/main-menus.css
+  omega/omega_messages:
+    css:
+      component:
+        style/css/elements/messages.css: style/css/elements/messages.css
+  omega/omega_pagers:
+    css:
+      component:
+        style/css/elements/pagers.css: style/css/elements/pagers.css
+  omega/omega_tabs:
+    css:
+      component:
+        style/css/elements/tabs.css: style/css/elements/tabs.css
+  omega/omega_taxonomy_terms:
+    css:
+      component:
+        style/css/elements/taxonomy-terms.css: style/css/elements/taxonomy-terms.css
+  omega/omega_forms:
+    css:
+      component:
+        style/css/elements/forms.css: style/css/elements/forms.css

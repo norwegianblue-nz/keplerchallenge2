@@ -1,0 +1,20 @@
+uuid: 71ceeb84-f191-4514-b9be-6e468cd55433
+langcode: en
+status: true
+dependencies:
+  theme:
+    - keplerst
+_core:
+  default_config_hash: ZhI3wc13P8a01EatacYC97GCVa0nQsRv8tYDYHdiHCQ
+id: keplerst_page_title
+theme: keplerst
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

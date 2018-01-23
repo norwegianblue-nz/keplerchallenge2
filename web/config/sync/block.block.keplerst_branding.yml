@@ -1,0 +1,25 @@
+uuid: 4017d3e5-14a4-4760-9e99-688008900414
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - keplerst
+_core:
+  default_config_hash: bMdQ7saaHRxBwyiaGvWnu_w4GRjywZsxlg4V8bsOpMw
+id: keplerst_branding
+theme: keplerst
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

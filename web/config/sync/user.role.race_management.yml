@@ -1,0 +1,9 @@
+uuid: 21b1f939-9e02-4d14-97d5-ae319b090dc3
+langcode: en
+status: true
+dependencies: {  }
+id: race_management
+label: race-management
+weight: 4
+is_admin: null
+permissions: {  }

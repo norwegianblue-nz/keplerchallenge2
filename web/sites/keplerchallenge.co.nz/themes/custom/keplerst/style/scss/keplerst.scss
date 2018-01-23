@@ -1,0 +1,146 @@
+@import "keplerst_mixins", "keplerst-style-vars", "keplerst-default-style-vars", "keplerstgs";
+////////////////////////////////////////////////////////////////////////////////
+//
+// SANDBOX 
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+      
+
+// Example css for fixed div's 
+// Templates (twig) also have the relevant code in 
+// .nb_fixed-bg {
+//     min-height: 85vh;
+//     background-position: 50% bottom;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-color:#333;
+//     position: fixed;
+//     top :0;
+//     width: 100vw;
+//     z-index: -1;
+// }
+// #nb_slideshow_bg {min-height: 85vh;
+// background-position: 50% 50%;
+// background-repeat: no-repeat;
+// background-size: cover;
+// }
+// @media all and (min-width: 0px) {.nb_fixed-bg{}}
+// @media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}       
+// @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {
+// 	.nb_fixed-bg, #nb_slideshow_bg{
+// 		height:85vh;
+// 		background-attachment: fixed;
+// 	}
+// }
+// @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
+// @media all and (min-width: 1220px) {.nb_fixed-bg{}}
+// 
+// .path-frontpage #nb_fixed-bg1 {
+//     display: none;
+// }
+// 
+// .nb_fixed-inner { /* HOME PAGE LOGO repositioned for slider */
+//     position: relative;
+//     top: -85vh;
+// }
+
+.nb_fixed-bg {
+    min-height: 85vh;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#333;
+}
+@media all and (min-width: 0px) {.nb_fixed-bg{}}
+@media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}       
+@media all and (min-width: 768px) /*and (max-width: 1023px)*/ {
+	.nb_fixed-bg, #nb_slideshow_bg{
+		height:1vh;
+		background-attachment: fixed;
+	}
+}
+@media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
+@media all and (min-width: 1220px) {.nb_fixed-bg{}}
+
+// Hamburger-Menu -example css . Edit as necessary.
+.responsive-menu-toggle-icon::before, .responsive-menu-toggle-icon::after, .responsive-menu-toggle-icon span.icon {
+	background: #c00;
+	//content: '';
+	//display: block;
+	//width: 20px;
+	//height: 3px;
+	//position: absolute;
+	//top: 0;
+	//left: 13px;
+	//border-radius: 2px;
+}
+
+footer.node__meta {float:right;}
+h2 {float:left;}
+.node__content{clear:both}
+
+//Pop-up Login Block
+.ui-widget-content {font-family:$defaultBodyFont; color: $primaryColor2;}
+#ui-id-1 {font-family: $defaultHeaderFont; color: $primaryColor1;}
+#ui-id-1::before {content: "pealing.com ";}
+.ui-widget input {width: 280px; color: $primaryColor1;}
+.ui-dialog .ui-dialog-buttonpane button {width: 100%; margin: 0;font-family: $defaultHeaderFont; color: $primaryColor1;}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {margin: 0; padding: 0; width: 100%;}
+// End Pop-up Login Block
+
+// User Account Menu 
+.menu--account {display: none;}
+.user-logged-in .menu--account {display: inline-block;float:right;}
+.user-logged-in .menu--account li.menu-item {display: list-item !important;}
+// End User Account Menu
+
+.field.field--name-created::before {content: "\A"; white-space: pre;} // Put new-line in the Author posted info.
+
+// Header - split into two for branding and user menu
+@media all and (max-width: 959px) {
+    #block-keplerst-branding {@include parrotCols(9, 12, normal, '100');float:left;}
+    #block-loginformpopup {@include parrotCols(3, 12, normal, '100');float:right;}
+}
+@media all and (min-width: 960px) and (max-width: 1279px) {
+    #block-keplerst-branding {@include parrotCols(10, 12, normal, '960');float:left;}
+    #block-loginformpopup {@include parrotCols(2, 12, normal, '960');float:right;}
+}
+@media all and (min-width: 1280px) {
+    #block-keplerst-branding {@include parrotCols(10, 12, normal, '1200');float:left;}
+    #block-loginformpopup {@include parrotCols(2, 12, normal, '1200');float:right;}
+}
+
+// Postscript 1 and 2 evenly split across page down to mobile sizes
+@media all and (max-width: 480px) {
+    .region--postscript-first {@include parrotCols(12, 12, normal, '100');float:left;}
+    .region--postscript-second {@include parrotCols(12, 12, normal, '100');float:right;}
+}
+@media all and (min-width: 481px) and (max-width: 959px) {
+    .region--postscript-first {@include parrotCols(6, 12, normal, '100');float:left;}
+    .region--postscript-second {@include parrotCols(6, 12, normal, '100');float:right;}
+}
+@media all and (min-width: 960px) and (max-width: 1279px) {
+    .region--postscript-first {@include parrotCols(6, 12, normal, '960');float:left;}
+    .region--postscript-second {@include parrotCols(6, 12, normal, '960');float:right;}
+}
+@media all and (min-width: 1280px) {
+    .region--postscript-first {@include parrotCols(6, 12, normal, '1200');float:left;}
+    .region--postscript-second {@include parrotCols(6, 12, normal, '1200');float:right;}
+}
+
+// "more pics" in the Blog posts
+.field--name-field-pics .field__item {display: inline-block;}
+
+// Tag Cloud
+.tagclouds-term {padding: .2em .1em .2em .2em;}
+.tagclouds-term::after {content: " ";}
+
+// Blog create forms
+form#node-blog-form  label {font-family: $defaultHeaderFont; color: $primaryColor1;}
+form#node-blog-form  summary {font-family: $defaultHeaderFont; color: $primaryColor2;}
+form#node-blog-form .js-form-file {border: rgba(128, 128, 128, 0.4)  solid 1px; border-radius: 4px;}
+form#node-blog-form td.field-multiple-drag, form#node-blog-form thead {display: none;}
+form#node-blog-form div#edit-title-wrapper label {display:none;}
+// End Blog form

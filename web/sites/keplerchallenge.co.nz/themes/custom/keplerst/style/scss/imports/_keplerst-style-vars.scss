@@ -1,0 +1,42 @@
+@import "keplerst_mixins";
+  
+// Basic Color Variables 
+$primaryColor1: #0062A0;
+$primaryColor2: #1D7459;
+$primaryColor3: #CCCCCC;
+$primaryColor4: #1A1A1A;
+$primaryColor5: #9A9A9A;
+$mainMenuBgColor: #9A9A9A;
+$mainMenuFontColor: #1A1A1A;
+$mainMenuBorderColor: #1A1A1A;
+$buttonBgColor: #9A9A9A;
+$buttonFontColor: #1A1A1A;
+$buttonBorderColor: #1A1A1A;
+
+// pealing Colours
+$keplerst_Teal: #00737B; /* rgb(0,115,123)*/
+$keplerst_TransTeal: rgba(0,115,123,0.8);
+$keplerst_DarkTeal: #004146; /* rgb(0,65,70)*/
+$keplerst_Blue: #00A3B6; /* rgb(0,163,182)*/
+$keplerst_Red: #E8474D; /* rgb(232,71,77)*/
+$keplerst_Olive: #9A9A23; /* rgb(154,154,35)*/
+$keplerst_DarkOlive: #727318; /* rgb(114,115,24)*/
+$keplerst_Orange: #DB4F14; /* rgb(219,79,20)*/
+$keplerst_DarkOrange: #872F07; /* rgb(135,47,7)*/
+$keplerst_Buff: #E2E0C9; /* rgb(226,224,201)*/
+
+// Basic Font Variables
+$defaultHeaderFont: comfortaaregular,Arial,sans-serif;
+$defaultBodyFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// pealing.com Font Sizes
+$generalTextSize: 1em;
+$desktopH2: 2.2em;
+$mobileH2: 1.8em;
+
+// pealing.com Fonts
+$keplerst_WorkSans-Light: "work_sanslight", sans-serif;
+$keplerst_WorkSans-Hairline: "work_sanshairline", sans-serif;
+$ktrk0_Exo2-LightCondensed:"exo_2light_condensed", sans-serif;
+$ktrk0_Exo2-RegularCondensed:"exo_2regular_condensed", sans-serif;
+$ktrk0_Exo2-MediumCondensed:"exo_2medium_condensed", sans-serif;

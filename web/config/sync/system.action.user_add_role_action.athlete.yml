@@ -1,0 +1,14 @@
+uuid: 2050b27d-67c5-49fa-af57-40c204b6a840
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.athlete
+  module:
+    - user
+id: user_add_role_action.athlete
+label: 'Add the athlete role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: athlete

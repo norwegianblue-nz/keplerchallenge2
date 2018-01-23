@@ -1,0 +1,62 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      exljbris Font Foundry
+ * License URL: http://www.fontspring.com/fflicense/exljbris
+ *
+ *
+
+ @font-face {
+    font-family: 'museo_slab500';
+    src: url('anodyne-webfont.eot');
+    src: url('anodyne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('anodyne-webfont.woff') format('woff'),
+         url('anodyne-webfont.ttf') format('truetype'),
+         url('anodyne-webfont.svg#anodyneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ @font-face {
+    font-family: 'museoslab500';
+    src: url('museoslab500webfont.eot');
+    src: url('museoslab500webfont.eot?#iefix') format('embedded-opentype'),
+         url('museoslab500webfont.woff') format('woff'),
+         url('museoslab500webfont.ttf') format('truetype'),
+         url('museoslab500webfont.svg#museo_slab_500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*/
+
+ @font-face {
+    font-family: 'museoslab500';
+    src: url('museoslab500.eot');
+    src: url('museoslab500.eot?#iefix') format('embedded-opentype'),
+         url('museoslab500.woff') format('woff'),
+         url('museoslab500.ttf') format('truetype'),
+         url('museoslab500.svg#museo_slab_500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

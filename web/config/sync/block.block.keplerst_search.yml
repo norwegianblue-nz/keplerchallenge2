@@ -1,0 +1,22 @@
+uuid: f573615d-67b6-4b5e-929e-fcd30bbae3b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - keplerst
+_core:
+  default_config_hash: DIm2Mt8ztPMv9ulem0HRleIRMGx_-c0C6OJlk3OMPS4
+id: keplerst_search
+theme: keplerst
+region: preface_first
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }

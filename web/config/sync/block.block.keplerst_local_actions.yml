@@ -1,0 +1,20 @@
+uuid: d1eaca67-4f63-44da-89b5-5e5d7e7f326d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - keplerst
+_core:
+  default_config_hash: MdvR0HlItLgh15R7zev_c80WWSqs__CO_bkqMD10ZXg
+id: keplerst_local_actions
+theme: keplerst
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

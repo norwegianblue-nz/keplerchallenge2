@@ -1,0 +1,26 @@
+uuid: 6e4f70ce-4336-4700-9df8-8e44e8076aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - keplerst
+_core:
+  default_config_hash: Ny2E8uTOPFw6lWvr4kkmvY6mU9ooeVH4mogo5CSOAns
+id: keplerst_tools
+theme: keplerst
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

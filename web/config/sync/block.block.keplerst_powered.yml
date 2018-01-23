@@ -1,0 +1,22 @@
+uuid: 4e0423ae-38c0-4278-93f5-6b07b6a6d9f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - keplerst
+_core:
+  default_config_hash: 8rrUMkgT2q08eH4hTJLmhUrAaLPUmo1yTVw7Xoo5vdo
+id: keplerst_powered
+theme: keplerst
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,2 @@
+[13-Oct-2016 00:34:09 UTC] PHP Fatal error:  Interface 'Drupal\omega\Export\OmegaExportInterface' not found in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/Export/OmegaExport.php on line 19
+[13-Oct-2016 00:34:55 UTC] PHP Fatal error:  Interface 'Drupal\omega\Export\OmegaExportInterface' not found in /var/www/vhosts/drupal-8.x/web/sites/kidsrestorethekepler/themes/custom/keplerst/src/Export/OmegaExport.php on line 19

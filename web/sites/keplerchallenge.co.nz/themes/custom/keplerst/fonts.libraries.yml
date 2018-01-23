@@ -1,0 +1,49 @@
+OpenSans:
+  omega:
+    allow_enable_disable: true
+    title: 'OpenSans Font.'
+    description: 'Font Family - OpenSans'
+  css:
+    theme:
+      fonts/opensans.css: {}
+WorkSans:
+  omega:
+    allow_enable_disable: true
+    title: 'WorkSans Font.'
+    description: 'Font Family - WorkSans'
+  css:
+    theme:
+      fonts/worksans.css: {}
+Exo:
+  omega:
+    allow_enable_disable: true
+    title: 'Exo Font.'
+    description: 'Font Family - Exo / Exo2'
+  css:
+    theme:
+      fonts/exo.css: {}
+MuseoSlab:
+  omega:
+    allow_enable_disable: true
+    title: 'Museoslab Font.'
+    description: 'Font Family - MuseoSlab'
+  css:
+    theme:
+      fonts/museoslab.css: {}
+GoudyStM:
+  omega:
+    allow_enable_disable: true
+    title: 'GoudyStM Font.'
+    description: 'Font Family - GoudyStM'
+  css:
+    theme:
+      fonts/GoudyStM.css: {}
+GoudyStM-Italic:
+  omega:
+    allow_enable_disable: true
+    title: 'GoudyStM-Italic Font.'
+    description: 'Font Family - GoudyStM-Italic'
+  css:
+    theme:
+      fonts/GoudyStM-Italic.css: {}
+

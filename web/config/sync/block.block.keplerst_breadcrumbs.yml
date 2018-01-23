@@ -1,0 +1,22 @@
+uuid: 0c214782-cbac-4e1a-8ac5-f75dc57f3430
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - keplerst
+_core:
+  default_config_hash: Z8JVq514F2-8gcy2u0w7tjET4yhJYffq7q8_PRnBRZY
+id: keplerst_breadcrumbs
+theme: keplerst
+region: highlighted
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
