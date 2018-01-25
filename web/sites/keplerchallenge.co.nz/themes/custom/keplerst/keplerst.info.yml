@@ -20,30 +20,30 @@ ckeditor_stylesheets:
   - fonts/comfortaa.css
   - fonts/opensans.css
 regions:
-  menu: Menu
-  header: Header
-  btns: 'Menu Buttons'
   title_bar: 'Title Bar'
   teaser: Teaser
-  highlighted: Highlighted
+  header: Header
   preface_first: 'Preface First'
+  menu: Menu
   preface_second: 'Preface Second'
   preface_third: 'Preface Third'
-  preface_fourth: 'Preface Fourth'
   content: Content
+  social: 'Social Media'
+  preface_fourth: 'Preface Fourth'
   content2: 'Content 2'
-  sidebar_first: 'Sidebar First'
-  sidebar_second: 'Sidebar Second'
-  extras: 'Extras'
   postscript_first: 'Postscript First'
   postscript_second: 'Postscript Second'
   postscript_third: 'Postscript Third'
-  social: 'Social Media'
   postscript_fourth: 'Postscript Fourth'
   footer_header: 'Footer Header'
   footer: Footer
   copyright: Copyright
   lastword: 'The Last Word'
+  btns: 'Menu Buttons'
+  highlighted: Highlighted
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  extras: 'Extras'
   page_top: 'Page Top'
   page_bottom: 'Page Bottom'
 features:

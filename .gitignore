@@ -39,5 +39,6 @@ vendor/simplesamlphp/*
 !vendor/simplesamlphp/simplesamlphp
 vendor/simplesamlphp/simplesamlphp/*
 !vendor/simplesamlphp/simplesamlphp/config
+# config.php ignored as has db authentication data.
 vendor/simplesamlphp/simplesamlphp/config/config.php
 !vendor/simplesamlphp/simplesamlphp/metadata
