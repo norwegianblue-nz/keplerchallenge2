@@ -22,6 +22,8 @@
 
 
 /web/sites/*/themes/custom/*/css/
+web/sites/keplerchallenge.co.nz/themes/custom/keplerst/style/css/
+web/sites/keplerchallenge.co.nz/themes/custom/keplerst/style/css_safe.tar.bz2
 /web/sites/*/themes/custom/*/css_safe.tar.bz2
 /web/sites/*/themes/custom/*/.sass-cache/
 /web/sites/*/*~
