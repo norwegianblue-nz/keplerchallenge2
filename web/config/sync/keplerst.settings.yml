@@ -15,10 +15,11 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: sites/kidsrestorethekepler/themes/custom/keplerst/logo.png
+  path: sites/keplerchallenge.co.nz/themes/custom/keplerst/logo.png
 favicon:
-  use_default: true
-  path: ''
+  use_default: false
+  path: sites/keplerchallenge.co.nz/themes/custom/keplerst/favicon.ico
+  mimetype: image/vnd.microsoft.icon
 omega_toggle_intro: 0
 enable_backups: 0
 force_subtheme_creation: 0

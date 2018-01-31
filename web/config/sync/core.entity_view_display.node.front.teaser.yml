@@ -1,0 +1,22 @@
+uuid: bc6f9dac-ea69-4bd5-aaab-68c635456633
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front.field_content
+    - field.field.node.front.field_content_2
+    - node.type.front
+  module:
+    - user
+id: node.front.teaser
+targetEntityType: node
+bundle: front
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_content: true
+  field_content_2: true

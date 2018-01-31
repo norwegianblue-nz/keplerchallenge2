@@ -6,6 +6,7 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/web/autoload.php
 
 # Ignore Drupal's file directory
 /web/sites/*/files/

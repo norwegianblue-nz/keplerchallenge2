@@ -8,8 +8,8 @@ _core:
   default_config_hash: QV3Lc6Iv0Ybi-XGFUuU4UAHGs2m4RFBa1QP4DRHZspo
 id: keplerst_local_tasks
 theme: keplerst
-region: content
-weight: -7
+region: highlighted
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

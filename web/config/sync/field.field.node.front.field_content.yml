@@ -1,0 +1,21 @@
+uuid: a22ef826-e37a-40e0-be82-5439d0cb1a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.front
+  module:
+    - text
+id: node.front.field_content
+field_name: field_content
+entity_type: node
+bundle: front
+label: Content
+description: 'The main content area'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

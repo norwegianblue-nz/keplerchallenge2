@@ -1,7 +1,9 @@
 uuid: 71ceeb84-f191-4514-b9be-6e468cd55433
 langcode: en
-status: true
+status: false
 dependencies:
+  module:
+    - node
   theme:
     - keplerst
 _core:
@@ -9,7 +11,7 @@ _core:
 id: keplerst_page_title
 theme: keplerst
 region: content
-weight: -7
+weight: -12
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,12 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

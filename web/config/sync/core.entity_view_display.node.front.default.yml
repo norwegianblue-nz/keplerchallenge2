@@ -1,0 +1,21 @@
+uuid: 460d9998-6479-4644-8b4f-c148a47c2a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front.field_bg_image
+    - field.field.node.front.field_content
+    - field.field.node.front.field_content_2
+    - node.type.front
+  module:
+    - user
+id: node.front.default
+targetEntityType: node
+bundle: front
+mode: default
+content: {  }
+hidden:
+  field_bg_image: true
+  field_content: true
+  field_content_2: true
+  links: true

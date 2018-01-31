@@ -11,7 +11,7 @@ _core:
 id: keplerst_messages
 theme: keplerst
 region: highlighted
-weight: -6
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

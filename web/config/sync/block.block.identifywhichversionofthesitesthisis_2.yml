@@ -1,0 +1,25 @@
+uuid: e86e6a9e-c582-4a3b-9e4e-aed574145c40
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d5fc4bf1-cbed-48dd-aff2-dac4064198df'
+  module:
+    - block_content
+  theme:
+    - seven
+id: identifywhichversionofthesitesthisis_2
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:d5fc4bf1-cbed-48dd-aff2-dac4064198df'
+settings:
+  id: 'block_content:d5fc4bf1-cbed-48dd-aff2-dac4064198df'
+  label: 'Identify which version of the sites this is'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

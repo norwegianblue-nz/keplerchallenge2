@@ -1,0 +1,31 @@
+uuid: dc5f1030-a11d-4349-a52d-b5011c24cd1a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:test_content_block:0fec98c6-cd5c-4650-94a7-5b12b81daa41'
+  module:
+    - block_content
+    - system
+  theme:
+    - keplerst
+id: test_teaser
+theme: keplerst
+region: teaser
+weight: 0
+provider: null
+plugin: 'block_content:0fec98c6-cd5c-4650-94a7-5b12b81daa41'
+settings:
+  id: 'block_content:0fec98c6-cd5c-4650-94a7-5b12b81daa41'
+  label: test_teaser
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

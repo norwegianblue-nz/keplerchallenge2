@@ -1,0 +1,33 @@
+uuid: 82871377-a723-46d9-8872-9cdd6e9900ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:test_content_block:f96a2211-cb5b-4be1-8c2b-3870c04deef8'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - keplerst
+id: test_footer
+theme: keplerst
+region: footer
+weight: -12
+provider: null
+plugin: 'block_content:f96a2211-cb5b-4be1-8c2b-3870c04deef8'
+settings:
+  id: 'block_content:f96a2211-cb5b-4be1-8c2b-3870c04deef8'
+  label: test_footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
