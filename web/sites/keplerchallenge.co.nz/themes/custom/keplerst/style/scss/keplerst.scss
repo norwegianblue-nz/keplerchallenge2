@@ -64,6 +64,25 @@
 @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
 @media all and (min-width: 1220px) {.nb_fixed-bg{}}
 
+/* Sandpit extension */
+#nb_fixed-bg0{
+    position: fixed;
+}
+
+#nb_fixed-bg0 video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*End of sandpit extension */
+
+
+
 // Hamburger-Menu -example css . Edit as necessary.
 .responsive-menu-toggle-icon::before, .responsive-menu-toggle-icon::after, .responsive-menu-toggle-icon span.icon {
 	background: #c00;
