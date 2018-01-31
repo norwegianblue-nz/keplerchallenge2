@@ -6,6 +6,7 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/web/autoload.php
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
@@ -20,8 +21,8 @@
 /web/sites/*/services.yml
 /web/sites/*/php_errors.log
 
-
-/web/sites/*/themes/custom/*/css/
+web/sites/keplerchallenge.co.nz/themes/custom/keplerst/style/css/
+/web/sites/*/themes/custom/*/css/*
 /web/sites/*/themes/custom/*/css_safe.tar.bz2
 /web/sites/*/themes/custom/*/.sass-cache/
 /web/sites/*/*~

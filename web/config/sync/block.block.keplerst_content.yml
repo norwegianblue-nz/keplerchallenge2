@@ -1,8 +1,9 @@
 uuid: 288260cd-3920-470f-84ac-b3ae38cc933e
 langcode: en
-status: true
+status: false
 dependencies:
   module:
+    - ctools
     - system
   theme:
     - keplerst
@@ -10,7 +11,7 @@ _core:
   default_config_hash: K8unYq2J8-FU98CenH87F7UM7PV_GETpcwN0D6qSRrI
 id: keplerst_content
 theme: keplerst
-region: content
+region: lastword
 weight: 0
 provider: null
 plugin: system_main_block
@@ -19,4 +20,12 @@ settings:
   label: 'Main page content'
   provider: system
   label_display: '0'
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

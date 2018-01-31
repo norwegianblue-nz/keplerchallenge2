@@ -10,8 +10,8 @@ _core:
   default_config_hash: DIm2Mt8ztPMv9ulem0HRleIRMGx_-c0C6OJlk3OMPS4
 id: keplerst_search
 theme: keplerst
-region: preface_first
-weight: -6
+region: title_bar
+weight: -7
 provider: null
 plugin: search_form_block
 settings:
