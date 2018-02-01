@@ -1472,12 +1472,6 @@ $gutter: 20px;
     margin-bottom: $regionSpacing;
   } 
 
-  // Breakpoint: Wide; Region Group: main; Region: content-second;
-  .region--content2 { 
-    @include column(12, 12);   
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: Wide; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(6, 12);   
@@ -1504,6 +1498,7 @@ $gutter: 20px;
     }
   }
 
+  
   &.with--content.without--sidebar-second {
     .region--content {
       @include column-reset();
@@ -1528,6 +1523,23 @@ $gutter: 20px;
   }
 
 }
+
+// Breakpoint: Wide; Region Group: main; Region: content-second;
+//.region--content2 { 
+//  @include column(12, 12);   
+//  margin-bottom: $regionSpacing;
+//} 
+.content2-layout {
+    @include row(12);
+    max-width: 1400px;
+  // Breakpoint: Wide; Region Group: extras; Region: extras;
+  .region--content2 { 
+    @include column(12, 12); 
+    margin-bottom: $regionSpacing;
+  } 
+}
+
+
 .extras-layout {
     @include row(12);
     max-width: 1400px;

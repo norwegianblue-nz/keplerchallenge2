@@ -1,7 +1,7 @@
 @import "keplerst_mixins", "keplerst-style-vars", "keplerst-default-style-vars", "keplerstgs";
 ////////////////////////////////////////////////////////////////////////////////
 //
-// SANDBOX 
+// Sandpit 
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -46,6 +46,25 @@
 //     top: -85vh;
 // }
 
+#teaser-layout{
+}
+
+.region--teaser {
+    position:absolute;
+    background-color: #012732;
+    text-align: center;
+}
+.region--teaser p{color:white;}
+
+#preface1-outer-wrapper{
+    background-color: #012732;
+}
+#preface1-outer-wrapper p{color:white;}
+
+
+/* End of Sandpit */
+
+
 .nb_fixed-bg {
     min-height: 85vh;
     background-position: 50% bottom;
@@ -65,19 +84,45 @@
 @media all and (min-width: 1220px) {.nb_fixed-bg{}}
 
 /* Sandpit extension */
-#nb_fixed-bg0{
-    position: fixed;
+#nb_bg_video{
+   /* position: fixed;*/
+    background-image: url(/sites/keplerchallenge.co.nz/files/video/poster_lg.jpg);
+    min-height: 85vh;
+    height: 1vh;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
-#nb_fixed-bg0 video {
-    min-width: 100%;
+#nb_bg_video .nb_background-video {
+    /*min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
 }
 /*End of sandpit extension */
 

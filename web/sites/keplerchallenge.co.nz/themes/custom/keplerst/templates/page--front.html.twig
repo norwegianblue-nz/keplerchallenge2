@@ -84,9 +84,9 @@
       </div>
     </section>
     {% endif %}
-    {% if bg_imageImageList.0 or page.teaser %} 
-    <section id="nb_fixed-bg0" class="nb_fixed-bg"  style='background-image: url("{{ bg_imageImageList.0 }}");'>
-        <video autoplay loop muted poster="/sites/keplerchallenge.co.nz/files/video/poster_lg.jpg" id="vid_background">
+    
+    <section id="nb_bg_video" class="nb_bg-video">
+        <video autoplay loop muted poster="/sites/keplerchallenge.co.nz/files/video/poster_lg.jpg" class="nb_background-video">
             <source src="sites/keplerchallenge.co.nz/files/video/2013.mp4" type="video/mp4">
             <source src="sites/keplerchallenge.co.nz/files/video/2013.webm" type="video/webm">
             <source src="sites/keplerchallenge.co.nz/files/video/2013.ogv" type="video/ogg">
@@ -97,12 +97,20 @@
                 </div>
             {% endif %}
     </section>
-    {% endif %} 
+
     <header id="header-outer-wrapper" class="nb_scrolling outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }}" role="banner">
       <div id="header-layout" class="{{ region_classes.header }} inner-wrapper clearfix">
         {{ page.header }}
       </div>
     </header> <!-- /.section, /#header-->
+    {% if page.preface_first %} 
+    <section id="preface1-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
+        <div id="preface-first-layout" class=" {{ region_classes.preface }}preface-first-layout inner-wrapper clearfix">
+            {{ page.preface_first }}
+        </div>
+    </section> <!-- /#preface-wrapper -->
+    {% endif %}  
+    
     <section id="menu-outer-wrapper" class="outer-wrapper clearfix">
       <div id="menu-layout" class="{{ region_classes.menu }} menu-layout inner-wrapper clearfix">
         {% if page.menu %}
@@ -110,12 +118,7 @@
         {% endif %}
       </div>
     </section>
-{#      
-    <section id="keplerst-letterbox" class="keplerst-letterbox outer-wrapper clearfix" >
-        <div id="keplerst-letterbox" class="keplerst-letterbox-inner clearfix">
-        </div>
-    </section>
-#}
+      
     <section id="btns-outer-wrapper" class="outer-wrapper clearfix">
       <div id="btns-layout" class="{{ region_classes.btns }} btns-layout inner-wrapper clearfix">
         {% if page.btns %}
@@ -131,55 +134,25 @@
         {% endif %}
       </div>
     </section>
-      
-     {#
-     * Set the array of image URL's for the javascript.
-     * bg_imageImageList is set in the page preprocessor
-     #}
-    
-    {# * Commented out. This section would display
-       * a changing background image - like DuskyRidges
-    {% set slideshowImageList %}
-        {% for item in bg_imageImageList %}
-            {{item}},
-        {% endfor %}
-    {% endset %}
-    {% if bg_imageImageList.0 or page.preface_first %} 
-    <section id="nb_fixed-bg0" class="nb_fixed-bg" >
-        <div id="nb_slideshow_bg" class="background-slider" style='background-image: url("{{ bg_imageImageList.0 }}");' data-background-image-list="{{ slideshowImageList }}">
-        </div>
-        <div id="preface-first-layout" class="nb_fixed-inner preface-first-layout inner-wrapper clearfix">
-            {% if page.preface_first %}
-                {{ page.preface_first }}
-            {% endif %}
-        </div>
-    </section>
-    {% endif %} 
-    #}
    
     
-    {% if page.preface_first %} 
-    <section id="preface1-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
-        <div id="preface-first-layout" class=" {{ region_classes.preface }}preface-first-layout inner-wrapper clearfix">
-            {{ page.preface_first }}
+    {% if bg_imageImageList.0 or page.preface_second %} 
+    <section id="nb_fixed-bg0" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.0 }}");'>
+        {% if page.preface_second %}
+        <div id="preface-second-layout" class=" {{ region_classes.preface }} preface-second-layout inner-wrapper clearfix">
+            {{ page.preface_second }}
         </div>
-    </section> <!-- /#preface-wrapper -->
-    {% endif %}  
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.1 %} 
-    <section id="nb_fixed-bg1" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.1 }}");'>
+        {% endif %}
     </section>
     {% endif %}
 
-    {% if page.preface_second %}
+{#    {% if page.preface_second %}
     <section id="preface2-outer-wrapper" class="nb_scrolling  outer-wrapper clearfix">
         <div id="preface-second-layout" class=" {{ region_classes.preface }} preface-second-layout inner-wrapper clearfix">
             {{ page.preface_second }}
         </div>
     </section> <!-- /#preface-wrapper -->
-    {% endif %}
+    {% endif %}#}
 
     {% if page.preface_third %}
     <section id="preface3-outer-wrapper" class="nb_scrolling  outer-wrapper clearfix">
@@ -188,43 +161,6 @@
         </div>
     </section> <!-- /#preface-wrapper -->
     {% endif %}
-
-{#
-    {% if page.preface_fourth %}
-    <section id="preface4-outer-wrapper" class="nb_scrolling  outer-wrapper clearfix">
-        <div id="preface-fourth-layout" class=" {{ region_classes.preface }} preface-fourth-layout inner-wrapper clearfix">
-            {{ page.preface_fourth }}
-        </div>
-    </section> <!-- /#preface-wrapper -->
-    {% endif %}
-#}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.2 or page.preface_fourth %}
-      <section id="nb_fixed-bg2" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.2 }}");'>
-        {% if page.preface_fourth %}
-          <div id="preface-fourth-layout" class=" {{ region_classes.preface }} preface-fourth-layout inner-wrapper clearfix">
-            {{ page.preface_fourth }}
-          </div>
-        {% endif %}
-      </section>
-    {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.3 %}
-    <section id="nb_fixed-bg3" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.3 }}");'>
-    </section>
-    {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.4 %}
-    <section id="nb_fixed-bg4" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.4 }}");'>
-    </section>
-    {% endif %}
-
     <section id="content1-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
       <div id="main-layout" class="{{ region_classes.main }} inner-wrapper clearfix">
         
@@ -244,12 +180,31 @@
       </div><!-- /#main -->
     </section><!-- /#main-outer-wrapper -->
 
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.5 %} 
-    <section id="nb_fixed-bg5" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.5 }}");'>
+
+    {% if page.social %}
+    <section id="social_media-wrapper" class="nb_scrolling  outer-wrapper clearfix">
+        <div id="social-layout" class=" {{ region_classes.social }} social-layout inner-wrapper clearfix">
+            {{ page.social }}
+        </div>
     </section>
+    {% endif %}
+{#
+    {% if page.preface_fourth %}
+    <section id="preface4-outer-wrapper" class="nb_scrolling  outer-wrapper clearfix">
+        <div id="preface-fourth-layout" class=" {{ region_classes.preface }} preface-fourth-layout inner-wrapper clearfix">
+            {{ page.preface_fourth }}
+        </div>
+    </section> <!-- /#preface-wrapper -->
+    {% endif %}
+#}
+    {% if bg_imageImageList.1 or page.preface_fourth %}
+      <section id="nb_fixed-bg1" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.1 }}");'>
+        {% if page.preface_fourth %}
+          <div id="preface-fourth-layout" class=" {{ region_classes.preface }} preface-fourth-layout inner-wrapper clearfix">
+            {{ page.preface_fourth }}
+          </div>
+        {% endif %}
+      </section>
     {% endif %}
 
     {% if page.content2 %} 
@@ -260,10 +215,23 @@
     </section>
     {% endif %}
 
-    {% if bg_imageImageList.6 %} 
-    <section id="nb_fixed-bg5" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.5 }}");'>
+    {% if bg_imageImageList.2 or page.postscript_first %}
+    <section id="nb_fixed-bg2" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.2 }}");'>
+        {% if page.postscript_first %}
+            <div id="postscript-first-layout" role="contentinfo" class="{{ region_classes.postscript }}  {{ region_classes.postscript_first }} postscript-first-layout inner-wrapper clearfix">
+                {{ page.postscript_first }}
+            </div>
+        {% endif %}
     </section>
     {% endif %}
+    {#{% if page.postscript_first %}
+    <section id="postscript1-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
+        <div id="postscript-first-layout" role="contentinfo" class="{{ region_classes.postscript_first }} postscript-first-layout inner-wrapper clearfix">
+            {{ page.postscript_first }}
+        </div>
+    </section> <!-- /#postscript1-wrapper -->
+    {% endif %}#}
+    
 
     {% if page.extras %}
     <section id="extras-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
@@ -271,28 +239,6 @@
           {{ page.extras }}
       </div>
     </section> 
-    {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.7 %}
-    <section id="nb_fixed-bg6" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.6 }}");'>
-    </section>
-    {% endif %}
-
-    {% if page.postscript_first %}
-    <section id="postscript1-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
-        <div id="postscript-first-layout" role="contentinfo" class="{{ region_classes.postscript_first }} postscript-first-layout inner-wrapper clearfix">
-            {{ page.postscript_first }}
-        </div>
-    </section> <!-- /#postscript1-wrapper -->
-    {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.8 %}
-    <section id="nb_fixed-bg7" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.7 }}");'>
-    </section>
     {% endif %}
     
     {% if page.postscript_second %}
@@ -302,13 +248,6 @@
         </div>
     </section> <!-- /#postscript2-wrapper -->
     {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.9 %}
-    <section id="nb_fixed-bg8" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.8 }}");'>
-    </section>
-    {% endif %}
     
     {% if page.postscript_third %}
     <section id="postscript3-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
@@ -317,13 +256,6 @@
         </div>
     </section> <!-- /#postscript3-wrapper -->
     {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.10 %}
-    <section id="nb_fixed-bg9" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.9 }}");'>
-    </section>
-    {% endif %}
     
     {% if page.postscript_fourth %}
     <section id="postscript4-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
@@ -331,35 +263,13 @@
             {{ page.postscript_fourth }}
     </section> <!-- /#postscript4-wrapper -->
     {% endif %}
-    {#
-    /* Div for the background image which will "parallax scroll" */
-     #}
-    {% if bg_imageImageList.11 %}
-    <section id="nb_fixed-bg10" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.10 }}");'>
-    </section>
-    {% endif %}
     
-    {% if page.social %}
-    <section id="social_media-wrapper" class="nb_scrolling  outer-wrapper clearfix">
-        <div id="social-layout" class=" {{ region_classes.social }} social-layout inner-wrapper clearfix">
-            {{ page.social }}
-        </div>
-    </section>
-    {% endif %}
-    {% if bg_imageImageList.12 %}
-    <section id="nb_fixed-bg11" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.11 }}");'>
-    </section>
-    {% endif %}
     {% if page.footer_header %}
         <section id="footer-header-outer-wrapper" class="outer-wrapper clearfix">
             <div id="footer-header-layout" role="contentinfo" class="{{ region_classes.footer_header }} footer-header-layout inner-wrapper clearfix">
                 {{ page.footer_header }}
             </div> <!-- /#footer-header -->
         </section> <!-- /#footer-header-outer-wrapper -->
-    {% endif %}
-    {% if bg_imageImageList.13 %}
-    <section id="nb_fixed-bg12" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.12 }}");'>
-    </section>
     {% endif %}
     {% if page.footer %}
         <footer id="footer-outer-wrapper" class="outer-wrapper clearfix">
@@ -383,6 +293,50 @@
     </section> <!-- /#lastword-outer-wrapper -->
 
 {#
+    {% if bg_imageImageList.3 %}
+    <section id="nb_fixed-bg3" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.3 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.4 %} 
+    <section id="nb_fixed-bg4" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.4 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.5 %} 
+    <section id="nb_fixed-bg5" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.5 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.6 %} 
+    <section id="nb_fixed-bg6" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.6 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.7 %}
+    <section id="nb_fixed-bg7" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.7 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.8 %}
+    <section id="nb_fixed-bg8" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.8 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.9 %}
+    <section id="nb_fixed-bg9" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.9 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.10 %}
+    <section id="nb_fixed-bg10" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.10 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.11 %}
+    <section id="nb_fixed-bg11" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.11 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.12 %}
+    <section id="nb_fixed-bg12" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.12 }}");'>
+    </section>
+    {% endif %}
+    {% if bg_imageImageList.13 %}
+    <section id="nb_fixed-bg13" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.13 }}");'>
+    </section>
+    {% endif %}
     {% if bg_imageImageList.14 %}
     <section id="nb_fixed-bg14" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.14 }}");'>
     </section>
