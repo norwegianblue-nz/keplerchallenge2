@@ -1,14 +1,14 @@
 @import "keplerst_mixins", "keplerst-style-vars", "keplerst-default-style-vars", "keplerstgs";
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Sandpit 
+// Sandpit
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-      
+      //This was an oooopppssss by Tim
 
-// Example css for fixed div's 
-// Templates (twig) also have the relevant code in 
+// Example css for fixed div's
+// Templates (twig) also have the relevant code in
 // .nb_fixed-bg {
 //     min-height: 85vh;
 //     background-position: 50% bottom;
@@ -26,7 +26,7 @@
 // background-size: cover;
 // }
 // @media all and (min-width: 0px) {.nb_fixed-bg{}}
-// @media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}       
+// @media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}
 // @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {
 // 	.nb_fixed-bg, #nb_slideshow_bg{
 // 		height:85vh;
@@ -35,11 +35,11 @@
 // }
 // @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
 // @media all and (min-width: 1220px) {.nb_fixed-bg{}}
-// 
+//
 // .path-frontpage #nb_fixed-bg1 {
 //     display: none;
 // }
-// 
+//
 // .nb_fixed-inner { /* HOME PAGE LOGO repositioned for slider */
 //     position: relative;
 //     top: -85vh;
@@ -75,7 +75,7 @@
     background-color:#333;
 }
 @media all and (min-width: 0px) {.nb_fixed-bg{}}
-@media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}       
+@media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}
 @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {
 	.nb_fixed-bg, #nb_slideshow_bg{
 		height:1vh;
@@ -93,7 +93,7 @@
     background-size: cover;
 }
 /*@media all and (min-width: 0px) {#footer-outer-wrapper{}}
-@media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{}}       
+@media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{}}
 @media all and (min-width: 768px)  {
 	#footer-outer-wrapper {
 		height:1vh;
@@ -164,7 +164,7 @@ h2 {float:left;}
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {margin: 0; padding: 0; width: 100%;}
 // End Pop-up Login Block
 
-// User Account Menu 
+// User Account Menu
 .menu--account {display: none;}
 .user-logged-in .menu--account {display: inline-block;float:right;}
 .user-logged-in .menu--account li.menu-item {display: list-item !important;}
