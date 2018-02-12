@@ -42,6 +42,7 @@ $kepler_GreyText: #333;
 $defaultHeaderFont: comfortaaregular,Arial,sans-serif;
 $defaultBodyFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+
 // pealing.com Font Sizes
 $generalTextSize: 1em;
 $desktopH2: 2.2em;
@@ -53,3 +54,11 @@ $keplerst_WorkSans-Hairline: "work_sanshairline", sans-serif;
 $ktrk0_Exo2-LightCondensed:"exo_2light_condensed", sans-serif;
 $ktrk0_Exo2-RegularCondensed:"exo_2regular_condensed", sans-serif;
 $ktrk0_Exo2-MediumCondensed:"exo_2medium_condensed", sans-serif;
+
+// TMD fonts for keplerst
+ <link href="https://fonts.googleapis.com/css?family=Baloo|Ubuntu:300,500" rel="stylesheet">  /*(standard)*/
+ <style>@import url('https://fonts.googleapis.com/css?family=Baloo|Ubuntu:300,500');</style>  /*(@ import)*/
+
+ $keplerst_ubuntu: 'Ubuntu', sans-serif;
+ $keplerst_baloo: 'Baloo', cursive;
+// weights etc added to keplerst_mixins doc
