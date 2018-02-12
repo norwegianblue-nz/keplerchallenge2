@@ -42,10 +42,10 @@
     @if $grid == '100' {
         $gridw : 100%;
         $gutw : 2%;
-    } 
+    }
     $colw : ($gridw / $nocols) - $gutw;
     $thisw : (($colw + $gutw) * $thiscols) - $gutw;
-    
+
     width : $thisw !important;
     margin-right : $gutw / 2 !important;
     margin-left : $gutw / 2 !important;
@@ -54,7 +54,7 @@
 }
 
 // Newspaper style columns within a div. See std doumentation for css columns
-// This mixin simply reduces the typing! 
+// This mixin simply reduces the typing!
 @mixin keplerstColumns($number, $min-width, $gap, $rule) {
     -webkit-column-count: $number; /* Chrome, Safari, Opera */
     -moz-column-count: $number; /* Firefox */
@@ -99,4 +99,30 @@
     -webkit-column-rule: $rule; /* Chrome, Safari, Opera */
     -moz-column-rule: $rule; /* Firefox */
     column-rule: $rule;
+}
+
+// TMD basic kepler Fonts
+@mixin keplerst_ubuntu-regular ($color, $size) {
+ font: $keplerst_ubuntu;
+ font-weight: 300;
+ color:$color;
+ font-size:$size;
+}
+@mixin keplerst_ubuntu-bold ($color, $size) {
+ font: $keplerst_ubuntu;
+ font-weight: 500;
+ color:$color;
+ font-size:$size;
+}
+@mixin keplerst_baloo-regular ($color, $size) {
+ font: $keplerst_baloo;
+ font-weight: 300;
+ color:$color;
+ font-size:$size;
+}
+@mixin keplerst_baloo-bold ($color, $size) {
+ font: $keplerst_baloo;
+ font-weight: 500;
+ color:$color;
+ font-size:$size;
 }
