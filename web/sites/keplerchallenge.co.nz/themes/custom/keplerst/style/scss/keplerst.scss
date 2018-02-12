@@ -52,21 +52,21 @@
 
 .region--teaser {
     position:absolute !important;
-    background-color: #012732;
+    background-color: $kepler_DarkBlue;
     text-align: center;
     bottom: 0;
 }
 .region--teaser p{color:white;}
 
 #preface1-outer-wrapper{
-    background-color: #012732;
+    background-color: $kepler_DarkBlue;
 }
 #preface1-outer-wrapper p{color:white;}
 
 
 /* End of Sandpit */
 
-
+// Fixed bg images
 .nb_fixed-bg {
     min-height: 85vh;
     background-position: 50% bottom;
@@ -84,6 +84,22 @@
 }
 @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
 @media all and (min-width: 1220px) {.nb_fixed-bg{}}
+
+// Footer bg image
+#footer-outer-wrapper {
+    background: $kepler_DarkOrange url("/sites/keplerchallenge.co.nz/files/2018-02/footer-bg.png") no-repeat;
+    min-height: 65vh;
+    background-position: 50% bottom;
+    background-size: cover;
+}
+/*@media all and (min-width: 0px) {#footer-outer-wrapper{}}
+@media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{}}       
+@media all and (min-width: 768px)  {
+	#footer-outer-wrapper {
+		height:1vh;
+		background-attachment: fixed;
+	}
+}*/
 
 /* Sandpit extension */
 #nb_bg_video{
