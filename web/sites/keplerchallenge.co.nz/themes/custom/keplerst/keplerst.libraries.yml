@@ -46,17 +46,28 @@ Comfortaa:
 #  css:
 #    theme:
 #      fonts/GoudyStM-Italic.css: {}
-#Google_Oxygen300:
-#  omega:
-#    allow_enable_disable: true
-#    title: 'Oxygen300 Google Font Library'
-#    description: 'Oxygen 300 served from Google CDN, using SIL Open Font License 1.1'
-#  license:
-#    name: SIL Open Font License, 1.1
-#    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-#  css:
-#    theme:
-#      //fonts.googleapis.com/css?family=Oxygen:300: { type: external }
+Google_Ubuntu:
+  omega:
+    allow_enable_disable: true
+    title: 'Ubuntu Google Font Library'
+    description: 'Ubuntu served from Google CDN, using Ubuntu Font License '
+  license:
+    name: Ubuntu Font License, 1.1
+    url: https://www.ubuntu.com/legal/terms-and-policies/font-licence
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Ubuntu:300,500: { type: external }
+Google_Baloo400:
+  omega:
+    allow_enable_disable: true
+    title: 'Baloo400 Google Font Library'
+    description: 'Baloo 400 served from Google CDN, using SIL Open Font License 1.1'
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Baloo:400: { type: external }
       
 
 keplerst:

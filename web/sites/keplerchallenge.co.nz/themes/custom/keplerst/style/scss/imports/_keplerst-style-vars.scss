@@ -55,9 +55,9 @@ $ktrk0_Exo2-LightCondensed:"exo_2light_condensed", sans-serif;
 $ktrk0_Exo2-RegularCondensed:"exo_2regular_condensed", sans-serif;
 $ktrk0_Exo2-MediumCondensed:"exo_2medium_condensed", sans-serif;
 
-// TMD fonts for keplerst
- <link href="https://fonts.googleapis.com/css?family=Baloo|Ubuntu:300,500" rel="stylesheet">  /*(standard)*/
- <style>@import url('https://fonts.googleapis.com/css?family=Baloo|Ubuntu:300,500');</style>  /*(@ import)*/
+// TMD fonts for keplerst /*Commented out by Roo - this is done in the Libraries */
+// <link href="https://fonts.googleapis.com/css?family=Baloo|Ubuntu:300,500" rel="stylesheet">  /*(standard)*/
+// <style>@import url('https://fonts.googleapis.com/css?family=Baloo|Ubuntu:300,500');</style>  /*(@ import)*/
 
  $keplerst_ubuntu: 'Ubuntu', sans-serif;
  $keplerst_baloo: 'Baloo', cursive;
