@@ -46,12 +46,15 @@
 // }
 
 #teaser-layout{
+    position:relative;
+    height: 100%;
 }
 
 .region--teaser {
-    position:absolute;
+    position:absolute !important;
     background-color: #012732;
     text-align: center;
+    bottom: 0;
 }
 .region--teaser p{color:white;}
 
@@ -98,14 +101,6 @@
 }
 
 #nb_bg_video .nb_background-video {
-    /*min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
     position: absolute;
     min-width: 100%;
     min-height: 100%;
