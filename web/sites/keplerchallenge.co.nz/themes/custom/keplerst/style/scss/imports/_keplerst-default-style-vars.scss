@@ -2,12 +2,12 @@
 @import "keplerst-style-vars";
 
 /* Fonts */
-$light: "Helvetica Neue", Arial, Helvetica !default;
-$reg: $keplerst_ubuntu !default;
-$bold: "Helvetica Neue", Arial, Helvetica !default;
+$light: @mixin keplerst_ubuntu-light !default;
+$reg: @mixin $keplerst_ubuntu !default;
+$bold: @mixin keplerst_ubuntu-medium !default;
 
-$bodyFont: "Helvetica Neue", Arial, Helvetica !default;
-$header: $keplerst_baloo;
+$bodyFont: @mixin keplerst_ubuntu-light !default;
+$header: @mixin $keplerst_baloo;
 
 // Media Queries
 

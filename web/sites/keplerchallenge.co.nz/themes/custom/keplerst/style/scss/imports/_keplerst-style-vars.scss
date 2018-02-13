@@ -1,7 +1,7 @@
 @import "keplerst_mixins";
 
 // Basic Color Variables
-$primaryColor1: #0062A0;
+$primaryColor1: $keplerst_Grey;
 $primaryColor2: #1D7459;
 $primaryColor3: #CCCCCC;
 $primaryColor4: #1A1A1A;
@@ -39,6 +39,6 @@ $mobileH2: 1.8em;
 
 
 
- $keplerst_ubuntu: 'Ubuntu', sans-serif;
- $keplerst_baloo: 'Baloo', cursive;
+ $keplerst_ubuntu: 'Ubuntu', Arial, sans-serif;
+ $keplerst_baloo: 'Baloo', cursive, serif;
 // weights etc added to keplerst_mixins doc

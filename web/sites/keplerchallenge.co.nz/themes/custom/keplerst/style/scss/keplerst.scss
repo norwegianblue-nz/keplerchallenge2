@@ -5,7 +5,6 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-// Test Atom conflict processing.
 
 #teaser-layout{
     position:relative;
@@ -25,6 +24,40 @@
 }
 #preface1-outer-wrapper p{color:white;}
 
+// tmd sandy-pit
+.btn {
+   width: 100%;
+   background: $keplerst_Tan1;
+   display: block;
+   margin: 1em 0;
+   padding: 0.5em;
+   border-radius: 3px;
+   color: $keplerst_DarkTeal;
+   text-align: center;
+   font-size: 1.1em;
+   font: $keplerst_ubuntu;
+   font-weight:500;
+   max-width: 250px;
+}
+.btn-lrg {
+    padding: 1em;
+}
+
+.region--footer h2 {
+	color: white;
+	font-size: 1.3em;
+	font-family: $keplerst_baloo;
+	letter-spacing: 0.05em;
+	font-weight: normal;
+	float: none;
+}
+
+.region--footer p {
+	color: $keplerst_Tan1;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+// -/tmd sandy pit ends
 
 /* End of Sandpit */
 
@@ -117,13 +150,14 @@ footer.node__meta {float:right;}
 h2 {float:left;}
 .node__content{clear:both}
 
+/*This Section from pealing.com but left in for reference as may be useful*/
 //Pop-up Login Block
-.ui-widget-content {font-family:$defaultBodyFont; color: $primaryColor2;}
+/*.ui-widget-content {font-family:$defaultBodyFont; color: $primaryColor2;}
 #ui-id-1 {font-family: $defaultHeaderFont; color: $primaryColor1;}
 #ui-id-1::before {content: "pealing.com ";}
 .ui-widget input {width: 280px; color: $primaryColor1;}
 .ui-dialog .ui-dialog-buttonpane button {width: 100%; margin: 0;font-family: $defaultHeaderFont; color: $primaryColor1;}
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {margin: 0; padding: 0; width: 100%;}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {margin: 0; padding: 0; width: 100%;}*/
 // End Pop-up Login Block
 
 // User Account Menu
@@ -132,7 +166,6 @@ h2 {float:left;}
 .user-logged-in .menu--account li.menu-item {display: list-item !important;}
 // End User Account Menu
 
-.field.field--name-created::before {content: "\A"; white-space: pre;} // Put new-line in the Author posted info.
 
 // Header - split into two for branding and user menu
 @media all and (max-width: 959px) {
@@ -166,17 +199,3 @@ h2 {float:left;}
     .region--postscript-second {@include parrotCols(6, 12, normal, '1200');float:right;}
 }
 
-// "more pics" in the Blog posts
-.field--name-field-pics .field__item {display: inline-block;}
-
-// Tag Cloud
-.tagclouds-term {padding: .2em .1em .2em .2em;}
-.tagclouds-term::after {content: " ";}
-
-// Blog create forms
-form#node-blog-form  label {font-family: $defaultHeaderFont; color: $primaryColor1;}
-form#node-blog-form  summary {font-family: $defaultHeaderFont; color: $primaryColor2;}
-form#node-blog-form .js-form-file {border: rgba(128, 128, 128, 0.4)  solid 1px; border-radius: 4px;}
-form#node-blog-form td.field-multiple-drag, form#node-blog-form thead {display: none;}
-form#node-blog-form div#edit-title-wrapper label {display:none;}
-// End Blog form

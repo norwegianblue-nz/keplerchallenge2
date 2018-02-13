@@ -102,27 +102,21 @@
 }
 
 // Basic keplerst Fonts
-@mixin keplerst_ubuntu-regular ($color, $size) {
- font: $keplerst_ubuntu;
+@mixin keplerst_ubuntu-light ($color, $size) {
+ font-family: $keplerst_ubuntu;
  font-weight: 300;
  color:$color;
  font-size:$size;
 }
-@mixin keplerst_ubuntu-bold ($color, $size) {
- font: $keplerst_ubuntu;
+@mixin keplerst_ubuntu-medium ($color, $size) {
+ font-family: $keplerst_ubuntu;
  font-weight: 500;
  color:$color;
  font-size:$size;
 }
 @mixin keplerst_baloo-regular ($color, $size) {
- font: $keplerst_baloo;
- font-weight: 300;
- color:$color;
- font-size:$size;
-}
-@mixin keplerst_baloo-bold ($color, $size) {
- font: $keplerst_baloo;
- font-weight: 500;
+ font-family: $keplerst_baloo;
+ font-weight: 400;
  color:$color;
  font-size:$size;
 }
