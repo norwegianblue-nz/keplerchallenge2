@@ -1,74 +1,17 @@
-OpenSans:
-  omega:
-    allow_enable_disable: true
-    title: 'OpenSans Font.'
-    description: 'Font Family - OpenSans'
-  css:
-    theme:
-      fonts/opensans.css: {}
-WorkSans:
-  omega:
-    allow_enable_disable: true
-    title: 'WorkSans Font.'
-    description: 'Font Family - WorkSans'
-  css:
-    theme:
-      fonts/worksans.css: {}
-Comfortaa:
-  omega:
-    allow_enable_disable: true
-    title: 'Comfortaa Font.'
-    description: 'Font Family - Comfortaa'
-  css:
-    theme:
-      fonts/comfortaa.css: {}
-#MuseoSlab:
-#  omega:
-#    allow_enable_disable: true
-#    title: 'Museoslab Font.'
-#    description: 'Font Family - MuseoSlab'
-#  css:
-#    theme:
-#      fonts/museoslab.css: {}
-#GoudyStM:
-#  omega:
-#    allow_enable_disable: true
-#    title: 'GoudyStM Font.'
-#    description: 'Font Family - GoudyStM'
-#  css:
-#    theme:
-#      fonts/GoudyStM.css: {}
-#GoudyStM-Italic:
-#  omega:
-#    allow_enable_disable: true
-#    title: 'GoudyStM-Italic Font.'
-#    description: 'Font Family - GoudyStM-Italic'
-#  css:
-#    theme:
-#      fonts/GoudyStM-Italic.css: {}
-Google_Ubuntu:
-  omega:
-    allow_enable_disable: true
-    title: 'Ubuntu Google Font Library'
-    description: 'Ubuntu served from Google CDN, using Ubuntu Font License '
-  license:
-    name: Ubuntu Font License, 1.1
-    url: https://www.ubuntu.com/legal/terms-and-policies/font-licence
-  css:
-    theme:
-      //fonts.googleapis.com/css?family=Ubuntu:300,500: { type: external }
-Google_Baloo400:
-  omega:
-    allow_enable_disable: true
-    title: 'Baloo400 Google Font Library'
-    description: 'Baloo 400 served from Google CDN, using SIL Open Font License 1.1'
+Ubuntu:
+   license:
+     name: Ubuntu Font License, 1.1
+     url: https://www.ubuntu.com/legal/terms-and-policies/font-licence
+   css:
+     theme:
+       //fonts.googleapis.com/css?family=Ubuntu:300,500: { type: external }
+Baloo:
   license:
     name: SIL Open Font License, 1.1
     url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
   css:
     theme:
-      //fonts.googleapis.com/css?family=Baloo:400: { type: external }
-      
+      //fonts.googleapis.com/css?family=Baloo:400: { external: true }
 
 keplerst:
   omega:

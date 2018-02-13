@@ -3,11 +3,11 @@
 
 /* Fonts */
 $light: "Helvetica Neue", Arial, Helvetica !default;
-$reg: "work_sanslight", "exo_2medium_condensed", sans-serif !default;
+$reg: $keplerst_ubuntu !default;
 $bold: "Helvetica Neue", Arial, Helvetica !default;
 
 $bodyFont: "Helvetica Neue", Arial, Helvetica !default;
-$header: Georgia, Times, serif;
+$header: $keplerst_baloo;
 
 // Media Queries
 

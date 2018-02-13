@@ -9,16 +9,13 @@ scss_support: true
 libraries:
   - keplerst/keplerst
   - keplerst/base
-  - keplerst/OpenSans
-  - keplerst/WorkSans
-  - keplerst/Comfortaa
+  - keplerst/Ubuntu 
+  - keplerst/Baloo 
 ckeditor_stylesheets:
   - style/css/keplerst.css
   - style/css/base.css
   - css/components/table.css
   - fonts/worksans.css
-  - fonts/comfortaa.css
-  - fonts/opensans.css
 regions:
   title_bar: 'Title Bar'
   teaser: Teaser
