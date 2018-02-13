@@ -1,23 +1,23 @@
-uuid: 3a95c84c-2553-4456-b1a9-7a2490a36d8e
+uuid: b67bd8b8-a3f8-46a9-a014-d430a0c52517
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:test_content_block:553d16c9-0c5e-4d25-8a8b-0b581721dd72'
+    - 'block_content:test_content_block:0accd542-c14c-4404-8e1b-07dcbdef464f'
   module:
     - block_content
     - ctools
   theme:
     - keplerst
-id: test_last_word
+id: test_preface_third
 theme: keplerst
-region: lastword
+region: preface_third
 weight: 0
 provider: null
-plugin: 'block_content:553d16c9-0c5e-4d25-8a8b-0b581721dd72'
+plugin: 'block_content:0accd542-c14c-4404-8e1b-07dcbdef464f'
 settings:
-  id: 'block_content:553d16c9-0c5e-4d25-8a8b-0b581721dd72'
-  label: test_last_word
+  id: 'block_content:0accd542-c14c-4404-8e1b-07dcbdef464f'
+  label: test_preface_third
   provider: block_content
   label_display: '0'
   status: true

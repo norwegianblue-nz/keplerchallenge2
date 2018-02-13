@@ -25,18 +25,19 @@
 #preface1-outer-wrapper p{color:white;}
 
 // tmd sandy-pit
+.col-test-3 {
+    @include parrotCols(3, 12, 'normal', '1024')
+    background-color: $primaryColor3;
+}
 .btn {
    width: 100%;
-   background: $keplerst_Tan1;
+   background:$keplerst_DarkTeal;
    display: block;
    margin: 1em 0;
    padding: 0.5em;
    border-radius: 3px;
-   color: $keplerst_DarkTeal;
    text-align: center;
-   font-size: 1.1em;
-   font: $keplerst_ubuntu;
-   font-weight:500;
+   @include keplerst_ubuntu-medium ($keplerst_Tan1, 1.1em);
    max-width: 250px;
 }
 .btn-lrg {
@@ -198,4 +199,3 @@ h2 {float:left;}
     .region--postscript-first {@include parrotCols(6, 12, normal, '1200');float:left;}
     .region--postscript-second {@include parrotCols(6, 12, normal, '1200');float:right;}
 }
-

@@ -1,9 +1,9 @@
-uuid: 24b934e0-bd44-4517-812f-e9782fad9b72
+uuid: bf1f1b30-f9cd-44f7-a894-36407e229dfe
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:test_content_block:1e90d16f-1b46-4d48-bf88-d9c9317338f2'
+    - 'block_content:test_content_block:dfcf721c-0576-4023-95a7-df30b53b8b87'
   module:
     - block_content
     - ctools
@@ -14,9 +14,9 @@ theme: keplerst
 region: postscript_fourth
 weight: 0
 provider: null
-plugin: 'block_content:1e90d16f-1b46-4d48-bf88-d9c9317338f2'
+plugin: 'block_content:dfcf721c-0576-4023-95a7-df30b53b8b87'
 settings:
-  id: 'block_content:1e90d16f-1b46-4d48-bf88-d9c9317338f2'
+  id: 'block_content:dfcf721c-0576-4023-95a7-df30b53b8b87'
   label: test_postscript_fourth
   provider: block_content
   label_display: '0'

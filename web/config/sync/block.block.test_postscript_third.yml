@@ -1,9 +1,9 @@
-uuid: 288e90e7-146f-4be7-9dea-eb6b8b14a6bf
+uuid: 9d884756-aa8a-4c53-88b0-1263dead76ee
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:test_content_block:a5c42c73-8c9c-4bef-86b6-9b032f51b440'
+    - 'block_content:test_content_block:0acc0246-05a5-4ff2-bf4e-7b8981dd635e'
   module:
     - block_content
     - ctools
@@ -11,12 +11,12 @@ dependencies:
     - keplerst
 id: test_postscript_third
 theme: keplerst
-region: preface_third
+region: postscript_third
 weight: 0
 provider: null
-plugin: 'block_content:a5c42c73-8c9c-4bef-86b6-9b032f51b440'
+plugin: 'block_content:0acc0246-05a5-4ff2-bf4e-7b8981dd635e'
 settings:
-  id: 'block_content:a5c42c73-8c9c-4bef-86b6-9b032f51b440'
+  id: 'block_content:0acc0246-05a5-4ff2-bf4e-7b8981dd635e'
   label: test_postscript_third
   provider: block_content
   label_display: '0'

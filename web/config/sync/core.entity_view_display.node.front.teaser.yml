@@ -18,5 +18,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_bg_image: true
   field_content: true
   field_content_2: true

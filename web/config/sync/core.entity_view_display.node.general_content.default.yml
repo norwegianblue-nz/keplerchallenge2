@@ -1,0 +1,38 @@
+uuid: 562f63f0-e3ee-41d6-ae4f-7e83e29de0a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.general_content.field_bg_image
+    - field.field.node.general_content.field_content
+    - field.field.node.general_content.field_content_2
+    - node.type.general_content
+  module:
+    - text
+    - user
+id: node.general_content.default
+targetEntityType: node
+bundle: general_content
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_content_2:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bg_image: true

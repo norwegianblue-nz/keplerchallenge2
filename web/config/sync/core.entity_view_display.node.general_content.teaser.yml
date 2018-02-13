@@ -1,0 +1,24 @@
+uuid: 4bf38f02-9c05-475a-8cd7-e174af9daaab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.general_content.field_bg_image
+    - field.field.node.general_content.field_content
+    - field.field.node.general_content.field_content_2
+    - node.type.general_content
+  module:
+    - user
+id: node.general_content.teaser
+targetEntityType: node
+bundle: general_content
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_bg_image: true
+  field_content: true
+  field_content_2: true

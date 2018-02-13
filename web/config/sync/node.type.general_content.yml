@@ -1,0 +1,18 @@
+uuid: 84e3af8f-2938-401c-8136-0b78aebc47b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'General Content'
+type: general_content
+description: 'This page type should be used for most content.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

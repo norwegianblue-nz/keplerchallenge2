@@ -1,0 +1,21 @@
+uuid: c46ed6f6-ecf8-4a66-8257-0552563e2a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.general_content
+  module:
+    - text
+id: node.general_content.field_content
+field_name: field_content
+entity_type: node
+bundle: general_content
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

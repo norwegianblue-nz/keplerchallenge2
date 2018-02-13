@@ -1,0 +1,21 @@
+uuid: 6c6177a4-ed19-46fd-98f1-b56d26e88324
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_2
+    - node.type.general_content
+  module:
+    - text
+id: node.general_content.field_content_2
+field_name: field_content_2
+entity_type: node
+bundle: general_content
+label: 'Content 2'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

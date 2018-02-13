@@ -2,12 +2,31 @@
 @import "keplerst-style-vars";
 
 /* Fonts */
-$light: @mixin keplerst_ubuntu-light !default;
-$reg: @mixin $keplerst_ubuntu !default;
-$bold: @mixin keplerst_ubuntu-medium !default;
+$light: $keplerst_ubuntu !default;
+$reg: $keplerst_ubuntu !default;
+$bold: $keplerst_ubuntu !default;
 
-$bodyFont: @mixin keplerst_ubuntu-light !default;
-$header: @mixin $keplerst_baloo;
+$bodyFont: $keplerst_ubuntu !default;
+$header: $keplerst_baloo;
+
+/*Break Points for reference
+ //Breakpoint: All 
+@media all and (min-width: 0px)
+ //Breakpoint: mobile_portrait 
+@media all and (max-width: 479px)
+ //Breakpoint: mobile_landscape 
+@media all and (min-width: 480px) and (max-width: 599px)
+ //Breakpoint: tablet_portrait 
+@media all and (min-width: 600px) and (max-width: 839px)
+ //Breakpoint: Tablet 
+@media all and (min-width: 840px) and (max-width: 959px)
+ //Breakpoint: Normal 
+@media all and (min-width: 960px) and (max-width: 1279px)
+ //Breakpoint: Wide 
+@media all and (min-width: 1280px) and (max-width: 1600px)
+ //Breakpoint: ExtraWide 
+@media all and (min-width: 1601px)
+*/
 
 // Media Queries
 

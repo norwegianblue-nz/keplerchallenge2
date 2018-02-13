@@ -1,9 +1,9 @@
-uuid: 0d1c5535-be3c-447b-9b09-c7f124ee0247
+uuid: de0f9506-1bf9-46ec-8017-b73d82f79f13
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:test_content_block:7317f872-2c28-4ab8-8cc8-d634b953cf0f'
+    - 'block_content:test_content_block:fccd3058-985c-42e0-89d1-b9c12762b9b2'
   module:
     - block_content
     - ctools
@@ -14,9 +14,9 @@ theme: keplerst
 region: preface_fourth
 weight: 0
 provider: null
-plugin: 'block_content:7317f872-2c28-4ab8-8cc8-d634b953cf0f'
+plugin: 'block_content:fccd3058-985c-42e0-89d1-b9c12762b9b2'
 settings:
-  id: 'block_content:7317f872-2c28-4ab8-8cc8-d634b953cf0f'
+  id: 'block_content:fccd3058-985c-42e0-89d1-b9c12762b9b2'
   label: test_preface_fourth
   provider: block_content
   label_display: '0'

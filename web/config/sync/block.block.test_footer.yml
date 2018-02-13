@@ -1,9 +1,9 @@
-uuid: 82871377-a723-46d9-8872-9cdd6e9900ac
+uuid: bda7ef8c-a7f5-41d4-848c-a92b5fed997f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:test_content_block:f96a2211-cb5b-4be1-8c2b-3870c04deef8'
+    - 'block_content:test_content_block:572ab4b1-9a17-479d-8e4f-b9547d1317d0'
   module:
     - block_content
     - ctools
@@ -12,11 +12,11 @@ dependencies:
 id: test_footer
 theme: keplerst
 region: footer
-weight: -12
+weight: -13
 provider: null
-plugin: 'block_content:f96a2211-cb5b-4be1-8c2b-3870c04deef8'
+plugin: 'block_content:572ab4b1-9a17-479d-8e4f-b9547d1317d0'
 settings:
-  id: 'block_content:f96a2211-cb5b-4be1-8c2b-3870c04deef8'
+  id: 'block_content:572ab4b1-9a17-479d-8e4f-b9547d1317d0'
   label: test_footer
   provider: block_content
   label_display: '0'

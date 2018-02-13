@@ -1,0 +1,39 @@
+uuid: ba11ac5d-08bf-40c8-b349-cf695f6ecb2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.general_content.field_bg_image
+    - field.field.node.general_content.field_content
+    - field.field.node.general_content.field_content_2
+    - node.type.general_content
+  module:
+    - text
+    - user
+id: node.general_content.full
+targetEntityType: node
+bundle: general_content
+mode: full
+content:
+  field_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_content_2:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bg_image: true

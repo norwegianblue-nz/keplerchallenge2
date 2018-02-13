@@ -1,0 +1,25 @@
+uuid: 99ed7b62-487c-4e0a-b4dc-c5bfda391b1b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: tmdfooteraccountlogin
+theme: keplerst
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
+settings:
+  id: 'block_content:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
+  label: 'tmd - footer account login'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

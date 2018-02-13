@@ -1,19 +1,5 @@
 @import "keplerst_mixins";
 
-// Basic Color Variables
-$primaryColor1: $keplerst_Grey;
-$primaryColor2: #1D7459;
-$primaryColor3: #CCCCCC;
-$primaryColor4: #1A1A1A;
-$primaryColor5: #9A9A9A;
-$mainMenuBgColor: #9A9A9A;
-$mainMenuFontColor: #1A1A1A;
-$mainMenuBorderColor: #1A1A1A;
-$buttonBgColor: #9A9A9A;
-$buttonFontColor: #1A1A1A;
-$buttonBorderColor: #1A1A1A;
-
-
 // keplerst Colours
 $keplerst_Tan1:#DFDDC7;
 $keplerst_Tan2:#E2E0C9;
@@ -25,6 +11,20 @@ $keplerst_DarkTeal: #003C3C;
 $keplerst_DarkBlue: #282850;
 $keplerst_Grey: #3C3C3C;
 $keplerst_GreyText: #333;
+
+// Basic Color Variables
+$primaryColor1: $keplerst_GreyText;
+$primaryColor2: #1D7459;
+$primaryColor3: #CCCCCC;
+$primaryColor4: #1A1A1A;
+$primaryColor5: #9A9A9A;
+$mainMenuBgColor: #9A9A9A;
+$mainMenuFontColor: #1A1A1A;
+$mainMenuBorderColor: #1A1A1A;
+$buttonBgColor: #9A9A9A;
+$buttonFontColor: #1A1A1A;
+$buttonBorderColor: #1A1A1A;
+
 
 
 // Basic Font Variables

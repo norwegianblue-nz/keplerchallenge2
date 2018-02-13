@@ -17,7 +17,9 @@ allow:
   default_login_roles:
     authenticated: '0'
     administrator: '0'
-  default_login_users: '1'
+    athlete: '0'
+    race_management: '0'
+  default_login_users: '1,12'
 logout_goto_url: ''
 user_register_original: visitors_admin_approval
 sync:

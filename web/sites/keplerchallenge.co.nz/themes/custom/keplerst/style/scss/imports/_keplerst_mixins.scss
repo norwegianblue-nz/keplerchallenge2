@@ -27,21 +27,25 @@
 //          1 at wide (grid width 1200)
 //          1 at normal (grid width 960)
 //          1 at mobile (fluid; grid 100%)
-@mixin parrotCols($thiscols:12, $nocols:12, $margin: 'normal', $grid: '960'){
+@mixin parrotCols($thiscols:12, $nocols:12, $margin: 'normal', $grid: '1024'){
     $wratio : $nocols / $thiscols;
-    $gridw : 960px;
+    $gridw : 1024px;
     $gutw : 20px;
-    @if $grid == '960' {
+    @if $grid == '480' {
+        $gridw : 100%;
+        $gutw : 2%;
+    }
+    @if $grid == '768' {
         $gridw : 960px;
         $gutw : 20px;
     }
-    @if $grid == '1200' {
+    @if $grid == '1024' {
         $gridw : 1200px;
         $gutw : 20px;
     }
-    @if $grid == '100' {
-        $gridw : 100%;
-        $gutw : 2%;
+    @if $grid == '1220' {
+        $gridw : 1200px;
+        $gutw : 20px;
     }
     $colw : ($gridw / $nocols) - $gutw;
     $thisw : (($colw + $gutw) * $thiscols) - $gutw;
@@ -52,6 +56,34 @@
     &:first-of-type {margin-left : 0 !important;}
     &:last-of-type {margin-right : 0 !important;}
 }
+
+// COPY PARKED tmd 2018/2/14
+// @mixin parrotCols($thiscols:12, $nocols:12, $margin: 'normal', $grid: '960'){
+//     $wratio : $nocols / $thiscols;
+//     $gridw : 960px;
+//     $gutw : 20px;
+//     @if $grid == '960' {
+//         $gridw : 960px;
+//         $gutw : 20px;
+//     }
+//     @if $grid == '1200' {
+//         $gridw : 1200px;
+//         $gutw : 20px;
+//     }
+//     @if $grid == '100' {
+//         $gridw : 100%;
+//         $gutw : 2%;
+//     }
+//     $colw : ($gridw / $nocols) - $gutw;
+//     $thisw : (($colw + $gutw) * $thiscols) - $gutw;
+//
+//     width : $thisw !important;
+//     margin-right : $gutw / 2 !important;
+//     margin-left : $gutw / 2 !important;
+//     &:first-of-type {margin-left : 0 !important;}
+//     &:last-of-type {margin-right : 0 !important;}
+// }
+
 
 // Newspaper style columns within a div. See std doumentation for css columns
 // This mixin simply reduces the typing!
@@ -83,24 +115,6 @@
     color:$color;
 }
 
-@mixin keplerstColumns($number, $min-width, $gap, $rule) {
-    -webkit-column-count: $number; /* Chrome, Safari, Opera */
-    -moz-column-count: $number; /* Firefox */
-    column-count: $number;
-
-    -webkit-column-width: $min-width; /* Chrome, Safari, Opera */
-    -moz-column-width: $min-width; /* Firefox */
-    column-width: $min-width;
-
-    -webkit-column-gap: $gap; /* Chrome, Safari, Opera */
-    -moz-column-gap: $gap; /* Firefox */
-    column-gap: $gap;
-
-    -webkit-column-rule: $rule; /* Chrome, Safari, Opera */
-    -moz-column-rule: $rule; /* Firefox */
-    column-rule: $rule;
-}
-
 // Basic keplerst Fonts
 @mixin keplerst_ubuntu-light ($color, $size) {
  font-family: $keplerst_ubuntu;
@@ -114,7 +128,7 @@
  color:$color;
  font-size:$size;
 }
-@mixin keplerst_baloo-regular ($color, $size) {
+@mixin keplerst_baloo ($color, $size) {
  font-family: $keplerst_baloo;
  font-weight: 400;
  color:$color;

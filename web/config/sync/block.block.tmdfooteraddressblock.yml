@@ -1,0 +1,25 @@
+uuid: ce2e6005-50eb-4795-a391-00f0d56b3903
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: tmdfooteraddressblock
+theme: keplerst
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+settings:
+  id: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+  label: 'tmd - footer address block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
