@@ -291,8 +291,13 @@ $Node = \Drupal::routeMatch()->getParameter('node');
 
     if (isset($Node)){
         $node = $vars['node'];
-        if (isset($node->field_bg_image)){
+        if (isset($node->field_bg_image) || isset($node->field_nf_bg_image)){
+          if (isset($node->field_bg_image)){
             $slide = $vars['node']->field_bg_image;
+          }
+          if (isset($node->field_nf_bg_image)){
+            $slide = $vars['node']->field_nf_bg_image;
+          }
             $vars['bg_imageImageList'] = array();
             foreach ($slide as $s) {
                 $image_id = $s->target_id;

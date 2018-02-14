@@ -3,11 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.general_content.field_bg_image
     - field.field.node.general_content.field_content
     - field.field.node.general_content.field_content_2
+    - field.field.node.general_content.field_footerimage1
+    - field.field.node.general_content.field_footerimage2
+    - field.field.node.general_content.field_footerimage3
+    - field.field.node.general_content.field_footerimage4
+    - field.field.node.general_content.field_nf_bg_image
     - node.type.general_content
   module:
+    - image
     - text
     - user
 id: node.general_content.default
@@ -29,10 +34,54 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_footerimage1:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_footerimage2:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_footerimage3:
+    weight: 7
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_footerimage4:
+    weight: 8
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nf_bg_image:
+    weight: 4
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_bg_image: true
+hidden: {  }

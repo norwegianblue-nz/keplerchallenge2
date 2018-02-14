@@ -1,20 +1,20 @@
-uuid: 8e95d328-a4a5-4c2e-a7cb-08710b361acf
+uuid: f6d05fff-b1cf-4d85-b663-7828838c1bc1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_bg_image
+    - field.storage.node.field_footerimage4
     - node.type.general_content
   module:
     - image
-id: node.general_content.field_bg_image
-field_name: field_bg_image
+id: node.general_content.field_footerimage4
+field_name: field_footerimage4
 entity_type: node
 bundle: general_content
-label: bg_image
+label: FooterImage4
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -23,16 +23,16 @@ settings:
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''
-  alt_field: false
-  alt_field_required: false
+  alt_field: true
+  alt_field_required: true
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: 06b7d26d-44f2-4224-bfe8-e1c2fd6bd65b
+    alt: 'Lake Te Anau from the ridge'
     title: ''
-    width: null
-    height: null
+    width: 800
+    height: 534
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

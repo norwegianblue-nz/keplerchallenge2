@@ -1,0 +1,38 @@
+uuid: 5893ec63-6b19-4b98-bfd6-f95b0e431217
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footerimage1
+    - node.type.general_content
+  module:
+    - image
+id: node.general_content.field_footerimage1
+field_name: field_footerimage1
+entity_type: node
+bundle: general_content
+label: FooterImage1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: a208f8ae-2803-4ce9-b49e-03666b459a69
+    alt: 'Drink Station at Rainbow Reach'
+    title: ''
+    width: 800
+    height: 534
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

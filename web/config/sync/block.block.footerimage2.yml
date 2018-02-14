@@ -1,4 +1,4 @@
-uuid: 4b37951d-d252-4bac-9914-21cd8add1c85
+uuid: e4f810a3-4484-45b2-b07c-0a59268e29cb
 langcode: en
 status: true
 dependencies:
@@ -7,21 +7,23 @@ dependencies:
     - ctools_block
   theme:
     - keplerst
-id: content2
+id: footerimage2
 theme: keplerst
-region: content2
+region: postscript_fourth
 weight: 0
 provider: null
-plugin: 'entity_field:node:field_content_2'
+plugin: 'entity_field:node:field_footerimage2'
 settings:
-  id: 'entity_field:node:field_content_2'
-  label: 'Content 2'
+  id: 'entity_field:node:field_footerimage2'
+  label: FooterImage2
   provider: ctools_block
   label_display: '0'
   formatter:
     label: hidden
-    type: text_default
-    settings: {  }
+    type: image
+    settings:
+      image_style: footer_std
+      image_link: file
     third_party_settings: {  }
     weight: 0
   context_mapping:
@@ -30,7 +32,6 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      front: front
       general_content: general_content
     negate: false
     context_mapping:

@@ -73,9 +73,35 @@
  * @ingroup themeable
  */
 #}
+
 <div id="page-wrapper" class="clearfix">
   <div id="page" class="clearfix {{ page_classes }}">
 
+    {% if page.title_bar %}
+    <section id="title-bar-wrapper" class="outer-wrapper clearfix">
+      <div id="title-bar-layout" class="{{ region_classes.title-bar }} title-bar-layout inner-wrapper clearfix">
+        {{ page.title_bar }}
+      </div>
+    </section>
+    <section id="keplerst-letterbox" class="keplerst-letterbox outer-wrapper clearfix" >
+        <div id="keplerst-letterbox" class="keplerst-letterbox-inner clearfix">
+        </div>
+    {% endif %}
+    </section>
+
+    <header id="header-outer-wrapper" class="nb_scrolling outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }}" role="banner">
+      <div id="header-layout" class="{{ region_classes.header }} inner-wrapper clearfix">
+        {{ page.header }}
+      </div>
+    </header> <!-- /.section, /#header-->
+    {% if page.preface_first %} 
+    <section id="preface1-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
+        <div id="preface-first-layout" class=" {{ region_classes.preface }}preface-first-layout inner-wrapper clearfix">
+            {{ page.preface_first }}
+        </div>
+    </section> <!-- /#preface-wrapper -->
+    {% endif %}  
+    
     <section id="menu-outer-wrapper" class="outer-wrapper clearfix">
       <div id="menu-layout" class="{{ region_classes.menu }} menu-layout inner-wrapper clearfix">
         {% if page.menu %}
@@ -83,15 +109,7 @@
         {% endif %}
       </div>
     </section>
-    <section id="keplerst-letterbox" class="keplerst-letterbox outer-wrapper clearfix" >
-        <div id="keplerst-letterbox" class="keplerst-letterbox-inner clearfix">
-        </div>
-    </section>
-    <header id="header-outer-wrapper" class="outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }}" role="banner">
-      <div id="header-layout" class="{{ region_classes.header }} inner-wrapper clearfix">
-        {{ page.header }}
-      </div>
-    </header> <!-- /.section, /#header-->
+      
     <section id="btns-outer-wrapper" class="outer-wrapper clearfix">
       <div id="btns-layout" class="{{ region_classes.btns }} btns-layout inner-wrapper clearfix">
         {% if page.btns %}
@@ -99,22 +117,8 @@
         {% endif %}
       </div>
     </section>
-    <section id="title-bar-wrapper" class="outer-wrapper clearfix">
-      <div id="title-bar-layout" class="{{ region_classes.title-bar }} title-bar-layout inner-wrapper clearfix">
-        {% if page.title-bar %}
-          {{ page.title-bar }}
-        {% endif %}
-      </div>
-    </section>
-    <section id="teaser-outer-wrapper" class="outer-wrapper clearfix">
-      <div id="teaser-layout" class="{{ region_classes.teaser }} teaser-layout inner-wrapper clearfix">
-        {% if page.teaser %}
-          {{ page.teaser }}
-        {% endif %}
-      </div>
-    </section>
   
-    <section id="core-outer-wrapper" class="outer-wrapper clearfix">
+    <section id="core-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
       <div id="core-layout" class="{{ region_classes.core }} inner-wrapper clearfix">
         {% if page.highlighted %}
           {{ page.highlighted }}
@@ -122,44 +126,26 @@
       </div>
     </section>
     
-    {#
-     * Set the background of the fixed div to the image.
-     * bg_imageImageList is set in the page preprocessor
-     #}
     
-    {% if bg_imageImageList.0 or page.preface_first %} 
-    <section id="nb_fixed-bg0" class="nb_fixed-bg" >
-        <div id="nb_slideshow_bg" class="background-slider" style='background-image: url("{{ bg_imageImageList.0 }}");'>
+    {% if bg_imageImageList.0 or page.preface_second %} 
+    <section id="nb_fixed-bg0" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.0 }}");'>
+        {% if page.preface_second %}
+        <div id="preface-second-layout" class=" {{ region_classes.preface }} preface-second-layout inner-wrapper clearfix">
+            {{ page.preface_second }}
         </div>
-        <div id="preface-first-layout" class="nb_fixed-inner preface-first-layout inner-wrapper clearfix">
-            {% if page.preface_first %}
-                {{ page.preface_first }}
             {% endif %}
-        </div>
     </section>
     {% endif %} 
     
-    {% if page.preface_second or page.preface_third or page.preface_fourth %}
-    <section id="preface-outer-wrapper" class="outer-wrapper clearfix">
-      <div id="preface-layout" class="{{ region_classes.preface }} inner-wrapper clearfix">
         
-        {% if page.preface_second %}
-          {{ page.preface_second }}
-        {% endif %}
-        
-        {% if page.preface_third %}
+    {% if page.preface_third %}
+    <section id="preface3-outer-wrapper" class="nb_scrolling  outer-wrapper clearfix">
+        <div id="preface-third-layout" class=" {{ region_classes.preface }} preface-third-layout inner-wrapper clearfix">
           {{ page.preface_third }}
-        {% endif %}
-        
-        {% if page.preface_fourth %}
-          {{ page.preface_fourth }}
-        {% endif %}
-        
-      </div><!-- /#preface-layout -->
+        </div>
     </section> <!-- /#preface-wrapper -->
     {% endif %}
-
-    <section id="content-outer-wrapper" class="outer-wrapper clearfix">
+    <section id="content1-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
       <div id="main-layout" class="{{ region_classes.main }} inner-wrapper clearfix">
         
         {% if page.content %}
@@ -174,63 +160,93 @@
           {{ page.sidebar_second }}
         {% endif %}
     
-        {% if page.content2 %}
-          {{ page.content2 }}
-        {% endif %}  
     
       </div><!-- /#main -->
     </section><!-- /#main-outer-wrapper -->
   
-    {% if page.postscript_first or page.postscript_second or page.postscript_third  %}
-    <section id="postscript-outer-wrapper" class="outer-wrapper clearfix">
-      <div id="postscript-layout" class="{{ region_classes.postscript }} inner-wrapper clearfix">
         
-        {% if page.postscript_first %}
-          {{ page.postscript_first }}
-        {% endif %}
-        
-        {% if page.postscript_second %}
-          {{ page.postscript_second }}
-        {% endif %}
-        
-        {% if page.postscript_third %}
-          {{ page.postscript_third }}
-        {% endif %}
-        
-      </div><!-- /#postscript-layout -->
-    </section> <!-- /#postscript-outer-wrapper -->
-    {% endif %}
-    
     {% if page.social %}
-    <section id="social-outer-wrapper" class="outer-wrapper clearfix">
-      <div id="social-layout" class="{{ region_classes.extras }} social-layout inner-wrapper clearfix">
-          {{ page.social }}
+    <section id="social_media-wrapper" class="nb_scrolling  outer-wrapper clearfix">
+        <div id="social-layout" class=" {{ region_classes.social }} social-layout inner-wrapper clearfix">
+            {{ page.social }}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if bg_imageImageList.1 or page.preface_fourth %}
+      <section id="nb_fixed-bg1" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.1 }}");'>
+        {% if page.preface_fourth %}
+          <div id="preface-fourth-layout" class=" {{ region_classes.preface }} preface-fourth-layout inner-wrapper clearfix">
+            {{ page.preface_fourth }}
+          </div>
+        {% endif %}
+      </section>
+    {% endif %}
+
+    {% if page.content2 %} 
+    <section id="content2-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
+        <div id="content2-layout" class=" {{ region_classes.content2 }} content2-layout inner-wrapper clearfix">
+            {{ page.content2 }}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if bg_imageImageList.2 or page.postscript_first %}
+    <section id="nb_fixed-bg2" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.2 }}");'>
+        {% if page.postscript_first %}
+            <div id="postscript-first-layout" role="contentinfo" class="{{ region_classes.postscript }}  {{ region_classes.postscript_first }} postscript-first-layout inner-wrapper clearfix">
+          {{ page.postscript_first }}
+            </div>
+        {% endif %}
+    </section>
+    {% endif %}
+        
+
+    {% if page.extras %}
+    <section id="extras-outer-wrapper" class="nb_scrolling outer-wrapper clearfix">
+      <div id="extras-layout" class="{{ region_classes.extras }} extras-layout inner-wrapper clearfix">
+          {{ page.extras }}
       </div>
     </section> 
     {% endif %}
-{#    Postscript 4 gets a full width wrapper  
-#}
+    
+        {% if page.postscript_second %}
+    <section id="postscript2-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
+        <div id="postscript-second-layout" role="contentinfo" class="{{ region_classes.postscript_second }} postscript-second-layout inner-wrapper clearfix">
+          {{ page.postscript_second }}
+        </div>
+    </section> <!-- /#postscript2-wrapper -->
+        {% endif %}
+        
+        {% if page.postscript_third %}
+    <section id="postscript3-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
+        <div id="postscript-third-layout" role="contentinfo" class="{{ region_classes.postscript_third }} postscript-third-layout inner-wrapper clearfix">
+          {{ page.postscript_third }}
+        </div>
+    </section> <!-- /#postscript3-wrapper -->
+        {% endif %}
+        
     {% if page.postscript_fourth %}
-    <section id="postscript-fourth-outer-wrapper" class="outer-wrapper clearfix">
-      <div id="postscript-fourth-layout" role="contentinfo" class="{{ region_classes.postscript_forth }} inner-wrapper clearfix">
+    <section id="postscript4-wrapper" class="nb_scrolling {{ region_classes.postscript }} outer-wrapper clearfix">
+        <div id="postscript-fourth-layout" role="contentinfo" class="{{ region_classes.postscript_fourth }} postscript-fourth-layout inner-wrapper clearfix">
         {{ page.postscript_fourth }}
-      </div> <!-- /#postscript_fourth -->
-    </section> <!-- /#postscript_fourth-outer-wrapper -->
+    </section> <!-- /#postscript4-wrapper -->
     {% endif %}
+    
+    {% if page.footer_header %}
     <section id="footer-header-outer-wrapper" class="outer-wrapper clearfix">
       <div id="footer-header-layout" role="contentinfo" class="{{ region_classes.footer_header }} footer-header-layout inner-wrapper clearfix">
-        {% if page.footer_header %}
           {{ page.footer_header }}
-        {% endif %}
       </div> <!-- /#footer-header -->
     </section> <!-- /#footer-header-outer-wrapper -->
+    {% endif %}
+    {% if page.footer %}
     <footer id="footer-outer-wrapper" class="outer-wrapper clearfix">
       <div id="footer-layout" role="contentinfo" class="{{ region_classes.footer }} inner-wrapper clearfix">
-        {% if page.footer %}
           {{ page.footer }}
-        {% endif %}
       </div> <!-- /#footer -->
     </footer> <!-- /#footer-outer-wrapper -->
+    {% endif %}
     
     {% if page.copyright %}
     <section id="copyright-outer-wrapper" class="{{ region_classes.copyright }} copyright-outer-wrapper outer-wrapper clearfix">

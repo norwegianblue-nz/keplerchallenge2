@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.general_content.field_bg_image
     - field.field.node.general_content.field_content
     - field.field.node.general_content.field_content_2
+    - field.field.node.general_content.field_nf_bg_image
     - node.type.general_content
   module:
     - text
@@ -17,23 +17,13 @@ bundle: general_content
 mode: full
 content:
   field_content:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_content_2:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  links:
     weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
 hidden:
-  field_bg_image: true
+  field_content_2: true
+  field_nf_bg_image: true
+  links: true

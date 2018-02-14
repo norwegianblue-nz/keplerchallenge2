@@ -1,0 +1,13 @@
+uuid: 15dea38b-8ff0-4733-a6e6-cec61e88690d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.footer_std
+  theme:
+    - keplerst
+id: footerimages
+label: FooterImages
+image_style_mappings: {  }
+breakpoint_group: keplerst.standard
+fallback_image_style: footer_std

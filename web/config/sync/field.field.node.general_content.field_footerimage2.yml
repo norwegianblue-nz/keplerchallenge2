@@ -1,0 +1,38 @@
+uuid: 70892cc8-8f55-45b7-852f-271fce18a7b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footerimage2
+    - node.type.general_content
+  module:
+    - image
+id: node.general_content.field_footerimage2
+field_name: field_footerimage2
+entity_type: node
+bundle: general_content
+label: FooterImage2
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: be461a16-cafe-4209-a965-e5519b15df4b
+    alt: 'Runners at Start'
+    title: ''
+    width: 800
+    height: 534
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

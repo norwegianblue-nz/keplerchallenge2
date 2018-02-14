@@ -1,0 +1,38 @@
+uuid: e6a101aa-8ba0-4897-b501-babf885cbe4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nf_bg_image
+    - node.type.general_content
+  module:
+    - image
+id: node.general_content.field_nf_bg_image
+field_name: field_nf_bg_image
+entity_type: node
+bundle: general_content
+label: 'Background Image (not FrontPage)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 88ec5aaf-ceaf-4ce0-8206-a805d62e13a1
+    alt: 'Registration Table'
+    title: ''
+    width: 1200
+    height: 801
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

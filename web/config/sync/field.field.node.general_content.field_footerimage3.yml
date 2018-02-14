@@ -1,0 +1,38 @@
+uuid: e544dacf-edf5-43b7-8fe3-64fd68804a85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footerimage3
+    - node.type.general_content
+  module:
+    - image
+id: node.general_content.field_footerimage3
+field_name: field_footerimage3
+entity_type: node
+bundle: general_content
+label: FooterImage3
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: f468bf13-8bc5-4cf1-8c19-bd1659d691ff
+    alt: 'Vajin Armstrong'
+    title: ''
+    width: 800
+    height: 534
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -108,12 +108,7 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
-  .region--content2 { 
-    @include column(4, 4); 
-    margin-bottom: $regionSpacing;
-  } 
-
-  // Breakpoint: All; Region Group: main; Region: sidebar_first;
+ // Breakpoint: All; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(4, 4); 
     margin-bottom: $regionSpacing;
@@ -126,6 +121,16 @@ $twidth: 100%; // setting grid to fluid
   } 
 
 }
+.content2-layout {
+    @include row(4);
+    max-width: 100;
+  // Breakpoint: All; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(4, 4); 
+    margin-bottom: $regionSpacing;
+  } 
+}
+
 .extras-layout {
     @include row(4);
     max-width: 100%;
@@ -135,6 +140,7 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 }
+
 // Breakpoint: All; Region Group: postscript;
 .postscript-layout { 
   @include row(4);
@@ -330,11 +336,6 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
-  .region--content2 { 
-    @include column(4, 4); 
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: mobile_portrait; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(4, 4); 
@@ -347,6 +348,15 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
+}
+.content2-layout {
+    @include row(4);
+    max-width: 100;
+  // Breakpoint: mobile_portrait; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(4, 4); 
+    margin-bottom: $regionSpacing;
+  } 
 }
 .extras-layout {
     @include row(4);
@@ -551,11 +561,6 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
-  .region--content2 { 
-    @include column(8, 8); 
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: mobile_landscape; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(8, 8); 
@@ -568,6 +573,15 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
+}
+.content2-layout {
+    @include row(8);
+    max-width: 100;
+  // Breakpoint: mobile_landscape; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(8, 8); 
+    margin-bottom: $regionSpacing;
+  } 
 }
 .extras-layout {
     @include row(8);
@@ -772,11 +786,6 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
-  .region--content2 { 
-    @include column(8, 8); 
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: tablet_portrait; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(8, 8); 
@@ -789,6 +798,15 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
+}
+.content2-layout {
+    @include row(8);
+    max-width: 100;
+  // Breakpoint: tablet_portrait; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(8, 8); 
+    margin-bottom: $regionSpacing;
+  } 
 }
 .extras-layout {
     @include row(8);
@@ -993,11 +1011,6 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
-  .region--content2 { 
-    @include column(12, 12); 
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: Tablet; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(6, 12); 
@@ -1010,6 +1023,15 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
+}
+.content2-layout {
+    @include row(12);
+    max-width: 100;
+  // Breakpoint: Tablet; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(12, 12); 
+    margin-bottom: $regionSpacing;
+  } 
 }
 .extras-layout {
     @include row(12);
@@ -1213,11 +1235,6 @@ $twidth: 100%; // setting grid to fluid
     margin-bottom: $regionSpacing;
   } 
 
-  // Breakpoint: Normal; Region Group: main; Region: content-second;
-  .region--content2 { 
-    @include column(12, 12); 
-    margin-bottom: $regionSpacing;
-  } 
 
   // Breakpoint: Normal; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
@@ -1267,6 +1284,15 @@ $twidth: 100%; // setting grid to fluid
     }
   }
 
+}
+.content2-layout {
+    @include row(12);
+    max-width: 1100px;
+  // Breakpoint: Normal; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(12, 12); 
+    margin-bottom: $regionSpacing;
+  } 
 }
 .extras-layout {
     @include row(12);
@@ -1472,12 +1498,6 @@ $gutter: 20px;
     margin-bottom: $regionSpacing;
   } 
 
-  // Breakpoint: Wide; Region Group: main; Region: content-second;
-  .region--content2 { 
-    @include column(12, 12);   
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: Wide; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(6, 12);   
@@ -1504,6 +1524,7 @@ $gutter: 20px;
     }
   }
 
+  
   &.with--content.without--sidebar-second {
     .region--content {
       @include column-reset();
@@ -1528,6 +1549,18 @@ $gutter: 20px;
   }
 
 }
+
+.content2-layout {
+    @include row(12);
+    max-width: 1400px;
+  // Breakpoint: Wide; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(12, 12); 
+    margin-bottom: $regionSpacing;
+  } 
+}
+
+
 .extras-layout {
     @include row(12);
     max-width: 1400px;
@@ -1732,12 +1765,6 @@ $gutter: 20px;
     margin-bottom: $regionSpacing;
   } 
 
-  // Breakpoint: ExtraWide; Region Group: main; Region: content-second;
-  .region--content2 { 
-    @include column(12, 12);   
-    margin-bottom: $regionSpacing;
-  } 
-
   // Breakpoint: ExtraWide; Region Group: main; Region: sidebar_first;
   .region--sidebar-first { 
     @include column(6, 12);   
@@ -1788,6 +1815,16 @@ $gutter: 20px;
   }
 
 }
+.content2-layout {
+    @include row(12);
+    max-width: 1550px;
+  // Breakpoint: Extrawide; Region Group: content2; Region: content-second;
+  .region--content2 { 
+    @include column(12, 12); 
+    margin-bottom: $regionSpacing;
+  } 
+}
+
 .extras-layout {
     @include row(12);
     max-width: 1550px;

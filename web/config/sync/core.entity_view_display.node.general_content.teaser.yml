@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.general_content.field_bg_image
     - field.field.node.general_content.field_content
     - field.field.node.general_content.field_content_2
+    - field.field.node.general_content.field_nf_bg_image
     - node.type.general_content
   module:
     - user
@@ -19,6 +19,6 @@ content:
     weight: 100
     region: content
 hidden:
-  field_bg_image: true
   field_content: true
   field_content_2: true
+  field_nf_bg_image: true
