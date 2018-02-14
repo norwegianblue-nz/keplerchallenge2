@@ -1,4 +1,4 @@
-
+@import "keplerst-style-vars"; //tmd 
 
 @mixin keplerstTransition($type: all, $speed: 0.25s, $transition: ease-in-out) {
   transition: $type $speed $transition;
@@ -6,7 +6,7 @@
    -webkit-transition: $type $speed $transition;
 }
 
-@mixin keplerstCorners($rad: 5px) {
+@mixin keplerstCorners($rad: 3px) {
   -webkit-border-radius: $rad;
   -moz-border-radius: $rad;
   border-radius: $rad;
@@ -27,7 +27,7 @@
 //          1 at wide (grid width 1200)
 //          1 at normal (grid width 960)
 //          1 at mobile (fluid; grid 100%)
-@mixin parrotCols($thiscols:12, $nocols:12, $margin: 'normal', $grid: '1024'){
+@mixin parrotCols($thiscols:12, $nocols:12, $margin: 'normal', $grid: '960'){
     $wratio : $nocols / $thiscols;
     $gridw : 1024px;
     $gutw : 20px;
@@ -35,17 +35,25 @@
         $gridw : 100%;
         $gutw : 2%;
     }
-    @if $grid == '768' {
+    @if $grid == '600' {
+        $gridw : 600px;
+        $gutw : 20px;
+    }
+    @if $grid == '840' {
+        $gridw : 840px;
+        $gutw : 20px;
+    }
+    @if $grid == '960' {
         $gridw : 960px;
         $gutw : 20px;
     }
-    @if $grid == '1024' {
-        $gridw : 1200px;
-        $gutw : 20px;
+    @if $grid == '1280' {
+        $gridw : 1280px;
+        $gutw : 30px;
     }
-    @if $grid == '1220' {
-        $gridw : 1200px;
-        $gutw : 20px;
+    @if $grid == '1600' {
+        $gridw : 1600px;
+        $gutw : 30px;
     }
     $colw : ($gridw / $nocols) - $gutw;
     $thisw : (($colw + $gutw) * $thiscols) - $gutw;
@@ -116,19 +124,19 @@
 }
 
 // Basic keplerst Fonts
-@mixin keplerst_ubuntu-light ($color, $size) {
+@mixin keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1em) {
  font-family: $keplerst_ubuntu;
  font-weight: 300;
  color:$color;
  font-size:$size;
 }
-@mixin keplerst_ubuntu-medium ($color, $size) {
+@mixin keplerst_ubuntu-medium ($color:$keplerst_GreyText, $size:1em) {
  font-family: $keplerst_ubuntu;
  font-weight: 500;
  color:$color;
  font-size:$size;
 }
-@mixin keplerst_baloo ($color, $size) {
+@mixin keplerst_baloo ($color:$keplerst_GreyText, $size:1em) {
  font-family: $keplerst_baloo;
  font-weight: 400;
  color:$color;
