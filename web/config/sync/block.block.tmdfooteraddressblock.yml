@@ -11,7 +11,7 @@ dependencies:
 id: tmdfooteraddressblock
 theme: keplerst
 region: footer
-weight: 0
+weight: -13
 provider: null
 plugin: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
 settings:

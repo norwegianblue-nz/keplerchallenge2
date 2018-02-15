@@ -1,0 +1,19 @@
+uuid: f1cf7e1c-101d-4aca-9309-bae007d8a1ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_partner_about
+    - taxonomy.vocabulary.partner
+id: taxonomy_term.partner.field_partner_about
+field_name: field_partner_about
+entity_type: taxonomy_term
+bundle: partner
+label: 'About the sponsor'
+description: 'Brief description of the partner''s activities'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

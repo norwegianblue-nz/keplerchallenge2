@@ -1,6 +1,6 @@
 uuid: 97ded05c-8a07-4008-ab8f-06a1765c585b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -13,7 +13,7 @@ _core:
 id: keplerst_footer
 theme: keplerst
 region: footer
-weight: -12
+weight: -16
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

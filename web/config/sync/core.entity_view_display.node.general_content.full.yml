@@ -6,11 +6,27 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.general_content.field_content
     - field.field.node.general_content.field_content_2
+    - field.field.node.general_content.field_footerimage1
+    - field.field.node.general_content.field_footerimage2
+    - field.field.node.general_content.field_footerimage3
+    - field.field.node.general_content.field_footerimage4
     - field.field.node.general_content.field_nf_bg_image
     - node.type.general_content
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_content
 id: node.general_content.full
 targetEntityType: node
 bundle: general_content
@@ -25,5 +41,9 @@ content:
     region: content
 hidden:
   field_content_2: true
+  field_footerimage1: true
+  field_footerimage2: true
+  field_footerimage3: true
+  field_footerimage4: true
   field_nf_bg_image: true
   links: true

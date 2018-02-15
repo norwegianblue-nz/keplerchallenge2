@@ -25,14 +25,6 @@
 #preface1-outer-wrapper p{color:white;}
 
 // tmd sandy-pit
-.col-test-container {
-    display: flex;
-}
-.col-test-3 {
-    @include parrotCols(3, 12, 'normal', '1600');
-    background-color:#900;
-    //display: inline-block;
-}
 .btn {
    width: 100%;
    background:$keplerst_DarkTeal;
@@ -42,29 +34,14 @@
    @include keplerstCorners (3px);
    text-align: center;
    @include keplerst_ubuntu-medium ($keplerst_Tan1, 1.1em);
-   max-width: 250px;
+   max-width: 260px;
 }
 .btn-lrg {
-    padding: 1em;
+    padding: 1em 0.5em;
 }
 
-.region--footer h2 {
-	color: white;
-	font-size: 1.3em;
-	font-family: $keplerst_baloo;
-	letter-spacing: 0.05em;
-	font-weight: normal;
-	float: none;
-}
 
-.region--footer p {
-	color: $keplerst_Tan1;
-	font-weight: 300;
-	font-size: 1.1em;
-}
 
-.region--copyright #copyright {float:left; @inlude keplerst_ubuntu-light(,20px);}
-.region--copyright #footer-logo {float:right;width:220px;}
 
 // -/tmd sandy pit ends
 
@@ -156,7 +133,7 @@
 }
 
 footer.node__meta {float:right;}
-h2 {float:left;}
+// h2 {float:left;} tmd removed - old styling from KTRK?
 .node__content{clear:both}
 
 /*This Section from pealing.com but left in for reference as may be useful*/
@@ -207,3 +184,59 @@ h2 {float:left;}
     .region--postscript-first {@include parrotCols(6, 12, normal, '1200');float:left;}
     .region--postscript-second {@include parrotCols(6, 12, normal, '1200');float:right;}
 }
+
+////////////////////////////////////////////////////////////////////////////////
+//
+//   Specific layout and styling
+//
+////////////////////////////////////////////////////////////////////////////////
+
+// FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.tmd-footer-menu-container {  display: flex;flex-wrap: wrap;justify-content: space-around;}
+.tmd-footer-menu{
+    width: 23.5%;
+    min-width: 136px;
+    margin-bottom: 1.5em;
+}
+@media all and (min-width: 960px) {
+    .tmd-footer-menu-container { display: grid;  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;  grid-gap: 2%; }
+    .tmd-footer-menu{ margin-left: 0;margin-right: 0;width: 100%; }
+}
+
+
+//  Typography
+.region--footer h2 {
+  @include keplerst_baloo(white, 1.2em);
+	letter-spacing: 0.05em;
+	float: none;
+}
+.region--footer p {
+  @include keplerst_ubuntu-light($keplerst_Tan1,1.1em);
+  margin: 0 0 0.7em;
+  line-height: 1.2;
+}
+.region--footer p a {
+  color: rgba($keplerst_Tan1, 1);
+  @include keplerstTransition(opacity, 0.25s, ease-in-out);
+  border-bottom:none !important;
+  &:hover {
+    color: rgba($keplerst_Tan1, 0.85);
+  }
+}
+
+
+
+// COPYRIGHT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.region--copyright {padding: 20px 0;}
+.region--copyright #copyright {
+  float:left; @include keplerst_ubuntu-light($keplerst_GreyText,20px); margin: 10px 0 20px;
+}
+.region--copyright #footer-logo {float:right;width:220px;}
+@media all and (max-width: 600px){
+  .region--copyright #footer-logo {float:none;}
+}
+#copyright-outer-wrapper {border-bottom: 1px solid $keplerst-Grey;}
+
+
+// FRONT PAGE OVERRIDES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

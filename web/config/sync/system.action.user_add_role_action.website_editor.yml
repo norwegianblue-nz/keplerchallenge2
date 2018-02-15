@@ -1,0 +1,14 @@
+uuid: 4a757940-3dd0-4b7b-b120-29264e49769d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.website_editor
+  module:
+    - user
+id: user_add_role_action.website_editor
+label: 'Add the Website Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: website_editor

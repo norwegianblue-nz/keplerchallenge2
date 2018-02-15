@@ -8,6 +8,16 @@ dependencies:
     - keplerst
 id: footerimages
 label: FooterImages
-image_style_mappings: {  }
+image_style_mappings:
+  -
+    breakpoint_id: keplerst.standard.extrawide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: footer_std
+  -
+    breakpoint_id: keplerst.standard.all
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: footer_std
 breakpoint_group: keplerst.standard
 fallback_image_style: footer_std

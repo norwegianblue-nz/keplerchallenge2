@@ -1,0 +1,25 @@
+uuid: ebfd2563-827b-4614-8533-7c652ddb64ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:71a6cdc8-4436-4f93-994b-78179ea09cb7'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: tmdfootermenus
+theme: keplerst
+region: footer
+weight: -15
+provider: null
+plugin: 'block_content:71a6cdc8-4436-4f93-994b-78179ea09cb7'
+settings:
+  id: 'block_content:71a6cdc8-4436-4f93-994b-78179ea09cb7'
+  label: 'tmd - footer menus'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

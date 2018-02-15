@@ -15,7 +15,8 @@ ckeditor_stylesheets:
   - style/css/keplerst.css
   - style/css/base.css
   - css/components/table.css
-  - fonts/worksans.css
+  - https://fonts.googleapis.com/css?family=Ubuntu:300,500
+  - https://fonts.googleapis.com/css?family=Baloo:400
 regions:
   title_bar: 'Title Bar'
   teaser: Teaser

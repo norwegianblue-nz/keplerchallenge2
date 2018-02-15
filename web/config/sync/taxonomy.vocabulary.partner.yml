@@ -1,0 +1,9 @@
+uuid: 63667c99-f517-451e-a9e0-f7fef6226a59
+langcode: en
+status: true
+dependencies: {  }
+name: Partner
+vid: partner
+description: 'Event Sponsors'
+hierarchy: 0
+weight: 0

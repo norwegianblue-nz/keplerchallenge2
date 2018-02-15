@@ -83,11 +83,13 @@
         {{ page.title_bar }}
       </div>
     </section>
+    {% endif %}
+{#    
     <section id="keplerst-letterbox" class="keplerst-letterbox outer-wrapper clearfix" >
         <div id="keplerst-letterbox" class="keplerst-letterbox-inner clearfix">
         </div>
-    {% endif %}
     </section>
+#}
 
     <header id="header-outer-wrapper" class="nb_scrolling outer-wrapper clearfix {{ secondary_menu ? 'with-secondary-menu' : 'without-secondary-menu' }}" role="banner">
       <div id="header-layout" class="{{ region_classes.header }} inner-wrapper clearfix">
@@ -102,6 +104,16 @@
     </section> <!-- /#preface-wrapper -->
     {% endif %}  
     
+    {% if bg_imageImageList.0 or page.teaser %} 
+    <section id="nb_fixed-bg0" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.0 }}");'>
+        {% if page.teaser %}
+            <div id="teaser-layout" class="nb_fixed-inner {{ region_classes.teaser }} teaser-layout inner-wrapper clearfix">
+            {{ page.teaser }}
+            </div>
+        {% endif %}
+    </section>
+    {% endif %} 
+
     <section id="menu-outer-wrapper" class="outer-wrapper clearfix">
       <div id="menu-layout" class="{{ region_classes.menu }} menu-layout inner-wrapper clearfix">
         {% if page.menu %}
@@ -127,14 +139,12 @@
     </section>
     
     
-    {% if bg_imageImageList.0 or page.preface_second %} 
-    <section id="nb_fixed-bg0" class="nb_fixed-bg" style='background-image: url("{{ bg_imageImageList.0 }}");'>
-        {% if page.preface_second %}
+    {% if page.preface_second %} 
+    <section id="preface2-outer-wrapper" class="nb_scrolling  outer-wrapper clearfix">
         <div id="preface-second-layout" class=" {{ region_classes.preface }} preface-second-layout inner-wrapper clearfix">
             {{ page.preface_second }}
         </div>
-            {% endif %}
-    </section>
+    </section> <!-- /#preface-wrapper -->
     {% endif %} 
     
         

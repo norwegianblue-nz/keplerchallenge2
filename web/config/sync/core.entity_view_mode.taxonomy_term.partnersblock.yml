@@ -1,0 +1,10 @@
+uuid: 33d1bcc9-e76c-4edc-9d18-30a71ced0c74
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.partnersblock
+label: PartnersBlock
+targetEntityType: taxonomy_term
+cache: true

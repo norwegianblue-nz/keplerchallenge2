@@ -2,8 +2,8 @@
 
 // Apply a natural box layout model to all elements http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 *, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -31,12 +31,12 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 
 a {
   text-decoration: none;
-  color: rgba($primaryColor2, 1);
+  color: rgba($primaryColor1, 1);
   @include keplerstTransition(opacity, 0.25s, ease-in-out);
   &:hover {
     text-decoration: none;
     border-bottom: none;
-    color: rgba($primaryColor2, 0.85);
+    color: rgba($primaryColor1, 0.85);
   }
 }
 
@@ -50,9 +50,9 @@ img {
 }
 
 p , .field--type-text-with-summary {
-  color: rgba($primaryColor1, 1);
-  font-size:$generalTextSize;
-  margin: 0 0 1.2em;
+  @include keplerst_ubuntu-light ($primaryColor1, 1.1em);
+  line-height: 2.2em;
+  margin: 0 0 2.2em;
 }
 del {
   text-decoration: line-through;
@@ -67,46 +67,49 @@ blockquote {
 }
 
 ul {
-  
+
   li {
-    
+
   }
 }
 
 ol {
-  
+
   li {
-    
+
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  
+
 }
 
 h1 ,
 .heading-a {
+  @include keplerst_ubuntu-medium ($primaryColor3, 3em);
   margin: 1.0em 0 0.5em;
-  font-weight: inherit;
-  font-size: 1.357em;
-  color: rgb(116,39,14);
-  font-family:$defaultHeaderFont;
+//  font-weight: inherit;
+//  font-size: 1.357em;
+//  color: $primaryColor2;
+//  font-family:$defaultHeaderFont;
 }
 
 h2,
 .heading-b {
+  @include keplerst_ubuntu-medium ($primaryColor2, 1.8em);
   margin: 1.0em 0 0.5em;
-  font-weight: inherit;
-  font-size: $desktopH2;
-  color: $primaryColor2;
-  font-family:$defaultHeaderFont;
+//  font-weight: inherit;
+//  font-size: $desktopH2;
+//  color: $primaryColor3;
+//  font-family:$defaultHeaderFont;
 }
 
 h3,
 .heading-c {
+  @include keplerst_ubuntu-medium ($primaryColor1, 1.4em);
   margin: 1.0em 0 0.5em;
-  font-weight: inherit;
-  font-size: 1.092em;
+//  font-weight: inherit;
+//  font-size: 1.092em;
 }
 h4,
 .heading-d {
@@ -132,12 +135,12 @@ h6,
 }
 
 // Specific elements
-.page-title {
-  font-size: 3em;
-  line-height: 1em;
-  color: rgb(0,116,125);
-  padding: 10px 0 0;
-  font-family:$defaultHeaderFont;
+.page-title, #block-title > div {
+  @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
+  line-height: 1.3em;
+  padding: 5px 0 50px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #777;
 }
 p a, p a.link {  border-bottom: dotted 0.1em !important;
 }

@@ -10,21 +10,21 @@ $bodyFont: $keplerst_ubuntu !default;
 $header: $keplerst_baloo;
 
 /*Break Points for reference
- //Breakpoint: All 
+ //Breakpoint: All
 @media all and (min-width: 0px)
- //Breakpoint: mobile_portrait 
+ //Breakpoint: mobile_portrait
 @media all and (max-width: 479px)
- //Breakpoint: mobile_landscape 
+ //Breakpoint: mobile_landscape
 @media all and (min-width: 480px) and (max-width: 599px)
- //Breakpoint: tablet_portrait 
+ //Breakpoint: tablet_portrait
 @media all and (min-width: 600px) and (max-width: 839px)
- //Breakpoint: Tablet 
+ //Breakpoint: Tablet
 @media all and (min-width: 840px) and (max-width: 959px)
- //Breakpoint: Normal 
+ //Breakpoint: Normal
 @media all and (min-width: 960px) and (max-width: 1279px)
- //Breakpoint: Wide 
+ //Breakpoint: Wide
 @media all and (min-width: 1280px) and (max-width: 1600px)
- //Breakpoint: ExtraWide 
+ //Breakpoint: ExtraWide
 @media all and (min-width: 1601px)
 */
 
@@ -77,8 +77,8 @@ $primaryColor4: #1A1A1A !default; // almost black
 $primaryColor5: #5A5A5A !default; // nice gray*/
 
 
-$siteTitleColor: rgba($primaryColor1, 1) !default;
-$siteTitleHoverColor: rgba($primaryColor1, 0.85) !default;
+$siteTitleColor: rgba($primaryColor3, 1) !default;
+$siteTitleHoverColor: rgba($primaryColor3, 0.85) !default;
 $siteSloganColor: #777 !default;
 
 $taxonomy-term--background: $primaryColor1 !default;

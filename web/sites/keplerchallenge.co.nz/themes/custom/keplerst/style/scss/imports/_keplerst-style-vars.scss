@@ -14,9 +14,9 @@ $keplerst_GreyText: #333;
 
 // Basic Color Variables
 $primaryColor1: $keplerst_GreyText;
-$primaryColor2: #1D7459;
-$primaryColor3: #CCCCCC;
-$primaryColor4: #1A1A1A;
+$primaryColor2: $keplerst_DarkBlue;
+$primaryColor3: $keplerst_DarkTeal;
+$primaryColor4: $keplerst_DarkOrange;
 $primaryColor5: #9A9A9A;
 $mainMenuBgColor: #9A9A9A;
 $mainMenuFontColor: #1A1A1A;
@@ -28,8 +28,8 @@ $buttonBorderColor: #1A1A1A;
 
 
 // Basic Font Variables
-$defaultHeaderFont: comfortaaregular,Arial,sans-serif;
-$defaultBodyFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$defaultHeaderFont: 'Ubuntu', Arial, sans-serif;
+$defaultBodyFont: 'Ubuntu', Arial, sans-serif;
 
 
 //  Font Sizes

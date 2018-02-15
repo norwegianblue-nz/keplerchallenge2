@@ -1,0 +1,27 @@
+uuid: 1c407a99-2595-4b9b-82ec-51f5d5a14a41
+langcode: en
+status: true
+dependencies: {  }
+id: website_editor
+label: 'Website Editor'
+weight: 5
+is_admin: null
+permissions:
+  - 'access coffee'
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'create article content'
+  - 'create general_content content'
+  - 'delete terms in partner'
+  - 'edit any article content'
+  - 'edit any front content'
+  - 'edit any general_content content'
+  - 'edit terms in partner'
+  - 'revert article revisions'
+  - 'revert front revisions'
+  - 'revert general_content revisions'
+  - 'view article revisions'
+  - 'view front revisions'
+  - 'view general_content revisions'
+  - 'view the administration theme'
