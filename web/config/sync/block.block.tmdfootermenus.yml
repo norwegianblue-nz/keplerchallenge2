@@ -11,7 +11,7 @@ dependencies:
 id: tmdfootermenus
 theme: keplerst
 region: footer
-weight: -15
+weight: -18
 provider: null
 plugin: 'block_content:71a6cdc8-4436-4f93-994b-78179ea09cb7'
 settings:

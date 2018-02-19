@@ -15,7 +15,7 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: sites/keplerchallenge.co.nz/themes/custom/keplerst/logo.png
+  path: sites/keplerchallenge.co.nz/themes/custom/keplerst/logo.svg
 favicon:
   use_default: false
   path: sites/keplerchallenge.co.nz/themes/custom/keplerst/favicon.ico

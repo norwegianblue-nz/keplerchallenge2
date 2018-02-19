@@ -1,0 +1,25 @@
+uuid: 7d8ec457-a0a5-4b5c-bbdc-e0179c16a044
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b4e9908-8ff8-4267-99e9-25c9a6c20524'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: tmdnewslettersignup
+theme: keplerst
+region: footer
+weight: -16
+provider: null
+plugin: 'block_content:0b4e9908-8ff8-4267-99e9-25c9a6c20524'
+settings:
+  id: 'block_content:0b4e9908-8ff8-4267-99e9-25c9a6c20524'
+  label: 'tmd - newsletter signup'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

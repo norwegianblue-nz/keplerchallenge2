@@ -1,6 +1,6 @@
 uuid: 13d7d829-854c-40c3-a02a-d81953aff1d6
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main

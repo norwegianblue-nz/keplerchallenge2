@@ -1,0 +1,24 @@
+uuid: 5f7094d2-0834-4f4c-ba71-e094c837cd98
+langcode: en
+status: true
+dependencies:
+  module:
+    - ultimenu
+  theme:
+    - keplerst
+id: ultimenumainnavigation
+theme: keplerst
+region: menu
+weight: 0
+provider: null
+plugin: 'ultimenu_block:ultimenu-main'
+settings:
+  id: 'ultimenu_block:ultimenu-main'
+  label: 'Ultimenu: Main navigation'
+  provider: ultimenu
+  label_display: '0'
+  skin: module|ultimenu--basic
+  orientation: ultimenu--htb
+  submenu: '1'
+  submenu_position: top
+visibility: {  }

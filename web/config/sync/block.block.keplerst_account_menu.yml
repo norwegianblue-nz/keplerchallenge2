@@ -13,7 +13,7 @@ _core:
 id: keplerst_account_menu
 theme: keplerst
 region: header
-weight: -7
+weight: -20
 provider: null
 plugin: 'system_menu_block:account'
 settings:

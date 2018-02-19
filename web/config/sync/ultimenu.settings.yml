@@ -1,0 +1,8 @@
+blocks:
+  main: main
+regions:
+  ultimenu_main_event_overview: ultimenu_main_event_overview
+goodies:
+  menu-desc: menu-desc
+  title-class: title-class
+skins: ''

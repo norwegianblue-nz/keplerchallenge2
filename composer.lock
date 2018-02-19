@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc7566cc9ae9ca229f8058a0c76ae698",
+    "content-hash": "0d970409f70d77c35a30c48ea57c36a6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4815,6 +4815,64 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
+            }
+        },
+        {
+            "name": "drupal/ultimenu",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ultimenu",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ultimenu-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "6a35dccf65718283c486f4dfaf2429f453525531"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1480435380",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts"
+                },
+                {
+                    "name": "Committers for Ultimenu",
+                    "homepage": "https://www.drupal.org/node/1897426/committers"
+                }
+            ],
+            "description": "Provides Ultimenu blocks, and regions based on available menus.",
+            "homepage": "https://drupal.org/project/ultimenu",
+            "keywords": [
+                "block",
+                "mega",
+                "megamenu",
+                "menu"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/ultimenu",
+                "issues": "https://drupal.org/project/issues/ultimenu"
             }
         },
         {

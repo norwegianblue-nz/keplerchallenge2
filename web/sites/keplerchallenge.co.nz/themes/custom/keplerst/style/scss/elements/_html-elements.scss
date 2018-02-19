@@ -93,7 +93,7 @@ ol {
     counter-increment: bullet-symbol;
     border-top: 1px solid rgba($keplerst_Tan1, 0.6);
     // margin: 1rem;
-    padding: 0.3rem 1rem 0.5rem 2.25rem;
+    padding: 0.3rem 1rem 0.5rem 2.55rem;
   }
 #main-layout ul li::before {
     position: absolute;
@@ -126,7 +126,7 @@ ol {
     line-height: 1.5rem;
     color: white;
     text-align: center;
-    margin-right: 0.5rem;
+    margin: 0 0.4rem;
   }
 #main-layout ol li:nth-of-type(n+100) {padding-left: 3.25rem !important;} //extra width for >100
 #main-layout ol li:nth-of-type(n+100)::before {width:2.5rem;border-radius: 1.5rem;} //extra width for >100

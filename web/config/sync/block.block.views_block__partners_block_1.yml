@@ -1,0 +1,32 @@
+uuid: 953da3b4-34b3-4bb9-935e-1dccb3614327
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.partners
+  module:
+    - ctools
+    - views
+  theme:
+    - keplerst
+id: views_block__partners_block_1
+theme: keplerst
+region: postscript_fourth
+weight: 0
+provider: null
+plugin: 'views_block:partners-block_1'
+settings:
+  id: 'views_block:partners-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

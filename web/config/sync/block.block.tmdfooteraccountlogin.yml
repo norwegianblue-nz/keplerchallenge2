@@ -11,7 +11,7 @@ dependencies:
 id: tmdfooteraccountlogin
 theme: keplerst
 region: footer
-weight: -14
+weight: -17
 provider: null
 plugin: 'block_content:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
 settings:

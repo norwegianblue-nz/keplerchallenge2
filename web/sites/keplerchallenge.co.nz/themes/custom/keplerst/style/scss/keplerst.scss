@@ -5,15 +5,24 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 #title-bar-wrapper {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(20,20,0,0.6);
 	position: fixed;
-	height: 3rem;
+	padding: 0.6rem 0;
 	width: 100%;
-	box-shadow: 0px 15px 30px 13px rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0px 15px 30px 13px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 15px 30px 13px rgba(0,0,0,0.7);
-
+	box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+  @include keplerstTransition (all, 1s, ease-in-out);
+  z-index: 10;
 }
+div#page.scrolled #title-bar-wrapper {
+	background-color: rgba(80,80,70,1);
+	box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  @include keplerstTransition (all, 0.5s, ease-in-out);
+}
+
 
 #teaser-layout{
     position:relative;

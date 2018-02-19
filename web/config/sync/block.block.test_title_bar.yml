@@ -1,6 +1,6 @@
 uuid: c28f837c-abd3-4466-94fb-a043fc24467a
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:test_content_block:32591b0a-501c-4ef2-9251-41e35cdcdaae'
@@ -12,7 +12,7 @@ dependencies:
 id: test_title_bar
 theme: keplerst
 region: title_bar
-weight: 0
+weight: -17
 provider: null
 plugin: 'block_content:32591b0a-501c-4ef2-9251-41e35cdcdaae'
 settings:
