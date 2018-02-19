@@ -49,7 +49,7 @@ img {
   height: auto;
 }
 
-p , .field--type-text-with-summary {
+p { // , .field--type-text-with-summary - tmd: Stand-alone class removed - causes extra space site-wide. Replace as required and/or retarget
   @include keplerst_ubuntu-light ($primaryColor1, 1.1em);
   line-height: 2.2em;
   margin: 0 0 2.2em;
@@ -67,18 +67,89 @@ blockquote {
 }
 
 ul {
-
   li {
-
+    @include keplerst_ubuntu-light ($primaryColor1, 1.1em);
   }
 }
 
 ol {
 
   li {
-
+    @include keplerst_ubuntu-light ($primaryColor1, 1.1em);
   }
 }
+
+//  background-image: image(/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/bullet-symbol.svg);
+#main-layout ul, #main-layout ol {
+    list-style: none;
+    counter-reset: bullet-symbol;
+    margin: -1rem 0 1rem;
+    padding-left: 0;
+  }
+#main-layout ul, #main-layout ol {border-bottom: 1px solid rgba($keplerst_Tan1, 0.6);}
+
+#main-layout li {
+    position: relative;
+    counter-increment: bullet-symbol;
+    border-top: 1px solid rgba($keplerst_Tan1, 0.6);
+    // margin: 1rem;
+    padding: 0.3rem 1rem 0.5rem 2.25rem;
+  }
+#main-layout ul li::before {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 16px solid $keplerst_Orange;
+  }
+#main-layout ul li:nth-child(2n+1) {background: rgba($keplerst_Tan1, 0.2);}
+
+#main-layout ol li::before {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    transform: translateY(-50%);
+    content: counter(bullet-symbol);
+    background: $keplerst_Orange;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+  }
+#main-layout ol li:nth-of-type(n+100) {padding-left: 3.25rem !important;} //extra width for >100
+#main-layout ol li:nth-of-type(n+100)::before {width:2.5rem;border-radius: 1.5rem;} //extra width for >100
+#main-layout ol ol li::before {
+    background: rgba($keplerst_Orange, 0.8);
+  }
+#main-layout ol ol ol li::before {
+    background: rgba($keplerst_Orange, 0.6);
+  }
+
+
+
+//>>>>>>.....>>>>>.....
+
+#triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red; }
+
+
+//>>>>>>.....>>>>>.....
 
 h1, h2, h3, h4, h5, h6 {
 

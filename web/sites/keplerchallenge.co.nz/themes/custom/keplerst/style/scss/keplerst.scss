@@ -4,7 +4,16 @@
 // Sandpit
 //
 ////////////////////////////////////////////////////////////////////////////////
+#title-bar-wrapper {
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	height: 3rem;
+	width: 100%;
+	box-shadow: 0px 15px 30px 13px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 15px 30px 13px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 15px 30px 13px rgba(0,0,0,0.7);
 
+}
 
 #teaser-layout{
     position:relative;
@@ -35,13 +44,78 @@
    text-align: center;
    @include keplerst_ubuntu-medium ($keplerst_Tan1, 1.1em);
    max-width: 260px;
+   border:none;
 }
 .btn-lrg {
     padding: 1em 0.5em;
 }
 
+#block-tmdsocialiconspage-2 {text-align: center;} // tmd - icons at top of pages
+
+figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
+
+#footer-header-outer-wrapper {background-color: $keplerst_DarkTeal;text-align: center;}
+#footer-header-outer-wrapper #block-tmdsocialiconspage {margin: 2rem 0 1.7rem;}
+#footer-header-outer-wrapper #social-icon-wrapper {
+    display: inline-table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid white;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 1.5em;
+      width: 13%;
+    }
+    &:before { right: 1em; }
+    &:after { left: 1em; }
+}
+@media all and (min-width: 480px) and (max-width: 599px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:25%;}}}
+@media all and (min-width: 600px) and (max-width: 839px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:31%;}}}
+@media all and (min-width: 840px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:33%;}}}
+
+a.social-icon {padding: 0 0.5rem;}
+
+// footer layout >>>>
+@media all and (min-width: 600px) {
+  #block-tmdfooteraccountlogin {float: left;width: 49%;}
+  #block-tmdnewslettersignup, #block-tmdfooteraddressblock {float: right;clear: right;width: 49%;}
+}
+@media all and (min-width: 840px) {
+  #mc-embedded-subscribe-form, .footer-col-wrapper {display: flex;}
+  .footer-col-right {width:35%; padding-left:10px;}
+  .footer-col-left {width: 65%; padding-right:10px;}
+  #block-tmdfooteraccountlogin .btn, #block-tmdnewslettersignup .btn, #block-tmdfooteraddressblock .btn {&:first-of-type{margin-top: 0;}}
+}
+
+// Mail chimp signup form - footer >>>>>>
+#mce-EMAIL {
+	width: 100%;
+	height: 3.1rem;
+  @include keplerstCorners (3px);
+  @include keplerst_ubuntu-light (#000, 1.3em);
+  padding: 0 0 0 0.6em;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#mce-EMAIL {&:hover, &:focus{background-color: rgba(255, 255, 255, 0.5);}}
+
+// TMD / NWB sign-off text >>>>>>>>>>>
+#block-thelastword p {
+  @include keplerst_ubuntu-light (#888, 0.8em);
+	line-height: 1.1em;
+	margin: 0.6em 0 0.7em;
+}
 
 
+// Main navigation >>>>>>>>>>>>>>>>> SAND PIT >>> move when complete
+#menu-outer-wrapper {background-color: $keplerst_DarkTeal;}
+
+// tmd - temp >>>> talk to Roo about responsive img sizes and layout.
+.region--postscript-fourth.region.region-postscript-fourth {
+	display: flex;
+	justify-content: space-between;
+}
 
 // -/tmd sandy pit ends
 
@@ -193,15 +267,15 @@ footer.node__meta {float:right;}
 
 // FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-.tmd-footer-menu-container {  display: flex;flex-wrap: wrap;justify-content: space-around;}
-.tmd-footer-menu{
+.tmd-footer-menu-container {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.tmd-footer-menu {
     width: 23.5%;
     min-width: 136px;
-    margin-bottom: 1.5em;
+    margin-bottom: 5rem;
 }
 @media all and (min-width: 960px) {
-    .tmd-footer-menu-container { display: grid;  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;  grid-gap: 2%; }
-    .tmd-footer-menu{ margin-left: 0;margin-right: 0;width: 100%; }
+    .tmd-footer-menu-container {display: grid;  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;  grid-gap: 2%; }
+    .tmd-footer-menu {margin-left: 0;margin-right: 0;width: 100%; }
 }
 
 

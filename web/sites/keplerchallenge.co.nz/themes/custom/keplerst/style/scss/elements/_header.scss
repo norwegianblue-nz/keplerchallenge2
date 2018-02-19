@@ -1,11 +1,11 @@
-// 
+//
 //  Created on : 17/10/2016, 1:12:35 PM
 //  Author     : roo
 //
 #header {
   font-family: $keplerst_baloo;
   position: relative; // nb */
-  
+
 
 }
 #header {height: 200px; // nb */
@@ -40,10 +40,10 @@
 header#header-outer-wrapper {background-color: rgba(255,255,255,0.8);z-index:10;width: 100%; /*box-shadow: -1px 0 3px 1px rgba(0, 0, 0, 0.3333);*/}
 @media all and (min-width: 560px) {
     header#header-outer-wrapper {position: fixed;}
-    section#btns-outer-wrapper {margin-top: 140px;}
+    section#btns-outer-wrapper {margin: 1rem 0 3rem;} // tmd - was margin-top: 140px
 }
 
- 
+
 
 // Header - split into two for branding and user menu
 @media all and (max-width: 959px) {
