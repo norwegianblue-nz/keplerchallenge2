@@ -1,20 +1,21 @@
-uuid: 76c5f47c-a630-4945-98c8-a9a6f0830fa1
+uuid: 703b38ea-4f5e-4734-9b2d-1fa1f2356eab
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.taxonomy_term.partnerspage
-    - field.field.taxonomy_term.partner.field_partner_about
-    - field.field.taxonomy_term.partner.field_partner_level
-    - field.field.taxonomy_term.partner.field_partner_logo
-    - field.field.taxonomy_term.partner.field_partner_url
-    - image.style.max_325x325
-    - taxonomy.vocabulary.partner
+    - core.entity_view_mode.node.partnerspage
+    - field.field.node.partners.field_partner_about
+    - field.field.node.partners.field_partner_description
+    - field.field.node.partners.field_partner_logo
+    - field.field.node.partners.field_partner_url
+    - field.field.node.partners.field_sponsorship_level
+    - node.type.partners
+    - responsive_image.styles.footerimages
   module:
     - ds
-    - image
     - link
-    - text
+    - responsive_image
+    - user
 third_party_settings:
   ds:
     layout:
@@ -33,65 +34,62 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
-        - taxonomy_term_title
         - field_partner_logo
+        - node_title
         - field_partner_url
         - field_partner_about
-        - description
-        - field_partner_level
+        - field_partner_description
     fields:
-      taxonomy_term_title:
-        plugin_id: taxonomy_term_title
-        weight: 0
+      node_title:
+        plugin_id: node_title
+        weight: 1
         label: hidden
         formatter: default
-id: taxonomy_term.partner.partnerspage
-targetEntityType: taxonomy_term
-bundle: partner
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+id: node.partners.partnerspage
+targetEntityType: node
+bundle: partners
 mode: partnerspage
 content:
-  description:
-    label: above
-    type: text_default
-    weight: 4
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
   field_partner_about:
     weight: 3
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: ds_content
-  field_partner_level:
-    weight: 5
-    label: above
-    settings:
-      link: false
+  field_partner_description:
+    weight: 4
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: basic_string
     region: ds_content
   field_partner_logo:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
-      image_style: max_325x325
-      image_link: ''
+      responsive_image_style: footerimages
+      image_link: content
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: ds_content
   field_partner_url:
     weight: 2
     label: hidden
     settings:
       trim_length: 80
-      url_only: false
+      url_only: true
+      rel: nofollow
+      target: _blank
       url_plain: false
-      rel: ''
-      target: ''
     third_party_settings: {  }
     type: link
     region: ds_content
-hidden: {  }
+hidden:
+  field_sponsorship_level: true
+  links: true

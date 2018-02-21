@@ -1,0 +1,23 @@
+uuid: 4a4a5537-520e-4b9d-8b09-6c1124026b18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_url
+    - node.type.partners
+  module:
+    - link
+id: node.partners.field_partner_url
+field_name: field_partner_url
+entity_type: node
+bundle: partners
+label: Website
+description: 'Enter the full website address, including http or https'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

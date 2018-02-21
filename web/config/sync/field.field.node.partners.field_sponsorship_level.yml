@@ -1,0 +1,33 @@
+uuid: 834228f3-6a56-444f-8f91-af88141bed37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsorship_level
+    - node.type.partners
+    - taxonomy.vocabulary.sponsorship_level
+  content:
+    - 'taxonomy_term:sponsorship_level:cde33a5b-bcd5-4785-a7a5-2ae67e826efe'
+id: node.partners.field_sponsorship_level
+field_name: field_sponsorship_level
+entity_type: node
+bundle: partners
+label: 'Sponsorship Level'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: cde33a5b-bcd5-4785-a7a5-2ae67e826efe
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sponsorship_level: sponsorship_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 499ed9f5-dd6c-412a-84c6-e4a290e8927e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.partnersblock
+label: PartnersBlock
+targetEntityType: node
+cache: true

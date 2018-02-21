@@ -2,7 +2,13 @@ blocks:
   main: main
 regions:
   ultimenu_main_event_overview: ultimenu_main_event_overview
+  ultimenu_main_entry_info: ultimenu_main_entry_info
+  ultimenu_main_athlete_info: ultimenu_main_athlete_info
+  ultimenu_main_our_partners: ultimenu_main_our_partners
+  ultimenu_main_community: ultimenu_main_community
+  ultimenu_main_news: ultimenu_main_news
+  ultimenu_main_gallery: ultimenu_main_gallery
+  ultimenu_main_shop: ultimenu_main_shop
 goodies:
-  menu-desc: menu-desc
   title-class: title-class
 skins: ''

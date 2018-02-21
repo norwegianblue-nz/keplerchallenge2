@@ -1,0 +1,19 @@
+uuid: f82c0ac3-0255-4737-a0e5-7ca19cafea70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_description
+    - node.type.partners
+id: node.partners.field_partner_description
+field_name: field_partner_description
+entity_type: node
+bundle: partners
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

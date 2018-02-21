@@ -4,24 +4,6 @@
 // Sandpit
 //
 ////////////////////////////////////////////////////////////////////////////////
-#title-bar-wrapper {
-	background-color: rgba(20,20,0,0.6);
-	position: fixed;
-	padding: 0.6rem 0;
-	width: 100%;
-	box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  @include keplerstTransition (all, 1s, ease-in-out);
-  z-index: 10;
-}
-div#page.scrolled #title-bar-wrapper {
-	background-color: rgba(80,80,70,1);
-	box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
-  -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
-  -moz-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
-  @include keplerstTransition (all, 0.5s, ease-in-out);
-}
 
 
 #teaser-layout{
@@ -43,79 +25,60 @@ div#page.scrolled #title-bar-wrapper {
 #preface1-outer-wrapper p{color:white;}
 
 // tmd sandy-pit
-.btn {
-   width: 100%;
-   background:$keplerst_DarkTeal;
-   display: block;
-   margin: 1em 0;
-   padding: 0.5em;
-   @include keplerstCorners (3px);
-   text-align: center;
-   @include keplerst_ubuntu-medium ($keplerst_Tan1, 1.1em);
-   max-width: 260px;
-   border:none;
+
+// Ulitimate menus
+ul.ultimenu--basic {
+  >li a {color: white;}
 }
-.btn-lrg {
-    padding: 1em 0.5em;
+.ultimenu--basic .region {background:rgba($keplerst_DarkTeal, 0.75);} // area removed by .ultimenu__flyout ... color added for effect only
+.ultimenu--basic .ultimenu__flyout {background-color: $keplerst_DarkTeal; padding: 0 0 0.5rem;@include keplerstCorners($rad: 0 0 2px 2px);}
+.ultimenu--basic a.ultimenu__link.is-active {background: rgba(255, 255, 255, 0.1);}
+.ultimenu--basic a.ultimenu__link.is-active:hover {background: rgba(255, 255, 255, 0.2);}
+
+
+
+// Partners
+.view-our-partners h3 a {color: $keplerst_DarkOrange;}
+.view-our-partners .view-content{
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+}
+.view-our-partners .views-row {width: 48%; margin: 0 0 3rem 0;}
+@media all and (min-width: 480px) and (max-width: 767px) {.view-our-partners .views-row {width: 31.5%;}}
+@media all and (min-width: 768px) /*and (max-width: 1023px)*/ {.view-our-partners .views-row {width: 23.5%;}
 }
 
-#block-tmdsocialiconspage-2 {text-align: center;} // tmd - icons at top of pages
+.view-our-partners h3 {
+	border-top: 1px solid #999;
+	color: $keplerst_DarkOrange;
+  min-width: 100%;
+}
+.view-our-partners .field--name-field-partner-logo { // tmd = aspect-ratio-box container
+	border: 1px solid #999;
+	text-align: center;
+  height: 0;
+  overflow: hidden;
+  padding-top: 500px / 500px * 100%;
+  background: white;
+  position: relative;
+}
+.view-our-partners .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.view-our-partners .field--name-node-title h2 {margin-top: 0;}
+.view-our-partners .field--name-node-title h2 a {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
+.view-our-partners .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
+.view-our-partners .field--name-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
+
+
+// Keeping sandy>>>>
 
 figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
-
-#footer-header-outer-wrapper {background-color: $keplerst_DarkTeal;text-align: center;}
-#footer-header-outer-wrapper #block-tmdsocialiconspage {margin: 2rem 0 1.7rem;}
-#footer-header-outer-wrapper #social-icon-wrapper {
-    display: inline-table;
-    white-space: nowrap;
-    &:before, &:after {
-      border-top: 1px solid white;
-      content: '';
-      display: table-cell;
-      position: relative;
-      top: 1.5em;
-      width: 13%;
-    }
-    &:before { right: 1em; }
-    &:after { left: 1em; }
-}
-@media all and (min-width: 480px) and (max-width: 599px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:25%;}}}
-@media all and (min-width: 600px) and (max-width: 839px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:31%;}}}
-@media all and (min-width: 840px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:33%;}}}
-
-a.social-icon {padding: 0 0.5rem;}
-
-// footer layout >>>>
-@media all and (min-width: 600px) {
-  #block-tmdfooteraccountlogin {float: left;width: 49%;}
-  #block-tmdnewslettersignup, #block-tmdfooteraddressblock {float: right;clear: right;width: 49%;}
-}
-@media all and (min-width: 840px) {
-  #mc-embedded-subscribe-form, .footer-col-wrapper {display: flex;}
-  .footer-col-right {width:35%; padding-left:10px;}
-  .footer-col-left {width: 65%; padding-right:10px;}
-  #block-tmdfooteraccountlogin .btn, #block-tmdnewslettersignup .btn, #block-tmdfooteraddressblock .btn {&:first-of-type{margin-top: 0;}}
-}
-
-// Mail chimp signup form - footer >>>>>>
-#mce-EMAIL {
-	width: 100%;
-	height: 3.1rem;
-  @include keplerstCorners (3px);
-  @include keplerst_ubuntu-light (#000, 1.3em);
-  padding: 0 0 0 0.6em;
-  border: 1px solid #000;
-  background-color: rgba(255, 255, 255, 0.05);
-}
-#mce-EMAIL {&:hover, &:focus{background-color: rgba(255, 255, 255, 0.5);}}
-
-// TMD / NWB sign-off text >>>>>>>>>>>
-#block-thelastword p {
-  @include keplerst_ubuntu-light (#888, 0.8em);
-	line-height: 1.1em;
-	margin: 0.6em 0 0.7em;
-}
-
 
 // Main navigation >>>>>>>>>>>>>>>>> SAND PIT >>> move when complete
 #menu-outer-wrapper {background-color: $keplerst_DarkTeal;}
@@ -128,7 +91,7 @@ a.social-icon {padding: 0 0.5rem;}
 
 // -/tmd sandy pit ends
 
-/* End of Sandpit */
+/* End of main Sandpit *////////////////////////////////////////////////////////
 
 // Fixed bg images
 .nb_fixed-bg {
@@ -237,36 +200,42 @@ footer.node__meta {float:right;}
 
 
 // Header - split into two for branding and user menu
-@media all and (max-width: 959px) {
-    #block-keplerst-branding {@include parrotCols(9, 12, normal, '100');float:left;}
-    #block-loginformpopup {@include parrotCols(3, 12, normal, '100');float:right;}
-}
-@media all and (min-width: 960px) and (max-width: 1279px) {
-    #block-keplerst-branding {@include parrotCols(10, 12, normal, '960');float:left;}
-    #block-loginformpopup {@include parrotCols(2, 12, normal, '960');float:right;}
-}
-@media all and (min-width: 1280px) {
-    #block-keplerst-branding {@include parrotCols(10, 12, normal, '1200');float:left;}
-    #block-loginformpopup {@include parrotCols(2, 12, normal, '1200');float:right;}
-}
+// tmd - removed - not required.
 
-// Postscript 1 and 2 evenly split across page down to mobile sizes
-@media all and (max-width: 480px) {
-    .region--postscript-first {@include parrotCols(12, 12, normal, '100');float:left;}
-    .region--postscript-second {@include parrotCols(12, 12, normal, '100');float:right;}
-}
-@media all and (min-width: 481px) and (max-width: 959px) {
-    .region--postscript-first {@include parrotCols(6, 12, normal, '100');float:left;}
-    .region--postscript-second {@include parrotCols(6, 12, normal, '100');float:right;}
-}
-@media all and (min-width: 960px) and (max-width: 1279px) {
-    .region--postscript-first {@include parrotCols(6, 12, normal, '960');float:left;}
-    .region--postscript-second {@include parrotCols(6, 12, normal, '960');float:right;}
-}
-@media all and (min-width: 1280px) {
-    .region--postscript-first {@include parrotCols(6, 12, normal, '1200');float:left;}
-    .region--postscript-second {@include parrotCols(6, 12, normal, '1200');float:right;}
-}
+// @media all and (max-width: 959px) {
+//     #block-keplerst-branding {@include parrotCols(9, 12, normal, '100');float:left;}
+//     #block-loginformpopup {@include parrotCols(3, 12, normal, '100');float:right;}
+// }
+// @media all and (min-width: 960px) and (max-width: 1279px) {
+//     #block-keplerst-branding {@include parrotCols(10, 12, normal, '960');float:left;}
+//     #block-loginformpopup {@include parrotCols(2, 12, normal, '960');float:right;}
+// }
+// @media all and (min-width: 1280px) {
+//     #block-keplerst-branding {@include parrotCols(10, 12, normal, '1200');float:left;}
+//     #block-loginformpopup {@include parrotCols(2, 12, normal, '1200');float:right;}
+// }
+//
+// // Postscript 1 and 2 evenly split across page down to mobile sizes
+// @media all and (max-width: 480px) {
+//     .region--postscript-first {@include parrotCols(12, 12, normal, '100');float:left;}
+//     .region--postscript-second {@include parrotCols(12, 12, normal, '100');float:right;}
+// }
+// @media all and (min-width: 481px) and (max-width: 959px) {
+//     .region--postscript-first {@include parrotCols(6, 12, normal, '100');float:left;}
+//     .region--postscript-second {@include parrotCols(6, 12, normal, '100');float:right;}
+// }
+// @media all and (min-width: 960px) and (max-width: 1279px) {
+//     .region--postscript-first {@include parrotCols(6, 12, normal, '960');float:left;}
+//     .region--postscript-second {@include parrotCols(6, 12, normal, '960');float:right;}
+// }
+// @media all and (min-width: 1280px) {
+//     .region--postscript-first {@include parrotCols(6, 12, normal, '1200');float:left;}
+//     .region--postscript-second {@include parrotCols(6, 12, normal, '1200');float:right;}
+// }
+
+
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -274,19 +243,123 @@ footer.node__meta {float:right;}
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+.btn {
+   width: 100%;
+   background:$keplerst_DarkTeal;
+   display: block;
+   margin: 1em 0;
+   padding: 0.5em;
+   @include keplerstCorners (3px);
+   text-align: center;
+   @include keplerst_ubuntu-medium ($keplerst_Tan1, 1.1em);
+   max-width: 260px;
+   border:none;
+}
+.btn-lrg {
+    padding: 1em 0.5em;
+}
+
+//TITLE BAR LAYOUT AND ELEMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#title-bar-wrapper {
+	background-color: rgba(20,20,0,0.6);
+	position: fixed;
+	padding: 0.2rem 0;
+	width: 100%;
+	box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+  @include keplerstTransition (all, 1s, ease-in-out);
+  z-index: 10;
+}
+div#page.scrolled #title-bar-wrapper {
+	background-color: rgba(80,80,70,1);
+	box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+  @include keplerstTransition (all, 0.5s, ease-in-out);
+}
+
+// layout
+.region--title-bar.region-title-bar {
+	display: flex;justify-content: space-between;align-items: center;
+}
+#block-keplerst-search {flex-grow: 33;} // tmd - creates wider space for search and allows grow on focus
+
+#block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
+#block-tmdaccountlogin,
+#block-keplerst-branding,
+#block-tmdsponsorlogotop,
+{flex-grow: 1;}
+
+#block-tmdsponsorlogotop {width: 110px;}
+#block-keplerst-branding {width: 104px;}
+#block-tmdaccountlogin {width: 38px;}
+#block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
+ {width: 35px;}
+
+#site-branding {padding: 7px 0 0;} //tmd - allows for odd height spacing of logo img
+
+
+// Search box
+#block-keplerst-search .js-form-item.form-item.js-form-type-search.form-type-search.js-form-item-keys.form-item-keys.form-no-label {
+	@include keplerst_ubuntu-light($keplerst_GreyText, 1.1em);
+}
+
+#block-keplerst-search input#edit-keys {
+	width: 170px;
+	border: 1px solid $keplerst_Orange;
+	padding: 5px;
+	background-color: rgba($keplerst_Tan1, 0.3);
+	@include keplerstTransition (all, 0.5s, ease-in-out);
+
+}
+#block-keplerst-search input#edit-keys {
+	&:hover, &:focus {background-color: rgba($keplerst_Tan1, 0.8);width:50%;}
+	@include keplerstTransition (all, 0.5s, ease-in-out);
+}
+
+#block-keplerst-search input#edit-submit {
+	@include keplerst_ubuntu-light(white, 0.8em);
+	padding: 7px 7px;
+	background-color: $keplerst_DarkOrange;
+	border: 1px solid $keplerst_DarkOrange;
+	text-transform: uppercase;
+	position: relative;
+	top: -2px;
+}
+
+// title bar ends //
+
+// SOCIAL ICONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#block-tmdsocialiconspage-2 {text-align: center;} // tmd - icons at top of pages
+
+
+// FOOTER HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#footer-header-outer-wrapper {background-color: $keplerst_DarkTeal;text-align: center;}
+#footer-header-outer-wrapper #block-tmdsocialiconspage {margin: 2rem 0 1.7rem;}
+#footer-header-outer-wrapper #social-icon-wrapper {
+    display: inline-table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid white;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 1.5em;
+      width: 13%;
+    }
+    &:before { right: 1em; }
+    &:after { left: 1em; }
+}
+@media all and (min-width: 480px) and (max-width: 599px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:25%;}}}
+@media all and (min-width: 600px) and (max-width: 839px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:31%;}}}
+@media all and (min-width: 840px) {#footer-header-outer-wrapper #social-icon-wrapper {&:before, &:after {width:33%;}}}
+
+a.social-icon {padding: 0 0.5rem;}
+
+
 // FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-.tmd-footer-menu-container {display: flex;flex-wrap: wrap;justify-content: space-between;}
-.tmd-footer-menu {
-    width: 23.5%;
-    min-width: 136px;
-    margin-bottom: 5rem;
-}
-@media all and (min-width: 960px) {
-    .tmd-footer-menu-container {display: grid;  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;  grid-gap: 2%; }
-    .tmd-footer-menu {margin-left: 0;margin-right: 0;width: 100%; }
-}
-
 
 //  Typography
 .region--footer h2 {
@@ -308,6 +381,51 @@ footer.node__meta {float:right;}
   }
 }
 
+// Footer menu
+.tmd-footer-menu-container {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.tmd-footer-menu {
+    width: 23.5%;
+    min-width: 136px;
+    margin-bottom: 5rem;
+}
+@media all and (min-width: 960px) {
+    .tmd-footer-menu-container {display: grid;  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;  grid-gap: 2%; }
+    .tmd-footer-menu {margin-left: 0;margin-right: 0;width: 100%; }
+}
+
+
+// footer lower layout >>>>
+@media all and (min-width: 600px) {
+  #block-tmdfooteraccountlogin {float: left;width: 49%;}
+  #block-tmdnewslettersignup, #block-tmdfooteraddressblock {float: right;clear: right;width: 49%;}
+}
+@media all and (min-width: 840px) {
+  #mc-embedded-subscribe-form, .footer-col-wrapper {display: flex;}
+  .footer-col-right {width:35%; padding-left:10px;}
+  .footer-col-left {width: 65%; padding-right:10px;}
+  #block-tmdfooteraccountlogin .btn, #block-tmdnewslettersignup .btn, #block-tmdfooteraddressblock .btn {&:first-of-type{margin-top: 0;}}
+}
+
+// Mail chimp signup form - footer >>>>>>
+#mce-EMAIL {
+	width: 100%;
+	height: 3.1rem;
+  @include keplerstCorners (3px);
+  @include keplerst_ubuntu-light (#000, 1.3em);
+  padding: 0 0 0 0.6em;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#mce-EMAIL {&:hover, &:focus{background-color: rgba(255, 255, 255, 0.5);}}
+
+// TMD / NWB last word sign-off text >>>>>>>>>>>
+#block-thelastword p {
+  @include keplerst_ubuntu-light (#888, 0.8em);
+	line-height: 1.1em;
+	margin: 0.6em 0 0.7em;
+}
+
+
 
 
 // COPYRIGHT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -323,3 +441,17 @@ footer.node__meta {float:right;}
 
 
 // FRONT PAGE OVERRIDES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.path-frontpage .region-content,
+.path-frontpage .region-content2 {text-align: center;}
+
+.front-buttons a {
+	@include keplerstCorners($rad: 3px);
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 1.5em 0.5em;
+	background-color: $keplerst_DarkOrange;
+	margin: 0.5em;
+	width: 180px;
+	color: $keplerst_Tan1;
+}

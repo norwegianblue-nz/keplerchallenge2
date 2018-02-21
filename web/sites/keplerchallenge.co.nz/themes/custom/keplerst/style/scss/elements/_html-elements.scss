@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 ,
 .heading-a {
-  @include keplerst_ubuntu-medium ($primaryColor3, 3em);
+  @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
   margin: 1.0em 0 0.5em;
 //  font-weight: inherit;
 //  font-size: 1.357em;

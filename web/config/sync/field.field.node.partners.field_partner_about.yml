@@ -1,0 +1,19 @@
+uuid: d032b6ed-559d-4946-808c-91fbbcb276fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_about
+    - node.type.partners
+id: node.partners.field_partner_about
+field_name: field_partner_about
+entity_type: node
+bundle: partners
+label: 'About the sponsor'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

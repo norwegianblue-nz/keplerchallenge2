@@ -1,108 +1,108 @@
 @import "keplerst-style-vars", "keplerst-default-style-vars";
 
 
-#site-branding {
-  margin: 0;
-  height: 100%;
-  //width: 49%;
-  background: transparent none repeat scroll 0% 0%;
-  color: #1d84c3;
-  padding: 10px 0 10px 10px;
-  position: relative;
-  z-index: 10;
-  
-  .site-logo {
-
-  }
-  
-  .site-name-slogan {
-    padding-top: 0;
-  }
-  
-  
-  
-  #logo {
-    float: left;
-    max-width: 90px;
-    height: auto;
-    margin-right: 25px;
-    
-    @include keplerstTransition(all, 0.25s, ease-in-out);
-    //@include keplerstCorners(10px);
-    
-    //background: rgba($primaryColor3, 1);
-    
-    &:hover {
-      //background: rgba($primaryColor2, 1);
-    }
-    
-    a {
-      display: block;
-    }
-    
-    img {
-      display: block;
-      //@include keplerstCorners(10px);
-    }
-    
-  }
-  
-  &:hover {
-    
-    #logo {
-      //background: rgba($primaryColor2, 1);
-    }
-  }
-  
-  
-  
-  .site-name {
-    font-size: 48px;
-    //line-height: 36px;
-    font-weight: bold;
-    letter-spacing: -0.075em;
-    font-family: $bodyFont;
-    color: $siteTitleColor;
-    
-    a {
-      @include keplerstTransition(all, 0.25s, ease-in-out);
-      //opacity: .5;
-      text-decoration: none;
-      color: $siteTitleColor;
-      font-family: $defaultHeaderFont;
-      
-      &:hover {
-        //opacity: 1;
-        color: $siteTitleHoverColor;  
-      }
-    }
-  }
-  .site-slogan {
-    color: $siteSloganColor;
-    font-variant: small-caps;
-  }
-}
-
-@media all and (max-width: 560px) {
-    #site-branding {
-        .site-name {font-size: 30px;}
-        #logo {
-            margin-right: 12px;
-            img {width:75px;}
-        }
-        .site-slogan {font-size: .8em;}
-    }
-}
-@media all and (max-width: 425px) {
-    #site-branding {
-        .site-name {font-size: 25px;}
-        #logo {
-            margin-right: 12px;
-            img {width:65px;}
-        }
-        .site-slogan {display:none;}
-    }
-}
-.scrolled #site-branding .site-name {font-size: 30px;}
-.scrolled #site-branding #logo img {width:75px;}
-
+// #site-branding {
+//   margin: 0;
+//   height: 100%;
+//   //width: 49%;
+//   background: transparent none repeat scroll 0% 0%;
+//   color: #1d84c3;
+//   padding: 10px 0 10px 10px;
+//   position: relative;
+//   z-index: 10;
+//
+//   .site-logo {
+//
+//   }
+//
+//   .site-name-slogan {
+//     padding-top: 0;
+//   }
+//
+//
+//
+//   #logo {
+//     // float: left; //tmd //
+//     // max-width: 90px; //tmd//
+//     height: auto;
+//     margin-right: 25px;
+//
+//     @include keplerstTransition(all, 0.25s, ease-in-out);
+//     //@include keplerstCorners(10px);
+//
+//     //background: rgba($primaryColor3, 1);
+//
+//     &:hover {
+//       //background: rgba($primaryColor2, 1);
+//     }
+//
+//     a {
+//       display: block;
+//     }
+//
+//     img {
+//       display: block;
+//       //@include keplerstCorners(10px);
+//     }
+//
+//   }
+//
+//   &:hover {
+//
+//     #logo {
+//       //background: rgba($primaryColor2, 1);
+//     }
+//   }
+//
+//
+//
+//   .site-name {
+//     font-size: 48px;
+//     //line-height: 36px;
+//     font-weight: bold;
+//     letter-spacing: -0.075em;
+//     font-family: $bodyFont;
+//     color: $siteTitleColor;
+//
+//     a {
+//       @include keplerstTransition(all, 0.25s, ease-in-out);
+//       //opacity: .5;
+//       text-decoration: none;
+//       color: $siteTitleColor;
+//       font-family: $defaultHeaderFont;
+//
+//       &:hover {
+//         //opacity: 1;
+//         color: $siteTitleHoverColor;
+//       }
+//     }
+//   }
+//   .site-slogan {
+//     color: $siteSloganColor;
+//     font-variant: small-caps;
+//   }
+// }
+//
+// @media all and (max-width: 560px) {
+//     #site-branding {
+//         .site-name {font-size: 30px;}
+//         #logo {
+//             margin-right: 12px;
+//             img {width:75px;}
+//         }
+//         .site-slogan {font-size: .8em;}
+//     }
+// }
+// @media all and (max-width: 425px) {
+//     #site-branding {
+//         .site-name {font-size: 25px;}
+//         #logo {
+//             margin-right: 12px;
+//             img {width:65px;}
+//         }
+//         .site-slogan {display:none;}
+//     }
+// }
+// .scrolled #site-branding .site-name {font-size: 30px;}
+// .scrolled #site-branding #logo img {width:75px;}
+//

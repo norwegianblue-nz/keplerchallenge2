@@ -11,7 +11,7 @@ _core:
 id: keplerst_search
 theme: keplerst
 region: title_bar
-weight: -20
+weight: -21
 provider: null
 plugin: search_form_block
 settings:

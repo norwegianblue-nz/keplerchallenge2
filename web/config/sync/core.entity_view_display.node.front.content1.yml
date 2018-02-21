@@ -1,0 +1,49 @@
+uuid: 08ad24e8-82cf-4942-bf3e-6d9b1e9f6e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content1
+    - field.field.node.front.field_bg_image
+    - field.field.node.front.field_content
+    - field.field.node.front.field_content_2
+    - node.type.front
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_content
+id: node.front.content1
+targetEntityType: node
+bundle: front
+mode: content1
+content:
+  field_content:
+    type: text_default
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bg_image: true
+  field_content_2: true
+  links: true

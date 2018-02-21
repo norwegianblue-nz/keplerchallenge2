@@ -10,14 +10,14 @@ nav.navigation {
   ul {
     margin: 0;
     padding: 0;
-    
+
     li {
       margin: 3px 5px;
       padding: 0;
       list-style-type: none;
       list-style-image: none;
       display: inline-block;
-      
+
       &:first-child {
         margin-left: 0;
       }
@@ -32,14 +32,14 @@ nav.navigation {
 
 
 @media all and (min-width: $desktop) {
-  
+
 nav.navigation {
-    
+
     ul, ul.links {
       margin: 0;
       margin-bottom: 0.5em;
       padding: 0;
-      
+
       li {
         margin: 0 5px;
         padding: 0;
@@ -52,22 +52,22 @@ nav.navigation {
           background: $menuitemBg;
           color: $menuitemColor;
           text-decoration: none;
-          
+
           @include keplerstTransition(all, 0.25s, ease-in-out);
-          
+
           &:hover {
             opacity: 0.85;
           }
-          
+
         }
 
         &:first-child {
           margin-left: 0;
         }
-  
+
         &:last-child {
           margin-right: 0;
-        }  
+        }
       }
     }
   }

@@ -1,29 +1,23 @@
-uuid: 4b37951d-d252-4bac-9914-21cd8add1c85
+uuid: 79996d81-6318-4b4f-8f49-df95ddb54e18
 langcode: en
 status: true
 dependencies:
   module:
     - ctools
-    - ctools_block
   theme:
     - keplerst
-id: content2
+id: entityviewcontent_2
 theme: keplerst
 region: content2
 weight: 0
 provider: null
-plugin: 'entity_field:node:field_content_2'
+plugin: 'entity_view:node'
 settings:
-  id: 'entity_field:node:field_content_2'
-  label: 'Content 2'
-  provider: ctools_block
+  id: 'entity_view:node'
+  label: Content2
+  provider: ctools
   label_display: '0'
-  formatter:
-    label: hidden
-    type: text_default
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+  view_mode: content
   context_mapping:
     entity: '@node.node_route_context:node'
 visibility:
@@ -31,7 +25,6 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       front: front
-      general_content: general_content
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

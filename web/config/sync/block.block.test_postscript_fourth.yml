@@ -12,7 +12,7 @@ dependencies:
 id: test_postscript_fourth
 theme: keplerst
 region: postscript_fourth
-weight: 0
+weight: -18
 provider: null
 plugin: 'block_content:dfcf721c-0576-4023-95a7-df30b53b8b87'
 settings:

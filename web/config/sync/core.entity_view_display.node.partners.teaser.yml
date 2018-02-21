@@ -1,0 +1,24 @@
+uuid: 0fc8f678-28d4-4c60-b464-cee60fea7284
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partners.field_partner_logo
+    - field.field.node.partners.field_partner_url
+    - field.field.node.partners.field_sponsorship_level
+    - node.type.partners
+  module:
+    - user
+id: node.partners.teaser
+targetEntityType: node
+bundle: partners
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_partner_logo: true
+  field_partner_url: true
+  field_sponsorship_level: true

@@ -1,0 +1,40 @@
+uuid: 4ecbf249-98a7-46ad-a12a-68829c2e22f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.front.field_bg_image
+    - field.field.node.front.field_content
+    - field.field.node.front.field_content_2
+    - node.type.front
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions: {  }
+id: node.front.full
+targetEntityType: node
+bundle: front
+mode: full
+content: {  }
+hidden:
+  field_bg_image: true
+  field_content: true
+  field_content_2: true
+  links: true

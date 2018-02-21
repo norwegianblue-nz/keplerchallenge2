@@ -1,25 +1,25 @@
-uuid: 953da3b4-34b3-4bb9-935e-1dccb3614327
+uuid: faf7e403-53a1-4425-9aef-4cbe18391fb3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.partners
+    - views.view.our_partners
   module:
     - ctools
     - views
   theme:
     - keplerst
-id: views_block__partners_block_1
+id: views_block__our_partners_frontpage_block
 theme: keplerst
 region: postscript_fourth
-weight: 0
+weight: -23
 provider: null
-plugin: 'views_block:partners-block_1'
+plugin: 'views_block:our_partners-frontpage_block'
 settings:
-  id: 'views_block:partners-block_1'
+  id: 'views_block:our_partners-frontpage_block'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:

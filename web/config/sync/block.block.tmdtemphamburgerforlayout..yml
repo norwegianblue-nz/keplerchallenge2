@@ -1,0 +1,25 @@
+uuid: 375f6458-cb91-47a1-8aa7-f20723d6620a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6e3b3ada-05f8-4293-8b70-de754b12d732'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: tmdtemphamburgerforlayout.
+theme: keplerst
+region: title_bar
+weight: -17
+provider: null
+plugin: 'block_content:6e3b3ada-05f8-4293-8b70-de754b12d732'
+settings:
+  id: 'block_content:6e3b3ada-05f8-4293-8b70-de754b12d732'
+  label: 'tmd - TEMP Hamburger for layout.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

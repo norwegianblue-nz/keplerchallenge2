@@ -1,9 +1,9 @@
-uuid: ba11ac5d-08bf-40c8-b349-cf695f6ecb2c
+uuid: d92cf6d5-920d-4919-a058-b5b4522f5f01
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.content1
     - field.field.node.general_content.field_content
     - field.field.node.general_content.field_content_2
     - field.field.node.general_content.field_footerimage1
@@ -14,23 +14,40 @@ dependencies:
     - node.type.general_content
   module:
     - ds
+    - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
-      settings: {  }
-    regions: {  }
-id: node.general_content.full
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_content
+id: node.general_content.content1
 targetEntityType: node
 bundle: general_content
-mode: full
-content: {  }
+mode: content1
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
 hidden:
-  field_content: true
   field_content_2: true
   field_footerimage1: true
   field_footerimage2: true

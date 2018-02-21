@@ -1,0 +1,19 @@
+uuid: 165c6782-67ff-4efc-8db0-7ce4faf464e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_partner_description
+field_name: field_partner_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: cd2aa271-7c1d-4478-be87-b7a5672fe2c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.partnerspage
+label: PartnersPage
+targetEntityType: node
+cache: true

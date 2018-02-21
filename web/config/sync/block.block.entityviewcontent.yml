@@ -1,0 +1,32 @@
+uuid: b70e2c8a-eadb-47f6-8bce-d0472c72ee00
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+  theme:
+    - keplerst
+id: entityviewcontent
+theme: keplerst
+region: content
+weight: 0
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: Content1
+  provider: ctools
+  label_display: '0'
+  view_mode: content1
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      front: front
+      general_content: general_content
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

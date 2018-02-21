@@ -1,0 +1,17 @@
+uuid: aa6a1010-dced-4d3a-a8e7-aaafdd061ebc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Partners
+type: partners
+description: 'A page for each sponsor'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
