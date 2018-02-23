@@ -12,7 +12,7 @@ dependencies:
 id: tmdsocialiconshome
 theme: keplerst
 region: content
-weight: 0
+weight: -21
 provider: null
 plugin: 'block_content:fe7b7b28-2e5e-4cd5-a427-a4617b39ec64'
 settings:

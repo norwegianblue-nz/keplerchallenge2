@@ -10,7 +10,7 @@ dependencies:
 id: title
 theme: keplerst
 region: content
-weight: -17
+weight: -25
 provider: null
 plugin: 'entity_field:node:title'
 settings:

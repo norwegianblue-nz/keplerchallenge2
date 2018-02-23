@@ -12,7 +12,7 @@ dependencies:
 id: tmdfrontbuttonscontent1
 theme: keplerst
 region: content
-weight: 0
+weight: -22
 provider: null
 plugin: 'block_content:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
 settings:

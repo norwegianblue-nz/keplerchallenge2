@@ -1,0 +1,25 @@
+uuid: 78b4d21e-25b3-46dc-8445-e7c1f6d49eda
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aab41a6d-5d49-49f6-940e-8f8845ec1cb1'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: hamburgernonmobile
+theme: keplerst
+region: title_bar
+weight: 0
+provider: null
+plugin: 'block_content:aab41a6d-5d49-49f6-940e-8f8845ec1cb1'
+settings:
+  id: 'block_content:aab41a6d-5d49-49f6-940e-8f8845ec1cb1'
+  label: 'Hamburger - non-mobile'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -11,7 +11,7 @@ _core:
 id: keplerst_page_title
 theme: keplerst
 region: content
-weight: -14
+weight: -20
 provider: null
 plugin: page_title_block
 settings:
