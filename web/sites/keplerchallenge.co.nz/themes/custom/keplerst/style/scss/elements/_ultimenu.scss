@@ -1,0 +1,23 @@
+/*#block-ultimenu-mainnav-title  .button.button--ultimenu {
+    display: block;
+  }
+*/
+
+// Ulitimate menus
+.ultimenu {min-height: unset;}
+#ultimenu-main li:hover {background-color:rgba($keplerst_Orange, 0.4);}
+ul.ultimenu--basic {
+  >li a {color: $keplerst_Tan1;}
+}
+.ultimenu--basic .active-trail {background: rgba($keplerst_DarkOrange, 1);}
+// .ultimenu--basic .active-trail:hover, .ultimenu--basic a.ultimenu__link:hover {background: rgba($keplerst_Orange, 0.4);}
+
+ul.menu {margin-left: 0;}
+.menu-item {padding-top: 0.1rem;}
+
+.ultimenu--basic .region {background:rgba($keplerst_DarkTeal, 1);} // dropdown background
+.ultimenu--basic .ultimenu__flyout {background-color: $keplerst_DarkTeal; padding: 0 0 0.5rem;@include keplerstCorners($rad: 0 0 2px 2px);border-top: solid 1px rgba($keplerst_Orange, 0.4);} // area behind dropdown
+.ultimenusub li.menu-item a {width: 100%;display: block;padding: 0rem 1rem;}
+.ultimenusub li.menu-item a.is-active {color: white;}
+.ultimenusub li.menu-item a.is-active::after {content:"(current page)"; font-size: 0.8em; text-transform: uppercase; color: rgba(255, 255, 255, 0.4); padding-left: 0.8rem; letter-spacing: 0.02rem;}
+// .ultimenusub li.menu-item a:hover {background-color:rgba($keplerst_Orange, 0.4);}

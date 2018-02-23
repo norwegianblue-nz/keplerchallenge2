@@ -23,42 +23,50 @@ $jq(document).on("scroll", function(){
 /*
  * Toggle 'expand' when a button clicked
  */
-$jq('.tool-bar-icon-login').click(function(){
-    if($jq('#block-keplerst-search').hasClass("expand")){
-        $jq('#block-keplerst-search').toggleClass("expand");
-        $jq('.tool-bar-icon-search').toggleClass("clicked");
-    }
-    if($jq('#block-toolbarinfo').hasClass("expand")){
-        $jq('#block-toolbarinfo').toggleClass("expand");
-        $jq('.tool-bar-icon-info').toggleClass("clicked");
-    }
-    $jq('#block-userlogin').toggleClass("expand");
+$jq('#nonmobile_hamburger').click(function(){
+    $jq('#menu-outer-wrapper').toggleClass("hamburger-clicked");
     $jq(this).toggleClass("clicked");
 });
-$jq('.tool-bar-icon-search').click(function(){
-    if($jq('#block-userlogin').hasClass("expand")){
-        $jq('#block-userlogin').toggleClass("expand");
-        $jq('.tool-bar-icon-login').toggleClass("clicked");
-    }
-    if($jq('#block-toolbarinfo').hasClass("expand")){
-        $jq('#block-toolbarinfo').toggleClass("expand");
-        $jq('.tool-bar-icon-info').toggleClass("clicked");
-    }
-    $jq('#block-keplerst-search').toggleClass("expand");
-    $jq(this).toggleClass("clicked");
-});
-$jq('.tool-bar-icon-info').click(function(){
-    if($jq('#block-keplerst-search').hasClass("expand")){
-        $jq('#block-keplerst-search').toggleClass("expand");
-        $jq('.tool-bar-icon-search').toggleClass("clicked");
-    }
-    if($jq('#block-userlogin').hasClass("expand")){
-        $jq('#block-userlogin').toggleClass("expand");
-        $jq('.tool-bar-icon-login').toggleClass("clicked");
-    }
-    $jq('#block-toolbarinfo').toggleClass("expand");
-    $jq(this).toggleClass("clicked");
-});
+
+//
+//$jq('.tool-bar-icon-login').click(function(){
+//    if($jq('#block-keplerst-search').hasClass("expand")){
+//        $jq('#block-keplerst-search').toggleClass("expand");
+//        $jq('.tool-bar-icon-search').toggleClass("clicked");
+//    }
+//    if($jq('#block-toolbarinfo').hasClass("expand")){
+//        $jq('#block-toolbarinfo').toggleClass("expand");
+//        $jq('.tool-bar-icon-info').toggleClass("clicked");
+//    }
+//    $jq('#block-userlogin').toggleClass("expand");
+//    $jq(this).toggleClass("clicked");
+//});
+//$jq('.tool-bar-icon-search').click(function(){
+//    if($jq('#block-userlogin').hasClass("expand")){
+//        $jq('#block-userlogin').toggleClass("expand");
+//        $jq('.tool-bar-icon-login').toggleClass("clicked");
+//    }
+//    if($jq('#block-toolbarinfo').hasClass("expand")){
+//        $jq('#block-toolbarinfo').toggleClass("expand");
+//        $jq('.tool-bar-icon-info').toggleClass("clicked");
+//    }
+//    $jq('#block-keplerst-search').toggleClass("expand");
+//    $jq(this).toggleClass("clicked");
+//});
+//$jq('.tool-bar-icon-info').click(function(){
+//    if($jq('#block-keplerst-search').hasClass("expand")){
+//        $jq('#block-keplerst-search').toggleClass("expand");
+//        $jq('.tool-bar-icon-search').toggleClass("clicked");
+//    }
+//    if($jq('#block-userlogin').hasClass("expand")){
+//        $jq('#block-userlogin').toggleClass("expand");
+//        $jq('.tool-bar-icon-login').toggleClass("clicked");
+//    }
+//    $jq('#block-toolbarinfo').toggleClass("expand");
+//    $jq(this).toggleClass("clicked");
+//});
+//
+
 /*
  * Switch the background image for the div with class .background-slider
  * dependant on the image list passed in via HTML5 data attribute.

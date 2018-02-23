@@ -20,6 +20,7 @@
 
 /web/sites/*/settings.local.php
 /web/sites/*/services.yml
+/web/sites/*/development.services.yml
 /web/sites/*/php_errors.log
 
 
@@ -43,6 +44,6 @@ vendor/simplesamlphp/*
 !vendor/simplesamlphp/simplesamlphp
 vendor/simplesamlphp/simplesamlphp/*
 !vendor/simplesamlphp/simplesamlphp/config
-# config.php ignored as has db authentication data.
+# config.php ignored as has db authentication data. There's a copy in /private
 vendor/simplesamlphp/simplesamlphp/config/config.php
 !vendor/simplesamlphp/simplesamlphp/metadata

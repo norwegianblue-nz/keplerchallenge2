@@ -9,7 +9,7 @@ $config = array(
 
         'core:AdminPassword',
     ),
-    
+
     // Use Drupal 7 as authentication source
     'keplerentries' => array(
         'saml:SP',

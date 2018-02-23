@@ -26,16 +26,21 @@
 
 // tmd sandy-pit
 
-// Ulitimate menus
-ul.ultimenu--basic {
-  >li a {color: white;}
+// Hamburger toggle
+
+#menu-outer-wrapper {
+  position: relative;
+  top: 0;
+  z-index: 9;
+  @include keplerstTransition (all, 0.5s, ease-in-out);
 }
-.ultimenu--basic .region {background:rgba($keplerst_DarkTeal, 0.75);} // area removed by .ultimenu__flyout ... color added for effect only
-.ultimenu--basic .ultimenu__flyout {background-color: $keplerst_DarkTeal; padding: 0 0 0.5rem;@include keplerstCorners($rad: 0 0 2px 2px);}
-.ultimenu--basic a.ultimenu__link.is-active {background: rgba(255, 255, 255, 0.1);}
-.ultimenu--basic a.ultimenu__link.is-active:hover {background: rgba(255, 255, 255, 0.2);}
-
-
+#menu-outer-wrapper.hamburger-clicked {
+	position: fixed;
+	top: 61px;
+	width: 100%;
+  z-index: 11;
+  @include keplerstTransition (all, 0.5s, ease-in-out);
+}
 
 // Partners
 .view-our-partners h3 a {color: $keplerst_DarkOrange;}
@@ -87,6 +92,8 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 .region--postscript-fourth.region.region-postscript-fourth {
 	display: flex;
 	justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 // -/tmd sandy pit ends
@@ -112,6 +119,9 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
 @media all and (min-width: 1220px) {.nb_fixed-bg{}}
 
+// Watermark bg (sort-of)
+#block-tmdkeplerlogowatermark {min-width: 100%;} // tmd - this is added as a block to ensure height is generated simply (as opposed to a bg image which would require padding etc)
+
 // Footer bg image
 #footer-outer-wrapper {
     background: $keplerst_DarkOrange url("/sites/keplerchallenge.co.nz/files/2018-02/footer-bg.png") no-repeat;
@@ -127,6 +137,7 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 		background-attachment: fixed;
 	}
 }*/
+
 
 /* Sandpit extension */
 #nb_bg_video{
