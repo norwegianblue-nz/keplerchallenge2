@@ -1,0 +1,31 @@
+uuid: ea813738-9167-41ca-a52b-781f4c06b4c3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4c20eb8-e3a3-45c9-b937-b8164fca9ccf'
+  module:
+    - block_content
+    - system
+  theme:
+    - keplerst
+id: tmdracedateteaser
+theme: keplerst
+region: teaser
+weight: 0
+provider: null
+plugin: 'block_content:b4c20eb8-e3a3-45c9-b937-b8164fca9ccf'
+settings:
+  id: 'block_content:b4c20eb8-e3a3-45c9-b937-b8164fca9ccf'
+  label: 'tmd - race date teaser'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

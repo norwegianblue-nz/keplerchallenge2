@@ -1,0 +1,20 @@
+uuid: d8fdc04c-9039-4b13-8f1f-a49f0c90b75c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - keplerst
+id: searchform
+theme: keplerst
+region: menu
+weight: -24
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

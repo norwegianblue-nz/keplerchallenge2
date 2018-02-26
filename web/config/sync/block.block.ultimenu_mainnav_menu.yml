@@ -9,7 +9,7 @@ dependencies:
 id: ultimenu_mainnav_menu
 theme: keplerst
 region: menu
-weight: 0
+weight: -25
 provider: null
 plugin: 'ultimenu_block:ultimenu-main'
 settings:

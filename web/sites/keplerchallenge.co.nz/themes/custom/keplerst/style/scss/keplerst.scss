@@ -7,22 +7,40 @@
 
 
 #teaser-layout{
-    position:relative;
-    height: 100%;
+  position:relative;
+  height: 100%;
 }
 
-.region--teaser {
-    position:absolute !important;
-    background-color: $keplerst_DarkBlue;
-    text-align: center;
-    bottom: 0;
+.region--teaser { // move tab to bottom of video window
+  position:absolute !important;
+  //background-color: $keplerst_DarkestTeal;
+  text-align: center;
+  bottom: 0;
 }
-.region--teaser p{color:white;}
+.region--teaser p{
+  color:white;
+  display: inline-table; // needed for lines either side
+  background-color: $keplerst_DarkestTeal;
+  margin: 0;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+
+  &::before, &::after { // before and after for left and right lines
+  border-top: 1px solid white;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 1rem;
+  width: 10%;}
+  &::before {right:1rem;} // add padding between line and text
+  &::after {left:1rem;}
+}
+
 
 #preface1-outer-wrapper{
-    background-color: $keplerst_DarkBlue;
+  background-color: $keplerst_DarkestTeal;
 }
-#preface1-outer-wrapper p{color:white;}
+#preface1-outer-wrapper p {color:white;}
 
 // tmd sandy-pit
 
@@ -102,7 +120,7 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 
 // Fixed bg images
 .nb_fixed-bg {
-    min-height: 85vh;
+    min-height: 55vh;
     background-position: 50% bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +137,7 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
 @media all and (min-width: 1220px) {.nb_fixed-bg{}}
 
-// Watermark bg (sort-of)
+// Watermark (sort-of) bg
 #block-tmdkeplerlogowatermark {min-width: 100%;} // tmd - this is added as a block to ensure height is generated simply (as opposed to a bg image which would require padding etc)
 
 // Footer bg image
@@ -188,6 +206,7 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 	//left: 13px;
 	//border-radius: 2px;
 }
+#block-hamburgernonmobile:hover {cursor: pointer;} // tmd - force display of hand pointer
 
 footer.node__meta {float:right;}
 // h2 {float:left;} tmd removed - old styling from KTRK?
@@ -299,24 +318,39 @@ div#page.scrolled #title-bar-wrapper {
 #block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
 #block-tmdaccountlogin,
 #block-keplerst-branding,
-#block-tmdsponsorlogotop,
-{flex-grow: 1;}
+#block-tmdsponsorlogotop
+{flex-grow: 1; margin: 0 0.5rem; // margin replaces widths
+}
 
-#block-tmdsponsorlogotop {width: 110px;}
-#block-keplerst-branding {width: 104px;}
-#block-tmdaccountlogin {width: 38px;}
-#block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
- {width: 35px;}
+@media all and (max-width: 959px) { // Change media query to match search box or search form display
+  .region--title-bar.region-title-bar {justify-content: flex-end;}
+  #block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
+  #block-tmdaccountlogin,
+  #block-keplerst-branding,
+  #block-tmdsponsorlogotop
+  {flex-grow: unset;}
+
+}
 
 #site-branding {padding: 7px 0 0;} //tmd - allows for odd height spacing of logo img
 
 
-// Search box
-#block-keplerst-search .js-form-item.form-item.js-form-type-search.form-type-search.js-form-item-keys.form-item-keys.form-no-label {
+// Search boxes
+
+@media all and (max-width: 959px) {
+  #block-keplerst-search {display: none;}
+}
+@media all and (min-width: 960px) {
+  #block-searchform {display: none;}
+}
+
+#block-searchform,
+#block-keplerst-search {
+ & .js-form-item.form-item.js-form-type-search.form-type-search.js-form-item-keys.form-item-keys.form-no-label {
 	@include keplerst_ubuntu-light($keplerst_GreyText, 1.1em);
 }
 
-#block-keplerst-search input#edit-keys {
+& input#edit-keys, & input#edit-keys--2 {
 	width: 170px;
 	border: 1px solid $keplerst_Orange;
 	padding: 5px;
@@ -324,12 +358,12 @@ div#page.scrolled #title-bar-wrapper {
 	@include keplerstTransition (all, 0.5s, ease-in-out);
 
 }
-#block-keplerst-search input#edit-keys {
+& input#edit-keys, & input#edit-keys--2 {
 	&:hover, &:focus {background-color: rgba($keplerst_Tan1, 0.8);width:50%;}
 	@include keplerstTransition (all, 0.5s, ease-in-out);
 }
 
-#block-keplerst-search input#edit-submit {
+& input#edit-submit, & input#edit-submit--2 {
 	@include keplerst_ubuntu-light(white, 0.8em);
 	padding: 7px 7px;
 	background-color: $keplerst_DarkOrange;
@@ -338,8 +372,12 @@ div#page.scrolled #title-bar-wrapper {
 	position: relative;
 	top: -2px;
 }
+}
+#block-searchform {padding: 1rem 0;}
 
 // title bar ends //
+
+
 
 // SOCIAL ICONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #block-tmdsocialiconspage-2 {text-align: center;} // tmd - icons at top of pages
@@ -466,3 +504,6 @@ a.social-icon {padding: 0 0.5rem;}
 	width: 180px;
 	color: $keplerst_Tan1;
 }
+
+.path-frontpage .nb_fixed-bg { // Larger home page top image
+    min-height: 85vh;}
