@@ -29,7 +29,7 @@
         "drupal/console": "^1.0.1",
         "drupal/contact_block": "^1.4",
         "drupal/contentimport": "^3.2",
-        "drupal/core": "~8.0",
+        "drupal/core": "~8.5",
         "drupal/diff": "1.x-dev",
         "drupal/ds": "^3.1",
         "drupal/easy_breadcrumb": "^1.6",

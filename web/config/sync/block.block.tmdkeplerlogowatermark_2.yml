@@ -1,0 +1,31 @@
+uuid: 22aab129-11f1-48f7-9ef1-5db0cb3b9e71
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - keplerst
+id: tmdkeplerlogowatermark_2
+theme: keplerst
+region: teaser
+weight: 0
+provider: null
+plugin: 'block_content:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+settings:
+  id: 'block_content:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+  label: 'tmd - kepler logo watermark'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

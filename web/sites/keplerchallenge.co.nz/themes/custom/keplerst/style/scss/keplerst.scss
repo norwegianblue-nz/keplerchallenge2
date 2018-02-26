@@ -6,35 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-#teaser-layout{
-  position:relative;
-  height: 100%;
-}
 
-.region--teaser { // move tab to bottom of video window
-  position:absolute !important;
-  //background-color: $keplerst_DarkestTeal;
-  text-align: center;
-  bottom: 0;
-}
-.region--teaser p{
-  color:white;
-  display: inline-table; // needed for lines either side
-  background-color: $keplerst_DarkestTeal;
-  margin: 0;
-  font-weight: 500;
-  padding: 0.5rem 2rem;
-
-  &::before, &::after { // before and after for left and right lines
-  border-top: 1px solid white;
-  content: '';
-  display: table-cell;
-  position: relative;
-  top: 1rem;
-  width: 10%;}
-  &::before {right:1rem;} // add padding between line and text
-  &::after {left:1rem;}
-}
 
 
 #preface1-outer-wrapper{
@@ -44,21 +16,34 @@
 
 // tmd sandy-pit
 
-// Hamburger toggle
-
+// Hamburger toggle and animation
+@keyframes fade-in1 {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fade-in2 {
+  from {opacity: 0; top: 25vh;}
+  to {opacity: 1; top: 61px;}
+}
 #menu-outer-wrapper {
   position: relative;
   top: 0;
   z-index: 9;
-  @include keplerstTransition (all, 0.5s, ease-in-out);
+  animation-name: fade-in1;
+  animation-duration: 2s;
+  animation-timing-function: ease;
 }
 #menu-outer-wrapper.hamburger-clicked {
 	position: fixed;
 	top: 61px;
 	width: 100%;
   z-index: 11;
-  @include keplerstTransition (all, 0.5s, ease-in-out);
+  animation-name: fade-in2;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
+
+
 
 // Partners
 .view-our-partners h3 a {color: $keplerst_DarkOrange;}
@@ -161,7 +146,7 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
 #nb_bg_video{
    /* position: fixed;*/
     background-image: url(/sites/keplerchallenge.co.nz/files/video/poster_lg.jpg);
-    min-height: 85vh;
+    min-height: 80vh;
     height: 1vh;
     position: relative;
     overflow: hidden;
@@ -284,10 +269,12 @@ footer.node__meta {float:right;}
    @include keplerst_ubuntu-medium ($keplerst_Tan1, 1.1em);
    max-width: 260px;
    border:none;
+   &:hover {background:rgba($keplerst_DarkTeal, 0.8);color: $keplerst_Orange;}
 }
 .btn-lrg {
     padding: 1em 0.5em;
 }
+
 
 //TITLE BAR LAYOUT AND ELEMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #title-bar-wrapper {
@@ -491,10 +478,20 @@ a.social-icon {padding: 0 0.5rem;}
 
 // FRONT PAGE OVERRIDES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-.path-frontpage .region-content,
-.path-frontpage .region-content2 {text-align: center;}
+.path-frontpage { // THIS WRAPS FRONT PAGE OVERRIDES
 
-.front-buttons a {
+  #menu-outer-wrapper {background-color: $keplerst_DarkOrange;min-height: 6vh;}
+
+  #preface1-outer-wrapper {min-height: 10vh;}
+
+  .nb_fixed-bg { // Larger home page top image
+  min-height: 80vh;}
+
+  section#btns-outer-wrapper { // overrides margin for social icons on pages
+        margin: 0;
+    }
+
+  .front-buttons a {
 	@include keplerstCorners($rad: 3px);
 	display: inline-block;
 	text-transform: uppercase;
@@ -503,7 +500,38 @@ a.social-icon {padding: 0 0.5rem;}
 	margin: 0.5em;
 	width: 180px;
 	color: $keplerst_Tan1;
-}
+  &:hover {background-color: rgba($keplerst_DarkOrange,0.8);}
+  }
 
-.path-frontpage .nb_fixed-bg { // Larger home page top image
-    min-height: 85vh;}
+  #teaser-layout{
+  position:relative;
+  height: 100%;
+  }
+
+  .region--teaser { // move tab to bottom of video window
+  position:absolute !important;
+  //background-color: $keplerst_DarkestTeal;
+  text-align: center;
+  bottom: 0;
+  }
+  .region--teaser p {
+  color:white;
+  display: inline-table; // needed for lines either side
+  background-color: $keplerst_DarkestTeal;
+  margin: 0;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+
+  &::before, &::after { // before and after for left and right lines
+  border-top: 2px solid white;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 1rem;
+  width: 10%;}
+  &::before {right:1rem;} // add padding between line and text
+  &::after {left:1rem;}
+  }
+  .region-content, .region-content2 {text-align: center;}
+
+} // THIS CLOSES FRONT PAGE OVERRIDES
