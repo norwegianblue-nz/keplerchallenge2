@@ -6,13 +6,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
 #preface1-outer-wrapper{
   background-color: $keplerst_DarkestTeal;
 }
 #preface1-outer-wrapper p {color:white;}
+
 
 // tmd sandy-pit
 
@@ -43,6 +41,17 @@
   animation-timing-function: ease;
 }
 
+// Preface 3 front page stapline-banner
+#preface3-outer-wrapper {
+  background: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/smaller-kepler-bmp.jpg") 50% 50% no-repeat;
+	background-size: cover;
+  padding: 2rem;
+}
+#strapline-banner {display: flex;justify-content: space-evenly;align-items: center;}
+@media all and (min-width: 799px) {#strapline-banner {padding: 0 10%;} // Push logos closer to centre on wider screens
+
+
+}
 
 
 // Partners
@@ -109,7 +118,7 @@ figure {margin:0.9rem 3rem 0 0px;} // In-line image and caption style
     background-position: 50% bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:#333;
+    background-color:$keplerst_DarkTeal;
 }
 @media all and (min-width: 0px) {.nb_fixed-bg{}}
 @media all and (min-width: 480px) and (max-width: 767px) {.nb_fixed-bg{}}

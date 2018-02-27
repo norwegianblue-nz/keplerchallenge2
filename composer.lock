@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61d02170ae54ebeb68af1bf35abd795",
+    "content-hash": "ad8914cfb8d6a50463f1210204230d6d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4860,6 +4860,69 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
+            }
+        },
+        {
+            "name": "drupal/token_custom",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/token_custom",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token_custom-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "9783b63dc75018d809582e61be9689b268f23d80"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1494188884",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron23",
+                    "homepage": "https://www.drupal.org/user/3177225"
+                },
+                {
+                    "name": "Samba B",
+                    "homepage": "https://www.drupal.org/user/2693751"
+                },
+                {
+                    "name": "gaspaio",
+                    "homepage": "https://www.drupal.org/user/545538"
+                },
+                {
+                    "name": "hanoii",
+                    "homepage": "https://www.drupal.org/user/23157"
+                },
+                {
+                    "name": "polynya",
+                    "homepage": "https://www.drupal.org/user/795122"
+                }
+            ],
+            "description": "Allow users to define custom tokens to use thoughout the site",
+            "homepage": "https://www.drupal.org/project/token_custom",
+            "support": {
+                "source": "http://cgit.drupalcode.org/token_custom"
             }
         },
         {
@@ -10874,6 +10937,7 @@
         "drupal/scheduler": 20,
         "drupal/search404": 20,
         "drupal/simplesamlphp_auth": 20,
+        "drupal/token_custom": 15,
         "drupal/toolbar_themes": 15,
         "drupal/xmlsitemap": 20
     },

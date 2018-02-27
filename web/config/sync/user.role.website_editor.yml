@@ -11,6 +11,7 @@ permissions:
   - 'access content overview'
   - 'access in-place editing'
   - 'access toolbar'
+  - 'administer custom tokens'
   - 'create article content'
   - 'create general_content content'
   - 'delete terms in partner'

@@ -1,0 +1,7 @@
+uuid: f578567e-e8da-4442-94dc-ec1441681460
+langcode: en
+status: true
+dependencies: {  }
+machineName: race-info-token
+name: 'Race Info Token'
+description: 'Tokens about the race such as title sponsor, year, etc.'
