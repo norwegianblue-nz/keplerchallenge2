@@ -2,10 +2,6 @@ uuid: 375f6458-cb91-47a1-8aa7-f20723d6620a
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:basic:6e3b3ada-05f8-4293-8b70-de754b12d732'
-  module:
-    - block_content
   theme:
     - keplerst
 id: tmdtemphamburgerforlayout.

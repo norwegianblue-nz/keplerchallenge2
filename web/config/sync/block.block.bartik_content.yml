@@ -1,0 +1,31 @@
+uuid: 82993123-46d8-4014-a948-60794d82f8ab
+langcode: en
+status: false
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: K8unYq2J8-FU98CenH87F7UM7PV_GETpcwN0D6qSRrI
+id: bartik_content
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

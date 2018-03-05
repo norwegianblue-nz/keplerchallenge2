@@ -1,0 +1,28 @@
+uuid: d4e5683e-6a43-4f76-baf8-14deaf6c255d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article_slide.body
+    - node.type.article_slide
+  module:
+    - text
+    - user
+id: node.article_slide.teaser
+targetEntityType: node
+bundle: article_slide
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,9 +1,9 @@
-uuid: 035eaf61-a7e7-4189-b4bc-1042734e9bb5
+uuid: 117a8820-95a8-493b-808d-f16aaa594b6f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:dacd8ffc-6f76-43cd-8cc8-8a1b09f6516d'
+    - 'block_content:basic:5f1a2714-af23-4ec6-9083-dc00359ad2ce'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: tmdsocialiconspage
 theme: keplerst
 region: footer_header
-weight: -18
+weight: 0
 provider: null
-plugin: 'block_content:dacd8ffc-6f76-43cd-8cc8-8a1b09f6516d'
+plugin: 'block_content:5f1a2714-af23-4ec6-9083-dc00359ad2ce'
 settings:
-  id: 'block_content:dacd8ffc-6f76-43cd-8cc8-8a1b09f6516d'
+  id: 'block_content:5f1a2714-af23-4ec6-9083-dc00359ad2ce'
   label: 'tmd - social icons page'
   provider: block_content
   label_display: '0'

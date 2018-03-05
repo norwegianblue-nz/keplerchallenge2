@@ -1,9 +1,9 @@
-uuid: 22aab129-11f1-48f7-9ef1-5db0cb3b9e71
+uuid: 5dc29d57-7478-4d75-a36b-fb4242e62823
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+    - 'block_content:basic:9ecabadd-05dd-4c05-a987-e6e375f009f9'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: keplerst
 region: teaser
 weight: 0
 provider: null
-plugin: 'block_content:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+plugin: 'block_content:9ecabadd-05dd-4c05-a987-e6e375f009f9'
 settings:
-  id: 'block_content:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+  id: 'block_content:9ecabadd-05dd-4c05-a987-e6e375f009f9'
   label: 'tmd - kepler logo watermark'
   provider: block_content
   label_display: '0'

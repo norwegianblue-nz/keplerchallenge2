@@ -19,6 +19,8 @@ content:
     weight: 100
     region: content
 hidden:
+  field_partner_about: true
+  field_partner_description: true
   field_partner_logo: true
   field_partner_url: true
   field_sponsorship_level: true

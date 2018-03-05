@@ -1,9 +1,9 @@
-uuid: 419e2aa7-72a4-4540-8443-a0e6b78fb8d2
+uuid: 228effc6-0e3b-4305-8df2-b047ef8d1e14
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:b19e279a-63cc-4ebe-9919-99c2a1111776'
+    - 'block_content:basic:1ad69200-e956-4c6c-9cbe-7654f88c3684'
   module:
     - block_content
     - system
@@ -14,10 +14,10 @@ theme: keplerst
 region: content2
 weight: 0
 provider: null
-plugin: 'block_content:b19e279a-63cc-4ebe-9919-99c2a1111776'
+plugin: 'block_content:1ad69200-e956-4c6c-9cbe-7654f88c3684'
 settings:
-  id: 'block_content:b19e279a-63cc-4ebe-9919-99c2a1111776'
-  label: 'tmd - front buttons content2'
+  id: 'block_content:1ad69200-e956-4c6c-9cbe-7654f88c3684'
+  label: 'tmd - front buttons content 2'
   provider: block_content
   label_display: '0'
   status: true

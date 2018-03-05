@@ -1,9 +1,9 @@
-uuid: 6fe0c735-4307-4360-b45d-1d3f43bbf920
+uuid: c95e0f4d-32e7-47be-bee6-5304b3e15bb1
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:dacd8ffc-6f76-43cd-8cc8-8a1b09f6516d'
+    - 'block_content:basic:5f1a2714-af23-4ec6-9083-dc00359ad2ce'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: keplerst
 region: btns
 weight: 0
 provider: null
-plugin: 'block_content:dacd8ffc-6f76-43cd-8cc8-8a1b09f6516d'
+plugin: 'block_content:5f1a2714-af23-4ec6-9083-dc00359ad2ce'
 settings:
-  id: 'block_content:dacd8ffc-6f76-43cd-8cc8-8a1b09f6516d'
+  id: 'block_content:5f1a2714-af23-4ec6-9083-dc00359ad2ce'
   label: 'tmd - social icons page'
   provider: block_content
   label_display: '0'

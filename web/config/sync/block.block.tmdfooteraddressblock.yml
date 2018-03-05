@@ -1,9 +1,9 @@
-uuid: ce2e6005-50eb-4795-a391-00f0d56b3903
+uuid: 1060041b-1f21-4940-8225-0f25d28726ed
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+    - 'block_content:basic:c7938a9d-aa0a-4b59-95b6-b60dd53920d9'
   module:
     - block_content
   theme:
@@ -11,12 +11,12 @@ dependencies:
 id: tmdfooteraddressblock
 theme: keplerst
 region: footer
-weight: -15
+weight: -19
 provider: null
-plugin: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+plugin: 'block_content:c7938a9d-aa0a-4b59-95b6-b60dd53920d9'
 settings:
-  id: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
-  label: 'tmd - footer address block'
+  id: 'block_content:c7938a9d-aa0a-4b59-95b6-b60dd53920d9'
+  label: 'tmd - footer kepler address'
   provider: block_content
   label_display: '0'
   status: true

@@ -21,4 +21,8 @@ content:
 hidden:
   field_content: true
   field_content_2: true
+  field_footerimage1: true
+  field_footerimage2: true
+  field_footerimage3: true
+  field_footerimage4: true
   field_nf_bg_image: true

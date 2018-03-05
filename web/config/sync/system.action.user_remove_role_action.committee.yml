@@ -1,0 +1,14 @@
+uuid: 73b4293b-7fe3-42c8-8290-474a8738aadc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.committee
+  module:
+    - user
+id: user_remove_role_action.committee
+label: 'Remove the committee role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: committee

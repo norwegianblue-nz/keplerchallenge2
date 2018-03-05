@@ -1,9 +1,9 @@
-uuid: 15dda0e2-4b3d-4aae-9878-a43f08d5c4f0
+uuid: 20de5bab-9c4e-4e26-88bf-ff069fb232a1
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:fb5ee5bf-cf37-4561-9e83-d18b529ac64f'
+    - 'block_content:basic:df2cf190-5fc4-4221-b088-4997cfb7bc47'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: tmdsponsorlogotop
 theme: keplerst
 region: title_bar
-weight: -20
+weight: -21
 provider: null
-plugin: 'block_content:fb5ee5bf-cf37-4561-9e83-d18b529ac64f'
+plugin: 'block_content:df2cf190-5fc4-4221-b088-4997cfb7bc47'
 settings:
-  id: 'block_content:fb5ee5bf-cf37-4561-9e83-d18b529ac64f'
+  id: 'block_content:df2cf190-5fc4-4221-b088-4997cfb7bc47'
   label: 'tmd - sponsor logo top'
   provider: block_content
   label_display: '0'

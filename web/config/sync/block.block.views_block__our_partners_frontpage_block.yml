@@ -12,7 +12,7 @@ dependencies:
 id: views_block__our_partners_frontpage_block
 theme: keplerst
 region: postscript_fourth
-weight: -24
+weight: -22
 provider: null
 plugin: 'views_block:our_partners-frontpage_block'
 settings:

@@ -1,0 +1,25 @@
+uuid: f5593bc7-cb7d-40f2-b252-635a85b69e81
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b4e9908-8ff8-4267-99e9-25c9a6c20524'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_tmdnewslettersignup
+theme: bartik
+region: header
+weight: -16
+provider: null
+plugin: 'block_content:0b4e9908-8ff8-4267-99e9-25c9a6c20524'
+settings:
+  id: 'block_content:0b4e9908-8ff8-4267-99e9-25c9a6c20524'
+  label: 'tmd - newsletter signup'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 72d4589b-b72e-40db-8d69-80d38e4eb2aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_partners
+  module:
+    - ctools
+    - views
+  theme:
+    - bartik
+id: bartik_views_block__our_partners_frontpage_block
+theme: bartik
+region: header
+weight: -24
+provider: null
+plugin: 'views_block:our_partners-frontpage_block'
+settings:
+  id: 'views_block:our_partners-frontpage_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

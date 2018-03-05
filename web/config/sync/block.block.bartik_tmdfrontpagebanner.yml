@@ -1,0 +1,31 @@
+uuid: b6bc19fd-0758-4869-affa-ebf239bfd2ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:90bf9028-f454-4322-aa05-77f299fcaa3f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bartik_tmdfrontpagebanner
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:90bf9028-f454-4322-aa05-77f299fcaa3f'
+settings:
+  id: 'block_content:90bf9028-f454-4322-aa05-77f299fcaa3f'
+  label: 'tmd - front page banner '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

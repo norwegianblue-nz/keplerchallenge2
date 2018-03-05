@@ -1,0 +1,14 @@
+uuid: b333bdc4-b59c-4c29-bb23-f3f837efab60
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.website_admin
+  module:
+    - user
+id: user_add_role_action.website_admin
+label: 'Add the website_admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: website_admin

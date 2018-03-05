@@ -1,0 +1,30 @@
+uuid: 7bbd0015-3c83-4f6e-8943-62db18c58f71
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - bartik
+_core:
+  default_config_hash: ZhI3wc13P8a01EatacYC97GCVa0nQsRv8tYDYHdiHCQ
+id: bartik_page_title
+theme: bartik
+region: content
+weight: -20
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

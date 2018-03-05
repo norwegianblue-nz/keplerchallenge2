@@ -1,0 +1,33 @@
+uuid: 3cf3ab42-8e63-4e0e-927e-6206330783e7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:test_content_block:dfcf721c-0576-4023-95a7-df30b53b8b87'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - bartik
+id: bartik_test_postscript_fourth
+theme: bartik
+region: header
+weight: -18
+provider: null
+plugin: 'block_content:dfcf721c-0576-4023-95a7-df30b53b8b87'
+settings:
+  id: 'block_content:dfcf721c-0576-4023-95a7-df30b53b8b87'
+  label: test_postscript_fourth
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

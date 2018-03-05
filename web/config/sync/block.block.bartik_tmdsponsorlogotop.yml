@@ -1,0 +1,25 @@
+uuid: 9357defe-8c94-4acb-a12c-d6148bfc8acf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fb5ee5bf-cf37-4561-9e83-d18b529ac64f'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_tmdsponsorlogotop
+theme: bartik
+region: header
+weight: -20
+provider: null
+plugin: 'block_content:fb5ee5bf-cf37-4561-9e83-d18b529ac64f'
+settings:
+  id: 'block_content:fb5ee5bf-cf37-4561-9e83-d18b529ac64f'
+  label: 'tmd - sponsor logo top'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

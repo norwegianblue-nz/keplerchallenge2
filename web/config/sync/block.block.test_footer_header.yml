@@ -2,10 +2,7 @@ uuid: c03e0d3c-de3f-4296-a165-fbfa08dc4124
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:test_content_block:5f75dffc-2fb7-4bcc-aeed-6d657279153f'
   module:
-    - block_content
     - ctools
   theme:
     - keplerst

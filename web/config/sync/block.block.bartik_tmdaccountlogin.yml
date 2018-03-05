@@ -1,0 +1,25 @@
+uuid: b6a54988-728c-4e69-b3da-07868b119a84
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ff778889-e711-4cb3-97d0-7dc84882b07e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_tmdaccountlogin
+theme: bartik
+region: header
+weight: -18
+provider: null
+plugin: 'block_content:ff778889-e711-4cb3-97d0-7dc84882b07e'
+settings:
+  id: 'block_content:ff778889-e711-4cb3-97d0-7dc84882b07e'
+  label: 'tmd - account login'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

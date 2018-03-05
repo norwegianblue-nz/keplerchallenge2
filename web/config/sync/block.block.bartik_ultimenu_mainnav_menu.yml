@@ -1,0 +1,24 @@
+uuid: 7b0a8615-4de3-4c20-b5b4-d9ef0dacb411
+langcode: en
+status: true
+dependencies:
+  module:
+    - ultimenu
+  theme:
+    - bartik
+id: bartik_ultimenu_mainnav_menu
+theme: bartik
+region: header
+weight: -25
+provider: null
+plugin: 'ultimenu_block:ultimenu-main'
+settings:
+  id: 'ultimenu_block:ultimenu-main'
+  label: 'Ultimenu: Main navigation'
+  provider: ultimenu
+  label_display: '0'
+  skin: module|ultimenu--basic
+  orientation: ultimenu--htb
+  submenu: '1'
+  submenu_position: top
+visibility: {  }

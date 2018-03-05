@@ -1,9 +1,9 @@
-uuid: f1ae655d-2c48-4ac0-86d6-ab6ef6d883c1
+uuid: 9c885741-44f5-41a0-9793-baecc126146e
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:ff778889-e711-4cb3-97d0-7dc84882b07e'
+    - 'block_content:basic:fce21123-2d8d-4982-a8ff-660131376320'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: tmdaccountlogin
 theme: keplerst
 region: title_bar
-weight: -18
+weight: -19
 provider: null
-plugin: 'block_content:ff778889-e711-4cb3-97d0-7dc84882b07e'
+plugin: 'block_content:fce21123-2d8d-4982-a8ff-660131376320'
 settings:
-  id: 'block_content:ff778889-e711-4cb3-97d0-7dc84882b07e'
+  id: 'block_content:fce21123-2d8d-4982-a8ff-660131376320'
   label: 'tmd - account login'
   provider: block_content
   label_display: '0'

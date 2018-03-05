@@ -1,0 +1,25 @@
+uuid: de59e377-06ab-45fd-8d20-98616ca80178
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:16c18ca9-c557-4245-85b4-cc3f5bc6188c'
+  module:
+    - block_content
+  theme:
+    - keplerst
+id: tmdcopyright
+theme: keplerst
+region: copyright
+weight: 0
+provider: null
+plugin: 'block_content:16c18ca9-c557-4245-85b4-cc3f5bc6188c'
+settings:
+  id: 'block_content:16c18ca9-c557-4245-85b4-cc3f5bc6188c'
+  label: 'tmd - copyright'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

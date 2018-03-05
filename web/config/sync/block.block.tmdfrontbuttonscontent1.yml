@@ -1,9 +1,9 @@
-uuid: cc6668e2-2983-41da-9643-2524e730b933
+uuid: f8465b38-3cc1-4943-b614-85b0cc689fdf
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
+    - 'block_content:basic:917de766-7211-482e-86e0-7089e53a4540'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: tmdfrontbuttonscontent1
 theme: keplerst
 region: content
-weight: -22
+weight: -19
 provider: null
-plugin: 'block_content:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
+plugin: 'block_content:917de766-7211-482e-86e0-7089e53a4540'
 settings:
-  id: 'block_content:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
+  id: 'block_content:917de766-7211-482e-86e0-7089e53a4540'
   label: 'tmd - front buttons content1'
   provider: block_content
   label_display: '0'

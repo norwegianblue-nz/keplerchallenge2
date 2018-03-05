@@ -1,0 +1,31 @@
+uuid: bf20484f-5939-4773-8082-7c42355e4047
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ac89f5b7-0e26-490f-bbed-0daed8ba2cae'
+  module:
+    - block_content
+    - system
+  theme:
+    - keplerst
+id: tmdfrontpageracedetail
+theme: keplerst
+region: preface_second
+weight: 0
+provider: null
+plugin: 'block_content:ac89f5b7-0e26-490f-bbed-0daed8ba2cae'
+settings:
+  id: 'block_content:ac89f5b7-0e26-490f-bbed-0daed8ba2cae'
+  label: 'tmd - front page race detail'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

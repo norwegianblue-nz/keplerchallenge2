@@ -1,9 +1,9 @@
-uuid: 47b16b4f-d1b9-43e2-8fa8-ec4d46553362
+uuid: 38889b9e-8e04-4bc9-b672-2c4d92c464f8
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:90bf9028-f454-4322-aa05-77f299fcaa3f'
+    - 'block_content:basic:1f6c065f-f9ed-4f31-951b-726a9a9279b1'
   module:
     - block_content
     - system
@@ -14,10 +14,10 @@ theme: keplerst
 region: preface_third
 weight: 0
 provider: null
-plugin: 'block_content:90bf9028-f454-4322-aa05-77f299fcaa3f'
+plugin: 'block_content:1f6c065f-f9ed-4f31-951b-726a9a9279b1'
 settings:
-  id: 'block_content:90bf9028-f454-4322-aa05-77f299fcaa3f'
-  label: 'tmd - front page banner '
+  id: 'block_content:1f6c065f-f9ed-4f31-951b-726a9a9279b1'
+  label: 'tmd - front page banner'
   provider: block_content
   label_display: '0'
   status: true

@@ -1,0 +1,31 @@
+uuid: feceeda3-32b8-4512-a5aa-b0bf9c3509fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bartik_tmdkeplerlogowatermark
+theme: bartik
+region: header
+weight: -23
+provider: null
+plugin: 'block_content:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+settings:
+  id: 'block_content:7fb544b7-83eb-4dad-acff-3cb1ee252a5f'
+  label: 'tmd - kepler logo watermark'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

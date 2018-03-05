@@ -16,6 +16,16 @@
  */
 $settings['hash_salt'] = 'WinA79zeuvHCI6Zeu9GZJlqswy9ihPZumbGwb7B-xL-wYYVqn5h2yTU13vuoG6VJL1HxqHO8Rg';
 
+/*
+ * Trusted Host Settings 
+ *
+ * Uncomment when in production
+ */
+/*
+$settings['trusted_host_patterns'] = array(
+   '^keplerchallenge\.co\.nz$',
+ );
+*/
 
 /**
  * Access control for update.php script.
@@ -47,7 +57,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'config/sync';
-$config_directories['migrate'] = 'config/migrate';
+/* $config_directories['migrate'] = 'config/migrate'; */
 
 /**
  * Load local development override configuration, if available.

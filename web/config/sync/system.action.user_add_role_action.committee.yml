@@ -1,0 +1,14 @@
+uuid: 3c67885c-905d-43e9-90c0-473daad6984e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.committee
+  module:
+    - user
+id: user_add_role_action.committee
+label: 'Add the committee role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: committee

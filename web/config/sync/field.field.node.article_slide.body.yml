@@ -1,0 +1,22 @@
+uuid: 31f3ff34-e1b1-4392-aac6-dafa5c4fbf8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.article_slide
+  module:
+    - text
+id: node.article_slide.body
+field_name: body
+entity_type: node
+bundle: article_slide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

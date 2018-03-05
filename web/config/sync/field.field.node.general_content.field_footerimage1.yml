@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: a208f8ae-2803-4ce9-b49e-03666b459a69
+    uuid: 87ccf3b8-7726-42bf-9df3-cd5049cc8bb6
     alt: 'Drink Station at Rainbow Reach'
     title: ''
     width: 800

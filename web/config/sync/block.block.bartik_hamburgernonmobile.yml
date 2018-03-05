@@ -1,0 +1,25 @@
+uuid: ba023b7f-3e7a-4225-af0c-a368183b3c2d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aab41a6d-5d49-49f6-940e-8f8845ec1cb1'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_hamburgernonmobile
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:aab41a6d-5d49-49f6-940e-8f8845ec1cb1'
+settings:
+  id: 'block_content:aab41a6d-5d49-49f6-940e-8f8845ec1cb1'
+  label: 'Hamburger - non-mobile'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

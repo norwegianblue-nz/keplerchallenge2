@@ -1,0 +1,62 @@
+uuid: 6e44504d-639e-4873-8152-c6caffe8d699
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_blog
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Blog entry)'
+source:
+  plugin: d7_node
+  node_type: blog
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  comment_node_blog/0/status: comment
+  body:
+    plugin: get
+    source: body
+  field_newsworthy:
+    plugin: get
+    source: field_newsworthy
+  field_newsimage1:
+    plugin: sub_process
+    source: field_newsimage1
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+  field_fb_like_btn:
+    plugin: get
+    source: field_fb_like_btn
+destination:
+  plugin: 'entity:node'
+  default_bundle: blog
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

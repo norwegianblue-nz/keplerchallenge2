@@ -1,0 +1,26 @@
+uuid: 8c9dcd88-c27c-43fb-85f3-af88c64431fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nakednode.body
+    - node.type.nakednode
+  module:
+    - text
+    - user
+id: node.nakednode.default
+targetEntityType: node
+bundle: nakednode
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

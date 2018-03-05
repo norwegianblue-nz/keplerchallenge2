@@ -1,0 +1,30 @@
+uuid: d6b945f1-9521-4fc7-abca-4701982ea221
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - bartik
+id: bartik_entityviewcontent_2
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: Content2
+  provider: ctools
+  label_display: '0'
+  view_mode: content
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

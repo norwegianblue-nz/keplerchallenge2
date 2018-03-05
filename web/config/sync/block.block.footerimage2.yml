@@ -10,7 +10,7 @@ dependencies:
 id: footerimage2
 theme: keplerst
 region: postscript_fourth
-weight: -21
+weight: -19
 provider: null
 plugin: 'entity_field:node:field_footerimage2'
 settings:

@@ -1,0 +1,31 @@
+uuid: e38d8922-200e-49a9-9130-9a08e773bcf7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:71f21d5f-fc88-46a5-a058-ca650735b7d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - keplerst
+id: tmdactivectabuttonshome
+theme: keplerst
+region: preface_first
+weight: 0
+provider: null
+plugin: 'block_content:71f21d5f-fc88-46a5-a058-ca650735b7d5'
+settings:
+  id: 'block_content:71f21d5f-fc88-46a5-a058-ca650735b7d5'
+  label: 'tmd - active CTA buttons home'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: c76e0f0a-5780-454b-9b8e-e194bfea2bcb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fe7b7b28-2e5e-4cd5-a427-a4617b39ec64'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bartik_tmdsocialiconshome
+theme: bartik
+region: content
+weight: -21
+provider: null
+plugin: 'block_content:fe7b7b28-2e5e-4cd5-a427-a4617b39ec64'
+settings:
+  id: 'block_content:fe7b7b28-2e5e-4cd5-a427-a4617b39ec64'
+  label: 'tmd - social icons home'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

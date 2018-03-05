@@ -1,9 +1,9 @@
-uuid: ea813738-9167-41ca-a52b-781f4c06b4c3
+uuid: 794976d6-0948-49fc-9618-12149044f22b
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:b4c20eb8-e3a3-45c9-b937-b8164fca9ccf'
+    - 'block_content:basic:f5432eb2-2c28-4cf1-9fe6-f4555b803ac4'
   module:
     - block_content
     - system
@@ -14,10 +14,10 @@ theme: keplerst
 region: teaser
 weight: 0
 provider: null
-plugin: 'block_content:b4c20eb8-e3a3-45c9-b937-b8164fca9ccf'
+plugin: 'block_content:f5432eb2-2c28-4cf1-9fe6-f4555b803ac4'
 settings:
-  id: 'block_content:b4c20eb8-e3a3-45c9-b937-b8164fca9ccf'
-  label: 'tmd - race date teaser'
+  id: 'block_content:f5432eb2-2c28-4cf1-9fe6-f4555b803ac4'
+  label: 'tmd - race date teaser home'
   provider: block_content
   label_display: '0'
   status: true

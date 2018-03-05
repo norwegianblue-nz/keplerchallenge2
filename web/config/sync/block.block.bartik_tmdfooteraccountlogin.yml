@@ -1,0 +1,25 @@
+uuid: 43d978dc-83e3-4a60-9b83-f37026fb2b53
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_tmdfooteraccountlogin
+theme: bartik
+region: header
+weight: -17
+provider: null
+plugin: 'block_content:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
+settings:
+  id: 'block_content:e1368b1c-2e19-4052-b928-b1fda1b97ffd'
+  label: 'tmd - footer account login'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

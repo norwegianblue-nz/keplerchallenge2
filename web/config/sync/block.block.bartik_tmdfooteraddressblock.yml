@@ -1,0 +1,25 @@
+uuid: c0355704-0f55-4a66-b902-3936fe98acd6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: bartik_tmdfooteraddressblock
+theme: bartik
+region: header
+weight: -15
+provider: null
+plugin: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+settings:
+  id: 'block_content:196f06aa-6db2-424e-9fe6-c94de29cc8c0'
+  label: 'tmd - footer address block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

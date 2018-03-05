@@ -1,0 +1,33 @@
+uuid: fa717fbf-ab84-42a9-a09b-b00146eee36f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:test_content_block:fd2d249a-96c7-4de1-9ab9-bd7af3bfe403'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - bartik
+id: bartik_test_preface_first
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:fd2d249a-96c7-4de1-9ab9-bd7af3bfe403'
+settings:
+  id: 'block_content:fd2d249a-96c7-4de1-9ab9-bd7af3bfe403'
+  label: test_preface_first
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

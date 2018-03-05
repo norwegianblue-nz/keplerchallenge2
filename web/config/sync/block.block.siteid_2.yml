@@ -1,0 +1,25 @@
+uuid: aec50e0b-9acc-4450-8eb8-678c6dd4cfc2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:126d95ca-a730-4ce7-98ef-8d743d17c136'
+  module:
+    - block_content
+  theme:
+    - seven
+id: siteid_2
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:126d95ca-a730-4ce7-98ef-8d743d17c136'
+settings:
+  id: 'block_content:126d95ca-a730-4ce7-98ef-8d743d17c136'
+  label: 'SITE ID'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

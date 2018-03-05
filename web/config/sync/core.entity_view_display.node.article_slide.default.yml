@@ -1,0 +1,26 @@
+uuid: af1429f9-6f9e-4c3d-a3df-a454bc2c9abd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article_slide.body
+    - node.type.article_slide
+  module:
+    - text
+    - user
+id: node.article_slide.default
+targetEntityType: node
+bundle: article_slide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

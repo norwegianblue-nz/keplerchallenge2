@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: f468bf13-8bc5-4cf1-8c19-bd1659d691ff
+    uuid: 00c1e426-adf8-45e7-ba0a-0cfa3c9e5c2f
     alt: 'Vajin Armstrong'
     title: ''
     width: 800

@@ -9,7 +9,7 @@ dependencies:
 id: searchform
 theme: keplerst
 region: menu
-weight: -24
+weight: -23
 provider: null
 plugin: search_form_block
 settings:

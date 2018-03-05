@@ -1,0 +1,38 @@
+uuid: 854eb140-506c-4bf3-98db-491a246a42f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - ctools_block
+  theme:
+    - bartik
+id: bartik_footerimage1
+theme: bartik
+region: header
+weight: -22
+provider: null
+plugin: 'entity_field:node:field_footerimage1'
+settings:
+  id: 'entity_field:node:field_footerimage1'
+  label: FooterImage1
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: hidden
+    type: image
+    settings:
+      image_style: footer_std
+      image_link: file
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      general_content: general_content
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

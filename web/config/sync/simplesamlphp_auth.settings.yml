@@ -1,12 +1,12 @@
 langcode: en
 default_langcode: en
-activate: true
+activate: false
 mail_attr: mail
 unique_id: uid
 user_name: cn
 auth_source: keplerentries
 login_link_display_name: SingleSign-On
-header_no_cache: 1
+header_no_cache: true
 role:
   population: 'athlete:roles,~=,5|race_management:roles,~=,6'
   eval_every_time: true
@@ -18,8 +18,11 @@ allow:
     authenticated: '0'
     administrator: '0'
     athlete: '0'
+    website_admin: '0'
     race_management: '0'
-  default_login_users: '1,12'
+    committee: '0'
+    website_editor: '0'
+  default_login_users: '1,5,12'
 logout_goto_url: ''
 user_register_original: visitors_admin_approval
 sync:

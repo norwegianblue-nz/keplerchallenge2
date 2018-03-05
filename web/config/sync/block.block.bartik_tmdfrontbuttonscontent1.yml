@@ -1,0 +1,31 @@
+uuid: 05862d00-0fb4-4f5e-bf6f-f92b818234ab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bartik_tmdfrontbuttonscontent1
+theme: bartik
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
+settings:
+  id: 'block_content:6432a53e-4e0c-4fea-92ad-23b3d32306c3'
+  label: 'tmd - front buttons content1'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
