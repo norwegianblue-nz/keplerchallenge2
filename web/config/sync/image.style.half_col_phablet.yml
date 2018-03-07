@@ -1,0 +1,14 @@
+uuid: e3425af5-abea-4243-80c9-83bfdec9375e
+langcode: en
+status: true
+dependencies: {  }
+name: half_col_phablet
+label: half_col_phablet
+effects:
+  bd2b0984-8919-4862-baa1-cbe6f48a2464:
+    uuid: bd2b0984-8919-4862-baa1-cbe6f48a2464
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 187

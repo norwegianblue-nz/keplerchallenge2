@@ -1,0 +1,14 @@
+uuid: bc97e197-9f52-4cfd-8edd-62a2430bb4d3
+langcode: en
+status: true
+dependencies: {  }
+name: hero_mobile_large
+label: hero_mobile_large
+effects:
+  52a97c5f-253a-4a7e-ac77-3cfa60aad8c8:
+    uuid: 52a97c5f-253a-4a7e-ac77-3cfa60aad8c8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 479
+      height: 319

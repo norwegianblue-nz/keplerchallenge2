@@ -1,0 +1,14 @@
+uuid: eefc2fbc-69fc-4c85-a0cc-149301f1bbc1
+langcode: en
+status: true
+dependencies: {  }
+name: hero_tablet
+label: hero_tablet
+effects:
+  d8749b05-01b4-4059-983f-89611baf1d24:
+    uuid: d8749b05-01b4-4059-983f-89611baf1d24
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 767
+      height: 511

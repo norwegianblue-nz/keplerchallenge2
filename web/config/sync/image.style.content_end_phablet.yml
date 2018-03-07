@@ -1,0 +1,14 @@
+uuid: 0ef3abd9-5adf-4108-8a86-f25e5d1b7381
+langcode: en
+status: true
+dependencies: {  }
+name: content_end_phablet
+label: content_end_phablet
+effects:
+  2256f61d-385e-4150-bbb0-32f1b0f7224d:
+    uuid: 2256f61d-385e-4150-bbb0-32f1b0f7224d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 130
+      height: 130

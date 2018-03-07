@@ -1,0 +1,14 @@
+uuid: cd3640ab-b1b2-4d4d-a4e7-c318f90cc798
+langcode: en
+status: true
+dependencies: {  }
+name: hero_wide
+label: hero_wide
+effects:
+  a5f8fbbe-f2d2-400c-a05e-be668fad302d:
+    uuid: a5f8fbbe-f2d2-400c-a05e-be668fad302d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 853

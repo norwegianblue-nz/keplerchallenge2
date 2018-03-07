@@ -20,9 +20,9 @@ settings:
   label_display: '0'
   formatter:
     label: hidden
-    type: image
+    type: responsive_image
     settings:
-      image_style: footer_std
+      responsive_image_style: content_end_images
       image_link: file
     third_party_settings: {  }
     weight: 0

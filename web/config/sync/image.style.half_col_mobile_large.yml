@@ -1,0 +1,14 @@
+uuid: 680b3323-4ddf-4abe-a798-d9c3bc60f0c6
+langcode: en
+status: true
+dependencies: {  }
+name: half_col_mobile_large
+label: half_col_mobile_large
+effects:
+  1e0fc3b9-3773-4394-ab0c-abedfc0a2317:
+    uuid: 1e0fc3b9-3773-4394-ab0c-abedfc0a2317
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 449
+      height: 300

@@ -1,0 +1,14 @@
+uuid: 20853ac9-5b83-43b0-9055-1372ce5f77a8
+langcode: en
+status: true
+dependencies: {  }
+name: half_col_mobile
+label: half_col_mobile
+effects:
+  ca19f3ef-311a-4eea-9adb-3e6867726bdf:
+    uuid: ca19f3ef-311a-4eea-9adb-3e6867726bdf
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 389
+      height: 260

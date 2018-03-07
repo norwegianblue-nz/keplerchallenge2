@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: d0dffbcc-0fa9-4df7-8259-ac4bdb2827ac
+    uuid: 1875c01c-fe89-4c9c-b02b-7c5f97b850b3
     alt: 'Runners at Start'
     title: ''
     width: 800

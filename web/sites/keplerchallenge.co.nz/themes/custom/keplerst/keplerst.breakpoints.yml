@@ -9,7 +9,16 @@ keplerst.standard.all:
   group: keplerst.standard
 keplerst.standard.mobile_portrait:
   label: Mobile Portrait
-  mediaQuery: 'all and (max-width: 479px)'
+  mediaQuery: 'all and (max-width: 415px)'
+  weight: 1
+  multipliers:
+    - 1x
+  status: true
+  langcode: en
+  group: keplerst.standard
+keplerst.standard.mobile_large_portrait:
+  label: Mobile Large Portrait
+  mediaQuery: 'all and and (min-width: 416px) (max-width: 479px)'
   weight: 1
   multipliers:
     - 1x
@@ -17,7 +26,7 @@ keplerst.standard.mobile_portrait:
   langcode: en
   group: keplerst.standard
 keplerst.standard.mobile_landscape:
-  label: Mobile Landscape
+  label: Mobile Landscape and Phablet
   mediaQuery: 'all and (min-width: 480px) and (max-width: 599px)'
   weight: 2
   multipliers:
@@ -26,8 +35,8 @@ keplerst.standard.mobile_landscape:
   langcode: en
   group: keplerst.standard
 keplerst.standard.tablet_portrait:
-  label: Mobile Landscape
-  mediaQuery: 'all and (min-width: 600px) and (max-width: 839px)'
+  label: Tablet Portrait
+  mediaQuery: 'all and (min-width: 600px) and (max-width: 767px)'
   weight: 3
   multipliers:
     - 1x
@@ -35,8 +44,8 @@ keplerst.standard.tablet_portrait:
   langcode: en
   group: keplerst.standard
 keplerst.standard.tablet:
-  label: Narrow
-  mediaQuery: 'all and (min-width: 840px) and (max-width: 959px)'
+  label: Tablet Landscape
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 959px)'
   weight: 4
   multipliers:
     - 1x
@@ -44,7 +53,7 @@ keplerst.standard.tablet:
   langcode: en
   group: keplerst.standard
 keplerst.standard.normal:
-  label: Narrow
+  label: Normal
   mediaQuery: 'all and (min-width: 960x) and (max-width: 1279px)'
   weight: 5
   multipliers:
@@ -53,7 +62,7 @@ keplerst.standard.normal:
   langcode: en
   group: keplerst.standard
 keplerst.standard.wide:
-  label: Normal
+  label: Wide
   mediaQuery: 'all and (min-width: 1280px) and (max-width: 1600px)'
   weight: 6
   multipliers:
@@ -62,7 +71,7 @@ keplerst.standard.wide:
   langcode: en
   group: keplerst.standard
 keplerst.standard.extrawide:
-  label: Wide
+  label: Extra Wide
   mediaQuery: 'all and (min-width: 1601px)'
   weight: 7
   multipliers:
@@ -70,13 +79,3 @@ keplerst.standard.extrawide:
   status: true
   langcode: en
   group: keplerst.standard  
-keplerst.standard.hamburger:
-  label: Hamburger
-  mediaQuery: 'all and (min-width: 1500px)'
-  weight: 6
-  multipliers:
-    - 1x
-  status: true
-  langcode: en
-  group: keplerst.standard  
-

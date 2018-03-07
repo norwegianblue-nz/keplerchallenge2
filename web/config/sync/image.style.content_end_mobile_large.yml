@@ -1,0 +1,14 @@
+uuid: 82e83507-1ad9-4354-bd94-0ea7da049cc3
+langcode: en
+status: true
+dependencies: {  }
+name: content_end_mobile_large
+label: content_end_mobile_large
+effects:
+  8426ed2f-14e5-4795-89eb-4ef122f4f1ad:
+    uuid: 8426ed2f-14e5-4795-89eb-4ef122f4f1ad
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 97
+      height: 97

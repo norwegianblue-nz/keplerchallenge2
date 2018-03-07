@@ -1,0 +1,59 @@
+uuid: 6c488864-238a-4f08-8c92-8f7a0ef8b447
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.content_end_mobile
+    - image.style.content_end_mobile_large
+    - image.style.content_end_narrow
+    - image.style.content_end_normal
+    - image.style.content_end_phablet
+    - image.style.content_end_tablet
+    - image.style.content_end_wide
+  theme:
+    - keplerst
+id: content_end_images
+label: Content_End_Images
+image_style_mappings:
+  -
+    breakpoint_id: keplerst.standard.extrawide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_wide
+  -
+    breakpoint_id: keplerst.standard.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_wide
+  -
+    breakpoint_id: keplerst.standard.normal
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_normal
+  -
+    breakpoint_id: keplerst.standard.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_narrow
+  -
+    breakpoint_id: keplerst.standard.tablet_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_tablet
+  -
+    breakpoint_id: keplerst.standard.mobile_landscape
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_phablet
+  -
+    breakpoint_id: keplerst.standard.mobile_large_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_mobile_large
+  -
+    breakpoint_id: keplerst.standard.mobile_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: content_end_mobile
+breakpoint_group: keplerst.standard
+fallback_image_style: content_end_normal

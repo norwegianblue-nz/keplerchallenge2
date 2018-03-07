@@ -1,0 +1,14 @@
+uuid: ec02bf1d-0f35-41af-a9b7-9d6cfbb78344
+langcode: en
+status: true
+dependencies: {  }
+name: hero_phablet
+label: hero_phablet
+effects:
+  366ca442-2c1d-4256-bb28-cbd157956a70:
+    uuid: 366ca442-2c1d-4256-bb28-cbd157956a70
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 599
+      height: 399

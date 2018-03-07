@@ -2,13 +2,13 @@ uuid: 955d2031-87e4-4792-9036-0ca88470c70a
 langcode: en
 status: true
 dependencies: {  }
-name: footer_std
-label: footer_std
+name: content_end_normal
+label: content_end_normal
 effects:
   5f40aa7c-a875-4967-8af6-cd6255ea4d0b:
     uuid: 5f40aa7c-a875-4967-8af6-cd6255ea4d0b
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 217
-      height: 217
+      width: 220
+      height: 220

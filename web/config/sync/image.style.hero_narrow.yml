@@ -1,0 +1,14 @@
+uuid: 4f74f770-14c0-48c4-b7d1-c0b6fb5b514a
+langcode: en
+status: true
+dependencies: {  }
+name: hero_narrow
+label: hero_narrow
+effects:
+  d2072af6-9684-4f9f-870c-ecee7110856d:
+    uuid: d2072af6-9684-4f9f-870c-ecee7110856d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 640

@@ -5,6 +5,7 @@ dependencies:
   module:
     - editor
     - inline_responsive_images
+    - token_filter
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
@@ -15,7 +16,7 @@ filters:
     id: filter_html
     provider: filter
     status: true
-    weight: -10
+    weight: -50
     settings:
       allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1 id> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption data-responsive-image-style width height> <table id class> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div id class>'
       filter_html_help: false
@@ -24,25 +25,25 @@ filters:
     id: filter_align
     provider: filter
     status: true
-    weight: 7
+    weight: -46
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: 8
+    weight: -45
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: true
-    weight: 11
+    weight: -44
     settings: {  }
   filter_responsive_image_style:
     id: filter_responsive_image_style
     provider: inline_responsive_images
     status: true
-    weight: 0
+    weight: -47
     settings:
       responsive_style_footerimages: '1'
       responsive_style_narrow: '1'
@@ -51,9 +52,11 @@ filters:
     id: filter_imagestyle
     provider: inline_responsive_images
     status: false
-    weight: 0
+    weight: -41
     settings:
+      image_style_footer_smal: '0'
       image_style_footer_std: '0'
+      image_style_footer_wi: '0'
       image_style_large: '0'
       image_style_max_1300x1300: '0'
       image_style_max_2600x2600: '0'
@@ -65,12 +68,36 @@ filters:
     id: filter_url
     provider: filter
     status: true
-    weight: 0
+    weight: -48
     settings:
       filter_url_length: 72
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
-    weight: 0
+    weight: -49
+    settings: {  }
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: -43
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: false
+    weight: -39
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: false
+    weight: -40
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: false
+    weight: -42
     settings: {  }

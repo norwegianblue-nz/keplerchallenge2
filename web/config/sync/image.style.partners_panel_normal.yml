@@ -1,0 +1,14 @@
+uuid: fe710437-1ed6-4127-8efe-88c2a1fe99d6
+langcode: en
+status: true
+dependencies: {  }
+name: partners_panel_normal
+label: partners_panel_normal
+effects:
+  c87360a6-5c81-494b-bb50-cf5a32dd77b7:
+    uuid: c87360a6-5c81-494b-bb50-cf5a32dd77b7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 170
+      height: 170

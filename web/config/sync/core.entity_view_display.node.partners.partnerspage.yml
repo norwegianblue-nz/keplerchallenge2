@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.partners.field_partner_url
     - field.field.node.partners.field_sponsorship_level
     - node.type.partners
-    - responsive_image.styles.footerimages
+    - responsive_image.styles.partners_panels
   module:
     - ds
     - link
@@ -70,14 +70,14 @@ content:
     type: basic_string
     region: ds_content
   field_partner_logo:
+    type: responsive_image
     weight: 0
+    region: ds_content
     label: hidden
     settings:
-      responsive_image_style: footerimages
-      image_link: content
+      responsive_image_style: partners_panels
+      image_link: ''
     third_party_settings: {  }
-    type: responsive_image
-    region: ds_content
   field_partner_url:
     weight: 2
     label: hidden

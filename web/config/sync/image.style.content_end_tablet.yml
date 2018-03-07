@@ -1,0 +1,14 @@
+uuid: 3811d8f6-5ed4-4caf-ab6e-57c43a4ea7db
+langcode: en
+status: true
+dependencies: {  }
+name: content_end_tablet
+label: content_end_tablet
+effects:
+  e63e1a0e-8387-4230-ab10-1cf032a02122:
+    uuid: e63e1a0e-8387-4230-ab10-1cf032a02122
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 138
+      height: 138

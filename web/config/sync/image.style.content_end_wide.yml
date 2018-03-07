@@ -1,0 +1,14 @@
+uuid: 9afce013-371a-416e-9025-5026dbd95f63
+langcode: en
+status: true
+dependencies: {  }
+name: content_end_wide
+label: content_end_wide
+effects:
+  694880ac-3ba7-4d66-8c18-f0d75de60c49:
+    uuid: 694880ac-3ba7-4d66-8c18-f0d75de60c49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 280
+      height: 280

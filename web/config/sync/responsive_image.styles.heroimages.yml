@@ -1,0 +1,59 @@
+uuid: 4a8e774e-7cb2-427a-b7bc-0c58acaef881
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.half_col_narrow
+    - image.style.hero_mobile
+    - image.style.hero_mobile_large
+    - image.style.hero_normal
+    - image.style.hero_phablet
+    - image.style.hero_tablet
+    - image.style.hero_wide
+  theme:
+    - keplerst
+id: heroimages
+label: Hero_Images
+image_style_mappings:
+  -
+    breakpoint_id: keplerst.standard.extrawide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_wide
+  -
+    breakpoint_id: keplerst.standard.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_wide
+  -
+    breakpoint_id: keplerst.standard.normal
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_normal
+  -
+    breakpoint_id: keplerst.standard.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: half_col_narrow
+  -
+    breakpoint_id: keplerst.standard.tablet_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_tablet
+  -
+    breakpoint_id: keplerst.standard.mobile_landscape
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_phablet
+  -
+    breakpoint_id: keplerst.standard.mobile_large_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_mobile_large
+  -
+    breakpoint_id: keplerst.standard.mobile_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: hero_mobile
+breakpoint_group: keplerst.standard
+fallback_image_style: hero_wide

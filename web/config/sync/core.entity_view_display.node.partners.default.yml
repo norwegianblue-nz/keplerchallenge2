@@ -9,10 +9,8 @@ dependencies:
     - field.field.node.partners.field_partner_url
     - field.field.node.partners.field_sponsorship_level
     - node.type.partners
-    - responsive_image.styles.footerimages
   module:
     - link
-    - responsive_image
     - user
 id: node.partners.default
 targetEntityType: node
@@ -33,15 +31,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  field_partner_logo:
-    weight: 105
-    label: hidden
-    settings:
-      responsive_image_style: footerimages
-      image_link: ''
-    third_party_settings: {  }
-    type: responsive_image
     region: content
   field_partner_url:
     weight: 103
@@ -68,4 +57,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_partner_logo: true

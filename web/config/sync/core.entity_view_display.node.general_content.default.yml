@@ -11,8 +11,10 @@ dependencies:
     - field.field.node.general_content.field_footerimage4
     - field.field.node.general_content.field_nf_bg_image
     - node.type.general_content
+    - responsive_image.styles.content_end_images
   module:
     - image
+    - responsive_image
     - text
     - user
 id: node.general_content.default
@@ -38,37 +40,37 @@ content:
     weight: 5
     label: above
     settings:
-      image_style: ''
+      responsive_image_style: content_end_images
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_footerimage2:
     weight: 6
     label: above
     settings:
-      image_style: ''
+      responsive_image_style: content_end_images
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_footerimage3:
     weight: 7
     label: above
     settings:
-      image_style: ''
+      responsive_image_style: content_end_images
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_footerimage4:
     weight: 8
     label: above
     settings:
-      image_style: ''
+      responsive_image_style: content_end_images
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_nf_bg_image:
     weight: 4

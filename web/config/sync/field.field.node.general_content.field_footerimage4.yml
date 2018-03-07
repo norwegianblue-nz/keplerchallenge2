@@ -28,7 +28,7 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 97daf66a-e324-4fb7-9cf0-a515fc316179
+    uuid: 73749b7e-f652-4e66-a755-f9bbd1153b6a
     alt: 'Lake Te Anau from the ridge'
     title: ''
     width: 800

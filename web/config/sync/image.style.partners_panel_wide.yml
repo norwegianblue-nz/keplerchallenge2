@@ -1,0 +1,14 @@
+uuid: 20c82d2a-7b76-4a5d-af80-dd302a2560f8
+langcode: en
+status: true
+dependencies: {  }
+name: partners_panel_wide
+label: partners_panel_wide
+effects:
+  9685332d-5afd-451b-af01-d75626857a63:
+    uuid: 9685332d-5afd-451b-af01-d75626857a63
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220

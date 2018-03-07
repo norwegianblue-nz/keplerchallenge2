@@ -74,6 +74,7 @@ module:
   text: 0
   token: 0
   token_custom: 0
+  token_filter: 0
   toolbar: 0
   tour: 0
   update: 0

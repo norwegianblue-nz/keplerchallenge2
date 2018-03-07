@@ -1,0 +1,14 @@
+uuid: 71f6c01c-7297-4a20-bdda-03c3d2c9230b
+langcode: en
+status: true
+dependencies: {  }
+name: hero_normal
+label: hero_normal
+effects:
+  fa64f0f7-b4fe-4a0d-96b7-5e24e8301ed0:
+    uuid: fa64f0f7-b4fe-4a0d-96b7-5e24e8301ed0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1280
+      height: 853

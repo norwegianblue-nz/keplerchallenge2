@@ -1,0 +1,14 @@
+uuid: 90945d40-7140-4155-8832-f44dc196bf26
+langcode: en
+status: true
+dependencies: {  }
+name: partners_panel_tablet
+label: partners_panel_tablet
+effects:
+  2fac79fb-6e5c-4cbb-b5dd-fbf1ffc46c82:
+    uuid: 2fac79fb-6e5c-4cbb-b5dd-fbf1ffc46c82
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 181
+      height: 181

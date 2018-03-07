@@ -1,0 +1,14 @@
+uuid: db4b62f4-13fc-430c-84cf-61e0100e6c70
+langcode: en
+status: true
+dependencies: {  }
+name: half_col_wide
+label: half_col_wide
+effects:
+  e54c0c52-0a43-4374-acdb-0077aa2d4a9a:
+    uuid: e54c0c52-0a43-4374-acdb-0077aa2d4a9a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 320

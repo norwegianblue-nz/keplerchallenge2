@@ -1,0 +1,14 @@
+uuid: baf7e197-4b1f-4887-adaa-9387fc2b557a
+langcode: en
+status: true
+dependencies: {  }
+name: half_col_tablet
+label: half_col_tablet
+effects:
+  9801513c-3fea-45d1-87cd-35d68cd43c96:
+    uuid: 9801513c-3fea-45d1-87cd-35d68cd43c96
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 244
+      height: 163
