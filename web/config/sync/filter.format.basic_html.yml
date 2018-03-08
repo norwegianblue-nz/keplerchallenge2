@@ -25,25 +25,25 @@ filters:
     id: filter_align
     provider: filter
     status: true
-    weight: -46
+    weight: -47
     settings: {  }
   filter_caption:
     id: filter_caption
     provider: filter
     status: true
-    weight: -45
+    weight: -46
     settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: true
-    weight: -44
+    weight: -45
     settings: {  }
   filter_responsive_image_style:
     id: filter_responsive_image_style
     provider: inline_responsive_images
     status: true
-    weight: -47
+    weight: -43
     settings:
       responsive_style_content_end_images: '0'
       responsive_style_half_col_images: '1'
@@ -127,5 +127,5 @@ filters:
     id: token_filter
     provider: token_filter
     status: true
-    weight: -43
+    weight: -44
     settings: {  }
