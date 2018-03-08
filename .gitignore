@@ -47,4 +47,17 @@ vendor/simplesamlphp/simplesamlphp/*
 # config.php ignored as has db authentication data. There's a copy in /private
 vendor/simplesamlphp/simplesamlphp/config/config.php
 !vendor/simplesamlphp/simplesamlphp/metadata
+#Ultimenu css
+!web/modules/contrib
+web/modules/contrib/*
+!web/modules/contrib/ultimenu
+web/modules/contrib/ultimenu/*
+!web/modules/contrib/ultimenu/css
+web/modules/contrib/ultimenu/css/ultimenu.admin.css
+!web/modules/contrib/ultimenu/skins
+web/modules/contrib/ultimenu/skins/*
+!web/modules/contrib/ultimenu/skins/ultimenu--basic.css
+!web/modules/contrib/ultimenu/skins/ultimenu--htb-sliding.css
+
+
 /sass_this
