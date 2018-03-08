@@ -5,10 +5,11 @@ dependencies: {  }
 name: partners_panel_mobile
 label: partners_panel_mobile
 effects:
-  e906997e-fd7d-4349-8f17-357241f2200d:
-    uuid: e906997e-fd7d-4349-8f17-357241f2200d
-    id: image_scale_and_crop
+  4f634228-d6b4-489c-bbd8-45faa8394289:
+    uuid: 4f634228-d6b4-489c-bbd8-45faa8394289
+    id: image_scale
     weight: 1
     data:
       width: 175
       height: 175
+      upscale: false

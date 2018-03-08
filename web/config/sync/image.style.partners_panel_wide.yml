@@ -5,10 +5,11 @@ dependencies: {  }
 name: partners_panel_wide
 label: partners_panel_wide
 effects:
-  9685332d-5afd-451b-af01-d75626857a63:
-    uuid: 9685332d-5afd-451b-af01-d75626857a63
-    id: image_scale_and_crop
+  d5f08797-6e4b-42df-8026-cf92399a670d:
+    uuid: d5f08797-6e4b-42df-8026-cf92399a670d
+    id: image_scale
     weight: 1
     data:
       width: 220
       height: 220
+      upscale: false

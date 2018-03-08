@@ -5,10 +5,11 @@ dependencies: {  }
 name: hero_mobile_large
 label: hero_mobile_large
 effects:
-  52a97c5f-253a-4a7e-ac77-3cfa60aad8c8:
-    uuid: 52a97c5f-253a-4a7e-ac77-3cfa60aad8c8
-    id: image_scale_and_crop
+  d800ef08-9130-494e-9b4e-32d09e1e4461:
+    uuid: d800ef08-9130-494e-9b4e-32d09e1e4461
+    id: image_scale
     weight: 1
     data:
-      width: 479
-      height: 319
+      width: 205
+      height: 205
+      upscale: false

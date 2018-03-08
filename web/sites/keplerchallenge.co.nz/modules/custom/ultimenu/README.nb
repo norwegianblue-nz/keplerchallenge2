@@ -1,0 +1,9 @@
+ULTIMENU MODULE - KeplerChallenge Version
+================================================================================
+
+This version modified to alter the screen width where the menu switches to mobile
+
+The std version switches at 59em
+The version switches at 960px
+
+Edits made are in ultimenu_960.patch

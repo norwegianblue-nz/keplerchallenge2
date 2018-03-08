@@ -45,31 +45,59 @@ filters:
       allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
       filter_html_help: true
       filter_html_nofollow: false
-  filter_responsive_image_style:
-    id: filter_responsive_image_style
-    provider: inline_responsive_images
-    status: true
-    weight: 0
-    settings:
-      responsive_style_footerimages: '0'
-      responsive_style_narrow: '1'
-      responsive_style_wide: '0'
   filter_imagestyle:
     id: filter_imagestyle
     provider: inline_responsive_images
     status: false
     weight: 0
     settings:
-      image_style_footer_smal: '0'
-      image_style_footer_std: '0'
-      image_style_footer_wi: '0'
+      image_style_content_end_mobile: '0'
+      image_style_content_end_mobile_large: '0'
+      image_style_content_end_narrow: '0'
+      image_style_content_end_normal: '0'
+      image_style_content_end_phablet: '0'
+      image_style_content_end_tablet: '0'
+      image_style_content_end_wide: '0'
+      image_style_half_col_mobile: '0'
+      image_style_half_col_mobile_large: '0'
+      image_style_half_col_narrow: '0'
+      image_style_half_col_normal: '0'
+      image_style_half_col_phablet: '0'
+      image_style_half_col_tablet: '0'
+      image_style_half_col_wide: '0'
+      image_style_hero_mobile: '0'
+      image_style_hero_mobile_large: '0'
+      image_style_hero_narrow: '0'
+      image_style_hero_normal: '0'
+      image_style_hero_phablet: '0'
+      image_style_hero_tablet: '0'
+      image_style_hero_wide: '0'
       image_style_large: '0'
       image_style_max_1300x1300: '0'
       image_style_max_2600x2600: '0'
       image_style_max_325x325: '0'
       image_style_max_650x650: '0'
       image_style_medium: '0'
+      image_style_partners_panel_mobile: '0'
+      image_style_partners_panel_mobile_large: '0'
+      image_style_partners_panel_narrow: '0'
+      image_style_partners_panel_normal: '0'
+      image_style_partners_panel_phablet: '0'
+      image_style_partners_panel_tablet: '0'
+      image_style_partners_panel_wide: '0'
       image_style_thumbnail: '0'
+  filter_responsive_image_style:
+    id: filter_responsive_image_style
+    provider: inline_responsive_images
+    status: true
+    weight: 0
+    settings:
+      responsive_style_content_end_images: '0'
+      responsive_style_half_col_images: '1'
+      responsive_style_heroimages: '0'
+      responsive_style_narrow: '0'
+      responsive_style_partners_panels: '0'
+      responsive_style_wide: '0'
   token_filter:
     id: token_filter
     provider: token_filter

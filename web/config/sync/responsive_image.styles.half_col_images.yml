@@ -3,11 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.content_end_narrow
     - image.style.half_col_mobile
     - image.style.half_col_mobile_large
     - image.style.half_col_narrow
-    - image.style.half_col_normal
     - image.style.half_col_phablet
     - image.style.half_col_tablet
     - image.style.half_col_wide
@@ -30,12 +28,12 @@ image_style_mappings:
     breakpoint_id: keplerst.standard.normal
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: half_col_normal
+    image_mapping: half_col_narrow
   -
     breakpoint_id: keplerst.standard.tablet
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: content_end_narrow
+    image_mapping: half_col_narrow
   -
     breakpoint_id: keplerst.standard.tablet_portrait
     multiplier: 1x
@@ -53,6 +51,11 @@ image_style_mappings:
     image_mapping: half_col_mobile_large
   -
     breakpoint_id: keplerst.standard.mobile_portrait
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: half_col_mobile
+  -
+    breakpoint_id: keplerst.standard.all
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: half_col_mobile

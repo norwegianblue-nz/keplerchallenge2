@@ -47,3 +47,4 @@ vendor/simplesamlphp/simplesamlphp/*
 # config.php ignored as has db authentication data. There's a copy in /private
 vendor/simplesamlphp/simplesamlphp/config/config.php
 !vendor/simplesamlphp/simplesamlphp/metadata
+/sass_this

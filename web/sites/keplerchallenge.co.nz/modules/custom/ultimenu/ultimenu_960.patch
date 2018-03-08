@@ -1,0 +1,76 @@
+diff -urN ultimenu.oem/css/ultimenu.css ultimenu.nb/css/ultimenu.css
+--- ultimenu.oem/css/ultimenu.css	2016-11-29 21:58:40.000000000 +1300
++++ ultimenu.nb/css/ultimenu.css	2018-03-08 15:38:58.000000000 +1300
+@@ -153,7 +153,8 @@
+ /**
+  * Smaller medium.
+  */
+-@media all and (max-width: 58.999em) {
++/*@media all and (max-width: 58.999em) {*/
++@media all and (max-width: 959px) {
+   /* Ultimenu flyout. Mobile version has no :hover, so safe to display: none,
+   and relies on click events via jQuery. */
+   .ultimenu {
+@@ -254,7 +255,8 @@
+ /**
+  * Larger medium ~ 944px
+  */
+-@media all and (min-width: 59em) {
++/*@media all and (min-width: 59em) {*/
++@media all and (min-width: 960px) {
+   .ultimenu .ultimenu__link {
+     line-height: 1.4;
+   }
+diff -urN ultimenu.oem/README.nb ultimenu.nb/README.nb
+--- ultimenu.oem/README.nb	1970-01-01 12:00:00.000000000 +1200
++++ ultimenu.nb/README.nb	2018-03-08 17:50:36.000000000 +1300
+@@ -0,0 +1,9 @@
++ULTIMENU MODULE - KeplerChallenge Version
++================================================================================
++
++This version modified to alter the screen width where the menu switches to mobile
++
++The std version switches at 59em
++The version switches at 960px
++
++Edits made are in ultimenu_960.patch
+\ No newline at end of file
+diff -urN ultimenu.oem/skins/ultimenu--basic.css ultimenu.nb/skins/ultimenu--basic.css
+--- ultimenu.oem/skins/ultimenu--basic.css	2016-11-29 21:58:40.000000000 +1300
++++ ultimenu.nb/skins/ultimenu--basic.css	2018-03-08 15:38:27.000000000 +1300
+@@ -19,7 +19,8 @@
+ /**
+  * Larger medium ~ 944px
+  */
+-@media all and (min-width: 59em) {
++/*@media all and (min-width: 59em) {*/
++@media all and (min-width: 960px) {
+   .ultimenu--basic .block {
+     display: inline-block;
+     margin-right: -4px;
+diff -urN ultimenu.oem/skins/ultimenu--htb-sliding.css ultimenu.nb/skins/ultimenu--htb-sliding.css
+--- ultimenu.oem/skins/ultimenu--htb-sliding.css	2016-11-29 21:58:40.000000000 +1300
++++ ultimenu.nb/skins/ultimenu--htb-sliding.css	2018-03-08 15:38:15.000000000 +1300
+@@ -8,7 +8,8 @@
+ /**
+  * Larger medium ~ 944px
+  */
+-@media all and (min-width: 59em) {
++/*@media all and (min-width: 59em) {*/
++@media all and (min-width: 960px) {
+ 
+   #header .ultimenu--htb-sliding  .ultimenu__flyout {
+     min-width: 100%;
+diff -urN ultimenu.oem/ultimenu.info.yml ultimenu.nb/ultimenu.info.yml
+--- ultimenu.oem/ultimenu.info.yml	2016-11-30 05:04:13.000000000 +1300
++++ ultimenu.nb/ultimenu.info.yml	2018-03-08 16:41:32.000000000 +1300
+@@ -1,6 +1,8 @@
+ name: Ultimenu
+ type: module
+-description: 'Provides Ultimenu blocks, and regions based on available menus.'
++description: 'Provides Ultimenu blocks, and regions based on available menus.
++This version modified by norwegian.blue to alter the break-point where the menu swaps
++See README.nb'
+ # version: VERSION
+ # core: 8.x
+ configure: ultimenu.settings

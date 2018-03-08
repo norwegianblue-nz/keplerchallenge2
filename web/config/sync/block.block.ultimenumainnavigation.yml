@@ -1,15 +1,15 @@
-uuid: 7b0a8615-4de3-4c20-b5b4-d9ef0dacb411
+uuid: 05a52546-f99c-47d3-b6d0-2e95a875e64f
 langcode: en
 status: true
 dependencies:
   module:
     - ultimenu
   theme:
-    - bartik
-id: bartik_ultimenu_mainnav_menu
-theme: bartik
-region: header
-weight: -25
+    - keplerst
+id: ultimenumainnavigation
+theme: keplerst
+region: menu
+weight: 0
 provider: null
 plugin: 'ultimenu_block:ultimenu-main'
 settings:

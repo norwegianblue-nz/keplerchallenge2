@@ -5,10 +5,11 @@ dependencies: {  }
 name: partners_panel_normal
 label: partners_panel_normal
 effects:
-  c87360a6-5c81-494b-bb50-cf5a32dd77b7:
-    uuid: c87360a6-5c81-494b-bb50-cf5a32dd77b7
-    id: image_scale_and_crop
+  0ac5747f-9524-4b64-b84c-396f17540e73:
+    uuid: 0ac5747f-9524-4b64-b84c-396f17540e73
+    id: image_scale
     weight: 1
     data:
       width: 170
       height: 170
+      upscale: false

@@ -73,7 +73,7 @@ content:
     type: responsive_image
     weight: 0
     region: ds_content
-    label: hidden
+    label: above
     settings:
       responsive_image_style: partners_panels
       image_link: ''

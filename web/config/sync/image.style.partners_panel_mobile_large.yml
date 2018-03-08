@@ -1,7 +1,15 @@
-uuid: 8c3fd0fb-4538-42eb-b2b7-c365bacbb3d5
+uuid: b2c5ddaa-41e3-4180-85f2-7b038fe0a44f
 langcode: en
 status: true
 dependencies: {  }
 name: partners_panel_mobile_large
 label: partners_panel_mobile_large
-effects: {  }
+effects:
+  1a8c41f2-1910-425d-b5e8-626ed6a5deec:
+    uuid: 1a8c41f2-1910-425d-b5e8-626ed6a5deec
+    id: image_scale
+    weight: 1
+    data:
+      width: 205
+      height: 205
+      upscale: false

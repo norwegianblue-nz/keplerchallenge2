@@ -1,12 +1,12 @@
-uuid: 3d565725-b005-4cdb-a8fb-7c24825ff9ad
+uuid: 184deb53-101c-43d3-a574-514977e1dc33
 langcode: en
 status: true
 dependencies: {  }
 name: half_col_normal
 label: half_col_normal
 effects:
-  9c5249e5-bebc-400a-bd55-b8894f2a0dde:
-    uuid: 9c5249e5-bebc-400a-bd55-b8894f2a0dde
+  1c5868e1-cbc9-48f6-8898-d23a55c525fb:
+    uuid: 1c5868e1-cbc9-48f6-8898-d23a55c525fb
     id: image_scale_and_crop
     weight: 1
     data:

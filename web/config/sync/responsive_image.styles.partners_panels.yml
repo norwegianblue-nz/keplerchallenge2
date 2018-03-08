@@ -1,4 +1,4 @@
-uuid: e267bae6-abce-45f4-9536-e58166147bb3
+uuid: c189f006-12f4-4353-b5a7-e2575ba62a0c
 langcode: en
 status: true
 dependencies:
@@ -56,4 +56,4 @@ image_style_mappings:
     image_mapping_type: image_style
     image_mapping: partners_panel_mobile
 breakpoint_group: keplerst.standard
-fallback_image_style: partners_panel_normal
+fallback_image_style: partners_panel_mobile_large
