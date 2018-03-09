@@ -39,14 +39,15 @@ web/sites/keplerchallenge.co.nz/unused_modules
 
 # Specifically include the simplesaml config and metadata
 # NOTE - you have to include each directory on the path to the include file and exclude all files in directories. Then include the next dir etc etc.
-!vendor/simplesamlphp
-vendor/simplesamlphp/*
-!vendor/simplesamlphp/simplesamlphp
-vendor/simplesamlphp/simplesamlphp/*
-!vendor/simplesamlphp/simplesamlphp/config
-# config.php ignored as has db authentication data. There's a copy in /private
-vendor/simplesamlphp/simplesamlphp/config/config.php
-!vendor/simplesamlphp/simplesamlphp/metadata
+# Now excluded again as it's different for different install instances.
+#!vendor/simplesamlphp
+#vendor/simplesamlphp/*
+#!vendor/simplesamlphp/simplesamlphp
+#vendor/simplesamlphp/simplesamlphp/*
+#!vendor/simplesamlphp/simplesamlphp/config
+## config.php ignored as has db authentication data. There's a copy in /private
+#vendor/simplesamlphp/simplesamlphp/config/config.php
+#!vendor/simplesamlphp/simplesamlphp/metadata
 web/config/sync/simplesamlphp_auth.settings.yml
 #Ultimenu css
 !web/modules/contrib
