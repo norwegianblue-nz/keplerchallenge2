@@ -47,6 +47,7 @@ vendor/simplesamlphp/simplesamlphp/*
 # config.php ignored as has db authentication data. There's a copy in /private
 vendor/simplesamlphp/simplesamlphp/config/config.php
 !vendor/simplesamlphp/simplesamlphp/metadata
+web/config/sync/simplesamlphp_auth.settings.yml
 #Ultimenu css
 !web/modules/contrib
 web/modules/contrib/*
