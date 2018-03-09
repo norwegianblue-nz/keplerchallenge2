@@ -19,8 +19,7 @@
 /**
  * Larger medium ~ 944px
  */
-/*@media all and (min-width: 59em) {*/
-@media all and (min-width: 960px) {
+@media all and (min-width: 59em) {
   .ultimenu--basic .block {
     display: inline-block;
     margin-right: -4px;
