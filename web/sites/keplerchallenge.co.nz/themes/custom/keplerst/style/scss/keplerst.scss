@@ -5,24 +5,66 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-
-.node--type-general-content .region-content {
-picture, figure {
-	float: left;
-	margin: 0.7rem 1.2rem 1rem 0;
-	clear: left;
+// To Top button
+#block-tmdtotopbutton {
+    position: fixed;
+    bottom: 2.3rem;
+    right: -5rem;
+		opacity: 0;
+		z-index: 200;
+		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
 }
-figure picture {width: 100%; margin: 0;}
-@media all and (max-width: 415px){picture, figure {width: 100%;}}
-@media all and (min-width:416px) and (max-width: 959px){picture, figure {width: 49%;}}
-figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
+.scrolled #block-tmdtotopbutton {
+		opacity: 1;
+		right: 1rem;
+		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
+}
 
-} // Close region-content
 
-#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {margin: 0 0 2vw 0; & img{width:100%;}}
-@media all and (max-width: 415px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 48%;}}
-@media all and (min-width:416px) and (max-width: 599px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 21.7%;}}
-@media all and (min-width:600px) and (max-width: 959px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 23%;}}
+// div#account-menu {display: block;}
+// #logged-in-menu {
+//   display: none; // INITIAL SATE
+//   background-color: $keplerst_Orange;
+//   width: 16rem;
+//   position: absolute;
+//   top: 3.4rem;
+//   right: 3.6rem;}
+// ul#logged-in-menu {list-style: none;	margin: 0rem;	padding: 0;
+//     & li {padding: 0; margin: 0; color: #fff;
+//       & a {color: #fff; display: block; padding:0.1rem 0.2rem;}
+//       & a:hover{background-color: rgba($keplerst_DarkOrange, 0.7)}
+//     }
+// }
+// div#account-menu:hover #logged-in-menu, div#account-menu:focus #logged-in-menu {display: block;}
+
+
+#logged-in-menu {
+  background-color: $keplerst_Orange;
+  width:35%;
+  position: absolute;
+  right: 0;}
+ul#logged-in-menu {list-style: none;	margin: 0rem;	padding: 0;
+    & li {padding: 0; margin: 0; color: #fff; display: inline-block;
+      & a {color: #fff; display: block; padding:0.1rem 0.2rem;}
+      & a:hover{background-color: rgba($keplerst_DarkOrange, 0.7)}
+    }
+}
+#logged-in-menu-container {
+	position: fixed;
+	top: 3.6rem;
+	width: 100%;
+	left: 0;
+	// background-color: rgba($keplerst_DarkOrange, 0.45);
+	height: 1.65rem;
+  // background-image: linear-gradient (to right, rgba($keplerst_DarkOrange, 0.45), rgba($keplerst_DarkOrange, 0.45) 90%, rgba($keplerst_DarkOrange, 1) 10% );
+  background-image:
+      linear-gradient(
+        to right,
+        rgba($keplerst_DarkOrange, 0.45),
+        rgba($keplerst_DarkOrange, 0.45) 90%,
+        rgba($keplerst_Orange, 1) 10%
+      );
+}
 
 
 // tmd sandy-pit
@@ -35,19 +77,18 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
     background-position: 50% bottom;
     background-size: cover;
 }
-/*@media all and (min-width: 0px) {#footer-outer-wrapper{}}
+@media all and (min-width: 0px) {#footer-outer-wrapper{}}
 @media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{}}
 @media all and (min-width: 768px)  {
 	#footer-outer-wrapper {
 		height:1vh;
 		background-attachment: fixed;
 	}
-}*/
+}
 
 
 // Partners
 //  Needs work on 'grid' once responsive image sizes complete
-.view-our-partners h3 a {color: $keplerst_DarkOrange;}
 // .view-our-partners .view-content{
 // 	display: flex;
 // 	flex-wrap: wrap;
@@ -59,58 +100,59 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 // }
 .view-our-partners {
 
-.field--name-field-partner-logo .field__label {display: none;}
 
-.view-content {
+	.view-content {
     display: grid;
     grid-row-gap: 20px;
-}
-.field--name-field-partner-logo {background: #fee; // TEMP ONLY //
-}
-
-.field--name-field-partner-logo { // tmd = aspect-ratio-box container
-  border: 1px solid #999;
-  text-align: center;
-  height: 230px;
+	}
+	.field--name-field-partner-logo { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
+  	border: 1px solid #999;
+		position: relative;
   // height: 0;
   // overflow: hidden;
   // padding-top: 500px / 500px * 100%;
   // background: white;
   // position: relative;
-}
-
-@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
-    .field--name-field-partner-logo {height: ;}
-}
-@media all and (min-width:416px) and (max-width:477px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
-    .field--name-field-partner-logo {height: ;}
-}
-@media all and (min-width:478px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
-    .field--name-field-partner-logo {height: ;}
-}
-@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 220px 220px 220px 220px; grid-column-gap: 20px;}
-    .field--name-field-partner-logo {height: ;}
-}
-@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
-    .field--name-field-partner-logo {height: ;}
-}
-
-
-// .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
+	}
+	// .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
   // position: absolute;
   // top: 0;
   // left: 0;
   // width: 100%;
   // height: 100%;
 // }
+	.field--name-field-partner-logo .field__label {display: none;}
 
-   h3 {
+	.field--name-field-partner-logo .field__item {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+
+	@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+    .field--name-field-partner-logo {height: 220px;} h3 {grid-column-start: 1;grid-column-end: span 1;}
+	}
+	@media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+    .field--name-field-partner-logo {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+	}
+	@media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+    .field--name-field-partner-logo {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	}
+	@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+    .field--name-field-partner-logo {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	}
+	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+    .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	}
+
+
+
+  h3 {
 	border-top: 1px solid #999;
 	color: $keplerst_DarkOrange;
-  // min-width: 100%;
-  grid-column-start: 1;
-  grid-column-end: span 4;
   }
+	h3 a {color: $keplerst_DarkOrange;}
+
   .field--name-node-title h2 {margin-top: 0;}
   .field--name-node-title h2 a {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
   .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
@@ -125,7 +167,6 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 
 
 // Main navigation >>>>>>>>>>>>>>>>> SAND PIT >>> move when complete
-#menu-outer-wrapper {background-color: $keplerst_DarkTeal;}
 
 // tmd - temp >>>> talk to Roo about responsive img sizes and layout.
 .region--postscript-fourth.region.region-postscript-fourth {
@@ -290,6 +331,7 @@ footer.node__meta {float:right;}
   -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
   @include keplerstTransition (all, 1s, ease-in-out);
   z-index: 10;
+	height: 3.6rem
 }
 div#page.scrolled #title-bar-wrapper {
 	background-color: rgba(80,80,70,1);
@@ -308,19 +350,27 @@ div#page.scrolled #title-bar-wrapper {
 
 #block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
 #block-tmdaccountlogin,
+#block-tmdaccountloginloggedin,
 #block-keplerst-branding,
 #block-tmdsponsorlogotop
 {flex-grow: 1; margin: 0 0.5rem; // margin replaces widths
 }
+#block-tmdaccountloginloggedin{display: none;}
 
 @media all and (max-width: 959px) { // Change media query to match search box or search form display
   .region--title-bar.region-title-bar {justify-content: flex-end;}
   #block-tmdtemphamburgerforlayout, // REPLACE ONCE HAMBURGER MENU IN !!!!!!!!
   #block-tmdaccountlogin,
+  #block-tmdaccountloginloggedin,
   #block-keplerst-branding,
   #block-tmdsponsorlogotop
   {flex-grow: unset;}
 
+}
+// Logged-in menu
+.user-logged-in {
+  #block-tmdaccountloginloggedin {display: block;}
+  #block-tmdaccountlogin {display: none;}
 }
 
 #site-branding {padding: 7px 0 0;} //tmd - allows for odd height spacing of logo img
@@ -347,6 +397,7 @@ div#page.scrolled #title-bar-wrapper {
   }
 }
 #menu-outer-wrapper {
+	background-color: $keplerst_DarkTeal;
   position: relative;
   top: 0;
   z-index: 9;
@@ -357,7 +408,7 @@ div#page.scrolled #title-bar-wrapper {
 
 #menu-outer-wrapper.hamburger-clicked {
   position: fixed;
-  top: 61px;
+  top: 3.6rem;
   width: 100%;
   z-index: 11;
   animation-name: fade-in2;
@@ -411,7 +462,7 @@ div#page.scrolled #title-bar-wrapper {
 	@include keplerstTransition (all, 0.5s, ease-in-out);
 }
 
-& input#edit-submit, & input#edit-submit--2 {
+& input#edit-submit, & input#edit-submit--2, & input#edit-submit--3 {
 	@include keplerst_ubuntu-light(white, 0.8em);
 	padding: 7px 7px;
 	background-color: $keplerst_DarkOrange;
@@ -451,10 +502,32 @@ div#page.scrolled #title-bar-wrapper {
 @media all and (min-width: 1280px) {
   .region-content, .region-content {padding: 0 100px;}
 }
+
+
+// Inline Pictures
+.node--type-general-content .region-content {
+picture, figure {
+	float: left;
+	margin: 0.7rem 1.2rem 1rem 0;
+	clear: left;
+}
+figure picture {width: 100%; margin: 0;}
+@media all and (max-width: 415px){picture, figure {width: 100%;}}
+@media all and (min-width:416px) and (max-width: 959px){picture, figure {width: 49%;}}
+figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
+} // Close region-content
+
+
 /* Bottom of content */
 // Watermark (sort-of) bg
-#block-tmdkeplerlogowatermark {min-width: 100%;} // tmd - this is added as a block to ensure height is generated simply (as opposed to a bg image which would require padding etc)
-// content end images
+#block-tmd-keplerlogowatermark {min-width: 100%;margin: 0 auto;} // tmd - this is added as a block to ensure height is generated simply (as opposed to a bg image which would require padding etc)
+
+// Content end pictures
+#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {margin: 0 0 2vw 0; & img{width:100%;}}
+@media all and (max-width: 415px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 48%;}}
+@media all and (min-width:416px) and (max-width: 599px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 21.7%;}}
+@media all and (min-width:600px) and (max-width: 959px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 23%;}}
+
 
 /* FOOTER HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -613,8 +686,13 @@ a.social-icon {padding: 0 0.5rem;}
     text-align: center;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
     left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
 }
 
 // Menu (menu bar srtip)
@@ -626,6 +704,7 @@ a.social-icon {padding: 0 0.5rem;}
     }
 // Preface 2 (Race detail "60km")
   #preface-second-layout {text-align: center;}
+  #block-tmdfrontpageracedetail {padding: 65vh 0 0 0px;}
 // Preface 3 (Banner with logos)
   #preface3-outer-wrapper {
     background: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/smaller-kepler-bmp.jpg") 50% 50% no-repeat;

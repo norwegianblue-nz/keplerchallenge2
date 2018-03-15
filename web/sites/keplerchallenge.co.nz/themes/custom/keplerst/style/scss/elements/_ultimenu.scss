@@ -3,7 +3,8 @@
   }
 */
 
-.region--menu {text-align: center;} // start by cntering the whole thing... and serach bar too
+.region--menu {text-align: center;min-height: 2.4rem;} // start by cntering the whole thing... and serach bar too
+.path-frontpage .region--menu {min-height: 6vh;}
 
 // Ulitimate menus
 .ultimenu {min-height: unset;}
@@ -23,3 +24,53 @@ ul.menu {margin-left: 0;}
 .ultimenusub li.menu-item a.is-active {color: white;}
 .ultimenusub li.menu-item a.is-active::after {content:"(current page)"; font-size: 0.8em; text-transform: uppercase; color: rgba(255, 255, 255, 0.4); padding-left: 0.8rem; letter-spacing: 0.02rem;}
 // .ultimenusub li.menu-item a:hover {background-color:rgba($keplerst_Orange, 0.4);}
+
+// // Hamburger
+.button.button--ultimenu {
+	background: none;
+	border: none;
+	border-radius: 0px;
+	height: 3.6rem;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 50px;
+}
+.button.button--ultimenu:hover, .button.button--ultimenu:active, .button.button--ultimenu:focus {
+	background: #993300;
+	border-color: none;
+}
+.button--ultimenu .bars {
+	display: block;
+	height: 0;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	-webkit-box-shadow: 0 10px 0 2px white, 0 20px 0 2px white, 0 30px 0 2px white;
+	-moz-box-shadow: 0 10px 0 2px white, 0 20px 0 2px white, 0 30px 0 2px white;
+	-ms-box-shadow: 0 10px 0 2px white, 0 20px 0 2px white, 0 30px 0 2px white;
+	-o-box-shadow: 0 10px 0 2px white, 0 20px 0 2px white, 0 30px 0 2px white;
+	box-shadow: 0 10px 0 2px white, 0 20px 0 2px white, 0 30px 0 2px white;
+}
+
+@media all and (max-width: 959px) {
+#block-ultimenumainnavigation {
+	position: fixed;
+	top: 3.6rem;
+  left: 0;
+	width: 100%;
+}
+}
+@media all and (min-width: 960px) {
+#block-ultimenumainnavigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+}
