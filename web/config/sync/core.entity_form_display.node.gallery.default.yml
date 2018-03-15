@@ -1,16 +1,21 @@
-uuid: 4f89b909-8b0a-4851-bbd2-daae06faafe0
+uuid: ce87c545-360d-4fc6-b30f-f09cc4ee90f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article_slide.body
-    - node.type.article_slide
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_image
+    - field.field.node.gallery.field_image_group
+    - image.style.thumbnail
+    - node.type.gallery
   module:
+    - content_moderation
+    - image
     - path
     - text
-id: node.article_slide.default
+id: node.gallery.default
 targetEntityType: node
-bundle: article_slide
+bundle: gallery
 mode: default
 content:
   body:
@@ -27,6 +32,26 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_gallery_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image_group:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
     third_party_settings: {  }
   path:
     type: path

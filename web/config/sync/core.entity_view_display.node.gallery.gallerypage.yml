@@ -1,0 +1,46 @@
+uuid: f35edbb6-083c-4fd5-8fb9-e19c0e2f227c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.gallerypage
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_image
+    - field.field.node.gallery.field_image_group
+    - node.type.gallery
+    - responsive_image.styles.partners_panels
+  module:
+    - ds
+    - responsive_image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_gallery_image
+id: node.gallery.gallerypage
+targetEntityType: node
+bundle: gallery
+mode: gallerypage
+content:
+  field_gallery_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: partners_panels
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: responsive_image
+    region: content
+hidden:
+  body: true
+  field_image_group: true
+  links: true

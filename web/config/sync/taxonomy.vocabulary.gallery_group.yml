@@ -1,0 +1,9 @@
+uuid: d400d1f8-9a42-490d-bf63-007f80c7bd18
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gallery Group'
+vid: gallery_group
+description: 'Grouping of images in the gallery'
+hierarchy: 0
+weight: 0

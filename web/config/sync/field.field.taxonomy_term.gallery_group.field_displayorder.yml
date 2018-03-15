@@ -1,0 +1,25 @@
+uuid: 97106082-c2cc-4a0d-929c-4a9a33d6f806
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_displayorder
+    - taxonomy.vocabulary.gallery_group
+id: taxonomy_term.gallery_group.field_displayorder
+field_name: field_displayorder
+entity_type: taxonomy_term
+bundle: gallery_group
+label: DisplayOrder
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: -50
+  max: 50
+  prefix: ''
+  suffix: ''
+field_type: integer
