@@ -153,7 +153,7 @@
 /**
  * Smaller medium.
  */
-@media all and (max-width: 58.999em) {
+@media all and (max-width: 959px) {
   /* Ultimenu flyout. Mobile version has no :hover, so safe to display: none,
   and relies on click events via jQuery. */
   .ultimenu {
@@ -254,7 +254,7 @@
 /**
  * Larger medium ~ 944px
  */
-@media all and (min-width: 59em) {
+@media all and (min-width: 960px) {
   .ultimenu .ultimenu__link {
     line-height: 1.4;
   }

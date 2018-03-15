@@ -8,7 +8,7 @@
 /**
  * Larger medium ~ 944px
  */
-@media all and (min-width: 59em) {
+@media all and (min-width: 960px) {
 
   #header .ultimenu--htb-sliding  .ultimenu__flyout {
     min-width: 100%;
