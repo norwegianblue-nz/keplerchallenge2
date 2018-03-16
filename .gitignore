@@ -6,7 +6,7 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
-/web/libraries/
+/web/libraries/*
 /web/autoload.php
 
 # Ignore Drupal's file directory
@@ -37,6 +37,9 @@ web/sites/keplerchallenge.co.nz/themes/custom/keplerst/style/css_safe.tar.bz2
 /web/sites/*/modules/custom/*_try*
 web/sites/keplerchallenge.co.nz/unused_modules
 
+## Required 3rd party libraries
+!web/libraries/colorbox
+
 # Specifically include the simplesaml config and metadata
 # NOTE - you have to include each directory on the path to the include file and exclude all files in directories. Then include the next dir etc etc.
 # Now excluded again as it's different for different install instances.
@@ -49,6 +52,7 @@ web/sites/keplerchallenge.co.nz/unused_modules
 #vendor/simplesamlphp/simplesamlphp/config/config.php
 #!vendor/simplesamlphp/simplesamlphp/metadata
 web/config/sync/simplesamlphp_auth.settings.yml
+
 #Ultimenu css
 !web/modules/contrib
 web/modules/contrib/*
