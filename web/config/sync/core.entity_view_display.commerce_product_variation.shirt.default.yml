@@ -1,0 +1,42 @@
+uuid: b15f36bf-5afd-4f6d-94a2-3d1061a03769
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.shirt
+    - field.field.commerce_product_variation.shirt.attribute_colour
+    - field.field.commerce_product_variation.shirt.attribute_size
+    - field.field.commerce_product_variation.shirt.field_product_image
+    - responsive_image.styles.partners_panels
+  module:
+    - commerce_price
+    - responsive_image
+id: commerce_product_variation.shirt.default
+targetEntityType: commerce_product_variation
+bundle: shirt
+mode: default
+content:
+  field_product_image:
+    weight: 1
+    label: hidden
+    settings:
+      responsive_image_style: partners_panels
+      image_link: content
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+hidden:
+  attribute_colour: true
+  attribute_size: true
+  product_id: true
+  sku: true
+  title: true

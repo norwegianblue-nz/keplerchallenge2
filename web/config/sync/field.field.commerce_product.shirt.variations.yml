@@ -1,0 +1,24 @@
+uuid: e0e118f8-a318-4a44-a564-65e458dab548
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shirt
+    - commerce_product.commerce_product_variation_type.shirt
+    - field.storage.commerce_product.variations
+id: commerce_product.shirt.variations
+field_name: variations
+entity_type: commerce_product
+bundle: shirt
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - shirt
+field_type: entity_reference

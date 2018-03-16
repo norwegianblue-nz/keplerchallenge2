@@ -1,0 +1,62 @@
+uuid: d0b671c6-6c04-4360-a369-ac7d3dbdc0a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.shirt
+    - field.field.commerce_product_variation.shirt.attribute_colour
+    - field.field.commerce_product_variation.shirt.attribute_size
+    - field.field.commerce_product_variation.shirt.field_product_image
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.shirt.default
+targetEntityType: commerce_product_variation
+bundle: shirt
+mode: default
+content:
+  attribute_colour:
+    type: options_select
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  attribute_size:
+    type: options_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_product_image:
+    weight: 100
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 99
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

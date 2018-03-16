@@ -1,0 +1,10 @@
+uuid: eeaab29d-6fa0-4eb1-b7e1-38dc8d8fdc83
+langcode: en
+status: true
+dependencies: {  }
+label: Merchandise
+id: merchandise
+purchasableEntityType: commerce_product_variation
+orderType: keplerstore
+traits: {  }
+locked: false

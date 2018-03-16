@@ -1,0 +1,32 @@
+uuid: 38d27667-55cf-4389-a2df-d503eb3df906
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.merchandise
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+  module:
+    - commerce_order
+    - commerce_product
+id: commerce_order_item.merchandise.add_to_cart
+targetEntityType: commerce_order_item
+bundle: merchandise
+mode: add_to_cart
+content:
+  purchased_entity:
+    type: commerce_product_variation_attributes
+    weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      step: '1'
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  unit_price: true

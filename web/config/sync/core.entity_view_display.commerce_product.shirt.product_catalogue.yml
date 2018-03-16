@@ -1,0 +1,48 @@
+uuid: 1ca6106f-883f-45e7-a7b9-f56990f623e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shirt
+    - core.entity_view_mode.commerce_product.product_catalogue
+    - field.field.commerce_product.shirt.body
+    - field.field.commerce_product.shirt.stores
+    - field.field.commerce_product.shirt.variations
+  module:
+    - commerce_product
+    - ds
+    - text
+id: commerce_product.shirt.product_catalogue
+targetEntityType: commerce_product
+bundle: shirt
+mode: product_catalogue
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 2
+    label: hidden
+    settings:
+      combine: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

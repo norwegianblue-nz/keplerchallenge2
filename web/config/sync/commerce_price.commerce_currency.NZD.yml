@@ -1,0 +1,9 @@
+uuid: d9ee7861-cad0-4216-a0ad-5377e77ce24b
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: NZD
+name: 'New Zealand Dollar'
+numericCode: '554'
+symbol: NZ$
+fractionDigits: 2
