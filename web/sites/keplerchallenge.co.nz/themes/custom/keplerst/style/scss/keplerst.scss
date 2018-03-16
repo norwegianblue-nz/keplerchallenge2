@@ -24,37 +24,6 @@
 // div#account-menu:hover #logged-in-menu, div#account-menu:focus #logged-in-menu {display: block;}
 
 
-#logged-in-menu {
-  background-color: $keplerst_Orange;
-  position: absolute;
-  text-align:left;
-  right: 0;}
-ul#logged-in-menu {list-style: none;	margin: 0rem;	padding: 0;
-    & li {padding: 0; margin: 0; color: #fff; display: inline-block;
-      & a {color: #fff; display: block; padding:0.2rem 0.4rem;}
-      & a:first-of-type {padding-left:0.8rem;}
-      & a:hover{background-color: rgba($keplerst_DarkOrange, 0.7)}
-    }
-}
-#logged-in-menu-stripe {
-	position: fixed;
-	top: 3.6rem;
-	width: 100%;
-	left: 0;
-	// background-color: rgba($keplerst_DarkOrange, 0.45);
-	height: 1.9rem;
-  background-image:
-      linear-gradient(
-        to right,
-        rgba($keplerst_DarkOrange, 0.45),
-        rgba($keplerst_DarkOrange, 0.45) 80%,
-        rgba($keplerst_Orange, 1) 20%
-      );
-}
-@media screen and (max-width: 415px){ #logged-in-menu{width: 100%; text-align:center;} #logged-in-menu-stripe {display: none;}}
-@media screen and (min-width: 416px) and (max-width:959px) { #logged-in-menu{width: 19.5rem;}}
-@media screen and (min-width: 960px) and (max-width:1279px) { #logged-in-menu{width: 21.5rem;}}
-@media screen and (min-width: 1280px){ #logged-in-menu{width: 22.8rem;}}
 
 
 // tmd sandy-pit
@@ -320,7 +289,7 @@ footer.node__meta {float:right;}
   -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
   @include keplerstTransition (all, 1s, ease-in-out);
   z-index: 10;
-	height: 3.6rem
+	height: 60px; // 3.6rem
 }
 div#page.scrolled #title-bar-wrapper {
 	background-color: rgba(80,80,70,1);
@@ -354,15 +323,11 @@ div#page.scrolled #title-bar-wrapper {
   {flex-grow: unset;}
 
 }
-// Logged-in menu
-.user-logged-in {
-  #block-tmdaccountloginloggedin {display: block;}
-  #block-tmdaccountlogin {display: none;}
-}
 
 #site-branding {padding: 7px 0 0;} //tmd - allows for odd height spacing of logo img
 
-// (menu)
+// (menus - main and account)
+
 /* Hamburger toggle and animation */
 //  Menu styling on page - see ultimenu for specifics
 @keyframes fade-in1 {
@@ -380,11 +345,42 @@ div#page.scrolled #title-bar-wrapper {
   }
   to {
     opacity: 1;
-    top: 61px;
+    top: 60px; // was 61px
+  }
+}
+@keyframes fade-in2b {
+  from {
+    opacity: 0;
+    top: 25vh;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes fade-in2-logged-in {
+  from {
+    opacity: 0;
+    top: 25vh;
+  }
+  to {
+    opacity: 1;
+    top: 90px; //5.5rem; // was 61px
+  }
+}
+@keyframes fade-in2b-logged-in {
+  from {
+    opacity: 0;
+    top: 25vh;
+  }
+  to {
+    opacity: 1;
+    top: 0;
   }
 }
 #menu-outer-wrapper {
 	background-color: $keplerst_DarkTeal;
+  width: 100%;
   position: relative;
   top: 0;
   z-index: 9;
@@ -392,18 +388,41 @@ div#page.scrolled #title-bar-wrapper {
   animation-duration: 2s;
   animation-timing-function: ease;
 }
+#header-outer-wrapper + #menu-outer-wrapper {margin-top: 60px;} // 3.4rem Offset for non top-pic pages
 
-#menu-outer-wrapper.hamburger-clicked {
-  position: fixed;
-  top: 3.6rem;
-  width: 100%;
-  z-index: 11;
+
+#menu-outer-wrapper.hamburger-clicked {position: fixed; z-index: 11;} // generic
+
+#nb_fixed-bg0 + #menu-outer-wrapper.hamburger-clicked {
+  top: 90px; //3.6rem;
   animation-name: fade-in2;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {
+  top: 0;
+  animation-name: fade-in2b;
   animation-duration: 1s;
   animation-timing-function: ease;
 }
 
 
+// Override when logged in
+.user-logged-in {
+#nb_fixed-bg0 + #menu-outer-wrapper.hamburger-clicked {
+  top: 90px; //3.6rem;
+  animation-name: fade-in2-logged-in;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {
+  top: 0;
+  animation-name: fade-in2b-logged-in;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+} // Close user-logged-in
 
 // Hamburger-Menu -example css . Edit as necessary.
 .responsive-menu-toggle-icon::before, .responsive-menu-toggle-icon::after, .responsive-menu-toggle-icon span.icon {
@@ -425,6 +444,59 @@ div#page.scrolled #title-bar-wrapper {
 @media all and (min-width: 960px) {
   #nonmobile_hamburger {display: block;} // tmd - show/hide relative to ultimenu hamburger
 }
+
+/*  logged-in account menu */
+#logged-in-menu {
+  background-color: $keplerst_Orange;
+  position: absolute;
+  text-align:left;
+  right: 0;}
+ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
+    & li {padding: 0; margin: 0; color: #fff; display: inline-block; height:30px;
+      & a {color: #fff; display: block; padding:0.2rem 0.4rem;}
+      & a:first-of-type {padding-left:0.8rem;}
+      & a:hover{background-color: rgba($keplerst_DarkOrange, 0.7)}
+    }
+}
+#logged-in-menu-stripe {
+	position: fixed;
+	top: 60px; //3.6rem;
+	width: 100%;
+	left: 0;
+	// background-color: rgba($keplerst_DarkOrange, 0.45);
+	height: 30px; //1.9rem;
+  background-image:
+      linear-gradient(
+        to right,
+        rgba($keplerst_DarkOrange, 0.45),
+        rgba($keplerst_DarkOrange, 0.45) 80%,
+        rgba($keplerst_Orange, 1) 20%
+      );
+}
+@media screen and (max-width: 415px){ #logged-in-menu{width: 100%; text-align:center;} #logged-in-menu-stripe {display: none;}}
+@media screen and (min-width: 416px) and (max-width:959px) { #logged-in-menu{width: 19.5rem;}}
+@media screen and (min-width: 960px) and (max-width:1279px) { #logged-in-menu{width: 21.5rem;}}
+@media screen and (min-width: 1280px){
+  #logged-in-menu{width: 22.8rem;}
+  #logged-in-menu-stripe {  background-image: linear-gradient(
+        to right,
+        rgba($keplerst_DarkOrange, 0.45),
+        rgba($keplerst_DarkOrange, 0.45) 70%,
+        rgba($keplerst_Orange, 1) 30%
+      );
+  }
+}
+
+
+/* Logged-in overrides */
+.user-logged-in {
+  #block-tmdaccountloginloggedin {display: block;}
+  #block-tmdaccountlogin {display: none;}
+  #header-outer-wrapper + #menu-outer-wrapper {margin-top: 90px;}//5.5rem;}
+  #header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {top:0;}
+}
+
+
 
 // (elements)
 /* Search boxes */
@@ -628,8 +700,6 @@ a.social-icon {padding: 0 0.5rem;}
 }
 
 
-
-
 /* COPYRIGHT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .region--copyright {padding: 20px 0;}
 .region--copyright #copyright {
@@ -642,7 +712,12 @@ a.social-icon {padding: 0 0.5rem;}
 #copyright-outer-wrapper {border-bottom: 1px solid $keplerst-Grey;}
 
 
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 /* FRONT PAGE OVERRIDES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .path-frontpage { // THIS WRAPS FRONT PAGE OVERRIDES
 
@@ -738,10 +813,3 @@ a.social-icon {padding: 0 0.5rem;}
   #content1-outer-wrapper, #content2-outer-wrapper {padding-bottom: 3rem;}
 
 }// THIS CLOSES FRONT PAGE OVERRIDES
-
-#header-outer-wrapper + #menu-outer-wrapper {margin-top: 3.4rem;}
-
-.user-logged-in {
-#header-outer-wrapper + #menu-outer-wrapper {margin-top: 5.5rem;}
-#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {top:0;}
-}
