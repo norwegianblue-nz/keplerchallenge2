@@ -5,20 +5,6 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-// To Top button
-#block-tmdtotopbutton {
-    position: fixed;
-    bottom: 2.3rem;
-    right: -5rem;
-		opacity: 0;
-		z-index: 200;
-		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
-}
-.scrolled #block-tmdtotopbutton {
-		opacity: 1;
-		right: 1rem;
-		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
-}
 
 
 // div#account-menu {display: block;}
@@ -73,24 +59,9 @@ ul#logged-in-menu {list-style: none;	margin: 0rem;	padding: 0;
 
 // tmd sandy-pit
 
-// Footer bg image
-// Needs images creating for breakpoints and media queries adding
-#footer-outer-wrapper {
-    background: $keplerst_DarkOrange url("/sites/keplerchallenge.co.nz/files/2018-02/footer-bg.png") no-repeat;
-    min-height: 65vh;
-    background-position: 50% bottom;
-    background-size: cover;
-}
-@media all and (min-width: 0px) {#footer-outer-wrapper{}}
-@media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{}}
-@media all and (min-width: 768px)  {
-	#footer-outer-wrapper {
-		height:1vh;
-		background-attachment: fixed;
-	}
-}
 
 
+//  ============== ========= ======== ========
 // Partners
 //  Needs work on 'grid' once responsive image sizes complete
 // .view-our-partners .view-content{
@@ -148,7 +119,6 @@ ul#logged-in-menu {list-style: none;	margin: 0rem;	padding: 0;
 	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
     .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
 	}
-
 
 
   h3 {
@@ -321,6 +291,21 @@ footer.node__meta {float:right;}
 }
 .btn-lrg {
     padding: 1em 0.5em;
+}
+
+// To Top button
+#block-tmdtotopbutton {
+    position: fixed;
+    bottom: 2.3rem;
+    right: -5rem;
+		opacity: 0;
+		z-index: 200;
+		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
+}
+.scrolled #block-tmdtotopbutton {
+		opacity: 1;
+		right: 1rem;
+		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
 }
 
 
@@ -596,6 +581,20 @@ a.social-icon {padding: 0 0.5rem;}
     .tmd-footer-menu {margin-left: 0;margin-right: 0;width: 100%; }
 }
 
+// Footer bg image
+#footer-outer-wrapper {
+    background-color: $keplerst_DarkOrange;
+    background-repeat: no-repeat;
+    min-height: 65vh;
+    background-position: 50% bottom;
+    background-size: cover;
+}
+@media all and (min-width: 0px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-mob.png");}}
+@media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-sml.png");}}
+@media all and (min-width: 768px) and (max-width: 959px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-med.png");}}
+@media all and (min-width: 768px) {#footer-outer-wrapper {height:1vh;background-attachment: fixed;}}
+@media all and (min-width: 960px) and (max-width: 1279px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-lrg.png");}}
+@media all and (min-width: 1280px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-xlrg.png");}}
 
 // footer lower layout >>>>
 @media all and (min-width: 600px) {
@@ -704,7 +703,7 @@ a.social-icon {padding: 0 0.5rem;}
 }
 
 // Menu (menu bar srtip)
-  #menu-outer-wrapper {background-color: $keplerst_DarkOrange;min-height: 6vh;}
+  #menu-outer-wrapper {background-color: $keplerst_DarkOrange;min-height: 2rem;}
 
 // Btns (not shown on front)
   section#btns-outer-wrapper { // overrides margin for social icons on pages
@@ -736,5 +735,13 @@ a.social-icon {padding: 0 0.5rem;}
   &:hover {background-color: rgba($keplerst_DarkOrange,0.8);}
   }
 
+  #content1-outer-wrapper, #content2-outer-wrapper {padding-bottom: 3rem;}
 
 }// THIS CLOSES FRONT PAGE OVERRIDES
+
+#header-outer-wrapper + #menu-outer-wrapper {margin-top: 3.4rem;}
+
+.user-logged-in {
+#header-outer-wrapper + #menu-outer-wrapper {margin-top: 5.5rem;}
+#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {top:0;}
+}
