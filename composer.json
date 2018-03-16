@@ -26,6 +26,7 @@
         "drupal/amp": "^1.0",
         "drupal/amptheme": "^1.0",
         "drupal/coffee": "1.x-dev",
+        "drupal/colorbox": "^1.4",
         "drupal/console": "^1.0.1",
         "drupal/contact_block": "^1.4",
         "drupal/contentimport": "^3.2",

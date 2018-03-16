@@ -1,0 +1,10 @@
+uuid: 07d8a03f-3273-415c-b743-8a03025d9bbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.gallery_images
+label: 'Gallery Images'
+targetEntityType: node
+cache: true

@@ -1,17 +1,19 @@
-uuid: d4e5683e-6a43-4f76-baf8-14deaf6c255d
+uuid: 1560d8b5-20bf-4675-a9c2-3cc93972ecd4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.article_slide.body
-    - node.type.article_slide
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_image
+    - field.field.node.gallery.field_image_group
+    - node.type.gallery
   module:
     - text
     - user
-id: node.article_slide.teaser
+id: node.gallery.teaser
 targetEntityType: node
-bundle: article_slide
+bundle: gallery
 mode: teaser
 content:
   body:
@@ -25,4 +27,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_gallery_image: true
+  field_image_group: true

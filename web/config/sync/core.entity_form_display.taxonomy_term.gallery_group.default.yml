@@ -1,0 +1,45 @@
+uuid: 1ac25689-9d25-4e4f-a000-90f7d19900e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.gallery_group.field_displayorder
+    - taxonomy.vocabulary.gallery_group
+  module:
+    - path
+    - text
+id: taxonomy_term.gallery_group.default
+targetEntityType: taxonomy_term
+bundle: gallery_group
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_displayorder:
+    weight: 31
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

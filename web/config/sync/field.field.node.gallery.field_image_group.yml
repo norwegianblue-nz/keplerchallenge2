@@ -1,0 +1,29 @@
+uuid: cd02ef11-2b5a-4943-bf6d-2b5281c6fc56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_group
+    - node.type.gallery
+    - taxonomy.vocabulary.gallery_group
+id: node.gallery.field_image_group
+field_name: field_image_group
+entity_type: node
+bundle: gallery
+label: 'Image Group'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gallery_group: gallery_group
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

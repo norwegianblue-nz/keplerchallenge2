@@ -1,0 +1,10 @@
+uuid: 9e19b5d7-a5b9-4535-bbde-2953c0b3410a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.gallerypage
+label: GalleryPage
+targetEntityType: node
+cache: true
