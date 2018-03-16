@@ -1,0 +1,38 @@
+uuid: 86c0c983-c68b-41a9-8a91-81fd7bad2f41
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.shirt
+    - field.storage.commerce_product_variation.field_product_image
+  module:
+    - image
+id: commerce_product_variation.shirt.field_product_image
+field_name: field_product_image
+entity_type: commerce_product_variation
+bundle: shirt
+label: 'Product Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

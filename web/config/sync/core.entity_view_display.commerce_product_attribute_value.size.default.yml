@@ -1,0 +1,20 @@
+uuid: 1190be35-30cb-4218-91e2-2ff6d6f0799a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.size
+id: commerce_product_attribute_value.size.default
+targetEntityType: commerce_product_attribute_value
+bundle: size
+mode: default
+content:
+  name:
+    label: inline
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

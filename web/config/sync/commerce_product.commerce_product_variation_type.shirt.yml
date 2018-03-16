@@ -1,0 +1,10 @@
+uuid: bbd4efbf-baa9-48b5-ba22-3ae8389dad37
+langcode: en
+status: true
+dependencies: {  }
+id: shirt
+label: Shirt
+orderItemType: merchandise
+generateTitle: true
+traits: {  }
+locked: false

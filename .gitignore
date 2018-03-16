@@ -65,5 +65,9 @@ web/modules/contrib/ultimenu/skins/*
 !web/modules/contrib/ultimenu/skins/ultimenu--basic.css
 !web/modules/contrib/ultimenu/skins/ultimenu--htb-sliding.css
 
+#Top region config
+       web/config/sync/block.block.tmdaccountloginloggedin.yml
+       web/config/sync/block.block.tmdtotopbutton.yml
+
 
 /sass_this
