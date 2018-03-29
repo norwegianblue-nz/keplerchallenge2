@@ -168,7 +168,7 @@ div.responsive-table {overflow-x:auto;}
   }
 
 
-// / tables
+// / close tables
 
 h1, h2, h3, h4, h5, h6 {
 
@@ -178,6 +178,7 @@ h1 ,
 .heading-a {
   @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
   margin: 1.0em 0 0.5em;
+  clear: left;
 //  font-weight: inherit;
 //  font-size: 1.357em;
 //  color: $primaryColor2;
@@ -188,6 +189,7 @@ h2,
 .heading-b {
   @include keplerst_ubuntu-medium ($primaryColor2, 1.8em);
   margin: 1.0em 0 0.5em;
+  clear: left;
 //  font-weight: inherit;
 //  font-size: $desktopH2;
 //  color: $primaryColor3;
@@ -232,9 +234,26 @@ h6,
   border-top: 1px solid #333;
   border-bottom: 1px solid #777;
 }
-p a, p a.link {  border-bottom: dotted 0.1em !important;
+p a, p a.link, #main-layout li a {  border-bottom: dotted 0.1em !important;
+}
+
+#main-layout {
+  & p, & li {
+    & a::after {
+  	content: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/link.svg');
+  	display: inline-block;
+  	top: 4px;
+  	position: relative;
+  	margin: 0 3px;
+    }
+  }
 }
 
 img.image-style-avatar{
     border-radius: 100%;
 }
+
+dt {@include keplerst_ubuntu-medium ($color:$keplerst_DarkOrange, $size:1.6em);margin-top: 2rem;}
+dd {@include keplerst_ubuntu-light ($color:$keplerst-Grey, $size:1.2em);}
+dd {display:none;}
+dt:hover + dd, dt:target + dd {display:block;}
