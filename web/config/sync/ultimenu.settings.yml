@@ -1,6 +1,14 @@
 blocks:
   main: main
-regions: {  }
+regions:
+  ultimenu_main_home: ultimenu_main_home
+  ultimenu_main_event_overview: ultimenu_main_event_overview
+  ultimenu_main_runner_info: ultimenu_main_runner_info
+  ultimenu_main_our_partners: ultimenu_main_our_partners
+  ultimenu_main_community: ultimenu_main_community
+  ultimenu_main_gallery: ultimenu_main_gallery
+  ultimenu_main_store: ultimenu_main_store
+  ultimenu_main_news: ultimenu_main_news
 goodies:
   title-class: title-class
   counter-class: counter-class

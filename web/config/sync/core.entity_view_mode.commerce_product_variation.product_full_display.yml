@@ -1,0 +1,10 @@
+uuid: b48c4567-0143-479c-b056-42ccf9ea2664
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.product_full_display
+label: 'Product Full Display'
+targetEntityType: commerce_product_variation
+cache: true

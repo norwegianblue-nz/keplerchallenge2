@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.commerce_product.product_catalogue
+    - system.menu.main
   module:
     - commerce_product
     - ds
@@ -202,6 +203,16 @@ display:
     display_options:
       display_extenders: {  }
       path: store
+      menu:
+        type: normal
+        title: Store
+        description: ''
+        expanded: true
+        parent: ''
+        weight: -43
+        context: '0'
+        menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:
