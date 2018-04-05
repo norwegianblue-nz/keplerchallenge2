@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: website_editor
-label: 'Website Editor'
+label: website_editor
 weight: 5
 is_admin: null
 permissions:
