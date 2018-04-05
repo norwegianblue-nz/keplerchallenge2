@@ -2,10 +2,6 @@ uuid: cf6a9d62-c994-472c-a667-6b5ab3b25aef
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:ef30f67d-16e8-478b-af60-041cd497bfc2'
-  module:
-    - block_content
   theme:
     - keplerst
 id: tmdaccountloginloggedin

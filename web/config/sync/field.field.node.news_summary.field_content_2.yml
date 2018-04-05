@@ -1,0 +1,21 @@
+uuid: 6877dd57-78f4-4f9a-845d-5aba78996fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_2
+    - node.type.news_summary
+  module:
+    - text
+id: node.news_summary.field_content_2
+field_name: field_content_2
+entity_type: node
+bundle: news_summary
+label: 'Content 2'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

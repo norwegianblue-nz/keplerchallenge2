@@ -8,9 +8,10 @@ dependencies:
     - field.field.node.partners.field_partner_description
     - field.field.node.partners.field_partner_logo
     - field.field.node.partners.field_partner_url
+    - field.field.node.partners.field_sponsor_image
     - field.field.node.partners.field_sponsorship_level
     - node.type.partners
-    - responsive_image.styles.partners_panels
+    - responsive_image.styles.content_end_images
   module:
     - ds
     - link
@@ -19,7 +20,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
+      id: ds_1col_wrapper
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -39,6 +40,7 @@ third_party_settings:
         - field_partner_url
         - field_partner_about
         - field_partner_description
+        - field_sponsor_image
     fields:
       node_title:
         plugin_id: node_title
@@ -55,41 +57,50 @@ bundle: partners
 mode: partnerspage
 content:
   field_partner_about:
+    type: string
     weight: 3
+    region: ds_content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: ds_content
   field_partner_description:
+    type: basic_string
     weight: 4
+    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-    region: ds_content
   field_partner_logo:
     type: responsive_image
     weight: 0
     region: ds_content
-    label: above
+    label: hidden
     settings:
       responsive_image_style: partners_panels
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
   field_partner_url:
+    type: link
     weight: 2
+    region: ds_content
     label: hidden
     settings:
       trim_length: 80
-      url_only: true
-      rel: nofollow
-      target: _blank
+      url_only: false
       url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: link
+  field_sponsor_image:
+    type: responsive_image
+    weight: 5
     region: ds_content
+    label: hidden
+    settings:
+      responsive_image_style: content_end_images
+      image_link: ''
+    third_party_settings: {  }
 hidden:
   field_sponsorship_level: true
   links: true

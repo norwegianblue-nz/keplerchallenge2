@@ -7,22 +7,51 @@ dependencies:
     - field.field.node.blog.body
     - node.type.blog
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h4
+          class: ''
 id: node.blog.teaser
 targetEntityType: node
 bundle: blog
 mode: teaser
 content:
   body:
+    type: text_trimmed
+    weight: 1
+    region: ds_content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      trim_length: 280
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  links: true

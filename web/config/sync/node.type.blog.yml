@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
 name: 'Blog entry'
 type: blog
-description: 'Use for multi-user blogs. Every user gets a personal blog.'
+description: "These are the entries from the old D7 Kepler Site<br />\r\n<em>DO NOT</em> use this type for new content.<br />\r\nUse <em>News Articles</em> for new News articles"
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

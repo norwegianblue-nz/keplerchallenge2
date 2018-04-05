@@ -33,6 +33,7 @@ visibility:
     id: 'entity_bundle:node'
     bundles:
       general_content: general_content
+      news_summary: news_summary
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

@@ -1,0 +1,57 @@
+uuid: cbdc316c-6150-4d76-9ab5-bd835c124ee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.content1
+    - field.field.node.news_summary.field_content
+    - field.field.node.news_summary.field_content_2
+    - field.field.node.news_summary.field_footerimage1
+    - field.field.node.news_summary.field_footerimage2
+    - field.field.node.news_summary.field_footerimage3
+    - field.field.node.news_summary.field_footerimage4
+    - field.field.node.news_summary.field_nf_bg_image
+    - node.type.news_summary
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_content
+id: node.news_summary.content1
+targetEntityType: node
+bundle: news_summary
+mode: content1
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+hidden:
+  field_content_2: true
+  field_footerimage1: true
+  field_footerimage2: true
+  field_footerimage3: true
+  field_footerimage4: true
+  field_nf_bg_image: true
+  links: true

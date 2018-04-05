@@ -11,6 +11,7 @@ dependencies:
     - node.type.article
   module:
     - comment
+    - content_moderation
     - image
     - path
     - text
@@ -54,7 +55,10 @@ content:
     type: entity_reference_autocomplete_tags
     weight: 3
     region: content
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
