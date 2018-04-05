@@ -1,0 +1,38 @@
+uuid: 24766b79-57c4-40c3-812b-83ea74c87ba7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footerimage2
+    - node.type.news_summary
+  module:
+    - image
+id: node.news_summary.field_footerimage2
+field_name: field_footerimage2
+entity_type: node
+bundle: news_summary
+label: FooterImage2
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

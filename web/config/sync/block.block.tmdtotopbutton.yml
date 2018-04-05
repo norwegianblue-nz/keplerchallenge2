@@ -2,10 +2,6 @@ uuid: ddfd63f3-2b12-44db-8790-d256e297c832
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:998ca78b-9358-4c4f-9df5-3f8951633d4d'
-  module:
-    - block_content
   theme:
     - keplerst
 id: tmdtotopbutton

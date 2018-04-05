@@ -1,109 +1,106 @@
-uuid: b26b464d-be7f-46c3-bb63-07db9c8d9862
+uuid: 6d3ef528-fb82-478b-929a-5bd626057c50
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.partners.field_partner_about
-    - field.field.node.partners.field_partner_description
-    - field.field.node.partners.field_partner_logo
-    - field.field.node.partners.field_partner_url
-    - field.field.node.partners.field_sponsor_image
-    - field.field.node.partners.field_sponsorship_level
+    - field.field.node.news_summary.field_content
+    - field.field.node.news_summary.field_content_2
+    - field.field.node.news_summary.field_footerimage1
+    - field.field.node.news_summary.field_footerimage2
+    - field.field.node.news_summary.field_footerimage3
+    - field.field.node.news_summary.field_footerimage4
+    - field.field.node.news_summary.field_nf_bg_image
     - image.style.thumbnail
-    - node.type.partners
+    - node.type.news_summary
   module:
     - content_moderation
     - image
-    - link
     - path
-id: node.partners.default
+    - text
+id: node.news_summary.default
 targetEntityType: node
-bundle: partners
+bundle: news_summary
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_partner_about:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_partner_description:
-    weight: 6
+  field_content:
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
-  field_partner_logo:
-    weight: 2
+  field_content_2:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_footerimage1:
+    weight: 9
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_partner_url:
-    weight: 3
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_sponsor_image:
-    weight: 5
+  field_footerimage2:
+    weight: 10
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_sponsorship_level:
-    weight: 1
-    settings: {  }
+  field_footerimage3:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: options_select
+    type: image_image
+    region: content
+  field_footerimage4:
+    weight: 12
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_nf_bg_image:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 12
+    weight: 4
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 3
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 9
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 10
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -116,11 +113,13 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,30 +1,31 @@
-uuid: 79996d81-6318-4b4f-8f49-df95ddb54e18
+uuid: 287f3a5f-b718-480d-87d2-7b1b87cc2ed6
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.news_articles
   module:
     - ctools
+    - views
   theme:
     - keplerst
-id: entityviewcontent_2
+id: views_block__news_articles_block_1
 theme: keplerst
-region: content2
+region: social
 weight: 0
 provider: null
-plugin: 'entity_view:node'
+plugin: 'views_block:news_articles-block_1'
 settings:
-  id: 'entity_view:node'
-  label: Content2
-  provider: ctools
-  label_display: '0'
-  view_mode: content
-  context_mapping:
-    entity: '@node.node_route_context:node'
+  id: 'views_block:news_articles-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      front: front
       news_summary: news_summary
     negate: false
     context_mapping:

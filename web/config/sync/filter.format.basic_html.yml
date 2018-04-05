@@ -18,7 +18,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1 id> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <span> <img src alt data-entity-type data-entity-uuid data-align data-caption data-responsive-image-style width height> <table id class> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div id class> <section class=""> <input type=""> <label>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h1 id> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <p> <br> <img src alt data-entity-type data-entity-uuid data-align data-caption data-responsive-image-style width height> <table id class> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <div id class> <section class=""> <input type=""> <label> <span> <span class> '
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -43,7 +43,7 @@ filters:
     id: filter_responsive_image_style
     provider: inline_responsive_images
     status: true
-    weight: -43
+    weight: -44
     settings:
       responsive_style_content_end_images: '0'
       responsive_style_half_col_images: '1'
@@ -127,5 +127,5 @@ filters:
     id: token_filter
     provider: token_filter
     status: true
-    weight: -44
+    weight: -43
     settings: {  }

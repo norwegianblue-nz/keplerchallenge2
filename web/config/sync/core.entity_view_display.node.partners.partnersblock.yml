@@ -8,33 +8,74 @@ dependencies:
     - field.field.node.partners.field_partner_description
     - field.field.node.partners.field_partner_logo
     - field.field.node.partners.field_partner_url
+    - field.field.node.partners.field_sponsor_image
     - field.field.node.partners.field_sponsorship_level
     - node.type.partners
+    - responsive_image.styles.content_end_images
   module:
+    - ds
+    - image
     - link
+    - responsive_image
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_fluid
+      library: ds/ds_2col_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_partner_logo
+        - links
+        - field_partner_url
+        - field_sponsorship_level
+        - field_partner_description
+        - field_partner_about
+      right:
+        - field_sponsor_image
 id: node.partners.partnersblock
 targetEntityType: node
 bundle: partners
 mode: partnersblock
 content:
   field_partner_about:
-    weight: 107
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: left
   field_partner_description:
-    weight: 106
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
+    region: left
+  field_partner_logo:
+    type: image
+    weight: 0
+    region: left
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   field_partner_url:
-    weight: 103
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -44,19 +85,27 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
+    region: left
+  field_sponsor_image:
+    type: responsive_image
+    weight: 6
+    region: right
+    label: above
+    settings:
+      responsive_image_style: content_end_images
+      image_link: ''
+    third_party_settings: {  }
   field_sponsorship_level:
-    weight: 104
+    weight: 3
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: left
   links:
-    weight: 100
-    region: content
+    weight: 1
+    region: left
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_partner_logo: true
+hidden: {  }

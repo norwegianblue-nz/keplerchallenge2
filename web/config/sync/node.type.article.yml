@@ -1,13 +1,19 @@
 uuid: 775aca67-9ff3-4f8a-92ca-0353283c066d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: Article
+name: 'News Article'
 type: article
-description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+description: '<em>News Articles</em> are displayed on the "News Page" '
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: true

@@ -7,7 +7,6 @@ label: committee
 weight: 5
 is_admin: null
 permissions:
-  - 'create blog content'
   - 'delete own blog content'
   - 'edit own blog content'
   - 'edit own comments'

@@ -39,15 +39,16 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
             - Source
   plugins:
+    stylescombo:
+      styles: "span.token|Token\r\n"
     language:
       language_list: un
-    stylescombo:
-      styles: ''
 image_upload:
   status: true
   scheme: public
