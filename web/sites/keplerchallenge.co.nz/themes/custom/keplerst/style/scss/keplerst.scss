@@ -44,7 +44,7 @@
 // @media all and (min-width: 480px) and (max-width: 767px) {.view-our-partners .views-row {width: 31.5%;}}
 // @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {.view-our-partners .views-row {width: 23.5%;}
 // }
-.view-our-partners,  { //.view-product-catalogue
+.view-our-partners  { // , .view-product-catalogue
 
 .view-header + .view-content > div.views-row:first-of-type > .node--type-partners > .field--name-field-partner-logo {} // Specific for Naming rights sponsor
 
@@ -92,6 +92,8 @@
 	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
     .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
 	}
+
+	.views-row:first-of-type {grid-column-start: 1;grid-column-end: span 4;}
 
 
   h3 {
@@ -161,11 +163,16 @@
 	#edit-quantity-wrapper {}
 	.form-item {
 		margin-top: 0em;
-		/* margin-bottom: 1em; */
+		margin-bottom: 0.4em;
 		/* width: 100%; */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+	.form-select {
+		font-weight: 300;
+		font-size: 1.2em;
+		padding: 2px 0;
 	}
 	.field--widget-commerce-quantity {
 		width: 100%;
@@ -575,9 +582,9 @@ div#page.scrolled #title-bar-wrapper {
   right: 0;}
 ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
     & li {padding: 0; margin: 0; color: #fff; display: inline-block; height:30px;
-      & a {color: #fff; display: block; padding:0.2rem 0.4rem;}
-      & a:first-of-type {padding-left:0.8rem;}
-      & a:hover{background-color: rgba($keplerst_DarkOrange, 0.7)}
+      & a {color: #fff; display: block; padding:0.2rem 0.6rem;}
+      &:first-of-type a {padding-left:1rem;}
+      & a:hover {background-color: rgba($keplerst_DarkOrange, 0.7)}
     }
 }
 #logged-in-menu-stripe {
@@ -595,11 +602,11 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
         rgba($keplerst_Orange, 1) 20%
       );
 }
-@media screen and (max-width: 415px){ #logged-in-menu{width: 100%; text-align:center;} #logged-in-menu-stripe {display: none;}}
-@media screen and (min-width: 416px) and (max-width:959px) { #logged-in-menu{width: 19.5rem;}}
-@media screen and (min-width: 960px) and (max-width:1279px) { #logged-in-menu{width: 21.5rem;}}
+@media screen and (max-width: 415px){ #logged-in-menu{width: 105%; text-align:center;} #logged-in-menu-stripe {display: none;}}
+@media screen and (min-width: 416px) and (max-width:959px) { #logged-in-menu{width: 24rem;}}
+@media screen and (min-width: 960px) and (max-width:1279px) { #logged-in-menu{width: 24rem;}}
 @media screen and (min-width: 1280px){
-  #logged-in-menu{width: 22.8rem;}
+  #logged-in-menu{width: 24rem;}
   #logged-in-menu-stripe {  background-image: linear-gradient(
         to right,
         rgba($keplerst_DarkOrange, 0.45),
@@ -613,6 +620,7 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
 /* Logged-in overrides */
 .user-logged-in {
   #block-tmdaccountloginloggedin {display: block;}
+	#block-tmdaccountloginloggedin #account-menu > a {border-bottom: 4px solid $keplerst_Orange;}
   #block-tmdaccountlogin {display: none;}
   #header-outer-wrapper + #menu-outer-wrapper {margin-top: 90px;}//5.5rem;}
   #header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {top:0;}
