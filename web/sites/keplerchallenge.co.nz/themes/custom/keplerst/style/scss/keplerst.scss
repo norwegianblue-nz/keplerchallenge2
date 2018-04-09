@@ -24,7 +24,8 @@
 // div#account-menu:hover #logged-in-menu, div#account-menu:focus #logged-in-menu {display: block;}
 
 
-
+.token::before{content:'[custom:';}
+.token::after{content:']';}
 
 // tmd sandy-pit
 
