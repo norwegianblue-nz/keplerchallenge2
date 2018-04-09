@@ -54,7 +54,7 @@
 	}
 	.field--name-field-partner-logo
    { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case a fall-back is needed
-  	border: 1px solid #999;
+  	border: 1px solid #ddd;
 		position: relative;
   // height: 0;
   // overflow: hidden;
@@ -93,7 +93,8 @@
     .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
 	}
 
-	.views-row:first-of-type {grid-column-start: 1;grid-column-end: span 4;}
+	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .field--name-field-partner-logo {border: 0px solid #fff;}}
+  .views-row:first-of-type .node--type-partners {grid-template-columns: 40% 40%; grid-column-gap:10%;}
 
 
   h3 {
@@ -233,6 +234,28 @@
 }
 //} // /gallery
 
+// Open News summary
+.node--type-news-summary {
+  #social_media-wrapper, #content2-outer-wrapper {}
+  #block-views-block-news-articles-block-1 {
+	border-top: solid 1px $keplerst_LightOrange;
+	border-bottom: solid 1px $keplerst_LightOrange;
+    & h2 {margin-top: 1rem;}
+    & h2 a::after {
+      content: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/link.svg');
+      display: inline-block;
+      top: 2px;
+      position: relative;
+      margin: 0 6px;
+    }
+  }
+  @media all and (min-width: 600px) {
+    .view-news-articles .view-content {display: flex; justify-content: space-between;}
+    .view-news-articles .view-content .views-row {width: 30%;}
+  }
+  h2.news-teaser a {color:$keplerst_DarkOrange;font-size: 1.2rem;}
+} // Close news summary
+
 // Keeping sandy>>>>
 
 
@@ -255,7 +278,7 @@
 /* Fixed bg images */
 .nb_fixed-bg {
     min-height: 55vh;
-    background-position: 50% bottom;
+    background-position: 50% 33%;
     background-repeat: no-repeat;
     background-size: cover;
     background-color:$keplerst_DarkTeal;
@@ -265,7 +288,7 @@
 @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {
 	.nb_fixed-bg, #nb_slideshow_bg{
 		height:1vh;
-		background-attachment: fixed;
+		/*background-attachment: fixed;*/
 	}
 }
 @media all and (min-width: 1024px) and (max-width: 1219px) {.nb_fixed-bg{}}
@@ -686,16 +709,16 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
 /* CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 // main col padding
 @media all and (min-width: 600px) {
-  .region-content, .region-content {padding: 0 8.47%;}
+  .region-content {padding: 0 8.47%;}
 }
 // @media all and (min-width: 768px) {
 //   .region-content, .region-content {padding: 0 64px;}
 // }
 @media all and (min-width: 960px) {
-  .region-content, .region-content {padding: 0 80px;}
+  .region-content {padding: 0 80px;}
 }
 @media all and (min-width: 1280px) {
-  .region-content, .region-content {padding: 0 100px;}
+  .region-content {padding: 0 100px;}
 }
 
 
@@ -883,7 +906,7 @@ a.social-icon {padding: 0 0.5rem;}
 @media all and (min-width: 0px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-mob.png");}}
 @media all and (min-width: 480px) and (max-width: 767px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-sml.png");}}
 @media all and (min-width: 768px) and (max-width: 959px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-med.png");}}
-@media all and (min-width: 768px) {#footer-outer-wrapper {height:1vh;background-attachment: fixed;}}
+@media all and (min-width: 768px) {#footer-outer-wrapper {/*height:1vh;*/background-attachment: fixed;}}
 @media all and (min-width: 960px) and (max-width: 1279px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-lrg.png");}}
 @media all and (min-width: 1280px) {#footer-outer-wrapper{background-image: url("/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/backgrounds/footer-bg-xlrg.png");}}
 
@@ -939,6 +962,10 @@ a.social-icon {padding: 0 0.5rem;}
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .path-frontpage { // THIS WRAPS FRONT PAGE OVERRIDES
+
+// Main top image
+  .nb_fixed-bg {background-attachment: fixed;} // Make hero images fixed on home.
+
 
 // Title Bar
 
