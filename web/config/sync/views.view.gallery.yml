@@ -282,7 +282,7 @@ display:
         description: 'Image Gallery'
         expanded: false
         parent: ''
-        weight: -44
+        weight: -48
         context: '0'
         menu_name: main
       style:
@@ -325,7 +325,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "\n<h2>Some images of the event.</h2>\n<p>We thank everyone for their use</p>"
+            value: "<h1>Photo Gallery</h1>\n<p class=\"header-intro\">\nThere's no denying it - the Kepler Track is drop dead gorgeous. On breaking the woman's race record, Zelah Morrall, was heard saying \"well I'd have been a bit quicker if I hadn't stopped to take a couple of photos… it was just so beautiful\". </p>\n<p>\nIn Te Anau we are fortunate to have award winning photographer Graham Dainty who shares his photos of the event with us each year. Here's a selection of Graham's photos from around the course.</p>"
             format: raw
           plugin_id: text
     cache_metadata:

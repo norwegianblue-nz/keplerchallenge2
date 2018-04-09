@@ -876,7 +876,7 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: -46
+        weight: -49
         context: '0'
         menu_name: main
       style:
@@ -919,7 +919,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<p>We are always indebted to the people who help out with finances.<p>\n<h2>Our partners are</h2>"
+            value: "<h1>Our partners are</h1>\n<p class=\"header-intro\">The Kepler Challenge would not be possible without the generous support of our partners.<p>"
             format: raw
           plugin_id: text
     cache_metadata:

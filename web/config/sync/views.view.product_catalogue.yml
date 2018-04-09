@@ -209,10 +209,24 @@ display:
         description: ''
         expanded: true
         parent: ''
-        weight: -43
+        weight: -47
         context: '0'
         menu_name: main
         enabled: true
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<h1>Kepler Store</h1>\n<p class=header-intro>Great Kepler merchandise to buy. Tee shirts and breakfast vouchers will be available to collect at registration.<p>"
+          plugin_id: text_custom
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:
