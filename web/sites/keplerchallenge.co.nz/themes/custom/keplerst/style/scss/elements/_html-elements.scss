@@ -227,13 +227,19 @@ h6,
 }
 
 // Specific elements
-.page-title, #block-title > div {
+.page-title, #block-title, .view-header h1 {
   @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
   line-height: 1.3em;
   padding: 5px 0 50px;
   border-top: 1px solid #333;
   border-bottom: 1px solid #777;
 }
+
+.header-intro {
+  font-size: 1.3rem;
+  line-height: 1.3em;
+}
+
 p a, p a.link, #main-layout li a {  border-bottom: dotted 0.1em !important;
 }
 
