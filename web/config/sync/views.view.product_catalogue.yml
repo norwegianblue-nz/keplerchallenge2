@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.commerce_product.full
     - core.entity_view_mode.commerce_product.product_catalogue
     - system.menu.main
   module:
@@ -87,6 +88,8 @@ display:
             item_9: default
           grouping_fieldset:
             group: false
+            group_field: commerce_product_field_data|type
+            group_field_function: ''
           advanced_fieldset:
             advanced: false
       fields:
@@ -209,10 +212,34 @@ display:
         description: ''
         expanded: true
         parent: ''
-        weight: -43
+        weight: -47
         context: '0'
         menu_name: main
         enabled: true
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<h1>Kepler Store</h1>\n<p class=header-intro>Great Kepler merchandise to buy. Tee shirts and breakfast vouchers will be available to collect at registration.<p>"
+          plugin_id: text_custom
+      defaults:
+        header: false
+        style: false
+        row: false
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:commerce_product'
+        options:
+          relationship: none
+          view_mode: product_catalogue
     cache_metadata:
       max-age: -1
       contexts:

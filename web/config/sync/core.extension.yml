@@ -14,6 +14,7 @@ module:
   commerce: 0
   commerce_cart: 0
   commerce_checkout: 0
+  commerce_dps: 0
   commerce_log: 0
   commerce_order: 0
   commerce_payment: 0
@@ -78,6 +79,7 @@ module:
   rdf: 0
   responsive_image: 0
   rest: 0
+  rules: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -92,6 +94,7 @@ module:
   token_filter: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
   update: 0
   user: 0
   views_ui: 0

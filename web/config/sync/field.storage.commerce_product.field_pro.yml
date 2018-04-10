@@ -1,4 +1,4 @@
-uuid: dad6ae00-4c05-48be-8f64-3f2ae896083a
+uuid: 30ebbb6f-5ecc-4fd1-9fec-4efa6ebdd63d
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - commerce_product
     - file
     - image
-id: commerce_product_variation.field_product_image
-field_name: field_product_image
-entity_type: commerce_product_variation
+id: commerce_product.field_pro
+field_name: field_pro
+entity_type: commerce_product
 type: image
 settings:
   uri_scheme: public

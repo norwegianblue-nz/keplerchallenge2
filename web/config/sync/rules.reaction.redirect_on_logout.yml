@@ -1,0 +1,35 @@
+uuid: cf2f6bef-8560-4fa4-a728-c969a2f3c8f2
+langcode: en
+status: true
+dependencies: {  }
+id: redirect_on_logout
+label: 'Redirect on Logout'
+events:
+  -
+    event_name: rules_user_logout
+description: ''
+tags:
+  - norwegian.blue
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 4a032d36-21d5-49ec-b7a0-f9479e487358
+  conditions:
+    id: rules_and
+    uuid: f8fe1974-e309-4ad8-b1df-e9e77cd29e38
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: f200db88-1b5c-452e-8e8b-a0b083dbd1c4
+    actions:
+      -
+        id: rules_action
+        uuid: eeb9ee0b-177a-4e79-ad46-0930324dc1b9
+        context_values:
+          url: /store
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_page_redirect
