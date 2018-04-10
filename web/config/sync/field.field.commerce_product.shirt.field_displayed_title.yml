@@ -1,0 +1,19 @@
+uuid: 91809060-8491-4763-8753-b3968fd3446f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shirt
+    - field.storage.commerce_product.field_displayed_title
+id: commerce_product.shirt.field_displayed_title
+field_name: field_displayed_title
+entity_type: commerce_product
+bundle: shirt
+label: 'Displayed Title'
+description: 'Title Displayed on Product Detail page'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

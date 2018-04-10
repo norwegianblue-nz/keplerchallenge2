@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.commerce_product.full
     - core.entity_view_mode.commerce_product.product_catalogue
     - system.menu.main
   module:
@@ -87,6 +88,8 @@ display:
             item_9: default
           grouping_fieldset:
             group: false
+            group_field: commerce_product_field_data|type
+            group_field_function: ''
           advanced_fieldset:
             advanced: false
       fields:
@@ -227,6 +230,16 @@ display:
           plugin_id: text_custom
       defaults:
         header: false
+        style: false
+        row: false
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:commerce_product'
+        options:
+          relationship: none
+          view_mode: product_catalogue
     cache_metadata:
       max-age: -1
       contexts:

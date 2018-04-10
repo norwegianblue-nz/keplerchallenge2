@@ -104,11 +104,11 @@ filters:
     status: true
     weight: -46
     settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
+  filter_html_escape:
+    id: filter_html_escape
     provider: filter
     status: false
-    weight: -39
+    weight: -43
     settings: {  }
   filter_url:
     id: filter_url
@@ -117,11 +117,11 @@ filters:
     weight: -41
     settings:
       filter_url_length: 72
-  filter_html_escape:
-    id: filter_html_escape
+  filter_html_image_secure:
+    id: filter_html_image_secure
     provider: filter
     status: false
-    weight: -43
+    weight: -39
     settings: {  }
   filter_autop:
     id: filter_autop

@@ -6,43 +6,48 @@ dependencies:
     - commerce_product.commerce_product_type.shirt
     - core.entity_view_mode.commerce_product.product_catalogue
     - field.field.commerce_product.shirt.body
+    - field.field.commerce_product.shirt.field_pro
     - field.field.commerce_product.shirt.stores
     - field.field.commerce_product.shirt.variations
+    - responsive_image.styles.partners_panels
   module:
     - commerce_product
     - ds
-    - text
+    - responsive_image
 id: commerce_product.shirt.product_catalogue
 targetEntityType: commerce_product
 bundle: shirt
 mode: product_catalogue
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  title:
-    label: hidden
-    type: string
+  field_pro:
+    type: responsive_image
     weight: 0
     region: content
+    label: hidden
+    settings:
+      responsive_image_style: partners_panels
+      image_link: content
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
     weight: 2
+    region: content
     label: hidden
     settings:
-      combine: false
+      combine: true
     third_party_settings:
       ds:
         ds_limit: ''
-    region: content
 hidden:
+  body: true
   created: true
   stores: true
   uid: true
