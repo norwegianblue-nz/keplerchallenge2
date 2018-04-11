@@ -1,0 +1,19 @@
+uuid: 26198a8b-056b-4d84-81b7-2152da829821
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_stripe
+id: stripe_norwegian_blue_test
+label: 'Stripe  - norwegian.blue Test'
+weight: null
+plugin: stripe
+configuration:
+  publishable_key: pk_test_9fqKgaqsXBGSVZGCCz9RRLV9
+  secret_key: sk_test_sUHLAIFiPun4VennhvqLoiX1
+  display_label: Stripe
+  mode: test
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND

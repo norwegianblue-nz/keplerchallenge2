@@ -14,7 +14,6 @@ module:
   commerce: 0
   commerce_cart: 0
   commerce_checkout: 0
-  commerce_dps: 0
   commerce_log: 0
   commerce_order: 0
   commerce_payment: 0
@@ -22,6 +21,7 @@ module:
   commerce_price: 0
   commerce_product: 0
   commerce_store: 0
+  commerce_stripe: 0
   config: 0
   contact: 0
   contact_block: 0

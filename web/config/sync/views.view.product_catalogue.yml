@@ -3,12 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.commerce_product.full
     - core.entity_view_mode.commerce_product.product_catalogue
     - system.menu.main
+    - user.role.authenticated
   module:
     - commerce_product
     - ds
+    - user
 id: product_catalogue
 label: 'Product Catalogue'
 module: views
@@ -25,8 +26,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -197,6 +200,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags: {  }
   page_1:
     display_plugin: page
@@ -246,4 +250,5 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags: {  }

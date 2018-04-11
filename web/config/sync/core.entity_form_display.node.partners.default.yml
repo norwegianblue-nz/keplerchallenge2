@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.partners.field_displayorder
     - field.field.node.partners.field_partner_about
     - field.field.node.partners.field_partner_description
     - field.field.node.partners.field_partner_logo
@@ -27,6 +28,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_displayorder:
+    weight: 26
+    settings:
+      placeholder: '0'
+    third_party_settings: {  }
+    type: number
+    region: content
   field_partner_about:
     weight: 4
     settings:

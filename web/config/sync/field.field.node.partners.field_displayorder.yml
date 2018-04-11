@@ -1,0 +1,25 @@
+uuid: fbeb06b0-0c40-40fa-97f9-9218991aa5ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_displayorder
+    - node.type.partners
+id: node.partners.field_displayorder
+field_name: field_displayorder
+entity_type: node
+bundle: partners
+label: 'Display Order'
+description: "Enter a number to determine the order the sponsors will be displayed within their sponsorship level.<br />\r\nSponsors with a smaller number will be displayed before sponsors with a larger number"
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

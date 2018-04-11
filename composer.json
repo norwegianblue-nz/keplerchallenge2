@@ -28,6 +28,7 @@
         "drupal/coffee": "1.x-dev",
         "drupal/colorbox": "^1.4",
         "drupal/commerce": "^2.5",
+        "drupal/commerce_stripe": "^1.0@beta",
         "drupal/console": "^1.0.1",
         "drupal/contact_block": "^1.4",
         "drupal/contentimport": "^3.2",
