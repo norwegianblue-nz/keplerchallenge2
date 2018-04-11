@@ -1,11 +1,9 @@
 @import "keplerst_mixins", "keplerst-style-vars", "keplerst-default-style-vars", "keplerstgs";
 ////////////////////////////////////////////////////////////////////////////////
 //
-/* Sandpit */
+/*     Sandpit    */
 //
 ////////////////////////////////////////////////////////////////////////////////
-
-
 
 // div#account-menu {display: block;}
 // #logged-in-menu {
@@ -24,140 +22,52 @@
 // div#account-menu:hover #logged-in-menu, div#account-menu:focus #logged-in-menu {display: block;}
 
 
+
+
 // tmd sandy-pit
 
-//
 
 
 
-//  ============== ========= ======== ========
-// Partners
-//  Needs work on 'grid' once responsive image sizes complete
-// .view-our-partners .view-content{
-// 	display: flex;
-// 	flex-wrap: wrap;
-//   justify-content: space-between;
-// }
-// .view-our-partners .views-row {width: 48%; margin: 0 0 3rem 0;}
-// @media all and (min-width: 480px) and (max-width: 767px) {.view-our-partners .views-row {width: 31.5%;}}
-// @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {.view-our-partners .views-row {width: 23.5%;}
-// }
-.view-our-partners  { // , .view-product-catalogue
+// Store - product + catalogue >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.view-product-catalogue, .path-product { //#main-layout
 
-.view-header + .view-content > div.views-row:first-of-type > .node--type-partners > .field--name-field-partner-logo {} // Specific for Naming rights sponsor
+  // .field--name-field-pro
+  //  { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
+  // 	border: 1px solid #999;
+	// 	position: relative;
+	// }
+  //
+	// .field--name-field-pro .field__item {
+	// position: absolute;
+	// top: 50%;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // transform: translateY(-50%);	}
+  //
+	// @media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+  //   .field--name-field-pro {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
+	// }
+	// @media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+  //   .field--name-field-pro {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+	// }
+	// @media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+  //   .field--name-field-pro {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	// }
+	// @media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+  //   .field--name-field-pro {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	// }
+	// @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+  //   .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	// }
 
-	.view-content {
-    display: grid;
-    grid-row-gap: 20px;
-	}
-	.field--name-field-partner-logo
-   { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case a fall-back is needed
-  	border: 1px solid #ddd;
-		position: relative;
-  // height: 0;
-  // overflow: hidden;
-  // padding-top: 500px / 500px * 100%;
-  // background: white;
-  // position: relative;
-	}
-	// .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-// }
-	.field--name-field-partner-logo .field__label {display: none;}
-
-	.field--name-field-partner-logo .field__item {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	}
-
-	@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
-    .field--name-field-partner-logo {height: 220px;} h3 {grid-column-start: 1;grid-column-end: span 1;}
-	}
-	@media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
-    .field--name-field-partner-logo {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
-	}
-	@media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
-    .field--name-field-partner-logo {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-	@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
-    .field--name-field-partner-logo {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
-    .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-
-	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .field--name-field-partner-logo {border: 0px solid #fff;}}
-  .views-row:first-of-type .node--type-partners {grid-template-columns: 40% 40%; grid-column-gap:10%;}
-
-
-  h3 {
-	border-top: 1px solid #999;
-	color: $keplerst_DarkOrange;
-  }
-	h3 a {color: $keplerst_DarkOrange;}
-
-  .field--name-node-title h2 {margin-top: 0;}
-  .field--name-node-title h2 a {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
-  .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
-  .field--name-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
-
-} // view-our-partners {} ends
-
-// Store product view >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-.view-product-catalogue { //, .path-product #main-layout
-
-
-	.view-content {
-    display: grid;
-    grid-row-gap: 20px;
-	}
-  .field--name-field-product-image
-   { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
-  	border: 1px solid #999;
-		position: relative;
-	}
-
-	.field--name-field-product-image .field__item {
-	position: absolute;
-	top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);	}
-
-	@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
-    .field--name-field-product-image {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
-	}
-	@media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
-    .field--name-field-product-image {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
-	}
-	@media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
-    .field--name-field-product-image {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-	@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
-    .field--name-field-product-image {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
-    .field--name-field-product-image {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-
-  // .field--name-node-title h2 {margin-top: 0;}
-  // .field--name-node-title h2 a {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
-  // .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
-  // .field--name-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
-
-  .field--name-title {margin-top: 0;}
-  .field--name-title {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
-
+  .field--name-title {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.4rem); display: block; height: 2.8em; line-height: 1em; margin-top: 0.5rem;}
 
   .field--type-commerce-price {@include keplerst_ubuntu-light ($color:$keplerst_DarkOrange, $size: 1.1rem);
     font-size: 1.1rem;
     border-bottom: 1px solid #ccc;
-    margin: 0.5rem 0;}
+    margin: 0.5rem 0;
+    max-height: 2rem;}
 
 	#edit-quantity-wrapper {}
 	.form-item {
@@ -181,8 +91,6 @@
 		width: 100%;
 		display: inline-block;
 	}
-
-
   label {@include keplerst_ubuntu-light ($color:$keplerst_Grey, $size: 1.1rem);}
   input.form-number {
   color: $keplerst_Grey;
@@ -191,7 +99,7 @@
   width: 60px;
   height: 3rem;
   }
-  input.button {
+  #main-layout input.button {
 	height: 3rem;
 	width: 100%;
 	background-color: $keplerst_DarkOrange;
@@ -201,9 +109,67 @@
   }
 } // / Store {} ends
 
+// Store product specifics >>
+.path-product { // (Product)
+    @media all and (min-width:500px) {
+      article {
+        display: grid;
+        grid-template-columns: auto;
+      }
+    }
+  .field--name-field-displayed-title {
+    grid-column-start: 1;
+    grid-column-end: span2;
+    }
+	.field--name-field-displayed-title {
+		margin: 0 0 2rem 0;
+	  @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
+	  line-height: 1.3em;
+	  padding: 5px 0 50px;
+	  border-top: 1px solid #333;
+	  border-bottom: 1px solid #777;
+	}
+	.field--name-field-pro,
+  .field--name-body {
+    // float: left;
+    padding-right: 2rem;
+	}
+} // CLOSE {} prod page
 
-// Photo gallery
-// .path-gallery {
+.view-product-catalogue { // (Catalogue)
+  .view-content {display: grid; grid-row-gap: 20px;}
+  .field--name-field-pro { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
+    border: 1px solid #999;
+    position: relative;
+  }
+  .field--name-field-pro .field__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);	}
+  @media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+    .field--name-field-pro {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
+  }
+  @media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+    .field--name-field-pro {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+  }
+  @media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+    .field--name-field-pro {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+  }
+  @media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+    .field--name-field-pro {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+  }
+  @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+    .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+  }
+} // Close {} cat page
+
+// End Store pages >>
+
+
+// Photo gallery  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.path-gallery {
 @media all and (max-width: 599px) {.field--name-field-gallery-image {
   display: flex;
   flex-wrap: wrap;
@@ -230,9 +196,9 @@
 .colorbox.cboxElement img {
 	max-width: unset;
 }
-//} // /gallery
+} // / {} gallery
 
-// Open News summary
+// Open News summary  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 .node--type-news-summary {
   #social_media-wrapper, #content2-outer-wrapper {}
   #block-views-block-news-articles-block-1 {
@@ -744,6 +710,84 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 @media all and (min-width:416px) and (max-width: 599px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 21.7%;}}
 @media all and (min-width:600px) and (max-width: 959px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 23%;}}
 
+//  ============== ========= ======== ========
+// Partners
+//  Needs work on 'grid' once responsive image sizes complete
+// .view-our-partners .view-content{
+// 	display: flex;
+// 	flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+// .view-our-partners .views-row {width: 48%; margin: 0 0 3rem 0;}
+// @media all and (min-width: 480px) and (max-width: 767px) {.view-our-partners .views-row {width: 31.5%;}}
+// @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {.view-our-partners .views-row {width: 23.5%;}
+// }
+.view-our-partners  {
+
+.view-header + .view-content > div.views-row:first-of-type > .node--type-partners > .field--name-field-partner-logo {} // Specific for Naming rights sponsor
+
+	.view-content {
+    display: grid;
+    grid-row-gap: 20px;
+	}
+	.field--name-field-partner-logo
+   { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case a fall-back is needed
+  	border: 1px solid #ddd;
+		position: relative;
+  // height: 0;
+  // overflow: hidden;
+  // padding-top: 500px / 500px * 100%;
+  // background: white;
+  // position: relative;
+	}
+	// .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+// }
+	.field--name-field-partner-logo .field__label {display: none;}
+
+	.field--name-field-partner-logo .field__item {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	}
+
+	@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+    .field--name-field-partner-logo {height: 220px;} h3 {grid-column-start: 1;grid-column-end: span 1;}
+	}
+	@media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+    .field--name-field-partner-logo {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+	}
+	@media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+    .field--name-field-partner-logo {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	}
+	@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+    .field--name-field-partner-logo {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	}
+	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+    .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	}
+
+	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .field--name-field-partner-logo {border: 0px solid #fff;}}
+  .views-row:first-of-type .node--type-partners {grid-template-columns: 40% 40%; grid-column-gap:10%;}
+
+  h3 {
+	border-top: 1px solid #999;
+	color: $keplerst_DarkOrange;
+  }
+	h3 a {color: $keplerst_DarkOrange;}
+
+  .field--name-node-title h2 {margin-top: 0;}
+  .field--name-node-title h2 a {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
+  .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
+  .field--name-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
+
+} // view-our-partners {} ends
+
+
 // FAQ Page specifics >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // /*Add some spacing*/
@@ -770,14 +814,14 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
     height: 36px;
 }
 
-// /*Show only the clipped intro - not used */
-.faq-section label + p {
-	display: block;
-	transition: all .15s ease-out;
-	// /* text-overflow: ellipsis; */
-	// /* white-space: nowrap; */
-	// /* overflow: hidden; */
-}
+// // /*Show only the clipped intro - not used */
+// .faq-section label + p {
+// 	display: block;
+// 	transition: all .15s ease-out;
+// 	// /* text-overflow: ellipsis; */
+// 	// /* white-space: nowrap; */
+// 	// /* overflow: hidden; */
+// }
 
 // /*If the checkbox is checked, show all paragraphs*/
 .faq-section input[type=checkbox]:checked~p{
