@@ -1,0 +1,12 @@
+uuid: 72c491b8-d8bc-4747-9feb-c668ff621d0f
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - roo@pealing.com
+reply: Thanks
+weight: 0
+message: Cheers
+redirect: ''
