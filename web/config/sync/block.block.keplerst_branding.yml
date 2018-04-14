@@ -11,7 +11,7 @@ _core:
 id: keplerst_branding
 theme: keplerst
 region: title_bar
-weight: -20
+weight: -21
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,0 +1,29 @@
+uuid: 80373ee3-dc41-4c5d-8ec8-c794046ed46a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.meal
+    - core.entity_view_mode.commerce_product_variation.product_catalogue
+    - field.field.commerce_product_variation.meal.attribute_size
+  module:
+    - commerce_price
+id: commerce_product_variation.meal.product_catalogue
+targetEntityType: commerce_product_variation
+bundle: meal
+mode: product_catalogue
+content:
+  price:
+    label: above
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
+hidden:
+  attribute_size: true
+  product_id: true
+  sku: true
+  title: true

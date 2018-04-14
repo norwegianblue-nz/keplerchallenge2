@@ -11,7 +11,7 @@ dependencies:
 id: tmdsponsorlogotop
 theme: keplerst
 region: title_bar
-weight: -21
+weight: -22
 provider: null
 plugin: 'block_content:df2cf190-5fc4-4221-b088-4997cfb7bc47'
 settings:

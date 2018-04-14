@@ -1,0 +1,10 @@
+uuid: 18acdd41-5f6c-4a6d-b451-1d57209d23ef
+langcode: en
+status: true
+dependencies: {  }
+label: Meals
+id: meals
+purchasableEntityType: commerce_product_variation
+orderType: keplerstore
+traits: {  }
+locked: false

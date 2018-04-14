@@ -12,7 +12,7 @@ dependencies:
 id: tmdracedateteaser
 theme: keplerst
 region: teaser
-weight: 0
+weight: -24
 provider: null
 plugin: 'block_content:f5432eb2-2c28-4cf1-9fe6-f4555b803ac4'
 settings:

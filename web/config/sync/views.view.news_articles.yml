@@ -237,7 +237,7 @@ display:
       title: 'Latest News'
       use_more: true
       use_more_always: false
-      use_more_text: more
+      use_more_text: 'more (This text can read anything we want)'
       use_ajax: true
     cache_metadata:
       max-age: -1
@@ -281,6 +281,20 @@ display:
     display_options:
       display_extenders: {  }
       path: news-articles
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<h1>News</h1>\n<p class=header-intro>We can put some intro text here.<p>"
+          plugin_id: text_custom
+      defaults:
+        header: false
     cache_metadata:
       max-age: -1
       contexts:

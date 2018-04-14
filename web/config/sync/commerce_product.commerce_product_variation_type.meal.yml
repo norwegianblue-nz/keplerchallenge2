@@ -1,0 +1,10 @@
+uuid: cafe5488-4274-4d02-a624-b155a1d1c7e9
+langcode: en
+status: true
+dependencies: {  }
+id: meal
+label: Meal
+orderItemType: meals
+generateTitle: true
+traits: {  }
+locked: false

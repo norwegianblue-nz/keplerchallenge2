@@ -55,35 +55,23 @@ display:
         options:
           offset: 0
       style:
-        type: table
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            order_number: order_number
-          info:
-            order_number:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
+          columns: 5
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: 'lineitem lineitem-price lineitem-qty lineitem-remove lineitem-total'
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
         options:
+          default_field_elements: true
           inline: {  }
           separator: ''
           hide_empty: false
-          default_field_elements: true
       fields:
         purchased_entity:
           id: purchased_entity
@@ -134,9 +122,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: entity_reference_label
           settings:
-            view_mode: cart
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -223,7 +211,7 @@ display:
           relationship: order_items
           group_type: group
           admin_label: ''
-          label: Quantity
+          label: Qty
           exclude: false
           alter:
             alter_text: false
@@ -274,7 +262,7 @@ display:
           relationship: order_items
           group_type: group
           admin_label: ''
-          label: Remove
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -307,7 +295,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true

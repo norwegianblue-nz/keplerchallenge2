@@ -9,7 +9,7 @@ dependencies:
 id: test_preface_third
 theme: keplerst
 region: preface_third
-weight: 0
+weight: -25
 provider: null
 plugin: 'block_content:0accd542-c14c-4404-8e1b-07dcbdef464f'
 settings:

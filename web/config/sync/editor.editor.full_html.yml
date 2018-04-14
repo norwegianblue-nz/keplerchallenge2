@@ -41,6 +41,7 @@ settings:
             - DrupalImage
             - Table
             - HorizontalRule
+            - node
         -
           name: 'Block Formatting'
           items:
@@ -49,8 +50,10 @@ settings:
         -
           name: Tools
           items:
+            - tokenbrowser
             - ShowBlocks
             - Source
+            - Maximize
   plugins:
     stylescombo:
       styles: span.token|Token

@@ -3,8 +3,8 @@ name: keplerchallenge.co.nz
 mail: info@scud.keplerchallenge.co.nz
 slogan: ''
 page:
-  403: /node/243
-  404: ''
+  403: /node/272
+  404: /node/273
   front: /node/213
 admin_compact_mode: false
 weight_select_max: 100

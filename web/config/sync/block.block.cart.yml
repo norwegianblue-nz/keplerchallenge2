@@ -1,0 +1,21 @@
+uuid: e1616d74-7b79-4c03-b9a1-610f85bec980
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - keplerst
+id: cart
+theme: keplerst
+region: title_bar
+weight: -24
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility: {  }

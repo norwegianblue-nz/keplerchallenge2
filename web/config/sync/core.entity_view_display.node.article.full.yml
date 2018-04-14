@@ -55,6 +55,10 @@ third_party_settings:
         weight: 0
         label: hidden
         formatter: default
+        settings:
+          wrapper: h1
+          class: news-article
+          link: false
       node_author:
         plugin_id: node_author
         weight: 5

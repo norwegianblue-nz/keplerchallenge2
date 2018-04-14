@@ -11,7 +11,7 @@ dependencies:
 id: hamburgernonmobile
 theme: keplerst
 region: title_bar
-weight: 0
+weight: -18
 provider: null
 plugin: 'block_content:623ea005-cd89-4c21-912f-c1d1322344a4'
 settings:

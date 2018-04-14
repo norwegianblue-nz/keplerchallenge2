@@ -9,7 +9,7 @@ dependencies:
 id: test_teaser
 theme: keplerst
 region: teaser
-weight: 0
+weight: -23
 provider: null
 plugin: 'block_content:e3b69715-7c40-448e-a91e-55b6c6ab377a'
 settings:

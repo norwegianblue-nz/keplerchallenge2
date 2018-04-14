@@ -12,7 +12,7 @@ dependencies:
 id: tmdfrontpagebanner
 theme: keplerst
 region: preface_third
-weight: 0
+weight: -26
 provider: null
 plugin: 'block_content:1f6c065f-f9ed-4f31-951b-726a9a9279b1'
 settings:

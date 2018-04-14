@@ -1,0 +1,11 @@
+uuid: 11978b05-4885-4e89-8d7a-baab8fd93058
+langcode: en
+status: true
+dependencies: {  }
+id: meal
+label: Meal
+description: ''
+variationType: meal
+injectVariationFields: true
+traits: {  }
+locked: false

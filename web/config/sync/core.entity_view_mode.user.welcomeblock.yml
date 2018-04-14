@@ -1,0 +1,10 @@
+uuid: 27f6bafb-9653-4ac7-890a-4a6f6e3243f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.welcomeblock
+label: WelcomeBlock
+targetEntityType: user
+cache: true

@@ -12,7 +12,7 @@ dependencies:
 id: tmdkeplerlogowatermark_2
 theme: keplerst
 region: teaser
-weight: 0
+weight: -25
 provider: null
 plugin: 'block_content:9ecabadd-05dd-4c05-a987-e6e375f009f9'
 settings:
