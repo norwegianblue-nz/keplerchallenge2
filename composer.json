@@ -37,6 +37,7 @@
         "drupal/ds": "^3.1",
         "drupal/easy_breadcrumb": "^1.6",
         "drupal/editor_advanced_link": "^1.4",
+        "drupal/entity_embed": "^1.0@beta",
         "drupal/geolocation": "^1.11",
         "drupal/google_analytics": "^2.2",
         "drupal/honeypot": "^1.27",
