@@ -227,7 +227,8 @@ h6,
 }
 
 // Specific elements
-.page-title, #block-title, .view-header h1 {
+// .page-title, #block-title, .view-header h1 {
+h1:first-of-type {
   @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
   line-height: 1.3em;
   padding: 5px 0 50px;

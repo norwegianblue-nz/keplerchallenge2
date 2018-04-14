@@ -30,7 +30,7 @@
 
 
 // Store - product + catalogue >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-.view-product-catalogue, .path-product { //#main-layout
+.path-store, .path-product, .path-cart { //#main-layout .view-product-catalogue
 
   // .field--name-field-pro
   //  { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
@@ -91,21 +91,22 @@
 		width: 100%;
 		display: inline-block;
 	}
+  #main-layout input.button {
+  	height: 3rem;
+  	width: 100%;
+    max-width: 230px;
+  	background-color: $keplerst_DarkOrange;
+  	border: 0;
+  	margin: 1rem 0;
+  	color: #fff;
+  }
   label {@include keplerst_ubuntu-light ($color:$keplerst_Grey, $size: 1.1rem);}
   input.form-number {
-  color: $keplerst_Grey;
-  text-align: center;
-  font-size: 1.2rem;
-  width: 60px;
-  height: 3rem;
-  }
-  #main-layout input.button {
-	height: 3rem;
-	width: 100%;
-	background-color: $keplerst_DarkOrange;
-	border: 0;
-	margin: 1rem 0;
-	color: #fff;
+    color: $keplerst_Grey;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 60px;
+    height: 3rem;
   }
 } // / Store {} ends
 
@@ -136,7 +137,7 @@
 	}
 } // CLOSE {} prod page
 
-.view-product-catalogue { // (Catalogue)
+.path-store { // (Catalogue) .view-product-catalogue
   .view-content {display: grid; grid-row-gap: 20px;}
   .field--name-field-pro { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
     border: 1px solid #999;
@@ -163,6 +164,27 @@
   @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
     .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
   }
+
+
+//  Inputs
+  select {
+    min-width: 150px;
+    // padding: 5px 35px 5px 5px;
+    // font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows.png') 97% top no-repeat;
+  }
+  select input[type=checkbox]:disabled {background-color: $keplerst_GreyText;}
+  /* CAUTION: IE hackery ahead */
+  select::-ms-expand {display: none; /* remove default arrow in IE 10 and 11 */}
+  /* target Internet Explorer 9 to undo the custom arrow */
+  @media screen and (min-width:0\0) {select {background:none\9; padding: 5px\9;} }
+
+
 } // Close {} cat page
 
 // End Store pages >>
@@ -710,7 +732,7 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 @media all and (min-width:416px) and (max-width: 599px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 21.7%;}}
 @media all and (min-width:600px) and (max-width: 959px){#block-footerimage1, #block-footerimage2, #block-footerimage3, #block-footerimage4 {width: 23%;}}
 
-//  ============== ========= ======== ========
+//  ============== ========= ======== ======== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Partners
 //  Needs work on 'grid' once responsive image sizes complete
 // .view-our-partners .view-content{
@@ -722,70 +744,136 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 // @media all and (min-width: 480px) and (max-width: 767px) {.view-our-partners .views-row {width: 31.5%;}}
 // @media all and (min-width: 768px) /*and (max-width: 1023px)*/ {.view-our-partners .views-row {width: 23.5%;}
 // }
+
+//  NOTE - Change made to view .field--name-field-partner-description retargetted to .views-field-field-partner-description
+
 .view-our-partners  {
 
-.view-header + .view-content > div.views-row:first-of-type > .node--type-partners > .field--name-field-partner-logo {} // Specific for Naming rights sponsor
+// .view-header + .view-content > div.views-row:first-of-type > .node--type-partners > .field--name-field-partner-logo {} // Specific for Naming rights sponsor
+//
+// 	.view-content {
+//     display: grid;
+//     grid-row-gap: 20px;
+// 	}
+// 	.field--name-field-partner-logo, .views-field-partner-logo, .views-field-field-partner-logo
+//    { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case a fall-back is needed
+//   	border: 1px solid #ddd;
+// 		position: relative;
+//   // height: 0;
+//   // overflow: hidden;
+//   // padding-top: 500px / 500px * 100%;
+//   // background: white;
+//   // position: relative;
+// 	}
+// 	// .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // width: 100%;
+//   // height: 100%;
+// // }
+// 	.field--name-field-partner-logo .field__label {display: none;}
+//
+// 	.field--name-field-partner-logo .field__item {
+// 	position: absolute;
+// 	top: 50%;
+// 	transform: translateY(-50%);
+// 	}
+//
+// 	@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+//     .field--name-field-partner-logo {height: 220px;} h3 {grid-column-start: 1;grid-column-end: span 1;}
+// 	}
+// 	@media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+//     .field--name-field-partner-logo {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+// 	}
+// 	@media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+//     .field--name-field-partner-logo {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+// 	}
+// 	@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+//     .field--name-field-partner-logo {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+// 	}
+// 	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+//     .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+// 	}
+//
+// 	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .field--name-field-partner-logo {border: 0px solid #fff;}}
+//   .views-row:first-of-type .node--type-partners {grid-template-columns: 40% 40%; grid-column-gap:10%;}
+//
+//   h3 {
+// 	border-top: 1px solid #999;
+// 	color: $keplerst_DarkOrange;
+//   }
+// 	h3 a {color: $keplerst_DarkOrange;}
+//
+//   .field--name-node-title h2, .views-field-title {margin-top: 0;}
+//   .field--name-node-title h2 a, .views-field-title {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
+//   .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
+//   .field--name-field-partner-description, .views-field-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
 
-	.view-content {
-    display: grid;
-    grid-row-gap: 20px;
-	}
-	.field--name-field-partner-logo
-   { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case a fall-back is needed
-  	border: 1px solid #ddd;
-		position: relative;
-  // height: 0;
-  // overflow: hidden;
-  // padding-top: 500px / 500px * 100%;
-  // background: white;
-  // position: relative;
-	}
-	// .field--name-field-partner-logo picture { // tmd = aspect item... may not work!
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
-// }
-	.field--name-field-partner-logo .field__label {display: none;}
 
-	.field--name-field-partner-logo .field__item {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	}
+  // >>>>>>>> New partners view >>>>>
+  // .view-header + .view-content > div.views-row:first-of-type > .node--type-partners > .field--name-field-partner-logo {} // Specific for Naming rights sponsor
 
-	@media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
-    .field--name-field-partner-logo {height: 220px;} h3 {grid-column-start: 1;grid-column-end: span 1;}
-	}
-	@media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
-    .field--name-field-partner-logo {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
-	}
-	@media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
-    .field--name-field-partner-logo {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-	@media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
-    .field--name-field-partner-logo {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
-	@media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
-    .field--name-field-partner-logo {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	}
+  	.view-content {
+      display: grid;
+      grid-row-gap: 20px;
+  	}
+  	.views-field-field-partner-logo {
+    	border: 1px solid #ddd;
+  		position: relative;
+      text-align: center;
+  	}
+    //  NOTE don't think this is required anymore!! :)
+  	// .field--name-field-partner-logo .field__item {
+  	// position: absolute;
+  	// top: 50%;
+  	// transform: translateY(-50%);
+  	// }
 
-	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .field--name-field-partner-logo {border: 0px solid #fff;}}
-  .views-row:first-of-type .node--type-partners {grid-template-columns: 40% 40%; grid-column-gap:10%;}
+    h3 {
+    	border-top: 1px solid #999;
+    	color: $keplerst_DarkOrange;
+    }
 
-  h3 {
-	border-top: 1px solid #999;
-	color: $keplerst_DarkOrange;
-  }
-	h3 a {color: $keplerst_DarkOrange;}
+  	@media all and (max-width:415px) {
+      .view-content {grid-template-columns: 100%;}
+      .views-field-field-partner-logo {height: 220px;}
+      h3 {grid-column-start: 1;grid-column-end: span 1;}
+  	}
+  	@media all and (min-width:416px) and (max-width: 767px) {
+      .view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+      .views-field-field-partner-logo {height: 180px;}
+      h3 {grid-column-start: 1;grid-column-end: span 2;}
+  	}
+  	@media all and (min-width:768px) and (max-width: 959px) {
+      .view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+      .views-field-field-partner-logo {height: 160px;}
+      h3 {grid-column-start: 1;grid-column-end: span 4;}
+  	}
+  	@media all and (min-width:960px) and (max-width: 1279px) {
+      .view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+      .views-field-field-partner-logo {height: 190px;}
+      h3 {grid-column-start: 1;grid-column-end: span 4;}
+  	}
+  	@media all and (min-width:1280px) {
+      .view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+      .views-field-field-partner-logo {height: 230px;}
+      h3 {grid-column-start: 1;grid-column-end: span 4;}
+  	}
 
-  .field--name-node-title h2 {margin-top: 0;}
-  .field--name-node-title h2 a {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
-  .field--name-field-partner-url a {@include keplerst_baloo ($color: $keplerst_DarkOrange, $size:1.1rem);}
-  .field--name-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
+  	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .views-field-field-partner-logo {border: 0px solid #fff;}}
+    .views-row:first-of-type {display:grid; grid-template-columns: 40% 40%; grid-column-gap:10%;}
+    .views-row:first-of-type .views-field-field-partner-about,
+    .views-row:first-of-type .views-field-title,
+    .views-row:first-of-type .views-field-field-partner-description {grid-column-start: 1; grid-column-end: span 2;}
+
+    .views-field-title {margin-top: 0; @include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.5rem);}
+
+    .views-field-field-partner-description {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1rem);}
+
 
 } // view-our-partners {} ends
+
 
 
 // FAQ Page specifics >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
