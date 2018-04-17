@@ -29,9 +29,9 @@
 
 
 
-// Store - product + catalogue >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-.path-store, .path-product, .path-cart { //#main-layout .view-product-catalogue
-
+// Store - product + catalogue + chaeckout process >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.path-store, .path-product, .path-cart, .path-checkout { //#main-layout .view-product-catalogue
+& #main-layout {
   // .field--name-field-pro
   //  { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
   // 	border: 1px solid #999;
@@ -64,7 +64,6 @@
   .field--name-title {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.4rem); display: block; height: 2.8em; line-height: 1em; margin-top: 0.5rem;}
 
   .field--type-commerce-price {@include keplerst_ubuntu-light ($color:$keplerst_DarkOrange, $size: 1.1rem);
-    font-size: 1.1rem;
     border-bottom: 1px solid #ccc;
     margin: 0.5rem 0;
     max-height: 2rem;}
@@ -91,7 +90,7 @@
 		width: 100%;
 		display: inline-block;
 	}
-  #main-layout input.button {
+  input.button {
   	height: 3rem;
   	width: 100%;
     max-width: 230px;
@@ -108,10 +107,10 @@
     width: 60px;
     height: 3rem;
   }
-} // / Store {} ends
+}} // / Storewide {} ends (page path and #main-layout)
 
-// Store product specifics >>
-.path-product { // (Product)
+// Store, Product page, Cart and Checkout specifics >>
+.path-product #main-layout { // (Product)
     @media all and (min-width:500px) {
       article {
         display: grid;
@@ -135,7 +134,7 @@
     // float: left;
     padding-right: 2rem;
 	}
-} // CLOSE {} prod page
+} // Prod page {} ends
 
 .path-store { // (Catalogue) .view-product-catalogue
   .view-content {display: grid; grid-row-gap: 20px;}
@@ -164,8 +163,6 @@
   @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
     .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
   }
-
-
 //  Inputs
   select {
     min-width: 150px;
@@ -178,6 +175,8 @@
     appearance: none;
     background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows.png') 97% top no-repeat;
   }
+  select:disabled {background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows-disabled.png') 97% top no-repeat;
+}
   select input[type=checkbox]:disabled {background-color: $keplerst_GreyText;}
   /* CAUTION: IE hackery ahead */
   select::-ms-expand {display: none; /* remove default arrow in IE 10 and 11 */}
@@ -185,7 +184,57 @@
   @media screen and (min-width:0\0) {select {background:none\9; padding: 5px\9;} }
 
 
-} // Close {} cat page
+} // Catalogue (Store) page {} ends.
+
+//  Cart page specifics
+.path-cart #main-layout {
+  .lineitem.lineitem-price.lineitem-qty.lineitem-remove.lineitem-total {
+    display:flex;justify-content: space-between;flex-wrap: wrap;
+    @include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1.3em);
+    border-bottom: solid #eee 1px;
+    padding: 1rem 0;
+  }
+  .views-label {@include keplerst_baloo ($color:$keplerst_DarkOrange,$size:0.9em);display: block;line-height: 1.2em;}
+  .field-content {}
+
+  .views-field-purchased-entity {width: 40%;}
+  @media all and (min-width:0px) and (max-width: 767px) {.views-field-purchased-entity {width: 100%}}
+  .views-field-unit-price__number {width: 10rem;}
+  .views-field-edit-quantity { & input.form-number {height:unset;width: 50px;height:31px;}}
+  .views-field-remove-button { & .delete-order-item {margin: 1.1rem 0 0; font-size: 0.6em;} & input.button {height: 31px !important; margin: 1.2rem 0 0 !important;}}
+  .views-field-total-price__number {flex-grow: 1;text-align:right;padding-right: 10px;}
+  .field--name-total-price {}
+  .field--type-commerce-price {max-height: 8rem;}
+  .order-total-line-value {width: 115px;}
+
+} // Cart pages {} ends
+
+// Checkout page specifics
+.path-checkout #main-layout {
+  input, input.InputElement {width:100%;padding: 10px;}
+  input[type="checkbox"], input[type="radio"] {width: 20px !important;}
+  .form-item {display: block;}
+  // input:required::before {
+  // content: '*Required';}
+
+  .summary-qty.summary-item.summary-total {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:0.9rem);border-bottom: 1px solid #ddd; padding: 0.7rem 0; }
+  .summary-qty.summary-item.summary-total:first-of-type {border-top: 1px solid #ddd;}
+  .field--type-commerce-price {color: $keplerst_GreyText; font-size: 0.9rem; border-bottom: 0px solid #fff;}
+  .order-total-line-value {width: 90px;}
+
+  .layout-region-checkout-main {margin-top:3.7rem;} // Checkout payment details fiedlset
+  .checkout-pane > legend {
+  	color: #900;
+  	font-size: 1.5rem;
+  	padding: 0 0rem;
+  	margin: -3rem 0 0;
+  }
+
+  // Stripe credit entry
+  .form-text { padding: 1em !important; min-width: 30%; }
+
+
+} // Checkout pages {} ends
 
 // End Store pages >>
 
@@ -250,12 +299,13 @@
 
 
 // tmd - temp >>>> talk to Roo about responsive img sizes and layout.
-.region--postscript-fourth.region.region-postscript-fourth {
-	display: flex;
-	justify-content: space-between;
-  text-align: center;
-  flex-wrap: wrap;
-}
+//  This was being used - now overriddedn by use of grid. Keep in case of fall-back.
+// .region--postscript-fourth.region.region-postscript-fourth {
+// 	display: flex;
+// 	justify-content: space-between;
+//   text-align: center;
+//   flex-wrap: wrap;
+// }
 
 // -/tmd sandy pit ends
 
@@ -448,9 +498,14 @@ div#page.scrolled #title-bar-wrapper {
 #block-tmdaccountloginloggedin,
 #block-keplerst-branding,
 #block-tmdsponsorlogotop
-{flex-grow: 1; margin: 0 0.5rem; // margin replaces widths
+{ padding: 0 0.5rem; // margin replaces widths // flex-grow: 1; - removed - no loner required?
 }
 #block-tmdaccountloginloggedin{display: none;}
+#block-tmdaccountloginloggedin::after {
+	content: "";
+	display: block;
+	border: 2px solid $keplerst_Orange;
+}
 
 @media all and (max-width: 959px) { // Change media query to match search box or search form display
   .region--title-bar.region-title-bar {justify-content: flex-end;}
@@ -583,15 +638,48 @@ div#page.scrolled #title-bar-wrapper {
   #nonmobile_hamburger {display: block;} // tmd - show/hide relative to ultimenu hamburger
 }
 
+/*  Cart content icon - displays when logged in */
+#block-cart {display: none;}
+.user-logged-in {
+#block-cart {display: block;}
+#block-cart .views-table.views-view-table {margin:6px;
+  & td {
+	vertical-align: top;
+	text-align: left;
+	padding: 0 3px;
+	line-height: 1em;
+	font-size: 0.8rem;
+}}
+.cart-block--contents__links {background-color: $keplerst_Orange; &:hover {background-color: rgba($keplerst_DarkOrange), 0.7}}
+.cart--cart-block {
+	text-align: center;
+	padding: 0 5px;
+	// background-color: $keplerst_Orange;
+  height: 55px;
+}
+.cart--cart-block::after {
+	content: "";
+	display: block;
+	border: 2px solid $keplerst_Orange;
+}
+.cart-block--summary__icon {
+	clear: both;
+	display: block;
+  position: relative;
+  top: 5px;
+}
+.cart-block--summary__count {color: #fff;font-size: 0.7rem;position: relative;top: -3px;background-color: rgba($keplerst_DarkOrange, 0.7);padding: 3px 3px 6px;}
+} // user-logged-in {} closes
+
 /*  logged-in account menu */
 #logged-in-menu {
   background-color: $keplerst_Orange;
   position: absolute;
   text-align:left;
-  right: 0;}
+  right: -10px;}
 ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
     & li {padding: 0; margin: 0; color: #fff; display: inline-block; height:30px;
-      & a {color: #fff; display: block; padding:0.2rem 0.6rem;}
+      & a {color: #fff; display: inline-block; padding:0.2rem 0.6rem;}
       &:first-of-type a {padding-left:1rem;}
       & a:hover {background-color: rgba($keplerst_DarkOrange, 0.7)}
     }
@@ -612,10 +700,10 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
       );
 }
 @media screen and (max-width: 415px){ #logged-in-menu{width: 105%; text-align:center;} #logged-in-menu-stripe {display: none;}}
-@media screen and (min-width: 416px) and (max-width:959px) { #logged-in-menu{width: 24rem;}}
-@media screen and (min-width: 960px) and (max-width:1279px) { #logged-in-menu{width: 24rem;}}
+@media screen and (min-width: 416px) and (max-width:959px) { }//#logged-in-menu{width: 24rem;}}
+@media screen and (min-width: 960px) and (max-width:1279px) { }//#logged-in-menu{width: 24rem;}}
 @media screen and (min-width: 1280px){
-  #logged-in-menu{width: 24rem;}
+  #logged-in-menu{}//width: 24rem;}
   #logged-in-menu-stripe {  background-image: linear-gradient(
         to right,
         rgba($keplerst_DarkOrange, 0.45),
@@ -695,16 +783,16 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
 /* CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 // main col padding
 @media all and (min-width: 600px) {
-  .region-content {padding: 0 8.47%;}
+  .region-content, .region-content2, .region-postscript-fourth {padding: 0 8.47%;}
 }
 // @media all and (min-width: 768px) {
 //   .region-content, .region-content {padding: 0 64px;}
 // }
 @media all and (min-width: 960px) {
-  .region-content {padding: 0 80px;}
+  .region-content, .region-content2, .region-postscript-fourth {padding: 0 80px;}
 }
 @media all and (min-width: 1280px) {
-  .region-content {padding: 0 100px;}
+  .region-content, .region-content2, .region-postscript-fourth {padding: 0 100px;}
 }
 
 
@@ -841,12 +929,12 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
       h3 {grid-column-start: 1;grid-column-end: span 1;}
   	}
   	@media all and (min-width:416px) and (max-width: 767px) {
-      .view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+      .view-content {grid-template-columns: 45% 45%; grid-column-gap: 10%;}
       .views-field-field-partner-logo {height: 180px;}
       h3 {grid-column-start: 1;grid-column-end: span 2;}
   	}
   	@media all and (min-width:768px) and (max-width: 959px) {
-      .view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+      .view-content {grid-template-columns: 22% 22% 22% 22%; grid-column-gap: 4%;}
       .views-field-field-partner-logo {height: 160px;}
       h3 {grid-column-start: 1;grid-column-end: span 4;}
   	}
@@ -862,7 +950,9 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
   	}
 
   	.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 4; & .views-field-field-partner-logo {border: 0px solid #fff;}}
-    .views-row:first-of-type {display:grid; grid-template-columns: 40% 40%; grid-column-gap:10%;}
+    .views-row:first-of-type {display:grid; grid-template-columns: 45% 45%; grid-column-gap:10%;}
+    @media all and (max-width: 415px) {.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 1;}}
+    @media all and (min-width: 416px) and (max-width: 767px) {.views-row:first-of-type {grid-column-start: 1; grid-column-end: span 2;}}
     .views-row:first-of-type .views-field-field-partner-about,
     .views-row:first-of-type .views-field-title,
     .views-row:first-of-type .views-field-field-partner-description {grid-column-start: 1; grid-column-end: span 2;}
@@ -1185,7 +1275,9 @@ a.social-icon {padding: 0 0.5rem;}
   color: $keplerst_Tan1;
   &:hover {background-color: rgba($keplerst_DarkOrange,0.8);}
   }
-
+  .region--postscript-fourth {text-align: center;} // centers titles on front page partners
+  .view-our-partners .views-row:first-of-type {display: block;}
+  .view-our-partners .views-field-field-partner-logo {height: unset;}
   #content1-outer-wrapper, #content2-outer-wrapper {padding-bottom: 3rem;}
 
 }// THIS CLOSES FRONT PAGE OVERRIDES
