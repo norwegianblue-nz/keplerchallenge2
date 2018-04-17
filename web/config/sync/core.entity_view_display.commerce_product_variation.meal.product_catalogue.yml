@@ -5,7 +5,6 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.meal
     - core.entity_view_mode.commerce_product_variation.product_catalogue
-    - field.field.commerce_product_variation.meal.attribute_size
   module:
     - commerce_price
 id: commerce_product_variation.meal.product_catalogue
@@ -14,16 +13,22 @@ bundle: meal
 mode: product_catalogue
 content:
   price:
-    label: above
+    label: hidden
     type: commerce_price_default
-    weight: 0
+    weight: 1
     region: content
     settings:
       strip_trailing_zeroes: false
       display_currency_code: false
     third_party_settings: {  }
+  product_id:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
 hidden:
-  attribute_size: true
-  product_id: true
   sku: true
   title: true

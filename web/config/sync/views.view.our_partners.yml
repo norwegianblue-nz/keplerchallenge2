@@ -789,8 +789,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ field_partner_url }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -829,7 +829,7 @@ display:
           type: responsive_image
           settings:
             responsive_image_style: partners_panels
-            image_link: content
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -876,10 +876,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: our-partners2
+      path: our-partners
       menu:
         type: normal
-        title: 'Our partners2'
+        title: 'Our partners'
         description: ''
         expanded: false
         parent: ''
@@ -1368,13 +1368,13 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: Page
+    display_title: 'Old Our Partners Page'
     position: 1
     display_options:
       display_extenders: {  }
-      path: our-partners
+      path: old_our-partners
       menu:
-        type: normal
+        type: none
         title: 'Our partners'
         description: ''
         expanded: false
@@ -1425,6 +1425,8 @@ display:
             value: "<h1>Our partners are</h1>\n<p class=\"header-intro\">The Kepler Challenge would not be possible without the generous support of our partners.<p>"
             format: raw
           plugin_id: text
+      display_description: ''
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

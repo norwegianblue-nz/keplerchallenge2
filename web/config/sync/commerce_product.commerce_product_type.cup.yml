@@ -1,0 +1,11 @@
+uuid: 28cc9a4d-c158-454b-886e-0ba0d0dc719b
+langcode: en
+status: true
+dependencies: {  }
+id: cup
+label: Cup
+description: ''
+variationType: cup
+injectVariationFields: true
+traits: {  }
+locked: false

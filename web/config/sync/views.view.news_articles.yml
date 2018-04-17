@@ -237,7 +237,7 @@ display:
       title: 'Latest News'
       use_more: true
       use_more_always: false
-      use_more_text: 'more (This text can read anything we want)'
+      use_more_text: 'See all news'
       use_ajax: true
     cache_metadata:
       max-age: -1
@@ -291,7 +291,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<h1>News</h1>\n<p class=header-intro>We can put some intro text here.<p>"
+          content: "<h1>News</h1>\n<p class=header-intro>News from the Kepler Challenge. You can also follow us on social media.<p>"
           plugin_id: text_custom
       defaults:
         header: false

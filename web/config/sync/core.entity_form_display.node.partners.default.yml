@@ -62,8 +62,8 @@ content:
   field_partner_url:
     weight: 3
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      placeholder_url: 'Enter full URL of sponsor'
+      placeholder_title: 'Leave this empty'
     third_party_settings: {  }
     type: link_default
     region: content

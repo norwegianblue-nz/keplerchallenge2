@@ -1,15 +1,16 @@
-uuid: 9c3fe310-fa10-495d-8d0a-8dc5c4364f9f
+uuid: f04aad56-0794-49c7-8ffc-c1c43999f637
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_variation_type.meal
+    - commerce_product.commerce_product_variation_type.cup
+    - core.entity_view_mode.commerce_product_variation.product_catalogue
   module:
     - commerce_price
-id: commerce_product_variation.meal.default
+id: commerce_product_variation.cup.product_catalogue
 targetEntityType: commerce_product_variation
-bundle: meal
-mode: default
+bundle: cup
+mode: product_catalogue
 content:
   price:
     label: hidden
@@ -26,7 +27,7 @@ content:
     region: content
     label: hidden
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
 hidden:
   sku: true
