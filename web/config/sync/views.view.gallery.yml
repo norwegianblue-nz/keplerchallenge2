@@ -283,7 +283,7 @@ display:
         description: 'Image Gallery'
         expanded: false
         parent: ''
-        weight: -48
+        weight: -43
         context: '0'
         menu_name: main
       style:
