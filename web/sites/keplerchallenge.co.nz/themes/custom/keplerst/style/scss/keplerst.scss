@@ -650,7 +650,7 @@ div#page.scrolled #title-bar-wrapper {
 	line-height: 1em;
 	font-size: 0.8rem;
 }}
-.cart-block--contents__links {background-color: $keplerst_Orange; &:hover {background-color: rgba($keplerst_DarkOrange), 0.7}}
+.cart-block--contents__links {background-color: $keplerst_Orange; &:hover {background-color: rgba($keplerst_DarkOrange, 0.7);}}
 .cart--cart-block {
 	text-align: center;
 	padding: 0 5px;
