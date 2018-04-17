@@ -165,7 +165,7 @@
   }
 //  Inputs
   select {
-    min-width: 150px;
+    min-width: 80px;
     // padding: 5px 35px 5px 5px;
     // font-size: 16px;
     border: 1px solid #ccc;
@@ -224,7 +224,7 @@
 
   .layout-region-checkout-main {margin-top:3.7rem;} // Checkout payment details fiedlset
   .checkout-pane > legend {
-  	color: #900;
+  	color: $keplerst_DarkOrange;
   	font-size: 1.5rem;
   	padding: 0 0rem;
   	margin: -3rem 0 0;
@@ -644,13 +644,21 @@ div#page.scrolled #title-bar-wrapper {
 #block-cart {display: block;}
 #block-cart .views-table.views-view-table {margin:6px;
   & td {
-	vertical-align: top;
-	text-align: left;
-	padding: 0 3px;
-	line-height: 1em;
-	font-size: 0.8rem;
-}}
-.cart-block--contents__links {background-color: $keplerst_Orange; &:hover {background-color: rgba($keplerst_DarkOrange, 0.7);}}
+  	vertical-align: top;
+  	text-align: left;
+  	padding: 3px;
+  	line-height: 1em;
+  	font-size: 0.8rem;
+  }
+  & tr {
+    border-bottom: 1px solid #eee;
+  }
+}
+// .cart-block--contents {width: unset;min-width: 255px;position: absolute;right: 0;}
+.cart-block--contents__inner {padding: 0;}
+.cart-block--contents__links {background-color: $keplerst_Orange; padding: 5px; color: #fff;
+  &:hover {background-color: rgba($keplerst_DarkOrange, 0.7);}
+}
 .cart--cart-block {
 	text-align: center;
 	padding: 0 5px;
