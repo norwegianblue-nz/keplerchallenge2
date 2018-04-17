@@ -11,7 +11,7 @@ dependencies:
 id: tmdaccountloginloggedin
 theme: keplerst
 region: title_bar
-weight: -19
+weight: -20
 provider: null
 plugin: 'block_content:ef30f67d-16e8-478b-af60-041cd497bfc2'
 settings:

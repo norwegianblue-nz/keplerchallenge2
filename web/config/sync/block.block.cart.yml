@@ -9,7 +9,7 @@ dependencies:
 id: cart
 theme: keplerst
 region: title_bar
-weight: -24
+weight: -22
 provider: null
 plugin: commerce_cart
 settings:

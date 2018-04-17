@@ -1,0 +1,10 @@
+uuid: fe597325-2318-499e-b858-6db36ea505a2
+langcode: en
+status: true
+dependencies: {  }
+id: cup
+label: Cup
+orderItemType: merchandise
+generateTitle: true
+traits: {  }
+locked: false

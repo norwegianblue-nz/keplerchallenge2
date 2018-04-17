@@ -1,15 +1,15 @@
-uuid: d7ebd8c3-89dc-4f17-9c6c-752ce72861df
+uuid: febfcc15-618a-44ef-9ad4-5e5cf98f16a3
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_variation_type.meal
+    - commerce_product.commerce_product_variation_type.cup
     - core.entity_view_mode.commerce_product_variation.cart
   module:
     - commerce_price
-id: commerce_product_variation.meal.cart
+id: commerce_product_variation.cup.cart
 targetEntityType: commerce_product_variation
-bundle: meal
+bundle: cup
 mode: cart
 content:
   price:

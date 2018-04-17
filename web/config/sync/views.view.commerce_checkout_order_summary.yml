@@ -288,7 +288,18 @@ display:
           entity_type: commerce_order_item
           entity_field: order_item_id
           plugin_id: standard
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: '<p>Kepler Challenge accept Visa and MasterCard payments. We use secure payment provided by Stripe and secure encrypted connections using https.</p>'
+          plugin_id: text_custom
       footer:
         commerce_order_total:
           id: commerce_order_total

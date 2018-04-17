@@ -216,7 +216,7 @@ display:
         description: ''
         expanded: true
         parent: ''
-        weight: -47
+        weight: -42
         context: '0'
         menu_name: main
         enabled: true

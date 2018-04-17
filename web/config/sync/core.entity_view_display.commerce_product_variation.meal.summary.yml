@@ -5,7 +5,6 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.meal
     - core.entity_view_mode.commerce_product_variation.summary
-    - field.field.commerce_product_variation.meal.attribute_size
   module:
     - commerce_price
 id: commerce_product_variation.meal.summary
@@ -23,7 +22,6 @@ content:
       display_currency_code: false
     third_party_settings: {  }
 hidden:
-  attribute_size: true
   product_id: true
   sku: true
   title: true

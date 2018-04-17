@@ -1,22 +1,22 @@
-uuid: ea17ee5e-6e82-49e2-87c0-a7fff235e2a3
+uuid: 17781408-ec29-40b3-a5c5-096d84dd0b8c
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.meal
+    - commerce_product.commerce_product_type.cup
     - core.entity_view_mode.commerce_product.product_catalogue
-    - field.field.commerce_product.meal.body
-    - field.field.commerce_product.meal.field_displayed_title
-    - field.field.commerce_product.meal.field_pro
-    - field.field.commerce_product.meal.stores
-    - field.field.commerce_product.meal.variations
+    - field.field.commerce_product.cup.body
+    - field.field.commerce_product.cup.field_displayed_title
+    - field.field.commerce_product.cup.field_pro
+    - field.field.commerce_product.cup.stores
+    - field.field.commerce_product.cup.variations
     - responsive_image.styles.partners_panels
   module:
     - commerce_product
     - responsive_image
-id: commerce_product.meal.product_catalogue
+id: commerce_product.cup.product_catalogue
 targetEntityType: commerce_product
-bundle: meal
+bundle: cup
 mode: product_catalogue
 content:
   field_pro:
@@ -29,12 +29,12 @@ content:
     type: responsive_image
     region: content
   title:
+    label: hidden
     type: string
     weight: 1
     region: content
-    label: hidden
     settings:
-      link_to_entity: true
+      link_to_entity: false
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
