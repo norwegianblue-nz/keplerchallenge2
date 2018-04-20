@@ -26,7 +26,15 @@
 
 // tmd sandy-pit
 
-
+// Logge din messages.
+  p.user-logged-out-status {color: #900;font-size:1.3rem;display: block;}
+  p.user-logged-in-status {display: none;}
+  .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
+.user-logged-in {
+  .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  p.user-logged-in-status {color: #090;font-size:1.3rem;display: block;}
+  p.user-logged-out-status {display: none;}
+}
 
 
 // Store - product + catalogue + chaeckout process >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -472,9 +480,9 @@ footer.node__meta {float:right;}
 	position: fixed;
 	padding: 0.2rem 0;
 	width: 100%;
-	box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
   @include keplerstTransition (all, 1s, ease-in-out);
   z-index: 10;
 	height: 60px; // 3.6rem
@@ -791,18 +799,17 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
 /* CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 // main col padding
 @media all and (min-width: 600px) {
-  .region-content, .region-content2, .region-postscript-fourth {padding: 0 8.47%;}
+  .region-content, .region-content2 {padding: 0 8.47%;}
 }
 // @media all and (min-width: 768px) {
 //   .region-content, .region-content {padding: 0 64px;}
 // }
 @media all and (min-width: 960px) {
-  .region-content, .region-content2, .region-postscript-fourth {padding: 0 80px;}
+  .region-content, .region-content2 {padding: 0 80px;}
 }
 @media all and (min-width: 1280px) {
-  .region-content, .region-content2, .region-postscript-fourth {padding: 0 100px;}
+  .region-content, .region-content2 {padding: 0 100px;}
 }
-
 
 // Inline Pictures
 .node--type-general-content .region-content {
@@ -1088,6 +1095,16 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 
 a.social-icon {padding: 0 0.5rem;}
 
+/* POSCRIPT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.region--postscript-fourth.region.region-postscript-fourth {
+	display: flex;
+	justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+
 
 /* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -1193,7 +1210,7 @@ a.social-icon {padding: 0 0.5rem;}
 
 // Main top image
   .nb_fixed-bg {background-attachment: fixed;} // Make hero images fixed on home.
-
+  @media all and (max-width: 416px) {.nb_fixed-bg {background-attachment: scroll;}} // Except for mobile which gets buggered up on iPhone
 
 // Title Bar
 
@@ -1271,7 +1288,7 @@ a.social-icon {padding: 0 0.5rem;}
   @media all and (min-width: 799px) {#strapline-banner {padding: 0 10%;} // Push logos closer to centre on wider screens
   }
 // Content
-  .region-content, .region-content2 {text-align: center;}
+  .region-content, .region-content2 {text-align: center; & h1 {max-width: 680px;margin: 4rem auto 2rem;} }
   .front-buttons a {
   @include keplerstCorners($rad: 3px);
   display: inline-block;
@@ -1283,9 +1300,19 @@ a.social-icon {padding: 0 0.5rem;}
   color: $keplerst_Tan1;
   &:hover {background-color: rgba($keplerst_DarkOrange,0.8);}
   }
+  // padding override for front page poscript
+  @media all and (min-width: 600px) {.region-postscript-fourth {padding: 0 8.47%;} }
+  @media all and (min-width: 960px) {.region-content, .region-content2, .region-postscript-fourth {padding: 0 80px;} }
+  @media all and (min-width: 1280px) {.region-content, .region-content2, .region-postscript-fourth {padding: 0 100px;} }
+
+  .region--postscript-fourth.region.region-postscript-fourth {display: block;}
   .region--postscript-fourth {text-align: center;} // centers titles on front page partners
   .view-our-partners .views-row:first-of-type {display: block;}
   .view-our-partners .views-field-field-partner-logo {height: unset;}
   #content1-outer-wrapper, #content2-outer-wrapper {padding-bottom: 3rem;}
 
 }// THIS CLOSES FRONT PAGE OVERRIDES
+
+.cke_editable {
+  .faq-section p {display: block;}
+}
