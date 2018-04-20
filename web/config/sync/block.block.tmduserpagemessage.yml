@@ -1,23 +1,23 @@
-uuid: f8465b38-3cc1-4943-b614-85b0cc689fdf
+uuid: c99b9db5-0d28-47ea-aaeb-3eafe3bc50f1
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:917de766-7211-482e-86e0-7089e53a4540'
+    - 'block_content:basic:863f89a8-a3d7-4664-acb9-59b5da0e59af'
   module:
     - block_content
     - system
   theme:
     - keplerst
-id: tmdfrontbuttonscontent1
+id: tmduserpagemessage
 theme: keplerst
 region: content
-weight: -25
+weight: -22
 provider: null
-plugin: 'block_content:917de766-7211-482e-86e0-7089e53a4540'
+plugin: 'block_content:863f89a8-a3d7-4664-acb9-59b5da0e59af'
 settings:
-  id: 'block_content:917de766-7211-482e-86e0-7089e53a4540'
-  label: 'tmd - front buttons content1'
+  id: 'block_content:863f89a8-a3d7-4664-acb9-59b5da0e59af'
+  label: 'tmd - user page message'
   provider: block_content
   label_display: '0'
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: '/user/*'
     negate: false
     context_mapping: {  }

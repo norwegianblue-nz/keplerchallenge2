@@ -11,7 +11,7 @@ dependencies:
 id: tmdcopyright
 theme: keplerst
 region: copyright
-weight: 0
+weight: -26
 provider: null
 plugin: 'block_content:16c18ca9-c557-4245-85b4-cc3f5bc6188c'
 settings:

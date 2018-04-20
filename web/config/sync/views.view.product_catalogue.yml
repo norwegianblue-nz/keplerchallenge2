@@ -230,7 +230,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<h1>Kepler Store</h1>\n<p class=header-intro>Great Kepler merchandise to buy. Tee shirts and breakfast vouchers will be available to collect at registration.<p>"
+          content: "<h1>Kepler Store</h1>\n<p class=header-intro>Great Kepler merchandise to buy. All items will be available to collect at registration.<p>\n<p class=header-intro>All prices are GST inclusive.</p>"
           plugin_id: text_custom
       defaults:
         header: false

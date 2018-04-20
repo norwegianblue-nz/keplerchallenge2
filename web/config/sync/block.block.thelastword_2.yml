@@ -1,0 +1,31 @@
+uuid: 025155c7-d69e-4183-876f-d881cc2c6346
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c37b4b2-e8cb-4617-939e-8669308a2f04'
+  module:
+    - block_content
+    - system
+  theme:
+    - keplerst
+id: thelastword_2
+theme: keplerst
+region: copyright
+weight: -25
+provider: null
+plugin: 'block_content:5c37b4b2-e8cb-4617-939e-8669308a2f04'
+settings:
+  id: 'block_content:5c37b4b2-e8cb-4617-939e-8669308a2f04'
+  label: 'The Last Word'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

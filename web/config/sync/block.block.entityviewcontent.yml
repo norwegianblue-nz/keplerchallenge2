@@ -10,7 +10,7 @@ dependencies:
 id: entityviewcontent
 theme: keplerst
 region: content
-weight: -23
+weight: -26
 provider: null
 plugin: 'entity_view:node'
 settings:
