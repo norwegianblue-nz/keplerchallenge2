@@ -49,5 +49,6 @@ content:
 hidden:
   body: true
   created: true
+  field_displayed_title: true
   stores: true
   uid: true

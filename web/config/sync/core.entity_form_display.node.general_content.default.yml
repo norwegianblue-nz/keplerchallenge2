@@ -9,12 +9,14 @@ dependencies:
     - field.field.node.general_content.field_footerimage2
     - field.field.node.general_content.field_footerimage3
     - field.field.node.general_content.field_footerimage4
+    - field.field.node.general_content.field_meta_tags
     - field.field.node.general_content.field_nf_bg_image
     - image.style.thumbnail
     - node.type.general_content
   module:
     - content_moderation
     - image
+    - metatag
     - path
     - text
 id: node.general_content.default
@@ -67,6 +69,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_meta_tags:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_nf_bg_image:
     weight: 1
