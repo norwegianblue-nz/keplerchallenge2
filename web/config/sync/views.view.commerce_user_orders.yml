@@ -2,6 +2,8 @@ uuid: 8fabba11-d18e-4597-a3a0-f44df43e7e56
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.main
   module:
     - commerce_order
     - commerce_price
