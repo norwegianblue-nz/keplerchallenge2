@@ -26,8 +26,40 @@
 
 // tmd sandy-pit
 
+// Logge din messages.
+  p.user-logged-out-status {color: #900;font-size:1.3rem;display: block;}
+  p.user-logged-in-status {display: none;}
+.user-logged-in {
+  p.user-logged-in-status {color: #090;font-size:1.3rem;display: block;}
+  p.user-logged-out-status {display: none;}
+}
+  .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
+  .user-logged-in {
+    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  }
 
-
+  .user-logged-in {
+    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  }
+#user-pass .button, #user-login-form #edit-submit.button {background-color: #ccc;}
+#user-pass {display: none;}
+#user-login-form {
+  margin-top: 3rem;
+  #edit-submit.button {position: relative; top: -5rem;}
+  .form-item {color:#ccc;}
+  .form-item-name, .form-item-pass { & input {border:none;} & .description{display: none;}}
+}
+#edit-simplesamlphp-auth-login-link {
+	display: block;
+	background-color: $keplerst_DarkOrange;
+	max-width: 230px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	padding: 1rem;
+  position: relative;
+  top: -125px;
+}
 
 // Store - product + catalogue + chaeckout process >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 .path-store, .path-product, .path-cart, .path-checkout { //#main-layout .view-product-catalogue
@@ -90,15 +122,15 @@
 		width: 100%;
 		display: inline-block;
 	}
-  input.button {
-  	height: 3rem;
-  	width: 100%;
-    max-width: 230px;
-  	background-color: $keplerst_DarkOrange;
-  	border: 0;
-  	margin: 1rem 0;
-  	color: #fff;
-  }
+  // input.button {
+  // 	height: 3rem;
+  // 	width: 100%;
+  //   max-width: 230px;
+  // 	background-color: $keplerst_DarkOrange;
+  // 	border: 0;
+  // 	margin: 1rem 0;
+  // 	color: #fff;
+  // }
   label {@include keplerst_ubuntu-light ($color:$keplerst_Grey, $size: 1.1rem);}
   input.form-number {
     color: $keplerst_Grey;
@@ -165,7 +197,7 @@
   }
 //  Inputs
   select {
-    min-width: 150px;
+    min-width: 80px;
     // padding: 5px 35px 5px 5px;
     // font-size: 16px;
     border: 1px solid #ccc;
@@ -224,7 +256,7 @@
 
   .layout-region-checkout-main {margin-top:3.7rem;} // Checkout payment details fiedlset
   .checkout-pane > legend {
-  	color: #900;
+  	color: $keplerst_DarkOrange;
   	font-size: 1.5rem;
   	padding: 0 0rem;
   	margin: -3rem 0 0;
@@ -450,6 +482,17 @@ footer.node__meta {float:right;}
     padding: 1em 0.5em;
 }
 
+  #main-layout .button {
+    height: 3rem;
+    width: 100%;
+    max-width: 230px;
+    background-color: $keplerst_DarkOrange;
+    border: 0;
+    margin: 1rem 0;
+    color: #fff;
+  }
+
+
 // To Top button
 #block-tmdtotopbutton {
     position: fixed;
@@ -472,9 +515,9 @@ footer.node__meta {float:right;}
 	position: fixed;
 	padding: 0.2rem 0;
 	width: 100%;
-	box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  -webkit-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
-  -moz-box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6);
   @include keplerstTransition (all, 1s, ease-in-out);
   z-index: 10;
 	height: 60px; // 3.6rem
@@ -644,13 +687,21 @@ div#page.scrolled #title-bar-wrapper {
 #block-cart {display: block;}
 #block-cart .views-table.views-view-table {margin:6px;
   & td {
-	vertical-align: top;
-	text-align: left;
-	padding: 0 3px;
-	line-height: 1em;
-	font-size: 0.8rem;
-}}
-.cart-block--contents__links {background-color: $keplerst_Orange; &:hover {background-color: rgba($keplerst_DarkOrange, 0.7);}}
+  	vertical-align: top;
+  	text-align: left;
+  	padding: 3px;
+  	line-height: 1em;
+  	font-size: 0.8rem;
+  }
+  & tr {
+    border-bottom: 1px solid #eee;
+  }
+}
+// .cart-block--contents {width: unset;min-width: 255px;position: absolute;right: 0;}
+.cart-block--contents__inner {padding: 0;}
+.cart-block--contents__links {background-color: $keplerst_Orange; padding: 5px; color: #fff;
+  &:hover {background-color: rgba($keplerst_DarkOrange, 0.7);}
+}
 .cart--cart-block {
 	text-align: center;
 	padding: 0 5px;
@@ -783,18 +834,17 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
 /* CONTENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 // main col padding
 @media all and (min-width: 600px) {
-  .region-content, .region-content2, .region-postscript-fourth {padding: 0 8.47%;}
+  .region-content, .region-content2 {padding: 0 8.47%;}
 }
 // @media all and (min-width: 768px) {
 //   .region-content, .region-content {padding: 0 64px;}
 // }
 @media all and (min-width: 960px) {
-  .region-content, .region-content2, .region-postscript-fourth {padding: 0 80px;}
+  .region-content, .region-content2 {padding: 0 80px;}
 }
 @media all and (min-width: 1280px) {
-  .region-content, .region-content2, .region-postscript-fourth {padding: 0 100px;}
+  .region-content, .region-content2 {padding: 0 100px;}
 }
-
 
 // Inline Pictures
 .node--type-general-content .region-content {
@@ -1080,6 +1130,16 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 
 a.social-icon {padding: 0 0.5rem;}
 
+/* POSCRIPT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.region--postscript-fourth.region.region-postscript-fourth {
+	display: flex;
+	justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+
 
 /* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -1185,7 +1245,7 @@ a.social-icon {padding: 0 0.5rem;}
 
 // Main top image
   .nb_fixed-bg {background-attachment: fixed;} // Make hero images fixed on home.
-
+  @media all and (max-width: 416px) {.nb_fixed-bg {background-attachment: scroll;}} // Except for mobile which gets buggered up on iPhone
 
 // Title Bar
 
@@ -1263,7 +1323,7 @@ a.social-icon {padding: 0 0.5rem;}
   @media all and (min-width: 799px) {#strapline-banner {padding: 0 10%;} // Push logos closer to centre on wider screens
   }
 // Content
-  .region-content, .region-content2 {text-align: center;}
+  .region-content, .region-content2 {text-align: center; & h1 {max-width: 680px;margin: 4rem auto 2rem;} }
   .front-buttons a {
   @include keplerstCorners($rad: 3px);
   display: inline-block;
@@ -1275,9 +1335,19 @@ a.social-icon {padding: 0 0.5rem;}
   color: $keplerst_Tan1;
   &:hover {background-color: rgba($keplerst_DarkOrange,0.8);}
   }
+  // padding override for front page poscript
+  @media all and (min-width: 600px) {.region-postscript-fourth {padding: 0 8.47%;} }
+  @media all and (min-width: 960px) {.region-content, .region-content2, .region-postscript-fourth {padding: 0 80px;} }
+  @media all and (min-width: 1280px) {.region-content, .region-content2, .region-postscript-fourth {padding: 0 100px;} }
+
+  .region--postscript-fourth.region.region-postscript-fourth {display: block;}
   .region--postscript-fourth {text-align: center;} // centers titles on front page partners
   .view-our-partners .views-row:first-of-type {display: block;}
   .view-our-partners .views-field-field-partner-logo {height: unset;}
   #content1-outer-wrapper, #content2-outer-wrapper {padding-bottom: 3rem;}
 
 }// THIS CLOSES FRONT PAGE OVERRIDES
+
+.cke_editable {
+  .faq-section p {display: block;}
+}
