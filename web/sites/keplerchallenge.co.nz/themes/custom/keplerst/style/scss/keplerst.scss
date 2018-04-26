@@ -29,13 +29,37 @@
 // Logge din messages.
   p.user-logged-out-status {color: #900;font-size:1.3rem;display: block;}
   p.user-logged-in-status {display: none;}
-  .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
 .user-logged-in {
-  .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
   p.user-logged-in-status {color: #090;font-size:1.3rem;display: block;}
   p.user-logged-out-status {display: none;}
 }
+  .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
+  .user-logged-in {
+    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  }
 
+  .user-logged-in {
+    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  }
+#user-pass .button, #user-login-form #edit-submit.button {background-color: #ccc;}
+#user-pass {display: none;}
+#user-login-form {
+  margin-top: 3rem;
+  #edit-submit.button {position: relative; top: -5rem;}
+  .form-item {color:#ccc;}
+  .form-item-name, .form-item-pass { & input {border:none;} & .description{display: none;}}
+}
+#edit-simplesamlphp-auth-login-link {
+	display: block;
+	background-color: $keplerst_DarkOrange;
+	max-width: 230px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	padding: 1rem;
+  position: relative;
+  top: -125px;
+}
 
 // Store - product + catalogue + chaeckout process >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 .path-store, .path-product, .path-cart, .path-checkout { //#main-layout .view-product-catalogue
@@ -98,15 +122,15 @@
 		width: 100%;
 		display: inline-block;
 	}
-  input.button {
-  	height: 3rem;
-  	width: 100%;
-    max-width: 230px;
-  	background-color: $keplerst_DarkOrange;
-  	border: 0;
-  	margin: 1rem 0;
-  	color: #fff;
-  }
+  // input.button {
+  // 	height: 3rem;
+  // 	width: 100%;
+  //   max-width: 230px;
+  // 	background-color: $keplerst_DarkOrange;
+  // 	border: 0;
+  // 	margin: 1rem 0;
+  // 	color: #fff;
+  // }
   label {@include keplerst_ubuntu-light ($color:$keplerst_Grey, $size: 1.1rem);}
   input.form-number {
     color: $keplerst_Grey;
@@ -457,6 +481,17 @@ footer.node__meta {float:right;}
 .btn-lrg {
     padding: 1em 0.5em;
 }
+
+  #main-layout .button {
+    height: 3rem;
+    width: 100%;
+    max-width: 230px;
+    background-color: $keplerst_DarkOrange;
+    border: 0;
+    margin: 1rem 0;
+    color: #fff;
+  }
+
 
 // To Top button
 #block-tmdtotopbutton {
