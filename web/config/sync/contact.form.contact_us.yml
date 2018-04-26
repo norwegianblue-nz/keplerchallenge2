@@ -5,8 +5,8 @@ dependencies: {  }
 id: contact_us
 label: 'Contact Us'
 recipients:
-  - roo@pealing.com
-reply: Thanks
+  - info@keplerchallenge.co.nz
+reply: ''
 weight: 0
-message: Cheers
-redirect: ''
+message: 'Thank you for your message - we will be in touch as soon as possible.'
+redirect: /thank-you

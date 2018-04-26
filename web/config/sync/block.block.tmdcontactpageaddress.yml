@@ -1,23 +1,23 @@
-uuid: 21e4a807-c832-4e81-93c4-a4cd4ebeac29
+uuid: d3fb7929-f010-4cb7-ad93-e5d5dfda8930
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:fce8b12f-059c-4fc1-b137-7a0a52735d32'
+    - 'block_content:basic:25981cb1-66b3-48fe-9cf4-46b677a3e944'
   module:
     - block_content
     - system
   theme:
     - keplerst
-id: tmduserpagemessage
+id: tmdcontactpageaddress
 theme: keplerst
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:fce8b12f-059c-4fc1-b137-7a0a52735d32'
+plugin: 'block_content:25981cb1-66b3-48fe-9cf4-46b677a3e944'
 settings:
-  id: 'block_content:fce8b12f-059c-4fc1-b137-7a0a52735d32'
-  label: 'tmd - user page message'
+  id: 'block_content:25981cb1-66b3-48fe-9cf4-46b677a3e944'
+  label: 'tmd - contact page address'
   provider: block_content
   label_display: '0'
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*'
+    pages: /contact/contact_us
     negate: false
     context_mapping: {  }

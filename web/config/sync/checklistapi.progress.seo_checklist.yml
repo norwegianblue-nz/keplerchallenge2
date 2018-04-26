@@ -1,0 +1,44 @@
+progress:
+  '#changed': 1524196055
+  '#changed_by': '1'
+  '#completed_items': 13
+  '#items':
+    install_and_enable_seo_checklist_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    install_and_enable_coffee_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    install_and_enable_admin_toolbar_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    enable_clean_urls:
+      '#completed': 1524196055
+      '#uid': '1'
+    install_and_enable_pathauto_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    configure_pathauto_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    create_pathauto_patterns:
+      '#completed': 1524196055
+      '#uid': '1'
+    install_and_enable_metatag_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    set_metatags_for_your_site:
+      '#completed': 1524196055
+      '#uid': '1'
+    install_and_enable_xml_sitemap_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    configure_xml_sitemap_module:
+      '#completed': 1524196055
+      '#uid': '1'
+    make_sure_website_is_responsive:
+      '#completed': 1524196055
+      '#uid': '1'
+    read_drupal_8_seo_by_ben_finklea:
+      '#completed': 1524196055
+      '#uid': '1'

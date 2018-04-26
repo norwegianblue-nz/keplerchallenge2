@@ -1,0 +1,9 @@
+uuid: 660acba4-39db-40a2-85e7-3306e9dc8d87
+langcode: en
+status: true
+dependencies: {  }
+id: node__blog
+label: 'Content: Blog entry'
+tags:
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'
+  title: '[current-page:title] | [site:name]'
