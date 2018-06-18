@@ -5,323 +5,9 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-// div#account-menu {display: block;}
-// #logged-in-menu {
-//   display: none; // INITIAL SATE
-//   background-color: $keplerst_Orange;
-//   width: 16rem;
-//   position: absolute;
-//   top: 3.4rem;
-//   right: 3.6rem;}
-// ul#logged-in-menu {list-style: none;	margin: 0rem;	padding: 0;
-//     & li {padding: 0; margin: 0; color: #fff;
-//       & a {color: #fff; display: block; padding:0.1rem 0.2rem;}
-//       & a:hover{background-color: rgba($keplerst_DarkOrange, 0.7)}
-//     }
-// }
-// div#account-menu:hover #logged-in-menu, div#account-menu:focus #logged-in-menu {display: block;}
-
-
-
 
 // tmd sandy-pit
 
-// Logge din messages.
-  p.user-logged-out-status {color: #900;font-size:1.3rem;display: block;}
-  p.user-logged-in-status {display: none;}
-.user-logged-in {
-  p.user-logged-in-status {color: #090;font-size:1.3rem;display: block;}
-  p.user-logged-out-status {display: none;}
-}
-  .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
-  .user-logged-in {
-    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
-  }
-
-  .user-logged-in {
-    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
-  }
-#user-pass .button, #user-login-form #edit-submit.button {background-color: #ccc;}
-#user-pass {display: none;}
-#user-login-form {
-  margin-top: 3rem;
-  #edit-submit.button {position: relative; top: -5rem;}
-  .form-item {color:#ccc;}
-  .form-item-name, .form-item-pass { & input {border:none;} & .description{display: none;}}
-}
-#edit-simplesamlphp-auth-login-link {
-	display: block;
-	background-color: $keplerst_DarkOrange;
-	max-width: 230px;
-	text-align: center;
-	color: #fff;
-	font-weight: 300;
-	padding: 1rem;
-  position: relative;
-  top: -125px;
-}
-
-// Store - product + catalogue + chaeckout process >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-.path-store, .path-product, .path-cart, .path-checkout { //#main-layout .view-product-catalogue
-& #main-layout {
-  // .field--name-field-pro
-  //  { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
-  // 	border: 1px solid #999;
-	// 	position: relative;
-	// }
-  //
-	// .field--name-field-pro .field__item {
-	// position: absolute;
-	// top: 50%;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // transform: translateY(-50%);	}
-  //
-	// @media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
-  //   .field--name-field-pro {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
-	// }
-	// @media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
-  //   .field--name-field-pro {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
-	// }
-	// @media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
-  //   .field--name-field-pro {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	// }
-	// @media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
-  //   .field--name-field-pro {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	// }
-	// @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
-  //   .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-	// }
-
-  .field--name-title {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.4rem); display: block; height: 2.8em; line-height: 1em; margin-top: 0.5rem;}
-
-  .field--type-commerce-price {@include keplerst_ubuntu-light ($color:$keplerst_DarkOrange, $size: 1.1rem);
-    border-bottom: 1px solid #ccc;
-    margin: 0.5rem 0;
-    max-height: 2rem;}
-
-	#edit-quantity-wrapper {}
-	.form-item {
-		margin-top: 0em;
-		margin-bottom: 0.4em;
-		/* width: 100%; */
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.form-select {
-		font-weight: 300;
-		font-size: 1.2em;
-		padding: 2px 0;
-	}
-	.field--widget-commerce-quantity {
-		width: 100%;
-		display: inline-block;
-	}
-	.form-actions {
-		width: 100%;
-		display: inline-block;
-	}
-  // input.button {
-  // 	height: 3rem;
-  // 	width: 100%;
-  //   max-width: 230px;
-  // 	background-color: $keplerst_DarkOrange;
-  // 	border: 0;
-  // 	margin: 1rem 0;
-  // 	color: #fff;
-  // }
-  label {@include keplerst_ubuntu-light ($color:$keplerst_Grey, $size: 1.1rem);}
-  input.form-number {
-    color: $keplerst_Grey;
-    text-align: center;
-    font-size: 1.2rem;
-    width: 60px;
-    height: 3rem;
-  }
-}} // / Storewide {} ends (page path and #main-layout)
-
-// Store, Product page, Cart and Checkout specifics >>
-.path-product #main-layout { // (Product)
-    @media all and (min-width:500px) {
-      article {
-        display: grid;
-        grid-template-columns: auto;
-      }
-    }
-  .field--name-field-displayed-title {
-    grid-column-start: 1;
-    grid-column-end: span2;
-    }
-	.field--name-field-displayed-title {
-		margin: 0 0 2rem 0;
-	  @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
-	  line-height: 1.3em;
-	  padding: 5px 0 50px;
-	  border-top: 1px solid #333;
-	  border-bottom: 1px solid #777;
-	}
-	.field--name-field-pro,
-  .field--name-body {
-    // float: left;
-    padding-right: 2rem;
-	}
-} // Prod page {} ends
-
-.path-store { // (Catalogue) .view-product-catalogue
-  .view-content {display: grid; grid-row-gap: 20px;}
-  .field--name-field-pro { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
-    border: 1px solid #999;
-    position: relative;
-  }
-  .field--name-field-pro .field__item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);	}
-  @media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
-    .field--name-field-pro {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
-  }
-  @media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
-    .field--name-field-pro {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
-  }
-  @media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
-    .field--name-field-pro {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-  }
-  @media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
-    .field--name-field-pro {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-  }
-  @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
-    .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
-  }
-//  Inputs
-  select {
-    min-width: 80px;
-    // padding: 5px 35px 5px 5px;
-    // font-size: 16px;
-    border: 1px solid #ccc;
-    height: 34px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows.png') 97% top no-repeat;
-  }
-  select:disabled {background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows-disabled.png') 97% top no-repeat;
-}
-  select input[type=checkbox]:disabled {background-color: $keplerst_GreyText;}
-  /* CAUTION: IE hackery ahead */
-  select::-ms-expand {display: none; /* remove default arrow in IE 10 and 11 */}
-  /* target Internet Explorer 9 to undo the custom arrow */
-  @media screen and (min-width:0\0) {select {background:none\9; padding: 5px\9;} }
-
-
-} // Catalogue (Store) page {} ends.
-
-//  Cart page specifics
-.path-cart #main-layout {
-  .lineitem.lineitem-price.lineitem-qty.lineitem-remove.lineitem-total {
-    display:flex;justify-content: space-between;flex-wrap: wrap;
-    @include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1.3em);
-    border-bottom: solid #eee 1px;
-    padding: 1rem 0;
-  }
-  .views-label {@include keplerst_baloo ($color:$keplerst_DarkOrange,$size:0.9em);display: block;line-height: 1.2em;}
-  .field-content {}
-
-  .views-field-purchased-entity {width: 40%;}
-  @media all and (min-width:0px) and (max-width: 767px) {.views-field-purchased-entity {width: 100%}}
-  .views-field-unit-price__number {width: 10rem;}
-  .views-field-edit-quantity { & input.form-number {height:unset;width: 50px;height:31px;}}
-  .views-field-remove-button { & .delete-order-item {margin: 1.1rem 0 0; font-size: 0.6em;} & input.button {height: 31px !important; margin: 1.2rem 0 0 !important;}}
-  .views-field-total-price__number {flex-grow: 1;text-align:right;padding-right: 10px;}
-  .field--name-total-price {}
-  .field--type-commerce-price {max-height: 8rem;}
-  .order-total-line-value {width: 115px;}
-
-} // Cart pages {} ends
-
-// Checkout page specifics
-.path-checkout #main-layout {
-  input, input.InputElement {width:100%;padding: 10px;}
-  input[type="checkbox"], input[type="radio"] {width: 20px !important;}
-  .form-item {display: block;}
-  // input:required::before {
-  // content: '*Required';}
-
-  .summary-qty.summary-item.summary-total {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:0.9rem);border-bottom: 1px solid #ddd; padding: 0.7rem 0; }
-  .summary-qty.summary-item.summary-total:first-of-type {border-top: 1px solid #ddd;}
-  .field--type-commerce-price {color: $keplerst_GreyText; font-size: 0.9rem; border-bottom: 0px solid #fff;}
-  .order-total-line-value {width: 90px;}
-
-  .layout-region-checkout-main {margin-top:3.7rem;} // Checkout payment details fiedlset
-  .checkout-pane > legend {
-  	color: $keplerst_DarkOrange;
-  	font-size: 1.5rem;
-  	padding: 0 0rem;
-  	margin: -3rem 0 0;
-  }
-
-  // Stripe credit entry
-  .form-text { padding: 1em !important; min-width: 30%; }
-
-
-} // Checkout pages {} ends
-
-// End Store pages >>
-
-
-// Photo gallery  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-.path-gallery {
-@media all and (max-width: 599px) {.field--name-field-gallery-image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}}
-@media all and (min-width: 600px) {.field--name-field-gallery-image {
-  	display: grid;
-  	grid-column-gap: 2%;
-  	grid-row-gap: 15px;
-  }}
-@media all and (min-width: 600px) and (max-width:959px){.field--name-field-gallery-image {
-	grid-template-columns: 23.5% 23.5% 23.5% 23.5% ;
-	grid-column-gap: 2%;
-}}
-@media all and (min-width: 960px){.field--name-field-gallery-image {
-	grid-template-columns: 15% 15% 15% 15% 15% 15%;
-	grid-column-gap: 2%;
-}}
-.colorbox.cboxElement {
-	width: 120px;
-	display: block;
-	overflow: hidden;
-}
-.colorbox.cboxElement img {
-	max-width: unset;
-}
-} // / {} gallery
-
-// Open News summary  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-.node--type-news-summary {
-  #social_media-wrapper, #content2-outer-wrapper {}
-  #block-views-block-news-articles-block-1 {
-	border-top: solid 1px $keplerst_LightOrange;
-	border-bottom: solid 1px $keplerst_LightOrange;
-    & h2 {margin-top: 1rem;}
-    & h2 a::after {
-      content: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/link.svg');
-      display: inline-block;
-      top: 2px;
-      position: relative;
-      margin: 0 6px;
-    }
-  }
-  @media all and (min-width: 600px) {
-    .view-news-articles .view-content {display: flex; justify-content: space-between;}
-    .view-news-articles .view-content .views-row {width: 30%;}
-  }
-  h2.news-teaser a {color:$keplerst_DarkOrange;font-size: 1.2rem;}
-} // Close news summary
 
 // Keeping sandy>>>>
 
@@ -508,6 +194,44 @@ footer.node__meta {float:right;}
 		@include keplerstTransition($type: opacity, $speed: 2s, $transition: ease-in-out);
 }
 
+// Account handling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Logged in messages.
+  p.user-logged-out-status {color: #900;font-size:1.3rem;display: block;}
+  p.user-logged-in-status {display: none;}
+.user-logged-in {
+  p.user-logged-in-status {color: #090;font-size:1.3rem;display: block;}
+  p.user-logged-out-status {display: none;}
+}
+  .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
+  .user-logged-in {
+    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  }
+
+  .user-logged-in {
+    .tabs.primary {display: block;} /* important: re-shows the tabs for editors and users */
+  }
+#user-pass .button, #user-login-form #edit-submit.button {background-color: #efefef;}
+#user-pass {display: none;}
+#user-login-form {
+  margin-top: 3rem;
+  #edit-submit.button {position: relative; top: -5rem;}
+  .form-item {color:#efefef;}
+  .form-item-name, .form-item-pass { & input {border:none;} & .description{display: none;}}
+  .form-item-name::before {content: "Admin ";}
+  .form-required::after {display: none;} /* Hide 'required' asterisk */
+}
+#edit-simplesamlphp-auth-login-link {
+	display: block;
+	background-color: $keplerst_DarkOrange;
+	max-width: 230px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	padding: 1rem;
+  position: relative;
+  top: -140px;
+}
+
 
 /* TITLE BAR LAYOUT, MENU AND ELEMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 #title-bar-wrapper {
@@ -581,7 +305,7 @@ div#page.scrolled #title-bar-wrapper {
   }
   to {
     opacity: 1;
-    top: 60px; // was 61px
+    // top: 60px; // was 61px
   }
 }
 @keyframes fade-in2b {
@@ -626,11 +350,9 @@ div#page.scrolled #title-bar-wrapper {
 }
 #header-outer-wrapper + #menu-outer-wrapper {margin-top: 60px;} // 3.4rem Offset for non top-pic pages
 
-
-#menu-outer-wrapper.hamburger-clicked {position: fixed; z-index: 11;} // generic
-
+#menu-outer-wrapper.hamburger-clicked {position: fixed; z-index: 11;margin-top: 60px;} // generic
 #nb_fixed-bg0 + #menu-outer-wrapper.hamburger-clicked {
-  top: 90px; //3.6rem;
+  // top: 60px; //3.6rem;
   animation-name: fade-in2;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -645,18 +367,7 @@ div#page.scrolled #title-bar-wrapper {
 
 // Override when logged in
 .user-logged-in {
-#nb_fixed-bg0 + #menu-outer-wrapper.hamburger-clicked {
-  top: 90px; //3.6rem;
-  animation-name: fade-in2-logged-in;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-}
-#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {
-  top: 0;
-  animation-name: fade-in2b-logged-in;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-}
+  #menu-outer-wrapper.hamburger-clicked {margin-top: 90px;} // generic
 
 } // Close user-logged-in
 
@@ -722,7 +433,7 @@ div#page.scrolled #title-bar-wrapper {
 .cart-block--summary__count {color: #fff;font-size: 0.7rem;position: relative;top: -3px;background-color: rgba($keplerst_DarkOrange, 0.7);padding: 3px 3px 6px;}
 } // user-logged-in {} closes
 
-/*  logged-in account menu */
+/*  Logged-in account menu */
 #logged-in-menu {
   background-color: $keplerst_Orange;
   position: absolute;
@@ -774,6 +485,33 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
   #header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {top:0;}
 }
 
+// User's order and cc history under /users
+// (NOTE: table elemnt sytying in _htm-lelments.scss)
+.path-user{
+  #block-keplerst-local-tasks, .view-profiles {border-top: solid 1px $keplerst_Orange; padding: 0.25rem 0 0 0;}
+  .view-profiles .view-content {border-top: solid 1px #ccc; padding: 0.25rem 0 0 0;margin-top: 0.5rem;}
+  .views-element-container {margin: 0.5rem 0 0 0;}
+
+  @media all and (min-width: 0px) and (max-width: 599px) {
+    .views-col {width: 100% !important;} // Allow addresses to fill width on smaller devices
+  }
+  @media all and (min-width: 600px) {
+    .region-highlighted {padding: 0 8.47%;}
+  }
+  @media all and (min-width: 960px) {
+      .region-highlighted {padding: 0 80px;}
+  }
+  @media all and (min-width: 1280px) {
+      .region-highlighted {padding: 0 100px;}
+  }
+  .views-col {padding-right: 15px;}
+  td.is-active {background-color: transparent;} // override tablesort.css
+  ul.links {
+  	margin: 0;
+  	list-style: none;
+  	padding: 0px;
+  }
+}
 
 
 // (elements)
@@ -1014,7 +752,11 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 
 } // view-our-partners {} ends
 
-
+// NEWS Articles specifics >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.node--type-article {
+  .field--taxonomy-terms .taxonomy-term {background-color: #fff; border-color: $keplerst_Orange;}
+  ul.links li {padding: 0 0.5em 0 0;}
+}
 
 // FAQ Page specifics >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -1106,6 +848,270 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 }
 
 
+// ** STORE ** - product + catalogue + chaeckout process >>>>>>>>>>>>>>>>>>>>>>>
+.path-store, .path-product, .path-cart, .path-checkout { //#main-layout .view-product-catalogue
+& #main-layout {
+  // .field--name-field-pro
+  //  { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
+  // 	border: 1px solid #999;
+	// 	position: relative;
+	// }
+  //
+	// .field--name-field-pro .field__item {
+	// position: absolute;
+	// top: 50%;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // transform: translateY(-50%);	}
+  //
+	// @media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+  //   .field--name-field-pro {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
+	// }
+	// @media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+  //   .field--name-field-pro {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+	// }
+	// @media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+  //   .field--name-field-pro {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	// }
+	// @media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+  //   .field--name-field-pro {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	// }
+	// @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+  //   .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+	// }
+
+  .field--name-title {@include keplerst_ubuntu-light ($color:$keplerst_DarkTeal, $size: 1.4rem); display: block; height: 2.8em; line-height: 1em; margin-top: 0.5rem;}
+
+  .field--type-commerce-price {@include keplerst_ubuntu-light ($color:$keplerst_DarkOrange, $size: 1.1rem);
+    border-bottom: 1px solid #ccc;
+    margin: 0.5rem 0;
+    max-height: 2rem;}
+
+	#edit-quantity-wrapper {}
+	.form-item {
+		margin-top: 0em;
+		margin-bottom: 0.4em;
+		/* width: 100%; */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.form-select {
+		font-weight: 300;
+		font-size: 1.2em;
+		padding: 2px 0;
+	}
+	.field--widget-commerce-quantity {
+		width: 100%;
+		display: inline-block;
+	}
+	.form-actions {
+		width: 100%;
+		display: inline-block;
+	}
+  // input.button {
+  // 	height: 3rem;
+  // 	width: 100%;
+  //   max-width: 230px;
+  // 	background-color: $keplerst_DarkOrange;
+  // 	border: 0;
+  // 	margin: 1rem 0;
+  // 	color: #fff;
+  // }
+  label {@include keplerst_ubuntu-light ($color:$keplerst_Grey, $size: 1.1rem);}
+  input.form-number {
+    color: $keplerst_Grey;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 60px;
+    height: 3rem;
+  }
+}} // / Storewide {} ends (page path and #main-layout)
+
+// Store, Product page, Cart and Checkout specifics >>
+.path-product #main-layout { // (Product)
+    @media all and (min-width:500px) {
+      article {
+        display: grid;
+        grid-template-columns: auto;
+      }
+    }
+  .field--name-field-displayed-title {
+    grid-column-start: 1;
+    grid-column-end: span2;
+    }
+	.field--name-field-displayed-title {
+		margin: 0 0 2rem 0;
+	  @include keplerst_ubuntu-light ($primaryColor3, 3.5em);
+	  line-height: 1.3em;
+	  padding: 5px 0 50px;
+	  border-top: 1px solid #333;
+	  border-bottom: 1px solid #777;
+	}
+	.field--name-field-pro,
+  .field--name-body {
+    // float: left;
+    padding-right: 2rem;
+	}
+} // Prod page {} ends
+
+.path-store { // (Catalogue) .view-product-catalogue
+  .view-content {display: grid; grid-row-gap: 20px;}
+  .field--name-field-pro { // tmd = aspect-ratio-box container +++ Changed to Grid... keep for now in case of fall-back
+    border: 1px solid #999;
+    position: relative;
+    text-align: center;
+  }
+  .field--name-field-pro .field__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);	}
+  @media all and (max-width:415px) {.view-content {grid-template-columns: 100%;}
+    .field--name-field-pro {height: 220px;} /*h3 {grid-column-start: 1;grid-column-end: span 1;}*/
+  }
+  @media all and (min-width:416px) and (max-width:767px) {.view-content {grid-template-columns: 40% 40%; grid-column-gap: 10%;}
+    .field--name-field-pro {height: 180px;} h3 {grid-column-start: 1;grid-column-end: span 2;}
+  }
+  @media all and (min-width:768px) and (max-width: 959px) {.view-content {grid-template-columns: 23% 23% 23% 23%; grid-column-gap: 2%;}
+    .field--name-field-pro {height: 160px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+  }
+  @media all and (min-width:960px) and (max-width: 1279px) {.view-content {grid-template-columns: 180px 180px 180px 180px; grid-column-gap: 20px;}
+    .field--name-field-pro {height: 190px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+  }
+  @media all and (min-width:1280px) {.view-content {grid-template-columns: 230px 230px 230px 230px; grid-column-gap: 20px;}
+    .field--name-field-pro {height: 230px;} h3 {grid-column-start: 1;grid-column-end: span 4;}
+  }
+//  Inputs
+  select {
+    min-width: 80px;
+    // padding: 5px 35px 5px 5px;
+    // font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows.png') 97% top no-repeat;
+  }
+  select:disabled {background: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/select-arrows-disabled.png') 97% top no-repeat;
+}
+  select input[type=checkbox]:disabled {background-color: $keplerst_GreyText;}
+  /* CAUTION: IE hackery ahead */
+  select::-ms-expand {display: none; /* remove default arrow in IE 10 and 11 */}
+  /* target Internet Explorer 9 to undo the custom arrow */
+  @media screen and (min-width:0\0) {select {background:none\9; padding: 5px\9;} }
+
+
+} // Catalogue (Store) page {} ends.
+
+//  Cart page specifics
+.path-cart #main-layout {
+  .lineitem.lineitem-price.lineitem-qty.lineitem-remove.lineitem-total {
+    display:flex;justify-content: space-between;flex-wrap: wrap;
+    @include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1.3em);
+    border-bottom: solid #eee 1px;
+    padding: 1rem 0;
+  }
+  .views-label {@include keplerst_baloo ($color:$keplerst_DarkOrange,$size:0.9em);display: block;line-height: 1.2em;}
+  .field-content {}
+
+  .views-field-purchased-entity {width: 40%;}
+  @media all and (min-width:0px) and (max-width: 767px) {.views-field-purchased-entity {width: 100%}}
+  .views-field-unit-price__number {width: 10rem;}
+  .views-field-edit-quantity { & input.form-number {height:unset;width: 50px;height:31px;}}
+  .views-field-remove-button { & .delete-order-item {margin: 1.1rem 0 0; font-size: 0.6em;} & input.button {height: 31px !important; margin: 1.2rem 0 0 !important;}}
+  .views-field-total-price__number {flex-grow: 1;text-align:right;padding-right: 10px;}
+  .field--name-total-price {}
+  .field--type-commerce-price {max-height: 8rem;}
+  .order-total-line-value {width: 115px;}
+
+  .cart-empty-page {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:1.3em);} //when there's nothing there!!
+
+} // Cart pages {} ends
+
+// Checkout page specifics
+.path-checkout #main-layout {
+  input, input.InputElement {width:100%;padding: 10px;}
+  input[type="checkbox"], input[type="radio"] {width: 20px !important;}
+  .form-item {display: block;}
+  // input:required::before {
+  // content: '*Required';}
+
+  .summary-qty.summary-item.summary-total {@include keplerst_ubuntu-light ($color:$keplerst_GreyText, $size:0.9rem);border-bottom: 1px solid #ddd; padding: 0.7rem 0; }
+  .summary-qty.summary-item.summary-total:first-of-type {border-top: 1px solid #ddd;}
+  .field--type-commerce-price {color: $keplerst_GreyText; font-size: 0.9rem; border-bottom: 0px solid #fff;}
+  .order-total-line-value {width: 90px;}
+
+  .layout-region-checkout-main {margin-top:3.7rem;} // Checkout payment details fiedlset
+  .checkout-pane > legend {
+  	color: $keplerst_DarkOrange;
+  	font-size: 1.5rem;
+  	padding: 0 0rem;
+  	margin: -3rem 0 0;
+  }
+
+  // Stripe credit entry
+  .form-text { padding: 1em !important; min-width: 30%; }
+
+} // Checkout pages {} ends
+// End of Store styles >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+// Photo gallery  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.path-gallery {
+@media all and (max-width: 599px) {.field--name-field-gallery-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}}
+@media all and (min-width: 600px) {.field--name-field-gallery-image {
+  	display: grid;
+  	grid-column-gap: 2%;
+  	grid-row-gap: 15px;
+  }}
+@media all and (min-width: 600px) and (max-width:959px){.field--name-field-gallery-image {
+	grid-template-columns: 23.5% 23.5% 23.5% 23.5% ;
+	grid-column-gap: 2%;
+}}
+@media all and (min-width: 960px){.field--name-field-gallery-image {
+	grid-template-columns: 15% 15% 15% 15% 15% 15%;
+	grid-column-gap: 2%;
+}}
+.colorbox.cboxElement {
+	width: 120px;
+	display: block;
+	overflow: hidden;
+}
+.colorbox.cboxElement img {
+	max-width: unset;
+}
+} // / {} gallery closes >>>>>>>>>>>>>>>>>>>>>>>
+
+// Open News summary  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.node--type-news-summary {
+  #social_media-wrapper, #content2-outer-wrapper {}
+  #block-views-block-news-articles-block-1 {
+	border-top: solid 1px $keplerst_LightOrange;
+	border-bottom: solid 1px $keplerst_LightOrange;
+    & h2 {margin-top: 1rem;}
+    & h2 a::after {
+      content: url('/sites/keplerchallenge.co.nz/themes/custom/keplerst/images/link.svg');
+      display: inline-block;
+      top: 2px;
+      position: relative;
+      margin: 0 6px;
+    }
+  }
+  @media all and (min-width: 600px) {
+    .view-news-articles .view-content {display: flex; justify-content: space-between;}
+    .view-news-articles .view-content .views-row {width: 30%;}
+  }
+  h2.news-teaser a {color:$keplerst_DarkOrange;font-size: 1.2rem;}
+} // Close news summary >>>>>>>>>>>>>>>>>>>>>>>
+
+
 /* FOOTER HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 #footer-header-outer-wrapper {background-color: $keplerst_DarkTeal;text-align: center;}
@@ -1130,7 +1136,7 @@ figure {margin:0.7rem 1.2rem 0 0;} // In-line image plus caption style
 
 a.social-icon {padding: 0 0.5rem;}
 
-/* POSCRIPT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* POSCRIPT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .region--postscript-fourth.region.region-postscript-fourth {
 	display: flex;
 	justify-content: space-between;
@@ -1212,6 +1218,7 @@ a.social-icon {padding: 0 0.5rem;}
   border: 1px solid #000;
   background-color: rgba(255, 255, 255, 0.05);
 }
+#mce-EMAIL::placeholder {color: #222;}
 #mce-EMAIL {&:hover, &:focus{background-color: rgba(255, 255, 255, 0.5);}}
 
 // TMD / NWB last word sign-off text >>>>>>>>>>>
@@ -1236,17 +1243,25 @@ a.social-icon {padding: 0 0.5rem;}
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+//
 /* FRONT PAGE OVERRIDES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
+//
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .path-frontpage { // THIS WRAPS FRONT PAGE OVERRIDES
 
 // Main top image
   .nb_fixed-bg {background-attachment: fixed;} // Make hero images fixed on home.
-  @media all and (max-width: 416px) {.nb_fixed-bg {background-attachment: scroll;}} // Except for mobile which gets buggered up on iPhone
-
+  @media all and (max-width: 600px) {.nb_fixed-bg {background-attachment: scroll;}} // Except for mobile which gets buggered up on iPhone
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    .nb_fixed-bg {background-attachment: scroll;} // Targets retina screens which has bug with cover + fixed
+  }
 // Title Bar
 
 // Teaser (inc BG image / video)
@@ -1305,6 +1320,12 @@ a.social-icon {padding: 0 0.5rem;}
 
 // Menu (menu bar srtip)
   #menu-outer-wrapper {background-color: $keplerst_DarkOrange;min-height: 2rem;}
+  #menu-outer-wrapper.hamburger-clicked { // (Retargets the front page as other pages otherwise override each other)
+    animation-name: fade-in2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
+
 
 // Btns (not shown on front)
   section#btns-outer-wrapper { // overrides margin for social icons on pages
@@ -1349,5 +1370,5 @@ a.social-icon {padding: 0 0.5rem;}
 }// THIS CLOSES FRONT PAGE OVERRIDES
 
 .cke_editable {
-  .faq-section p {display: block;}
+  .faq-section p {display: block;} // Allows editing of otherwise hidden FAQ content when logged in as editor
 }
