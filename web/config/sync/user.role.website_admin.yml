@@ -90,7 +90,6 @@ permissions:
   - 'use advanced search'
   - 'use text format filtered_html'
   - 'use text format full_html'
-  - 'use text format php_code'
   - 'use text format raw'
   - 'view dynamic display blocks'
   - 'view own unpublished content'

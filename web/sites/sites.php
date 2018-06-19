@@ -53,3 +53,7 @@
  * @see \Drupal\Core\DrupalKernel::getSitePath()
  * @see https://www.drupal.org/documentation/install/multi-site
  */
+ /*
+  URL: http://scud.keplerchallenge.co.nz
+  $sites['scud.keplerchallenge.co.nz'] = 'keplerchallenge.co.nz';
+  */

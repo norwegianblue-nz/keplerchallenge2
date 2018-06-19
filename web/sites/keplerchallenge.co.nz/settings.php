@@ -57,6 +57,7 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'config/sync';
+$config_directories['local'] = 'config/local';
 /* $config_directories['migrate'] = 'config/migrate'; */
 
 /**
