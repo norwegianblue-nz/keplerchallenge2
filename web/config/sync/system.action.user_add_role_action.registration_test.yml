@@ -1,0 +1,14 @@
+uuid: cf806abe-9090-4ffd-9339-6f0cd4ce7b3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.registration_test
+  module:
+    - user
+id: user_add_role_action.registration_test
+label: 'Add the registration_test role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: registration_test

@@ -1,0 +1,14 @@
+uuid: f4bba074-897e-4924-bcaf-eb66b3340e43
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.registration_test
+  module:
+    - user
+id: user_remove_role_action.registration_test
+label: 'Remove the registration_test role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: registration_test

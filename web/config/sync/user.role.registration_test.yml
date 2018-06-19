@@ -1,0 +1,9 @@
+uuid: a26e642d-8b1e-46a5-99af-743e567a4e3e
+langcode: en
+status: true
+dependencies: {  }
+id: registration_test
+label: registration_test
+weight: 6
+is_admin: null
+permissions: {  }
