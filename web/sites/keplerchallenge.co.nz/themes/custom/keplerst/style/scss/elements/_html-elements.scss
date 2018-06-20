@@ -86,6 +86,9 @@ ol {
     margin: -1rem 0 1rem;
     padding-left: 0;
   }
+#main-layout .field--name-field-content h2 + ul, #main-layout .field--name-field-content h2 + ol,
+#main-layout .field--name-field-content h3 + ul, #main-layout .field--name-field-content h3 + ol {margin-top: 0;}
+
 #main-layout .field--name-field-content ul, #main-layout.field--name-field-content ol {border-bottom: 1px solid rgba($keplerst_Tan1, 0.6);}
 
 #main-layout .field--name-field-content li {

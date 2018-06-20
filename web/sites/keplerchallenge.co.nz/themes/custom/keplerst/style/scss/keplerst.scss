@@ -196,11 +196,14 @@ footer.node__meta {float:right;}
 
 // Account handling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Logged in messages.
-  p.user-logged-out-status {color: #900;font-size:1.3rem;display: block;}
-  p.user-logged-in-status {display: none;}
+  p.user-logged-out-status {color: #900;font-size:1.3rem;display: block; margin-bottom: 0;}
+  p.user-logged-out {display: block;}
+  p.user-logged-in-status, p.user-logged-in {display: none;}
+
 .user-logged-in {
-  p.user-logged-in-status {color: #090;font-size:1.3rem;display: block;}
-  p.user-logged-out-status {display: none;}
+  p.user-logged-in-status {color: #090;font-size:1.3rem;display: block; margin-bottom: 0;}
+  p.user-logged-in {display: block;}
+  p.user-logged-out-status, p.user-logged-out {display: none;}
 }
   .tabs.primary {display: none;} /* important: hides the password reset tabs on main site to stop password resets not on Entries system */
   .user-logged-in {
