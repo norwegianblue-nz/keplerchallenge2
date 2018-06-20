@@ -1,3 +1,7 @@
-<p>Links will be displayed <strong>automatically</strong> here. 
-<strong>Do <span style="color: #900">not</span> refresh your browser</strong> - this will slow your connection (<a href="/node/113">read more...</a>).</p>
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
+
 <?php include("timetogo.inc") ?>

@@ -1,5 +1,10 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
 <div id="reg-links">
-<h3> Once you are sure you are familiar with our <a href="/node/37">conditions of entry</a>, choose your event from below.</h3>
+<h3> Choose your event from below.</h3>
 <div align="center">
 <p><a href="https://entries.keplerchallenge.co.nz/9722677/kepler-challenge-entry" style="
 background-color: #0066cc;
@@ -19,3 +24,5 @@ padding: 5px 15px;">ASICS Luxmore Grunt</a>
 
 </div>
 
+<?php 
+//phpinfo() 

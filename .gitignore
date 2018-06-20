@@ -35,7 +35,6 @@ web/sites/keplerchallenge.co.nz/themes/custom/keplerst/style/css_safe.tar.bz2
 # Ignore test modules
 /web/sites/*/modules/contrib
 /web/sites/*/modules/custom/*_try*
-/web/sites/*/modules/custom/entrylinks_block
 web/sites/keplerchallenge.co.nz/unused_modules
 
 ## Required 3rd party libraries
@@ -72,10 +71,11 @@ web/modules/contrib/ultimenu/skins/*
 
 #Local Specific settings
  web/config/sync/system.performance.yml
- web/config/sync/google_analytics.settings.yml
+ /web/config/sync/google_analytics.settings.yml
+ web/config/sync/commerce_payment.commerce_payment_gateway*
 
 #Local config backup
- web/config/sync/local
+ web/config/local
 
 /sass_this
 !/web/sites/keplerchallenge.co.nz/static

@@ -12,7 +12,7 @@ dependencies:
 id: tmduserpagemessage
 theme: keplerst
 region: content
-weight: 0
+weight: -19
 provider: null
 plugin: 'block_content:fce8b12f-059c-4fc1-b137-7a0a52735d32'
 settings:
