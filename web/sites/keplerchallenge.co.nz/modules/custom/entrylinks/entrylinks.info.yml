@@ -1,0 +1,10 @@
+## YAML Template.
+---
+name: Entry Links 
+type: module
+description: Displays the ajax changing coundown timer to the entry links.
+core: 8.x
+package: norwegian.blue
+version: 1.0
+dependencies:
+  - block

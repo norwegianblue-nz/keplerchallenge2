@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains entrylinks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function entrylinks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the entrylinks module.
+    case 'help.page.entrylinks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Display links to event entry pages') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function entrylinks_theme() {
+  return [
+    'entrylinks' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+

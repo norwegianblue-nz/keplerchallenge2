@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:126d95ca-a730-4ce7-98ef-8d743d17c136'
   module:
     - block_content
+    - user
   theme:
     - keplerst
 id: siteid
@@ -22,4 +23,13 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      website_admin: website_admin
+      website_editor: website_editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

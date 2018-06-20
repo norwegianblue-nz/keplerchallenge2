@@ -1,1 +1,1 @@
-timetogolong.inc
+timetogo15m.inc

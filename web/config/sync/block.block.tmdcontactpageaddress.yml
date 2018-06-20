@@ -12,7 +12,7 @@ dependencies:
 id: tmdcontactpageaddress
 theme: keplerst
 region: content
-weight: 0
+weight: -20
 provider: null
 plugin: 'block_content:25981cb1-66b3-48fe-9cf4-46b677a3e944'
 settings:
