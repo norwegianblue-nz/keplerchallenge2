@@ -151,6 +151,7 @@ AddEncoding gzip svgz
   # custom modules or to run another PHP application in the same directory.
   RewriteCond %{REQUEST_URI} !/core/modules/statistics/statistics.php$
   # Allow access to the static php required to generate the Entry Links
+  RewriteCond %{REQUEST_URI} !/sites/keplerchallenge.co.nz/static/onlineentry.php$
   RewriteCond %{REQUEST_URI} !/sites/keplerchallenge.co.nz/static/refresh.php$
   # Deny access to any other PHP files that do not match the rules above.
   # Specifically, disallow autoload.php from being served directly.

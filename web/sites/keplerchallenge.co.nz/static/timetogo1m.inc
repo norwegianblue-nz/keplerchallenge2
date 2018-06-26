@@ -1,1 +1,0 @@
-<div id="counter"><p><img src="/sites/keplerchallenge.co.nz/static/images/-1minute.gif" alt="" style="float:left;margin-right:4px;padding-top:6px;">The links will appear here in under a minute....</p></div>
