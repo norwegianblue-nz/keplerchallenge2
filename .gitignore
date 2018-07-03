@@ -67,17 +67,27 @@ web/modules/contrib/ultimenu/skins/*
 !web/modules/contrib/ultimenu/skins/ultimenu--htb-sliding.css
 
 #Top region config
- web/config/sync/block.block.tmdaccountloginloggedin.yml
- web/config/sync/block.block.tmdtotopbutton.yml
+web/config/sync/block.block.tmdaccountloginloggedin.yml
+web/config/sync/block.block.tmdtotopbutton.yml
 
 #Local Specific settings
- web/config/sync/system.performance.yml
- web/config/sync/google_analytics.settings.yml
- web/config/sync/commerce_payment.commerce_payment_gateway*
- web/config/sync/simplesamlphp_auth*
+web/config/sync/system.performance.yml
+web/config/sync/google_analytics.settings.yml
+web/config/sync/commerce_payment.commerce_payment_gateway*
+web/config/sync/simplesamlphp_auth*
+web/config/sync/commerce_payment.commerce_payment_gateway.stripe_keplerchallenge_test.yml
+web/config/sync/google_analytics.settings.yml
+web/config/sync/swiftmailer.transport.yml
+web/config/sync/system.performance.yml
+web/config/sync/commerce_payment.commerce_payment_gateway.keplerchallenge_stripe_live.yml
+web/config/sync/block.block.entrylinkscountdown.yml
+
+web/sites/keplerchallenge.co.nz/themes/custom/keplerst/style/scss/keplerst~SAFE*
+web/sites/keplerchallenge.co.nz/static/refresh.php
+
 
 #Local config backup
- web/config/local
+web/config/local/
 
 /sass_this
 !/web/sites/keplerchallenge.co.nz/static
