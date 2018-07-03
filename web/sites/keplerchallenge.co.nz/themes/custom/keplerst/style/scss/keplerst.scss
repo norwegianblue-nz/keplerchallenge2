@@ -29,6 +29,27 @@
 
 /* End of main Sandpit *////////////////////////////////////////////////////////
 
+// Important IE Message /////////////////
+div.tmd-IE-msg {display:none;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    div.tmd-IE-msg {display:block;
+    width:100%;
+    background-color:#900;
+    border:solid 2px #000;
+    position: fixed;
+    top:75px;
+    left:0;
+    z-index:10;
+    }
+div.tmd-IE-msg p {
+    color:#fff;
+    font-size:20px;
+    line-height: 1.5em;
+    padding:20px;}
+  /* IE-only styles here. Works for IE 10 & IE 11*/
+}
+// IE message css ends //////////////////////
+
 /* Fixed bg images */
 .nb_fixed-bg {
     min-height: 55vh;
