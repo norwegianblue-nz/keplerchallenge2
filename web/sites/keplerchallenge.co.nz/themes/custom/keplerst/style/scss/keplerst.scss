@@ -372,7 +372,7 @@ div#page.scrolled #title-bar-wrapper {
   animation-duration: 2s;
   animation-timing-function: ease;
 }
-#header-outer-wrapper + #menu-outer-wrapper {margin-top: 60px;} // 3.4rem Offset for non top-pic pages
+#header-outer-wrapper + #menu-outer-wrapper, #title-bar-wrapper+#header-outer-wrapper+#preface1-outer-wrapper+#menu-outer-wrapper  {margin-top: 60px;} // 3.4rem Offset for non top-pic pages
 
 #menu-outer-wrapper.hamburger-clicked {position: fixed; z-index: 11;margin-top: 60px;} // generic
 #nb_fixed-bg0 + #menu-outer-wrapper.hamburger-clicked {
@@ -381,7 +381,7 @@ div#page.scrolled #title-bar-wrapper {
   animation-duration: 1s;
   animation-timing-function: ease;
 }
-#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {
+#header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked, #title-bar-wrapper+#header-outer-wrapper+#preface1-outer-wrapper+#menu-outer-wrapper.hamburger-clicked {
   top: 0;
   animation-name: fade-in2b;
   animation-duration: 1s;
@@ -505,8 +505,8 @@ ul#logged-in-menu {list-style: none;	margin: 2px 0;	padding: 0;
   #block-tmdaccountloginloggedin {display: block;}
 	#block-tmdaccountloginloggedin #account-menu > a {border-bottom: 4px solid $keplerst_Orange;}
   #block-tmdaccountlogin {display: none;}
-  #header-outer-wrapper + #menu-outer-wrapper {margin-top: 90px;}//5.5rem;}
-  #header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked {top:0;}
+  #header-outer-wrapper + #menu-outer-wrapper, #title-bar-wrapper+#header-outer-wrapper+#preface1-outer-wrapper+#menu-outer-wrapper {margin-top: 90px;}//5.5rem;}
+  #header-outer-wrapper + #menu-outer-wrapper.hamburger-clicked, #title-bar-wrapper+#header-outer-wrapper+#preface1-outer-wrapper+#menu-outer-wrapper.hamburger-clicked {top:0;}
 }
 
 // User's order and cc history under /users
