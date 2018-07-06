@@ -28,19 +28,19 @@ $jq('#nonmobile_hamburger').click(function(){
     $jq(this).toggleClass("clicked");
 });
 
-links();    
-   function links()
-    {
-        $jq.ajax({
-           type: "GET",
-           url: "/sites/keplerchallenge.co.nz/static/refresh.php",
-           cache: false,
-           success: function(response){
-              $jq("#entry_links").html(response);
-            }
-       });
-    }
-setInterval(links, 5000);
+//links();    
+//   function links()
+//    {
+//        $jq.ajax({
+//           type: "GET",
+//           url: "/sites/keplerchallenge.co.nz/static/refresh.php",
+//           cache: false,
+//           success: function(response){
+//              $jq("#entry_links").html(response);
+//            }
+//       });
+//    }
+//setInterval(links, 5000);
 
 
 /*
